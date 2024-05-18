@@ -1,0 +1,28 @@
+USE farming;
+
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+
+TRUNCATE TABLE languages;
+TRUNCATE TABLE relationships;
+TRUNCATE TABLE fields;
+TRUNCATE TABLE life_types;
+TRUNCATE TABLE plants;
+TRUNCATE TABLE vernacular;
+TRUNCATE TABLE soils;
+TRUNCATE TABLE crop_aid;
+TRUNCATE TABLE germination_conditions;
+TRUNCATE TABLE soil_conditions;
+TRUNCATE TABLE species;
+TRUNCATE TABLE climates;
+TRUNCATE TABLE pests;
+TRUNCATE TABLE terms;
+TRUNCATE TABLE synonyms;
+TRUNCATE TABLE techniques;
+TRUNCATE TABLE phytochemicals;
+CREATE TABLE farming_theories;
+CREATE TABLE farming_theory_features;
+CREATE TABLE farming_practices;
+CREATE TABLE plant_uses;
+TRUNCATE TABLE practices;
+
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
