@@ -21,13 +21,7 @@ USE farming;
 -- Tables 'life_type', 'climates' and 'soils' may be referenced,
 -- therefore they should precede all others
 
-CREATE TABLE life_types (
-  life_type_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  life_type VARCHAR(50) NOT NULL,
-  description VARCHAR(999), -- NOT NULL,
-  PRIMARY KEY  (life_type_id),
-  KEY idx_life_type (life_type)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 
 CREATE TABLE climates (
   climate_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -58,8 +52,8 @@ CREATE TABLE plants (
   climate VARCHAR(255),
   wild BOOL, -- DEFAULT FALSE,
   PRIMARY KEY (plant_id),
-  FOREIGN KEY (life_type)  REFERENCES life_types(life_type),
-  FOREIGN KEY (climate) REFERENCES climates(cname),
+  FOREIGN KEY (life_type) REFERENCES biology.life_types(life_type),
+  FOREIGN KEY (climate)   REFERENCES           climates(cname),
   -- FOREIGN KEY (soil)    REFERENCES soils(sname),
   KEY idx_varieties_bname (bname)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -136,7 +130,7 @@ CREATE TABLE pests ( -- pests or infectious diseases
   pest_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   pname   VARCHAR(50) NOT NULL,
   nature  VARCHAR(50), -- {fungal, bacterial, viral, nematode, molusc, arthropod, rodent, other}
-  mechanism  VARCHAR(255),
+  mechanism  VARCHAR(999),
   part       VARCHAR(128), -- The anatomical part that gets harmed.
   vector     VARCHAR(128), -- How the agent arrives onto or into the plant.
   conditions VARCHAR(50), -- Under what conditions is the plant more vulnerable?

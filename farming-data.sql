@@ -15,64 +15,8 @@ SET AUTOCOMMIT=0;
 -- trees for the hedgerow: bullace, hazelnut, crab apple, medlar, Asian pear, cornelian, cherry, goumi
 
 
--- Tables 'life_type', 'climates' and 'soils' may be referenced,
+-- Tables 'climates' and 'soils' may be referenced,
 -- therefore they should precede all others
-
-INSERT INTO life_types (life_type, description) VALUES
-('brassicas', NULL), -- formerly Cruciferae
-('cucurbitaceae', NULL),
-('liliaceae', NULL),
-('fabaceae', NULL), -- legumes
-('poaceae', NULL), -- cereal
-('apiaceae', NULL), -- formerly Umbelliferae
-('asteraceae', NULL), -- formerly Compositae
-('chenopodiaceae', NULL),
-('solanaceae', NULL),
--- a
-('annual', NULL),
-('biennial', NULL),
-('perennial', NULL),
-('ornamental', NULL),
-('edible ornamental', NULL),
-('vegetable', NULL),
-('vine', NULL), --
-('succulent', NULL),
-('bush', NULL),
-('shrub', NULL),
-('leguminous shrub', NULL),
-('tree', NULL),
-('fruit tree', NULL),
-('nut tree', NULL),
--- b
-('virus', NULL),
-('bacteria', NULL),
-('cyanobacteria', NULL),
-('archaea', NULL),
-('algae', NULL),
-('fungi', NULL),
-('hornwort', NULL),
-('liverwort', NULL),
-('lichen', NULL),
-('moss', NULL),
-('seaweed', NULL),
--- c
-('insect', NULL),
-('caterpillar', NULL),
-('spider', NULL),
-('mollusk', NULL),
-('nematode', NULL),
-('earthworm', NULL),
-('mite', NULL),
-('moth', NULL),
-('aphid', 'small sap-sucking insects and members of the superfamily Aphidoidea. Common names include greenfly and blackfly'),
-('amphibian', NULL),
-('rodent', NULL),
-('mole', NULL),
-('vole', NULL),
-('gopher', NULL),
-('deer', NULL),
-('snake', NULL),
-('bird', NULL);
 
 INSERT INTO plants (bname, life_type, climate) VALUES
 ('Panax ginseng', 'perennial', 'mountain'),
@@ -403,7 +347,7 @@ INSERT INTO terms (term, description, field) VALUES
 ('apomixis (self-cloning)', 'seeds are produced asexually and the new plant is genetically identical to its parent', 'plant breeding'),
 --
 ('self-sowing', NULL, NULL), -- adj
-('succulent', NULL, 'phytology'), --  also found in TABLE 'life_types';
+('succulent', NULL, 'phytology'); --  also found in TABLE 'life_types';
 
 INSERT INTO terms (term, description, field) VALUES
 ('bonemeal', NULL, 'farming'),
