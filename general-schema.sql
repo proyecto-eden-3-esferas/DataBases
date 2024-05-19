@@ -1,6 +1,7 @@
 SET NAMES utf8mb4;
 -- SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
--- You cannot just DROP SCHEMA general unless FOREIGN KEY checks are suspended:
+-- You cannot just DROP SCHEMA general unless FOREIGN KEY checks are suspended
+-- because 'fields' is referenced by plant_uses
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
 
@@ -124,7 +125,7 @@ CREATE TABLE fields (
   description VARCHAR(512),
   discussion  VARCHAR(512),
   PRIMARY KEY  (fields_id),
-  KEY idx_fields_field (field)
+  KEY idx_fields_field (field) -- referenced by TABLE 'plant_uses'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO fields (field, description, discussion) VALUES
