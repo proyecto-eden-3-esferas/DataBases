@@ -46,13 +46,15 @@ CREATE TABLE soils (
 --
 
 CREATE TABLE plants (
-  plant_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  bname VARCHAR(45),
+-- plant_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  bname  VARCHAR(45) NOT NULL,
+  family VARCHAR(50), -- NOT NULL, -- from 'in_family' in "plant_families.sql"
+  language_code VARCHAR(2) NOT NULL DEFAULT 'en',
   life_type VARCHAR(50),
   climate VARCHAR(255),
   wild BOOL, -- DEFAULT FALSE,
-  PRIMARY KEY (plant_id),
-  FOREIGN KEY (life_type) REFERENCES biology.life_types(life_type),
+  PRIMARY KEY (bname),
+-- FOREIGN KEY (life_type) REFERENCES biology.life_types(life_type), -- commented out because of fields like "woody biannual"
   FOREIGN KEY (climate)   REFERENCES           climates(cname),
   -- FOREIGN KEY (soil)    REFERENCES soils(sname),
   KEY idx_varieties_bname (bname)
@@ -142,7 +144,7 @@ CREATE TABLE pests ( -- pests or infectious diseases
 CREATE TABLE terms (
   term_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   term  VARCHAR(108) NOT NULL,
-  description VARCHAR(499),
+  description VARCHAR(999),
   field VARCHAR(255), -- an enumeration in 'pathology', 'mineral'...
   PRIMARY KEY  (term_id),
   KEY idx_terms_term (term)

@@ -18,55 +18,60 @@ SET AUTOCOMMIT=0;
 -- Tables 'climates' and 'soils' may be referenced,
 -- therefore they should precede all others
 
-INSERT INTO plants (bname, life_type, climate) VALUES
-('Panax ginseng', 'perennial', 'mountain'),
-('Zea may', 'cereal', NULL),
-('Asparagus officinalis', 'perennial vegetable', NULL),
-('Baptisia spp.', 'leguminous shrub', NULL), -- is a medium-size leguminous shrub. It builds soil fertility and can be coppiced for woody biomass and grown around the edges of the central tree.
-('Toona sinensis', 'ornamental', NULL),
-('Campanula', 'edible ornamental', 'full sun to moderate shade. Can do well in poor to rich garden soil, heavy or light. Cannot compete well with grasses.'), -- full sun to moderate shade
-('Campanula rapunculus', 'edible ornamental', NULL),
-('Campanula versicolor', 'edible ornamental', NULL),
-('hosta', 'long-lived perennial', 'moist, shady'), -- 'full shade, rich, woodland soils with coarse woody debris mulch' =
+INSERT INTO plants (bname, family, life_type, climate) VALUES
+('spinach', 'Amaranthaceae', 'vegetable', NULL),
+('Panax ginseng', 'Araliaceae', 'perennial', 'mountain'),
+('Zea may', 'Poaceae', 'cereal', NULL),
+('Asparagus officinalis', 'Asparagaceae', 'perennial vegetable', NULL),
+('Baptisia spp.', 'Fabaceae', 'leguminous shrub', NULL), -- wild indigo or false indigo; is a medium-size leguminous shrub. It builds soil fertility and can be coppiced for woody biomass and grown around the edges of the central tree.
+('Toona sinensis', NULL, 'ornamental', NULL),
+('Campanula', 'Campanulaceae', 'edible ornamental', 'full sun to moderate shade. Can do well in poor to rich garden soil, heavy or light. Cannot compete well with grasses.'), -- full sun to moderate shade; bellflower
+('Campanula rapunculus', NULL, 'edible ornamental', NULL),
+('Campanula versicolor', NULL, 'edible ornamental', NULL),
+('hosta', 'Asparagaceae', 'long-lived perennial', 'moist, shady'), -- 'full shade, rich, woodland soils with coarse woody debris mulch' =
 -- ('Japonica (striped) corn/maize', NULL, NULL,  'full sun, rich fertile garden soil'),
-('cymbopogon', NULL, NULL),
-('Lupinus', NULL, NULL),
-('Lupinus Mutabilis', NULL, NULL),
-('Malva', NULL, NULL),
-('Malva moschata', NULL, NULL), -- beautiful ornamental edible mallow
-('malva', 'grass', NULL), -- beautiful ornamental edible mallow
-('Malva sylvestris', 'grass', NULL), -- beautiful ornamental edible mallow
-('Malva alcea', 'ornamental perennial', NULL), -- beautiful ornamental edible mallow
-('Hibiscus syriacus', 'ornamental/edible bush or tree', NULL),
-('Asclepias syriaca', NULL,  'full sun to part shade; highly variable soils, can thrive in sandy soil to swamp'),
-('Claytonia perfoliata', NULL, NULL),
+('cymbopogon', 'Poaceae', NULL, NULL), -- lemongrass
+('Lupinus', 'Fabaceae', NULL, NULL), -- lupin, lupine, or regionally bluebonnet; altramuz (es)
+('Lupinus Mutabilis', 'Fabaceae', NULL, NULL),
+('Malva moschata',    'Malvaceae', NULL, NULL), -- beautiful ornamental edible mallow
+('malva',             'Malvaceae', 'grass', NULL), -- beautiful ornamental edible mallow
+('Malva sylvestris',  'Malvaceae', 'grass', NULL), -- beautiful ornamental edible mallow
+('Malva alcea',       'Malvaceae', 'ornamental perennial', NULL), -- beautiful ornamental edible mallow
+('Hibiscus syriacus', 'Malvaceae', 'ornamental/edible bush or tree', NULL),
+('Asclepias syriaca', 'Apocynaceae', ' herbaceous perennial',  'full sun to part shade; highly variable soils, can thrive in sandy soil to swamp'), -- in the milkweeds
+('Claytonia perfoliata', 'Apocynaceae', NULL, NULL), -- common milkweed, butterfly flower, silkweed, silky swallow-wort, and Virginia silkweed
 -- ('Brassica oleracea acephala', 'brassica', NULL), -- kale
 
 -- ('cauliflower', NULL,'brassica', NULL),
 -- ('broccoli', NULL,'brassica', NULL),
 -- ('tree collard', NULL,'brassica', NULL),
 -- ('purple broccoli', NULL,'brassica', NULL),
-('Cynara', NULL, NULL),
-('Cynara', NULL, NULL),
+('Cynara', 'Asteraceae', 'thistle-like perennial', NULL),
 -- ('scarlet runner bean', NULL, NULL, NULL),
-('Dolichos Lablab', NULL, NULL),
-('Phaseolus vulgaris', NULL, NULL),
+('Dolichos Lablab', 'Fabaceae', 'perennial grass', NULL),
+('Phaseolus vulgaris', 'Fabaceae', NULL, NULL),
 -- ('Purple dragon dwarf bush bean', NULL, NULL, NULL),
-('Borago officinalis', NULL, NULL),
--- ('sorrel', NULL, NULL, NULL),
+('Borago officinalis', 'Boraginaceae', NULL, NULL), -- starflower
+('sorrel', 'Polygonaceae', 'herbaceous perennial', NULL), -- Sorrel is a leafy green plant, use alternately as an herb and a vegetable, with a distinctive sour, lemony flavor. It's from the knotweed family, or Polygonaceae, the same botanical family as buckwheat and rhubarb. It also goes by the name "dock."
+('Rumex acetosa', 'Polygonaceae', 'herbaceous perennial', NULL), -- Common sorrel (Rumex acetosa) is the one most readily available at markets and nurseries for planting. It is a deep-rooted perennial that will last for years and years if it finds a spot it likes. It has a sharp flavor and somewhat large, arrow-shaped leaves.
+('Rumex scutatus', 'Polygonaceae', 'herbaceous perennial', NULL), -- French sorrel (Rumex scutatus) is also cultivated, so you'll see it at markets sometimes. It has a milder flavor than common sorrel, with smaller and more rounded leaves.
+('Rumex sanguineus', 'Polygonaceae', 'herbaceous perennial', NULL), -- Red-veined sorrel (Rumex sanguineus) has, as you may have already guessed, deep red veins running through its leaves. It has a very mild, almost un-sorrel-like flavor with very little of the tartness usually associated with this plant. It does stand out in a salad.
+('Rumex acetosella', 'Polygonaceae', 'herbaceous perennial', NULL), -- Sheep's sorrel (Rumex acetosella) grows wild in much of the United States. It is about as sour as common sorrel but with smaller leaves. It is foraged rather than cultivated.
+-- ('BNAME', 'Polygonaceae', 'LIFE_TYPE', 'CLIMATE'), -- buckwheat
+-- ('BNAME', 'Polygonaceae', 'LIFE_TYPE', 'CLIMATE'), -- rhubarb
 -- ('amaranth', NULL, NULL, NULL),
 -- ('onion', NULL, NULL, NULL), -- allium genus
 -- ('garlic', NULL, NULL, NULL), -- allium genus, scapes, bulbils
-('Allium x proliferum', NULL, NULL), -- allium genus, onion flavour
-('Allium schoenoprasum', NULL, NULL),-- allium genus
-('Allium ampeloprasum', NULL, NULL), -- allium genus
+-- In the APG III classification system, Allium is placed in the family Amaryllidaceae, subfamily Allioideae (formerly the family Alliaceae).[11] In some of the older classification systems, Allium was placed in Liliaceae.
+('Allium x proliferum', 'Liliaceae', NULL, NULL), -- allium genus, onion flavour, alternative fam. 'Amaryllidaceae'
+('Allium schoenoprasum', 'Liliaceae', NULL, NULL),-- allium genus, alternative fam. 'Amaryllidaceae'
+('Allium ampeloprasum', 'Liliaceae', NULL, NULL), -- allium genus, alternative fam. 'Amaryllidaceae'
 -- ('scallion', NULL, NULL, NULL), -- allium genus?
-('Allium tuberosum', NULL, NULL), -- allium genus
-('Allium Carninatum', NULL, NULL), -- allium genus
-('Allium Cowanii', NULL, NULL), -- allium genus
-('Allium unifolium', NULL, NULL), -- allium genus
-('Agastache foeniculum', NULL, NULL),
-('Agastache foeniculum', NULL, NULL),
+('Allium tuberosum', 'Liliaceae', NULL, NULL), -- allium genus, alternative fam. 'Amaryllidaceae'
+('Allium Carninatum', 'Liliaceae', NULL, NULL), -- allium genus, alternative fam. 'Amaryllidaceae'
+('Allium Cowanii', 'Liliaceae', NULL, NULL), -- allium genus, alternative fam. 'Amaryllidaceae'
+('Allium unifolium', 'Liliaceae', NULL, NULL), -- allium genus, alternative fam. 'Amaryllidaceae'
+('Agastache foeniculum', 'Lamiaceae', NULL, NULL),
 -- ('Jerusalem artichoke', NULL, NULL, NULL),
 -- ('wild plum', NULL, NULL, NULL),
 -- ('elderberry', NULL, NULL, NULL),
@@ -81,13 +86,14 @@ INSERT INTO plants (bname, life_type, climate) VALUES
 -- ('hawthorn', NULL,'tree', NULL), -- lower-yielding
 -- ('Asian pear', NULL,'fruit tree', NULL),
 -- ('blackthorn', NULL,'tree', NULL),
-('Asimina triloba', 'fruit tree', NULL), -- require very little care
+-- INSERT INTO plants ('BNAME', 'FAMILY', 'LIFE_TYPE', 'CLIMATE')
+('Asimina triloba', 'Annonaceae', 'small deciduous fruit tree', NULL), -- require very little care
 -- ('jujube', NULL,'fruit tree', NULL), -- big, sweet, valuable fruit without such a problem with bugs
 -- ('mango', NULL,'fruit tree', NULL),    -- require very little care
 -- ('Aromatnaya quince', NULL,'fruit tree', NULL),  -- recommended above other vars
 -- ('quince', NULL,'fruit tree', NULL),   -- require very little care
                                                                                                -- a fireblight host, though
-('Cajanus cajan', 'legume', NULL),
+('Cajanus cajan', 'Fabaceae', 'legume', NULL),
 -- ('apple', NULL,'fruit tree', NULL),
 -- ('pear', NULL,'fruit tree', NULL),
 -- ('peach', NULL,'fruit tree', NULL),
@@ -115,12 +121,12 @@ INSERT INTO plants (bname, life_type, climate) VALUES
 -- ('chestnut', NULL,'nut tree', NULL),
   -- Staple carb crop highly recommended for larger gardens or forest systems.
 -- ('Korean pine', NULL,'nut tree', NULL),
-('Camasia quamash', NULL, 'mediterranean'),
-('Symphytum', NULL, NULL),
+('Camasia quamash', 'Asparagaceae', 'perennial herbaceous monocot', 'mediterranean'),
+('Symphytum', 'Boraginaceae', NULL, NULL),
 -- ('Bocking comfrey', NULL, NULL, NULL),
-('Symphytum ibericum', NULL, NULL),
-('Hemerocallis fulva',          NULL, NULL),
-('Hemerocallis lilioasphodelus', NULL, NULL),
+('Symphytum ibericum', 'Boraginaceae', NULL, NULL), -- This is a most useful and handsome plant making impenetrable weed-cover in shade among shrubs. It forms mounds of large dark green leaves, spreading by underground shoots. In spring before the new leaves are fully developed the fiddle-neck clusters of flowers change from burnt-orange buds to creamy-yellow bells. - dwarf comfrey
+('Hemerocallis fulva',           'Asphodelaceae', NULL, NULL),
+('Hemerocallis lilioasphodelus', 'Asphodelaceae', NULL, NULL),
 -- ('dogwood', NULL, NULL, NULL),  -- lower-yielding
 -- ('', NULL, NULL, NULL),
 -- ('', NULL, NULL, NULL),
@@ -128,7 +134,7 @@ INSERT INTO plants (bname, life_type, climate) VALUES
 -- ('', NULL, NULL, NULL),
 -- ('', NULL, NULL, NULL),
 -- ('crab apple', NULL, NULL, NULL), -- lower-yielding
-('Petasites japonica', 'perennial',  'woodland plant, thrives in shade');
+('Petasites japonica', 'Asteraceae', 'herbaceous perennial',  'woodland plant, thrives in shade');
 
 INSERT INTO vernacular (vname, bname, code) VALUES
 -- (VNAME,BNAME,CODE),
@@ -316,45 +322,11 @@ INSERT INTO pests (pname, nature, mechanism, part, vector, conditions) VALUES
 ('tomato hornworms', NULL, NULL, NULL, NULL, NULL);
 
 INSERT INTO terms (term, description, field) VALUES
-('kingdom', 'In biology, a kingdom is the second highest level taxon of organisms in scientific classification. The domains or empire are the topmost level. The kingdoms are then divided into smaller groups called phyla (for animals) or divisions (for plants).', 'biology'),
-('metabolic pathway', 'a linked series of chemical reactions occurring within a cell catalyzed by enzymes. In most cases of a metabolic pathway, the product of one enzyme acts as the substrate for the next.', 'biochemistry'),
-('metabolite', 'any of the reactants, products, and intermediates of an enzymatic reaction, which are modified by a sequence of chemical reactions catalyzed by enzymes', 'biochemistry'),
-('enzyme', NULL, 'biochemistry'),
-('angiosperms', 'flowering plants', 'phytology'),
-('gymnosperms', 'conifers, cycads and allies', 'phytology'),
-('pteridophytes', 'ferns and allies', 'phytology'),
-('bryophytes', 'mosses and liveworts', 'phytology'),
-('halophyte', NULL, 'phytology'),
-('pseudocereal', NULL, 'phytology'),
-('monocotyledoneus', NULL, 'phytology'),
-('pseudanthia', 'reduced inflorescences', 'phytology'),
---
-('microclimate', ' a small area within a larger site that has special conditions which favour certain species which will grow well elsewhere', NULL),
-('autogamy or self-fertilization', 'the fusion of two gametes that come from one individual;predominantly observed in the form of self-pollination, a reproductive mechanism employed by many flowering plants. However, species of protists have also been observed using autogamy as a means of reproduction. Flowering plants engage in autogamy regularly, while the protists that engage in autogamy only do so in stressful environments', 'biology'),
-('population', 'a group of interbreeding individuals in similar geographic area that undergo negligible gene flow with other groups of the species', 'biology'),
-('minimum viable population (MVP)', 'the smallest possible size at which a biological population can exist without facing extinction from natural disasters or demographic, environmental, or genetic stochasticity (chance)', 'biology'),
-('conservation biology', 'the study of the conservation of nature and of Earth''s biodiversity with the aim of protecting species, their habitats, and ecosystems from excessive rates of extinction and the erosion of biotic interactions', 'biology'),
-('fixation (genetics)', 'the change in a gene pool from a situation where there exists at least two variants of a particular gene (allele) in a given population to a situation where only one of the alleles remains. That is, the allele becomes fixed', 'population genetics'),
-('genetic drift', 'also known as random genetic drift, allelic drift or the Wright effect, is the change in the frequency of an existing gene variant (allele) in a population due to random chance', 'ecology'),
-('gene pool', 'the set of all genes, or genetic information, in any population, usually of a particular species', 'ecology'),
-('population bottleneck or genetic bottleneck', 'a sharp reduction in the size of a population due to environmental events such as famines, earthquakes, floods, fires, disease, and droughts; or human activities such as genocide, speciocide, widespread violence or intentional culling.', 'ecology'),
-('biological fitness', 'an organism''s ability to survive and perpetuate its genetic material', 'biology'),
-('inbreeding', 'the breeding of related individuals', 'breeding'),
-('inbreeding depression', 'the reduced biological fitness that may result from inbreeding', 'breeding'),
-('self-fertilization', 'pollen from a plant will fertilise reproductive cells or ovules of the same plant', 'plant breeding'),
-('cross-pollination', 'pollen from one plant can only fertilize a different plant', 'plant breeding'),
-('asexual propagation', 'the new plant is genetically identical to its parent (e.g. runners from strawberry plants)', 'plant breeding'),
-('apomixis (self-cloning)', 'seeds are produced asexually and the new plant is genetically identical to its parent', 'plant breeding'),
---
-('self-sowing', NULL, NULL), -- adj
-('succulent', NULL, 'phytology'); --  also found in TABLE 'life_types';
-
-INSERT INTO terms (term, description, field) VALUES
+('herb', 'a widely distributed and widespread group of plants, excluding vegetables and other plants consumed for macronutrients, with savory or aromatic properties that are used for flavoring and garnishing food, for medicinal purposes, or for fragrances.\nCulinary use typically distinguishes herbs from spices. Herbs generally refers to the leafy green or flowering parts of a plant (either fresh or dried), while spices are usually dried and produced from other parts of the plant, including seeds, bark, roots and fruits.', 'kitchen'),
 ('bonemeal', NULL, 'farming'),
-('cultivar', NULL, 'farming'),
+('cultivar', 'a kind of cultivated plant that people have selected for desired traits and which retains those traits when propagated.', 'farming'),
 ('variety', NULL, 'farming'),
 ('biodynamic preparations/sprays', NULL, 'biodynamic'),
-
 -- For teaching purpose, plant breeding is presented as four categories:
 ('line breeding', '(autogamous crops)', 'plant breeding category'),
 ('population breeding', '(allogamous crops)', 'plant breeding category'),
