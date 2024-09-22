@@ -15,36 +15,6 @@ USE farming;
 -- On the other hand, changing the primary key declaration (to a meaningful field)
 -- would not break my code: insertions, deletions, updates etc. would be performed in just the same way,
 
-
-
--- Table 'life_types' is still at the biology level
--- Tables 'life_type', 'climates' and 'soils' may be referenced,
--- therefore they should precede all others
-
-
-
-CREATE TABLE climates (
-  climate_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  cname VARCHAR(50) NOT NULL,
-  insolation VARCHAR(50),
-  min_height INT,
-  max_height INT,
-  PRIMARY KEY  (climate_id),
-  KEY idx_climates_cname (cname)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-CREATE TABLE soils (
-  soil_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  sname VARCHAR(50) NOT NULL,
-  min_soil_pH DECIMAL(2,1),
-  max_soil_pH DECIMAL(2,1),
-  particle_size VARCHAR(50),
-  PRIMARY KEY  (soil_id),
-  KEY idx_soils_name (sname)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
-
 CREATE TABLE plants (
 -- plant_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   bname  VARCHAR(45) NOT NULL,
@@ -55,7 +25,7 @@ CREATE TABLE plants (
   wild BOOL, -- DEFAULT FALSE,
   PRIMARY KEY (bname),
 -- FOREIGN KEY (life_type) REFERENCES biology.life_types(life_type), -- commented out because of fields like "woody biannual"
-  FOREIGN KEY (climate)   REFERENCES           climates(cname),
+-- FOREIGN KEY (climate)   REFERENCES           geology.climates(cname),
   -- FOREIGN KEY (soil)    REFERENCES soils(sname),
   KEY idx_varieties_bname (bname)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -153,7 +123,7 @@ CREATE TABLE terms (
 CREATE TABLE plant_anatomy (
   part_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   part  VARCHAR(108) NOT NULL, -- same type as terms(part),        please
-  description VARCHAR(499),    -- same type as terms(description), please
+  description VARCHAR(999),    -- same type as terms(description), please
   field VARCHAR(255),
   PRIMARY KEY  (part_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -205,8 +175,6 @@ CREATE TABLE farming_practices (
   PRIMARY KEY  (practice_id),
   KEY idx_farm_practice (practice)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-
 
 CREATE TABLE phytochemicals (
   phytochemical_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,

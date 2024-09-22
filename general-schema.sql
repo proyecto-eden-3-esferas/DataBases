@@ -5,9 +5,9 @@ SET NAMES utf8mb4;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
 
-DROP SCHEMA IF EXISTS general;
-CREATE SCHEMA general;
-USE general;
+DROP   SCHEMA IF EXISTS general;
+CREATE SCHEMA           general;
+USE                     general;
 
 -- Database 'general' contains some very general tables:
 -- 'languages'
@@ -24,6 +24,28 @@ CREATE TABLE languages (
   KEY idx_language (language),
   KEY idx_language_code (code)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE relationships ( -- should be split into 'relationships' and 'farming_relationships'
+  relationship_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  relationship VARCHAR(50) NOT NULL,
+  arity SMALLINT DEFAULT 2,
+  description VARCHAR(999),-- NOT NULL,
+  PRIMARY KEY  (relationship_id),
+  KEY idx_relationship (relationship)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE fields (
+  fields_id  SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  field    VARCHAR(48)   NOT NULL,
+  description VARCHAR(512),
+  discussion  VARCHAR(512),
+  PRIMARY KEY  (fields_id),
+  KEY idx_fields_field (field) -- referenced by TABLE 'plant_uses'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- INSERT-ions
 
 INSERT INTO languages (language,code,abbreviation) VALUES
 ('Amharic', 'am', 'amh'),
@@ -87,15 +109,6 @@ INSERT INTO languages (language,code,abbreviation) VALUES
 -- ('NAME', 'XY', 'XYZ'),
 ('Zulu', 'zu', 'zul');
 
-CREATE TABLE relationships ( -- should be split into 'relationships' and 'farming_relationships'
-  relationship_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  relationship VARCHAR(50) NOT NULL,
-  arity SMALLINT DEFAULT 2,
-  description VARCHAR(999),-- NOT NULL,
-  PRIMARY KEY  (relationship_id),
-  KEY idx_relationship (relationship)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 INSERT INTO relationships (relationship, description, arity) VALUES
 ('aids', NULL, 2),
 ('harms', NULL, 2),
@@ -117,17 +130,6 @@ INSERT INTO relationships (relationship, description, arity) VALUES
 ('does not overlap', NULL, 2),
 ('equivalent to', NULL, 2);
 
-
-
-CREATE TABLE fields (
-  fields_id  SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  field    VARCHAR(48)   NOT NULL,
-  description VARCHAR(512),
-  discussion  VARCHAR(512),
-  PRIMARY KEY  (fields_id),
-  KEY idx_fields_field (field) -- referenced by TABLE 'plant_uses'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 INSERT INTO fields (field, description, discussion) VALUES
 ('science',   NULL, NULL),
 ('biology',   NULL, NULL),
@@ -137,14 +139,14 @@ INSERT INTO fields (field, description, discussion) VALUES
 ('kitchen', NULL, NULL),
 ('farming',   NULL, NULL),
 ('garden',  NULL, NULL),
-('guild',   NULL, NULL), -- companion planting
---
+('guild',   NULL, NULL), -- companion planting --
 ('health',   NULL, NULL),
 ('knowledge management',   NULL, NULL), -- databases, knowledge graphs...
 ('humanities', NULL, NULL),
 ('religion',   NULL, NULL),
 ('occultism',   NULL, NULL),
 ('general', NULL, NULL);
+
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

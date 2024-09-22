@@ -20,6 +20,8 @@ SET AUTOCOMMIT=0;
 
 INSERT INTO plants (bname, family, life_type, climate) VALUES
 ('spinach', 'Amaranthaceae', 'vegetable', NULL),
+('Chenopodium quinoa', 'Amaranthaceae', 'pseudocereal', 'generally undemanding and altitude-hardy'),
+('Chenopodium berlandieri', 'Amaranthaceae', 'annual herbaceous', NULL),
 ('Panax ginseng', 'Araliaceae', 'perennial', 'mountain'),
 ('Zea may', 'Poaceae', 'cereal', NULL),
 ('Asparagus officinalis', 'Asparagaceae', 'perennial vegetable', NULL),
@@ -57,10 +59,12 @@ INSERT INTO plants (bname, family, life_type, climate) VALUES
 ('Rumex scutatus', 'Polygonaceae', 'herbaceous perennial', NULL), -- French sorrel (Rumex scutatus) is also cultivated, so you'll see it at markets sometimes. It has a milder flavor than common sorrel, with smaller and more rounded leaves.
 ('Rumex sanguineus', 'Polygonaceae', 'herbaceous perennial', NULL), -- Red-veined sorrel (Rumex sanguineus) has, as you may have already guessed, deep red veins running through its leaves. It has a very mild, almost un-sorrel-like flavor with very little of the tartness usually associated with this plant. It does stand out in a salad.
 ('Rumex acetosella', 'Polygonaceae', 'herbaceous perennial', NULL), -- Sheep's sorrel (Rumex acetosella) grows wild in much of the United States. It is about as sour as common sorrel but with smaller leaves. It is foraged rather than cultivated.
--- ('BNAME', 'Polygonaceae', 'LIFE_TYPE', 'CLIMATE'), -- buckwheat
+('Conopodium majus', 'Apiaceae', 'edible tubers', 'in woods and fields from Norway to Italy and Corsica'), -- earthnut
+('Fagopyrum esculentum', 'Polygonaceae', 'herbaceous annual pseudocereal', NULL), -- buckwheat
 -- ('BNAME', 'Polygonaceae', 'LIFE_TYPE', 'CLIMATE'), -- rhubarb
--- ('amaranth', NULL, NULL, NULL),
--- ('onion', NULL, NULL, NULL), -- allium genus
+('Amaranthus', 'Amaranthaceae', 'short-lived perennials', NULL), -- amaranth
+('Amaranthus caudatus', 'Amaranthaceae', 'annual, broad-leaved dicotyledon', NULL), --
+('Allium cepa', 'Amaryllidaceae', 'herbaceous biennial vegetable', 'temperate'), -- onions
 -- ('garlic', NULL, NULL, NULL), -- allium genus, scapes, bulbils
 -- In the APG III classification system, Allium is placed in the family Amaryllidaceae, subfamily Allioideae (formerly the family Alliaceae).[11] In some of the older classification systems, Allium was placed in Liliaceae.
 ('Allium x proliferum', 'Liliaceae', NULL, NULL), -- allium genus, onion flavour, alternative fam. 'Amaryllidaceae'
@@ -71,8 +75,13 @@ INSERT INTO plants (bname, family, life_type, climate) VALUES
 ('Allium Carninatum', 'Liliaceae', NULL, NULL), -- allium genus, alternative fam. 'Amaryllidaceae'
 ('Allium Cowanii', 'Liliaceae', NULL, NULL), -- allium genus, alternative fam. 'Amaryllidaceae'
 ('Allium unifolium', 'Liliaceae', NULL, NULL), -- allium genus, alternative fam. 'Amaryllidaceae'
+('Salvia hispanica', 'Lamiaceae', 'annual grass', NULL), -- chia
 ('Agastache foeniculum', 'Lamiaceae', NULL, NULL),
--- ('Jerusalem artichoke', NULL, NULL, NULL),
+('Jerusalem artichoke', 'Asteraceae', NULL, NULL),
+('Urtica dioica', 'Urticaceae', 'weedy perennial', NULL), -- 'stinging nettle'
+('Raphanus sativus', 'Brassicaceae', 'annual or biennial', NULL),
+('Capsicum annuum', 'Solanaceae', 'annual pepper cultivar', NULL), -- bell pepper
+('Moringa oleifera', 'Moringaceae', 'small deciduous tree', 'tropical'), -- also naturalized in Africa and tropical America. Flowers, pods, leaves, and even twigs are cooked and eaten. The leaves, which can also be eaten raw when young, are especially nutritious and are high in iron, potassium, and vitamin C. A horseradish-flavoured condiment is prepared from the crushed roots. Ben oil, extracted from the seeds, is used by watchmakers and in cosmetics; perfume makers value it for its retention of scents.
 -- ('wild plum', NULL, NULL, NULL),
 -- ('elderberry', NULL, NULL, NULL),
 -- ('blackberry', NULL, NULL, NULL), -- low-maintenance
@@ -138,6 +147,8 @@ INSERT INTO plants (bname, family, life_type, climate) VALUES
 
 INSERT INTO vernacular (vname, bname, code) VALUES
 -- (VNAME,BNAME,CODE),
+('chia', 'Salvia hispanica', 'en'),
+('chia', 'Salvia hispanica', 'es'),
 ('ginseng', 'Panax ginseng', 'en'),
 ('ginseng', 'Panax ginseng', 'es'),
 ('cassava (/kəˈsɑːvə/)', 'Manihot esculenta', 'en'),
@@ -310,6 +321,19 @@ INSERT INTO companion(bname, with_bname, explanation) VALUES
 ('Asparagus officinalis', 'tomato', 'The tomato plant repels the asparagus beetle. Asparagus may repel some harmful root nematodes that affect tomato plants.');
 
 INSERT INTO pests (pname, nature, mechanism, part, vector, conditions) VALUES
+-- ('PNAME', 'NATURE', MECHANISM, PART, VECTOR, CONDITIONS),
+-- ('PNAME', 'NATURE', MECHANISM, PART, VECTOR, CONDITIONS),
+-- ('PNAME', 'NATURE', MECHANISM, PART, VECTOR, CONDITIONS),
+('powdery mildew', NULL, NULL, NULL, NULL, NULL),
+('Argentinian weevil', 'invasive weed', NULL, NULL, NULL, NULL),
+('Fallopia japonica', 'invasive weed', NULL, NULL, NULL, NULL), -- Japanese knotweed
+('Fusarium', 'ascomycete fungus', MECHANISM, PART, VECTOR, CONDITIONS),
+('Phytophthora cinnamomi', 'oomycete', MECHANISM, PART, VECTOR, CONDITIONS), -- causes Phytophthora root rot of many plants
+('Plasmopara viticola', 'oomycete', MECHANISM, PART, VECTOR, CONDITIONS), -- causes grapevine downy mildew
+('Phytophthora infestans', 'oomycete', MECHANISM, PART, VECTOR, CONDITIONS), -- the potato late blight pathogen
+('Agrobacterium tumefaciens', 'bacteria', MECHANISM, PART, VECTOR, CONDITIONS),
+('downy mildew', 'a fungal disease that causes yellow to grey-brown patches on leaves, especially the undersides. Water plants at soil level (not on the leaves), remove and destroy affected leaves and do not overcrowd plants to ensure adequate air flow. If problems persist, spray with a homemade milk spray or fungicide.', NULL, 'leaves', NULL, NULL),
+('aphids', 'small (2-4mm long) sap-sucking insects. They can cause leaves to wilt or become discoloured, and also excrete honeydew which can attract ants and other insect pests. To manage aphids, remove them by spraying with a garden hose, apply a soap or alcohol spray, or encourage predatory insects to your garden.', NULL, 'new shoots or the undersides of leaves', NULL, NULL),
 ('botryotinia', 'ascomycete fungi', 'Plant diseases caused by Botryotinia species appear primarily as blossom blights and fruit rots but also as leaf spots and bulb rots in the field and in stored products. The fungi induce host cell death resulting in progressive decay of infected plant tissue', NULL, NULL, NULL),
 ('Fusarium oxysporum', 'ascomycete fungus', NULL, 'root', NULL, NULL), --  causes a disease called fusariosis in roots that causes a yellowing and wilting, with serious ecological damages to woodland plants and economic losses in plants of commercial interest.
 ('cabbage moth', NULL, NULL, NULL, NULL, NULL),
@@ -322,10 +346,15 @@ INSERT INTO pests (pname, nature, mechanism, part, vector, conditions) VALUES
 ('tomato hornworms', NULL, NULL, NULL, NULL, NULL);
 
 INSERT INTO terms (term, description, field) VALUES
+('consortia', 'mixtures of microorganisms', 'biological control'),
+('stratification', NULL, NULL),
+('stover', 'the leaves and stalks of field crops, such as corn (maize), sorghum or soybean that are commonly left in a field after harvesting the grain; similar to straw, the residue left after any cereal grain or grass has been harvested at maturity for its seed', 'farming'),
+('pseudocereal', 'or pseudograin, is one of any non-grasses that are used in much the same way as cereals (true cereals are grasses). Prominent examples include amaranth, quinoa, and buckwheat. They have a good nutritional profile, with high levels of essential amino acids, essential fatty acids, minerals, and some vitamins.', NULL),
 ('herb', 'a widely distributed and widespread group of plants, excluding vegetables and other plants consumed for macronutrients, with savory or aromatic properties that are used for flavoring and garnishing food, for medicinal purposes, or for fragrances.\nCulinary use typically distinguishes herbs from spices. Herbs generally refers to the leafy green or flowering parts of a plant (either fresh or dried), while spices are usually dried and produced from other parts of the plant, including seeds, bark, roots and fruits.', 'kitchen'),
 ('bonemeal', NULL, 'farming'),
 ('cultivar', 'a kind of cultivated plant that people have selected for desired traits and which retains those traits when propagated.', 'farming'),
 ('variety', NULL, 'farming'),
+('biological control', 'any reduction in the amount or the effect of pathogens (disease-producing activity) that is achieved through the induction of biological mechanisms or the action of naturally occurring or introduced antagonists, that occurs by manipulating the microenvironment to favour the activity of antagonists', 'farming')
 ('biodynamic preparations/sprays', NULL, 'biodynamic'),
 -- For teaching purpose, plant breeding is presented as four categories:
 ('line breeding', '(autogamous crops)', 'plant breeding category'),
@@ -408,7 +437,10 @@ opportunities', NULL),
 ('to train', NULL, 'farming'); -- verb
 
 INSERT INTO plant_anatomy (part, description) VALUES
+('acorn', 'or oaknut, the nut of the oaks and their close relatives (genera Quercus and Lithocarpus, in the family Fagaceae)'),
+('cotyledon', '(/ˌkɒtɪˈliːdən/; a "seed leaf" - a significant part of the embryo within the seed of a plant, and is formally defined as "the embryonic leaf in seed-bearing plants, one or more of which are the first to appear from a germinating seed."\nBotanists use the number of cotyledons present as one characteristic to classify the flowering plants (angiosperms): species with one cotyledon are called monocotyledonous ("monocots"); plants with two embryonic leaves are termed dicotyledonous ("dicots").'),
 ('actinomorphic', NULL),
+('apoplast', NULL),
 ('anther', NULL),
 ('berry', NULL),
 ('bract', NULL),
@@ -444,7 +476,6 @@ INSERT INTO plant_anatomy (part, description) VALUES
 
 
 INSERT INTO techniques (term, approach) VALUES
--- ('', NULL),
 -- ('', NULL),
 -- ('', NULL),
 -- ('', NULL),
@@ -533,6 +564,10 @@ opposed to continually growing the same crop', 'organic'),
 --
 
 INSERT INTO phytochemicals (phytochemical, properties, human_nutrition, other) VALUES
+-- ('PHYTOCHEMICAL', 'PROPERTIES', 'HUMAN_NUTRITION', 'OTHER'),
+('Antinutrient', 'a natural or synthetic compounds that interferes with the absorption of nutrients', NULL, NULL),
+('tannin', 'a class of astringent, polyphenolic biomolecules that bind to and precipitate proteins and various other organic compounds including amino acids and alkaloids', 'traditionally been considered antinutritional', NULL),
+('alkaloid', 'PROPERTIES', 'HUMAN_NUTRITION', 'OTHER'),
 ('starch', NULL, NULL, NULL),
 ('betalain (pigment)', NULL, NULL, NULL),
 ('carotenoids', NULL, NULL, NULL),
@@ -551,6 +586,7 @@ INSERT INTO phytochemicals (phytochemical, properties, human_nutrition, other) V
 
 
 INSERT INTO plant_uses (bname, field, its_uses) VALUES
+('Tagetes', 'biological control', 'planted as a cover crop just prior to a nematode-susceptible crop, has been shown to suppress nematodes'),
 ('Panax ginseng', 'health', 'There is no high-quality evidence for ginseng having any health effect.\nBelieved that it may improve memory and cognition in otherwise healthy adults and that it may improve sexual function in adults with erectile dysfunction.'),
 ('Manihot esculenta', 'kitchen', '[...] is predominantly consumed in boiled form, but substantial quantities are processed to extract cassava starch, called tapioca, which is used for food, animal feed, and industrial purposes. The Brazilian farinha, and the related garri of West Africa, is an edible coarse flour obtained by grating cassava roots, pressing moisture off the obtained grated pulp, and finally drying it (and roasting in the case of both farinha and garri).\nCassava is the third-largest source of food carbohydrates in the tropics, after rice and maize. Cassava is a major staple food in the developing world, providing a basic diet for over half a billion people.\nCassava is classified as either sweet or bitter. Like many other roots and tubers, both bitter and sweet varieties of cassava contain toxins; the bitter varieties contain much larger amounts. Cassava must be properly prepared before consumption, as improper preparation can leave enough residual cyanide to cause cyanide poisoning.'),
 ('Lupinus Mutabilis', 'kitchen', 'edible when raw; larger peas and a better texture than ordinary lupine'),

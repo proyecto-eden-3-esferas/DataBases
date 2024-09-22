@@ -19,38 +19,12 @@ CREATE TABLE health_practices (  -- includes theories AND approaches
   -- KEY idx_practices_practice (practice)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE human_organs (
-  organ_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  organ VARCHAR(50) NOT NULL,
-  func  VARCHAR(50), -- NOT NULL (function should migrate to its own table)
-  description VARCHAR(999),-- NOT NULL,
-  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY  (organ_id),
-  KEY idx_organ (organ)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE human_body_systems (
-  system_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  sys VARCHAR(50) NOT NULL,
-  func  VARCHAR(50), -- NOT NULL (function should migrate to its own table)
-  description VARCHAR(999),-- NOT NULL,
-  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY  (system_id),
-  KEY idx_system (sys)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE organs_in_systems (
-  relationship_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  organ VARCHAR(50) NOT NULL,
-  sys   VARCHAR(50) NOT NULL,
-  discussion VARCHAR(999),-- NOT NULL,
-  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY  (relationship_id),
-  -- KEY idx_sys (sys),
-  FOREIGN KEY (organ)  REFERENCES human_organs(organ),
-  FOREIGN KEY (sys)  REFERENCES human_body_systems(sys)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+
+
+-- Pathology, diseases, conditions syntomes, treatment etc.
 
 CREATE TABLE diseases (
   disease_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -61,6 +35,7 @@ CREATE TABLE diseases (
   KEY idx_disease (disease)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+
 CREATE TABLE affects_organ (
   relationship_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   disease VARCHAR(50) NOT NULL,
@@ -69,7 +44,7 @@ CREATE TABLE affects_organ (
   last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY  (relationship_id),
   FOREIGN KEY (disease)  REFERENCES diseases(disease),
-  FOREIGN KEY (organ)  REFERENCES human_organs(organ)
+  FOREIGN KEY (organ)  REFERENCES biology.animal_organs(organ)
   -- PRIMARY KEY  (disease_id, organ),
   -- KEY idx_disease (disease)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -82,10 +57,14 @@ CREATE TABLE affects_system (
   last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY  (relationship_id),
   FOREIGN KEY (disease)  REFERENCES diseases(disease),
-  FOREIGN KEY (sys)  REFERENCES human_body_systems(sys)
+  FOREIGN KEY (sys)  REFERENCES biology.animal_body_systems(sys)
   -- PRIMARY KEY  (disease_id, system),
   -- KEY idx_disease (disease)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+-- So far we have defined no tables relying on other databases
+-- (such as 'biology')
 
 
 UNLOCK TABLES;
