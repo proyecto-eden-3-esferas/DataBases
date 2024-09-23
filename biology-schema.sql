@@ -104,6 +104,39 @@ CREATE TABLE animal_molecule_funcs (
   KEY idx_molecule (molecule)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- Animal Cells:
+
+CREATE TABLE organelles (
+  organelle_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  organelle VARCHAR(50) NOT NULL,
+  description VARCHAR(999),-- NOT NULL, -- you may discuss functions, but they're to be listed in another table
+  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY  (organelle_id),
+  KEY idx_animal_organelle (organelle)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE animal_cells (
+  cell_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  cell VARCHAR(50) NOT NULL,
+  description VARCHAR(999),-- NOT NULL, -- you may discuss functions, but they're to be listed in another table
+  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY  (cell_id),
+  KEY idx_animal_cell (cell)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE animal_cell_funcs (
+  hof_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  cell VARCHAR(50) NOT NULL,
+  func  VARCHAR(50) NOT NULL, -- NOT NULL (function should migrate to its own table)
+  description VARCHAR(999),-- NOT NULL,
+  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY  (hof_id),
+  FOREIGN KEY (func)  REFERENCES funcs(func),
+  KEY idx_animal_cell (cell)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
 -- Animal Organs:
 
 CREATE TABLE animal_organs (

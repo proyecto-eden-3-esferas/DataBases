@@ -88,6 +88,7 @@ INSERT INTO terms(term, description, field) VALUES
 ('saprotrophic', 'nutrition /sæprəˈtrɒfɪk, -proʊ-/ or lysotrophic nutrition is a process of chemoheterotrophic extracellular digestion involved in the processing of decayed (dead or waste) organic matter', 'nutrition'),
 ('blight', 'a rapid and complete chlorosis, browning, then death of plant tissues such as leaves, branches, twigs, or floral organs', 'phytology'),
 ('chlorosis', 'a condition in which leaves produce insufficient chlorophyll', 'phytology'),
+
 ('metabolomics', NULL, NULL),
 --
 ('genomics', NULL, 'genetics'),
@@ -117,6 +118,9 @@ INSERT INTO terms(term, description, field) VALUES
 ('minimum viable population (MVP)', 'the smallest possible size at which a biological population can exist without facing extinction from natural disasters or demographic, environmental, or genetic stochasticity (chance)', 'biology'),
 ('conservation biology', 'the study of the conservation of nature and of Earth''s biodiversity with the aim of protecting species, their habitats, and ecosystems from excessive rates of extinction and the erosion of biotic interactions', 'biology'),
 ('fixation', 'the change in a gene pool from a situation where there exists at least two variants of a particular gene (allele) in a given population to a situation where only one of the alleles remains. That is, the allele becomes fixed', 'population genetics'),
+-- Histology
+('stroma', '(from Ancient Greek στρῶμα: layer, bed, bed covering) the part of a tissue or organ with a structural or connective role; made up of all the parts without specific functions of the organ - for example, connective tissue, blood vessels, ducts, etc.', 'histology'),
+('parenchyma', 'consists of the cells that perform the function of the tissue or organ', 'histology'),
 -- Ecology:
 ('niche', NULL, 'ecology'),
 ('epiphytic', NULL, 'ecology'),
@@ -134,8 +138,12 @@ INSERT INTO terms(term, description, field) VALUES
 ('cross-pollination', 'pollen from one plant can only fertilize a different plant', 'plant breeding'),
 ('asexual propagation', 'the new plant is genetically identical to its parent (e.g. runners from strawberry plants)', 'plant breeding'),
 ('apomixis (self-cloning)', 'seeds are produced asexually and the new plant is genetically identical to its parent', 'plant breeding'),
+('stem cell', '', ''),
 --
+('plexus', '', ''),
+('sympathetic', '', ''),
 ('epithelial', '', ''),
+('mediastinum', '', ''),
 ('meninges', '(sg. meninx: the three membranes (dura mater, arachnoid, pia mater) that envelop the brain', 'animal histology'),
 --
 ('self-sowing', NULL, NULL), -- adj
@@ -153,10 +161,64 @@ INSERT INTO theories (theory, description, approach, published) VALUES
 
 INSERT INTO animal_molecules (molecule, description) VALUES
 ('pheromone', 'a secreted or excreted chemical factor that triggers a social response in members of the same species.'),
+('cholesterol', 'the principal sterol of all higher animals, distributed in body tissues, especially the brain and spinal cord, and in animal fats and oils; an essential structural component of animal cell membranes; a precursor for the biosynthesis of steroid hormones, bile acid and vitamin D'),
 ('collagen', 'the main structural protein in the extracellular matrix of a body&apos;s various connective tissues'),
 ('lipase', 'an enzyme the body uses to break down fats in food so they can be absorbed in the intestines. Lipase is produced in the pancreas, mouth, and stomach'),
 ('glucagon', ''),
-('protease' , '(also called a peptidase, proteinase, or proteolytic enzyme) an enzyme that catalyzes proteolysis, breaking down proteins into smaller polypeptides or single amino acids, and spurring the formation of new protein products');
+('insulin', ''),
+('protease' , '(also called a peptidase, proteinase, or proteolytic enzyme) an enzyme that catalyzes proteolysis, breaking down proteins into smaller polypeptides or single amino acids, and spurring the formation of new protein products'),
+('fatty acid', '');
+
+INSERT INTO organelles(organelle, description) VALUES
+-- ('', ''),
+-- ('', ''),
+-- ('', ''),
+-- ('', ''),
+-- ('', ''),
+
+-- Components of a typical animal cell:
+('nucleolus', '')
+('nucleus', ''),
+('ribosome (dots as part of 5)', ''),
+('vesicle', ''),
+('golgi apparatus (or, golgi body)', ''),
+('cytoskeleton', ''),
+-- ('smooth endoplasmic reticulum', ''),
+-- ('rough endoplasmic reticulum', ''),
+('mitochondrion', ''),
+('vacuole', ''),
+('cytosol', 'a liquid matrix around the organelles'),
+('lysosome', ''),
+('centrosome', ''),
+('cell membrane', ''),
+('endoplasmic reticulum', 'a part of a transportation system of the eukaryotic cell, with many other important functions such as protein folding; made up of two subunits – rough endoplasmic reticulum (RER), and smooth endoplasmic reticulum (SER); forms an interconnected network of flattened, membrane-enclosed sacs known as cisternae (in the RER), and tubular structures in the SER');
+
+INSERT INTO animal_cells(cell, description) VALUES
+('T cells', NULL),
+
+-- cell types:
+('epithelial', NULL),
+('dendritic', NULL),
+('mesenchymal', NULL),
+('endothelial', NULL),
+
+('fibroblast', 'spindle-shaped; synthesizes the extracellular matrix and collagen, produces the structural framework (stroma) for animal tissues, and plays a critical role in wound healing; the most common cells of connective tissue in animals'),
+('spermatozoon', NULL),
+('astricyte', NULL),
+('hepatocyte', NULL),
+-- Brain cells:
+('neuron', NULL),
+('glial cell', NULL),
+
+-- ('', NULL),
+-- ('', NULL),
+-- ('', NULL),
+-- ('', NULL),
+-- ('', NULL),
+-- ('', NULL),
+-- ('', NULL),
+('erythrocyte', 'red blood cell'),
+('lymphocyte', 'white blood cell');
 
 
 INSERT INTO animal_organs(organ, description) VALUES
@@ -185,6 +247,7 @@ INSERT INTO animal_organs(organ, description) VALUES
 ('trachea', NULL),
 
 ('esophagus', NULL),
+('spleen', NULL),
 
 ('mouth', NULL),
 ('intestine', NULL),
@@ -208,7 +271,7 @@ INSERT INTO animal_organs(organ, description) VALUES
 
 ('fascial compartment', 'a section within the body that contains muscles and nerves and is surrounded by fascia.'),
 
-('white blood cell', NULL),
+
 ('lymph node', NULL);
 
 -- ('', NULL),

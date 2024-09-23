@@ -1,54 +1,153 @@
-DATABASES
-=========
-Code for defining schema and for filling database structures with records and such.
+WHAT KIND OF PROJECT AND FILES?
+===============================
+This project contains code for defining schema (databases and their tables)
+and for filling database structures (tables) with records and such.
+
+The alternative is, well, for the database administrator to define a schema or structure
+and let the users contribute the records/rows/data over time.
 
 
-SQL DATABASES
-=============
+
+WHAT DATABASES: FARMING-BIOLOGY-HEALTH-CREATION
+===============================================
+
+This database project started as a "farming" database. (Actually, I have always had *organic* farming in mind.) It includes tables for phytochemicals, life forms and other relations pertaining to biology, so a biology database was started, then a geology database.
+
+Early on I deemed it useful to provide a general database with tables for languages and relationships. (The "general" database was born.)
+
+Later on I saw that farming overlapped with health (nutrition, medicinal plants, chemicals etc.),
+and thus the "health" database was born.
+
+Any of farming, biology and health databases can be developed independently as long as FOREIGN KEY instegrity is not violated.
+
+Now, since alternative farming stems from created theories or approaches, another database arose named "creation" with tables for people (creators of theories, approaches, books etc.), their works and theories, explanations of phenomena etc. Culture at large.
+
+
+
+OTHER DATABASES HERE
+====================
+
+- biological-control.sql: the SQL code is meant to be run *after* biology-XXX.sql
+
+- plant_families.sql: the SQL code is meant to be run *after* biology-XXX.sql
+
+- geology.sql: required by the "farming" database, as already mentioned
+
+- notes-schema.sql: a very immature (sketchy) database for holding notes; not an altogether bad idea, though
+
+
+
+SQL CODE
+========
+
 All SQL code has been tested on MySQL.
+
+Most databases are stored in a DATABASE-schema.sql file for its structure,
+to be loaded *before* a DATABASE-data.sql file containing the rows via INSERT-ions.
+
 It would take minor changes to get it to run on PostgreSQL,
 another free-of-charge open source DBMS (DataBase Management System),
 which is to a large extent complementary (far more feature-rich) to MySQL.
+
+(I don't know how easy it would be to port my SQL code to MariaDB. Largely painless, most probably.)
+
 Also, my discussion assumes MySQL is run on Linux,
 yet most of these instructions apply to Windows, too.
 
 
-TIP
-===
-DataBases can be niftily loaded through script "exec-mysql.sh",
+PERSISTANCE
+===========
+
+The databases in this project are persistent: they are not erased
+when the server stops or should the database file be erased or the server updated...
+BECAUSE all the structure and all the records or data are held in SQL text files
+with extension .sql and containing SQL code.
+
+The alternative is for the database administrator to define a schema or structure
+and let the users contribute the records/rows/data over time.
+
+
+DEPENDENCIES
+============
+
+Some databases here are not self-standing but depend on others.
+They have foreign keys that reference *other* databases.
+
+You can find dependencies by inspecting table definitions.
+Specifically, foreign keys may reference another table, as in
+  FOREIGN KEY (field) REFERENCES general.fields(field)
+found in the farming database.
+Therefore, database "general", as well as "geology" and "biology" should be loaded
+before any others so that no integrety violations take place.
+
+You can thus infer a hierarchy where
+
+1. general, geology and biology are self-standing
+2. general precedes farming
+   geology precedes farming
+   general precedes health
+   biology precedes health
+
+NOTE: Future adjustments are likely to make database "biology" and many others dependent on "general"
+      as "general" holds tables for languages (such as "English", "Spanish")
+      and relationship (such as "is a kind of", "is the same as").
+      Also, "farming" is likely to be redefined to depend on "biology",
+      which should then be loaded before "farming" is loaded.
+      Therefore:
+   biology will eventually precede farming
+
+
+STEPS
+=====
+
+1. Install a DBMS, such as a MySQL server
+
+2. Start it (on Linux it is running by default once installed):
+  /etc/init.d/mysql start status
+  sudo /etc/init.d/mysql start
+  sudo /etc/init.d/mysql stop
+
+3. Create a database with CREATE DATABASE followed by some CREATE TABLE commands
+
+4. Populate its tables with the INSERT command
+
+5. Run queries etc.
+
+
+EASY AND PERSISTENT LOADING
+===========================
+DataBases can be easily loaded (third and fourth steps) through script "exec-mysql.sh",
 whose contents are:
+
   #!/bin/bash
   # This script executes an SQL file on the local MySQL server
   sudo mysql -uroot -pmsandbox < $1
-Further, you first execute the schema (CREATE) file, then the data (INSERT) file,
-save for general-schema.sql, which contains both schema definitions and insertions.
+
+
 For instance:
   exec-mysql.sh general-schema.sql # there is no "general-data.sql" file as yet
+  exec-mysql.sh geology.sql
   exec-mysql.sh farming-schema.sql
   exec-mysql.sh farming-data.sql
 
+NOTE:  general-schema.sql, which contains both schema definitions and insertions.
 
-
-WARNING
-=======
-These databases depend on database 'general',
-which should have been defined and populated before.
-Otherwise insertions fail unless commit is suspended
-amongst other sleights of hand.
 
 
 Databases
 =========
 - general
-- farming ("plant_families.sql" can be run after both "farming-*.sql" have)
+- farming ("plant_families.sql" and "biological-control.sql" can be run after both "farming-*.sql" have)
 - health
 - creation
 
+
 On "farming-users.sql"
 ======================
-This file contains some code for creating users specifically for the 'farming' database.
-The lines could be easily rewritten to do the same for other tables.
+This file contains some code for creating users specifically for the "farming" database.
+The lines could be easily rewritten to achieve the same for other tables.
 Basically, you get a 'farming-reader' (SELECT) and a 'farming-reader-writer' (all operations)
+
 
 On Initial and Final SQL Code
 =============================
@@ -57,29 +156,24 @@ and delays COMMIT until after all insertions have been scheduled.
 After all insertions, previous settings are restored and a general COMMIT is effected.
 Maybe it is better to make do without those tricks...
 
-Database 'general'
-------------------
-It contains some very geeneral tables to be referenced by tables in other databases
 
 
-Database 'farming'
-==================
-DataBase 'farming' is so called " because it started as a broad farming database. Broad means that it includes some immediate ramifications like nutrition and the environment. Actually, farming is related to nearly everything else in the human world.
+The Evolution of Database 'farming'
+===================================
+DataBase 'farming' is so called because it started as a broad farming database. Broad means that it includes some immediate ramifications like nutrition and the environment. Actually, farming is related to nearly everything else in the human world.
 
 Some extensions are almost independent of farming:
 (1) health (files "farming-schema-health.sql" and "farming-data-health.sql") )
 (2) other culture, like some general theories, books, relationships (files "neither")
 Over time both have been moved to 'health' and to 'creation'
 
-It is meant to be used like this: you run scripts to define the schema, then you run the scripts to input the data. The schemes and the data are in the SQL language and SQL files bear extension, well, "sql".
-
 I am aware that this is unlike a commercial database, which is kept running round the clock. Here all the schema and especially all the data should be written before they are fed into the database.
 
-I am testing the "code" with a MySQL DBMS, but I intend not to rely on MySQL-specific features. I would like to test the code on MariaDB and PostgreSQL and make and document the changes.
 
 
-How to use
-----------
+HOW TO USE (ONCE SCHEMA AND RECORDS HAVE BEEN LOADED)
+=====================================================
+
 * mysql> SHOW DATABASES;
 * USE mydatabase;
 * mysql> SHOW TABLES;
@@ -91,8 +185,8 @@ How to use
   SHOW TABLES;
 
 
-TODO
-----
+TODOs
+=====
 
 (0) Modularize: same table in two different databases: "plant_families.sql" (done), TABLE plant_uses (currently in "farming-*.sql")
 
