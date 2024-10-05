@@ -139,11 +139,25 @@ INSERT INTO terms(term, description, field) VALUES
 ('asexual propagation', 'the new plant is genetically identical to its parent (e.g. runners from strawberry plants)', 'plant breeding'),
 ('apomixis (self-cloning)', 'seeds are produced asexually and the new plant is genetically identical to its parent', 'plant breeding'),
 ('stem cell', '', ''),
---
-('plexus', '', ''),
+-- Anatomy
+('malleus', '(hammer), the largest ear bone', 'ear bone'),
+('incus', '', 'ear bone'),
+('stapes', '', 'ear bone'),
+('patella', 'kneecap', 'bone'),
+
+-- Anatomical Terms
+('fossa', 'a depression in a bone', 'anatomy'),
+('lumen', 'open space', 'anatomy'),
+('styloid', 'pointy', 'anatomy'),
+('process', 'something that sticks out', 'anatomy'),
+('epicondyle', '', 'anatomy'),
+
+('mesentery', 'a fold of membrane that attaches the intestine to the wall around the stomach area and holds it in place', 'anatomy'),
+('plexus', '', 'anatomy'),
 ('sympathetic', '', ''),
-('epithelial', '', ''),
-('mediastinum', '', ''),
+('pathogens', 'disease-causing foreign invaders', 'pathology'),
+('epithelial', '', 'histology'),
+('mediastinum', '', 'anatomy'),
 ('meninges', '(sg. meninx: the three membranes (dura mater, arachnoid, pia mater) that envelop the brain', 'animal histology'),
 --
 ('self-sowing', NULL, NULL), -- adj
@@ -159,17 +173,23 @@ INSERT INTO theories (theory, description, approach, published) VALUES
 
 
 
-INSERT INTO animal_molecules (molecule, description) VALUES
-('pheromone', 'a secreted or excreted chemical factor that triggers a social response in members of the same species.'),
-('cholesterol', 'the principal sterol of all higher animals, distributed in body tissues, especially the brain and spinal cord, and in animal fats and oils; an essential structural component of animal cell membranes; a precursor for the biosynthesis of steroid hormones, bile acid and vitamin D'),
-('collagen', 'the main structural protein in the extracellular matrix of a body&apos;s various connective tissues'),
-('lipase', 'an enzyme the body uses to break down fats in food so they can be absorbed in the intestines. Lipase is produced in the pancreas, mouth, and stomach'),
-('glucagon', ''),
-('insulin', ''),
-('protease' , '(also called a peptidase, proteinase, or proteolytic enzyme) an enzyme that catalyzes proteolysis, breaking down proteins into smaller polypeptides or single amino acids, and spurring the formation of new protein products'),
-('fatty acid', '');
+INSERT INTO animal_molecules (molecule, description, type) VALUES
+('pheromone', 'a secreted or excreted chemical factor that triggers a social response in members of the same species.', 'hormone'),
+('cholesterol', 'the principal sterol of all higher animals, distributed in body tissues, especially the brain and spinal cord, and in animal fats and oils; an essential structural component of animal cell membranes; a precursor for the biosynthesis of steroid hormones, bile acid and vitamin D', ''),
+('collagen', 'the main structural protein in the extracellular matrix of a body&apos;s various connective tissues', 'protein'),
+('elastin', 'elastin fibers provide elasticity, which allows the skin to come back to shape if stretched; the number of fibers increases with depth in the dermis', ''),
+('estrogen', 'a hormone...', 'hormone'),
+('testosterone', 'a hormone...', 'hormone'),
+('histamine', 'released by the immune system; causes allergy symptoms; it also regulats the sleep-wake cycle and cognitive function', ''),
+('lipase', 'an enzyme the body uses to break down fats in food so they can be absorbed in the intestines. Lipase is produced in the pancreas, mouth, and stomach', 'enzyme'),
+('glucagon', '', ''),
+('insulin', '', ''),
+('keratin', 'a hard waterproof protein'),
+('proteoglycan', 'a protein molecule with a carbohydrate added to it'),
+('protease' , '(also called a peptidase, proteinase, or proteolytic enzyme) an enzyme that catalyzes proteolysis, breaking down proteins into smaller polypeptides or single amino acids, and spurring the formation of new protein products', 'enzyme'),
+('fatty acid', '', '');
 
-INSERT INTO organelles(organelle, description) VALUES
+INSERT INTO organelles (organelle, description) VALUES
 -- ('', ''),
 -- ('', ''),
 -- ('', ''),
@@ -202,13 +222,31 @@ INSERT INTO animal_cells(cell, description) VALUES
 ('mesenchymal', NULL),
 ('endothelial', NULL),
 
+('keratinocyte', 'begin in the stratum basale and make up the majority of epidermal cells; purpose to grow and divide, and as they divide, they push the older cells up toward the surface; produce and fill themselves with keratin as they move towards the surface and die (cornification)'),
+('melanocyte', 'produce skin pigments called melanin; stay in the stratum basale, with projections to more superficial layers'),
+('dendritic cell', 'immune system cells found in the stratum spinosum and the stratum granulosum; alert the body''s immune system to the invasion of pathogens that could make it through the stratum corneum'),
+
 ('fibroblast', 'spindle-shaped; synthesizes the extracellular matrix and collagen, produces the structural framework (stroma) for animal tissues, and plays a critical role in wound healing; the most common cells of connective tissue in animals'),
+('chondrocyte', 'cartilage cell; produces a matrix of proteoglycans and water'),
 ('spermatozoon', NULL),
 ('astricyte', NULL),
 ('hepatocyte', NULL),
+
 -- Brain cells:
 ('neuron', NULL),
 ('glial cell', NULL),
+
+-- neuroglia (aid in neuron function)
+('oligodendrocyte', 'forms myelin in the CNS'),
+('ependymal cell', 'produces cerebrospinal fluid in the CNS'),
+('astrocyte', 'forms the blood-brain barrier in the CNS'),
+('microglion', 'seeks out and fight pathogens in the CNS'),
+('schwann cell', 'forms myelin in the PNS'),
+('satellite cell', 'controls the environment for ganglia in the PNS'),
+
+-- Bone cells:
+('osteoblasts', 'they build bone tissue by forming a soft matrix of protein and carbohydrate molecules with collagen fibers'),
+('osteoclasts', 'they destroy bone tissue; they allow hard mineral crystals to be deposited in the matrix'),
 
 -- ('', NULL),
 -- ('', NULL),

@@ -88,6 +88,7 @@ CREATE TABLE animal_molecules (
   molecule_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   molecule VARCHAR(50) NOT NULL,
   description VARCHAR(999),-- NOT NULL, -- you may discuss functions, but they're to be listed in another table
+  type VARCHAR(50),
   last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY  (molecule_id),
   KEY idx_molecule (molecule)
