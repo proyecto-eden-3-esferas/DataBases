@@ -85,11 +85,20 @@ INSERT INTO relationships (relationship, description, arity) VALUES
 ('is_species',           'DESCRIPTION', 1);
 
 INSERT INTO terms(term, description, field) VALUES
+('pluripotent', '(of a stem cell,) that it can become cells of differing types', 'cytology'),
+('hemopoiesis', 'the production of blood cells or formed elements', 'cytology'),
+('myeloid hemopoiesis', 'the production of all the formed elements in the red bone marrow', 'cytology'),
+('serum', 'plasma with the clotting proteins removed', 'blood'),
+
 ('saprotrophic', 'nutrition /sæprəˈtrɒfɪk, -proʊ-/ or lysotrophic nutrition is a process of chemoheterotrophic extracellular digestion involved in the processing of decayed (dead or waste) organic matter', 'nutrition'),
 ('blight', 'a rapid and complete chlorosis, browning, then death of plant tissues such as leaves, branches, twigs, or floral organs', 'phytology'),
 ('chlorosis', 'a condition in which leaves produce insufficient chlorophyll', 'phytology'),
 
+('homeostasis', NULL, NULL),
 ('metabolomics', NULL, NULL),
+('hemostasis', 'the stopping of bleeding; a three-step process: vascular spasm, platelet plug formation, and blood
+clotting or coagulation; platelets important in all three steps', NULL),
+
 --
 ('genomics', NULL, 'genetics'),
 ('gene expression', NULL, 'genetics'),
@@ -160,6 +169,7 @@ INSERT INTO terms(term, description, field) VALUES
 ('mediastinum', '', 'anatomy'),
 ('meninges', '(sg. meninx: the three membranes (dura mater, arachnoid, pia mater) that envelop the brain', 'animal histology'),
 --
+--
 ('self-sowing', NULL, NULL), -- adj
 ('succulent', NULL, 'phytology'); --  also found in TABLE 'life_types';
 
@@ -171,10 +181,20 @@ INSERT INTO theories (theory, description, approach, published) VALUES
 ('adaptive radiation',
  'a process in which organisms diversify rapidly from an ancestral species into a multitude of new forms, particularly when a change in the environment makes new resources available, alters biotic interactions or opens new environmental niches', 'evolutionary biology', NULL);
 
-
+INSERT INTO parasites (parasite, description) VALUES
+('mite', NULL),
+('tick', NULL),
+('aphid', NULL),
+-- ('', NULL),
+-- ('', NULL),
+-- ('', NULL),
+('hookworm', NULL),
+('tapework', NULL);
 
 INSERT INTO animal_molecules (molecule, description, type) VALUES
 ('pheromone', 'a secreted or excreted chemical factor that triggers a social response in members of the same species.', 'hormone'),
+('epinephrine', 'has a positive chronotropic effect on heart rate', NULL),
+('norepinephrine', '', NULL)
 ('cholesterol', 'the principal sterol of all higher animals, distributed in body tissues, especially the brain and spinal cord, and in animal fats and oils; an essential structural component of animal cell membranes; a precursor for the biosynthesis of steroid hormones, bile acid and vitamin D', ''),
 ('collagen', 'the main structural protein in the extracellular matrix of a body&apos;s various connective tissues', 'protein'),
 ('elastin', 'elastin fibers provide elasticity, which allows the skin to come back to shape if stretched; the number of fibers increases with depth in the dermis', ''),
@@ -187,7 +207,12 @@ INSERT INTO animal_molecules (molecule, description, type) VALUES
 ('keratin', 'a hard waterproof protein'),
 ('proteoglycan', 'a protein molecule with a carbohydrate added to it'),
 ('protease' , '(also called a peptidase, proteinase, or proteolytic enzyme) an enzyme that catalyzes proteolysis, breaking down proteins into smaller polypeptides or single amino acids, and spurring the formation of new protein products', 'enzyme'),
-('fatty acid', '', '');
+('hemoglobin', 'a red, complex protein made of four chains of amino acids called globins', 'protein'),
+('globin', 'each contains a heme group with an iron ion at its center that can bind to one oxygen molecule', 'protein'),
+('bilirubin', 'results from the break down of heme; must be removed from the body; makes urine yellow', 'waste'),
+('fibrinogen', 'comes out of solution to form a solid fiber called fibrin, thus causing coagulation', NULL),
+('fibrin', 'acts as a net to trap blood cells and platelets to form a solid clot attached to the vessel walls', NULL),
+('fatty acid', '', ''),;
 
 INSERT INTO organelles (organelle, description) VALUES
 -- ('', ''),
@@ -243,6 +268,9 @@ INSERT INTO animal_cells(cell, description) VALUES
 ('microglion', 'seeks out and fight pathogens in the CNS'),
 ('schwann cell', 'forms myelin in the PNS'),
 ('satellite cell', 'controls the environment for ganglia in the PNS'),
+
+-- blood
+('hemocytoblast', 'can become any one of the seven formed elements; located in red bone marrow')
 
 -- Bone cells:
 ('osteoblasts', 'they build bone tissue by forming a soft matrix of protein and carbohydrate molecules with collagen fibers'),

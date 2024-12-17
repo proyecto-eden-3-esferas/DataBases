@@ -80,6 +80,20 @@ CREATE TABLE funcs ( -- no INSERT's so far
   KEY idx_func (func)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+
+CREATE TABLE parasites ( -- no INSERT's so far
+  parasite_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  parasite  VARCHAR(50) NOT NULL,
+  description VARCHAR(999),-- NOT NULL,
+  -- affected  VARCHAR(50); -- NOT NULL,
+  -- FOREIGN KEY (affected)  REFERENCES life_types (life_type),
+  last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY  (parasite_id),
+  KEY idx_func (func)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
 -- Specific to animal and intimately shared with database (SCHEMA) 'health':
 
 -- Animal (Organic) Molecules:

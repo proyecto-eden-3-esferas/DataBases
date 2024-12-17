@@ -1,3 +1,12 @@
+SET NAMES utf8mb4;
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
+SET @old_autocommit=@@autocommit;
+
+USE farming;
+
+SET AUTOCOMMIT=0;
 
 -- Support species to fill in the gaps in tightly-spaced hedgerows:
 --   Asian pears, wild pears, rugosa roses, goumi, elderberry, medlar, currants, brambles.
@@ -318,9 +327,9 @@ INSERT INTO pests (pname, nature, mechanism, part, vector, conditions) VALUES
 ('powdery mildew', NULL, NULL, NULL, NULL, NULL),
 ('Argentinian weevil', 'invasive weed', NULL, NULL, NULL, NULL),
 ('Fallopia japonica', 'invasive weed', NULL, NULL, NULL, NULL), -- Japanese knotweed
-('Fusarium', 'ascomycete fungus', NULL, NULL, NULL, NULL), -- MECHANISM, PART, VECTOR, CONDITIONS),
-('Phytophthora cinnamomi', 'oomycete', NULL, NULL, NULL, NULL), -- MECHANISM, PART, VECTOR, CONDITIONS), -- causes Phytophthora root rot of many plants
-('Plasmopara viticola', 'oomycete', NULL, NULL, NULL, NULL), -- MECHANISM, PART, VECTOR, CONDITIONS), -- causes grapevine downy mildew
+('Fusarium', 'ascomycete fungus', MECHANISM, PART, VECTOR, CONDITIONS),
+('Phytophthora cinnamomi', 'oomycete', MECHANISM, PART, VECTOR, CONDITIONS), -- causes Phytophthora root rot of many plants
+('Plasmopara viticola', 'oomycete', MECHANISM, PART, VECTOR, CONDITIONS), -- causes grapevine downy mildew
 ('Phytophthora infestans', 'oomycete', NULL, NULL, NULL, NULL), -- MECHANISM, PART, VECTOR, CONDITIONS), -- the potato late blight pathogen
 ('Agrobacterium tumefaciens', 'bacteria', NULL, NULL, NULL, NULL), -- MECHANISM, PART, VECTOR, CONDITIONS),
 ('downy mildew', 'a fungal disease that causes yellow to grey-brown patches on leaves, especially the undersides. Water plants at soil level (not on the leaves), remove and destroy affected leaves and do not overcrowd plants to ensure adequate air flow. If problems persist, spray with a homemade milk spray or fungicide.', NULL, 'leaves', NULL, NULL),
@@ -600,3 +609,12 @@ INSERT INTO plant_uses (bname, field, its_uses) VALUES
 -- ('Phaseolus vulgaris', 'Purple dragon dwarf bush bean', NULL, 'garden', 'ornamental in borders'),
 -- ('Phaseolus vulgaris', 'Purple dragon dwarf bush bean', NULL, 'kitchen', 'its beans great for homesteaders, both green and dry'),
 ('Campanula versicolor', 'kitchen', 'good edible leaves for a bellflower');
+
+
+UNLOCK TABLES;
+COMMIT;
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+SET autocommit=@old_autocommit;

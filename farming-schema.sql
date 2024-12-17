@@ -22,7 +22,7 @@ CREATE TABLE plants (
   language_code VARCHAR(2) NOT NULL DEFAULT 'en',
   life_type VARCHAR(50),
   climate VARCHAR(255),
-  wild BOOL, -- DEFAULT FALSE,
+  wild BOOL DEFAULT NULL, -- as oppesed to bred or genetically engineered
   PRIMARY KEY (bname),
 -- FOREIGN KEY (life_type) REFERENCES biology.life_types(life_type), -- commented out because of fields like "woody biannual"
 -- FOREIGN KEY (climate)   REFERENCES           geology.climates(cname),
@@ -41,7 +41,7 @@ CREATE TABLE vernacular ( -- non-scientific names of plants, animals
 
 CREATE TABLE crop_groups ( -- non-scientific names of plants, animals
   crop       VARCHAR(45) NOT NULL, -- 'vname' or variety name
-  crop_group VARCHAR(45) NOT NULL, -- references a 'life_type'
+  crop_group VARCHAR(45) NOT NULL, -- references a 'life_type', usu. a plant family
   code          CHAR(2)  NOT NULL DEFAULT 'en',
   PRIMARY KEY  (crop),
   FOREIGN KEY (crop_group)  REFERENCES life_types(life_type),
@@ -49,7 +49,7 @@ CREATE TABLE crop_groups ( -- non-scientific names of plants, animals
 -- FOREIGN KEY (bname) REFERENCES plants(bname)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE crop_aid (
+CREATE TABLE crop_care (
   bname VARCHAR(45) NOT NULL,
   fertilizer VARCHAR(255), -- column imported from deleted table 'plant_varieties'
   watering VARCHAR(255),   -- column imported from deleted table 'plant_varieties'

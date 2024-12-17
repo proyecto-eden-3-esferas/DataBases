@@ -1,188 +1,323 @@
-# SQLite: A Full-Featured Embedded DataBase Engine
+# DataBases
+Databases in SQL for farming, health, culture, and so on
 
-(My code, databses, and are notes to be hosted as a branch at: https://github.com/proyecto-eden-3-esferas/SQLite/.)
+# WHAT KIND OF PROJECT AND FILES?
 
-SQLite is both:
-- A DataBase Management System (DBMS), and
-- A C library to be compiled and linked into executables (no dependencies on dynamic libraries) that go on to become specialized DBMS's.
+This project contains code for defining schema (databases and their tables)
+and for filling database structures (tables) with records and such.
 
+The alternative is, well, for the database administrator to define a schema or structure
+and let the users contribute the records/rows/data over time.
 
-# SQLite's Good Points
 
-- SQLite distribution code is small, so it can be included in your application. (Below I explain that I just build an SQLite.o object file and link it in.)
 
-- When you run it on the command line, it creates one database file in the current directory by default. This makes your databases absolutely carriable.
+# WHAT DATABASES: FARMING-BIOLOGY-HEALTH-CREATION
 
-- It is written in standard C and used as C code.
+This database project started as a *farming* database. (Actually, I have always had *organic* farming in mind.) It includes tables for phytochemicals, life forms and other relations pertaining to biology, so a *biology* database was started, then a *geology* database. Nevertheless, I have commented out references to either *biology* or *geology* databases.
 
-- It runs on Linux, Windows MacOS... Yet this project is initially centred on Linux.
+Early on I deemed it useful to provide a general database with tables for languages and relationships. (The *general* database was born.)
 
+Later on I saw that farming overlapped with health (nutrition, medicinal plants, chemicals etc.),
+and thus the *health* database was born.
 
-# Install(ed) Packages on Debian-Based Linux (`.deb` packages)
+Any of *farming*, *biology* and *health* databases can be developed independently as long as FOREIGN KEY instegrity is not violated.
 
-1. `sqlite3`
-SQLite is a C library that implements an SQL database engine.
-Programs that link with the SQLite library can have SQL database
-access without running a separate RDBMS process.
+Now, since alternative farming stems from created theories or approaches, another database arose named *creation* with tables for people (creators of theories, approaches, books etc.), their works and theories, explanations of phenomena etc. Culture at large.
 
-2. `sqlite3-doc` (28MB of documentation)
-- /usr/share/doc/sqlite3/index.html
-- /usr/share/doc/sqlite3/c3ref/
 
-3. `sqlite3-tools`
-This package contains various tools such as:
-- /usr/bin/showdb
-- /usr/bin/showjournal
-- /usr/bin/showstat4
-- /usr/bin/showwal
-- /usr/bin/sqldiff
-- /usr/bin/sqlite3_analyzer
+# SWITCH-OVER TO SQLITE
 
-9MB downloaded
-33MB additional disk space
+Over the last month or so I have been learning and porting my former MySQL code to SQLite.
 
-4. `libsqlite-dev`
-- /usr/include/sqlite3.h
-- /usr/include/sqlite3ext.h
+I still keep a schema and a data file for each database, plus SQLite files have an `-lite` infix. Since I have started porting the *farming* database, the two associated SQL files are named: *farming-schema-lite.sql* and *farming-data-lite.sql*
 
+Data files mainly contain `INSERT` commands, so they are pretty straightforward to translate.
 
-# Procedures
+SQLite schemas are slightly different from MySQL ones. To begin with, I don't think you can reference a database different from the one you last opened, so you should read those foreign schemata as well as data with `.read` In the case of the *farming* database, you first have to bring the *general* database in.
 
-Create a DB first:
 
-```
-  sqlite3   mydata.db
-```
+# OTHER DATABASES HERE
 
-Actually, `man sqlite3` provides enough information to get started.
+- *biological-control.sql: the SQL code is meant to be run *after* biology-XXX.sql
 
+- *plant_families.sql: the SQL code is meant to be run *after* biology-XXX.sql
 
-# Compiling as C++ (GNU ToolChain)
+- *geology.sql: actually no longer required by the "farming" database, as already mentioned
 
-Essentially, I create an object file (`sqlite3.o`) and link it into the executable. The main program just includes the header file (`sqlite3.o`).
-So I build with a line like:
+- *notes-schema.sql: a very immature (sketchy) database for holding notes; not an altogether bad idea, though
 
-```
-g++ -std=c++11 -o examplepp SQLite.ex00.cpp sqlite3.o
-```
-This builds an executable (`examplepp`) that already showcases many of the features of SQLite... it executes SQL code.
 
 
-# Projects
+# SQL CODE
 
-1. Use a database as an object store, only to some extent. Well, the class code should be written carefully to handle serialization. All classes might be made derived from some `SQLObject` class
-```
-template <typename OBJ>
-class SQLObject {
-public:
-  unsigned int id;
-  virtual void load();
-  virtual void store();
-  bool changed;
-  //
-  OBJ obj;
-  SQLObject(unsigned int id);
-};
-```
+All SQL code has been tested on MySQL.
 
-It would be easy to serialize classes without references, pointers o composite members (struct-like objects, containers etc.)
+Most databases are stored in a DATABASE-schema.sql file for its structure,
+to be loaded *before* a DATABASE-data.sql file containing the rows via INSERT-ions.
 
+It would take minor changes to get it to run on PostgreSQL,
+another free-of-charge open source DBMS (DataBase Management System),
+which is to a large extent complementary (far more feature-rich) to MySQL.
 
-2. A zettelkasten application:
-A table would hold the text of the notes. Other tables would handle links from a note to other notes, with some explanation of the relationship between the source and the target note. Another table might hold relationships with their description and their arity ("next", "previous", "is an example of", "contradicts", "relevant quote" and so on.).
+(I don't know how easy it would be to port my SQL code to MariaDB. Largely painless, most probably.)
 
-At an advanced, further stage, I would like to deal with notes whose text excedes the alloted number of characters, typically through VARCHAR(NNN). This is a general SQL issue. It is inefficient to define a slot size capable of accomodating the largest imaginable piece of text.
+Also, my discussion assumes MySQL is run on Linux,
+yet most of these instructions apply to Windows, too.
 
 
-3. An INSERT-generator:
+# PERSISTANCE
 
-Given a database, SQL code for inserting records or rows into a database is generated. The reverse, reading an SQL file and defing and populating a database would be fairly straightforward. (You may name it "SQL-interpreter".) It would be desirable for the code generated to be "pretty": indented consistently, without redundant space characters, and so on.
+The databases in this project are persistent: they are not erased
+when the server stops or should the database file be erased or the server updated...
+BECAUSE all the structure and all the records or data are held in SQL text files
+with extension .sql and containing SQL code.
 
+The alternative is for the database administrator to define a schema or structure
+and let the users contribute the records/rows/data over time.
 
-4. An Intelligent Agenda Manager (*intellegenda*)
 
+# DEPENDENCIES
 
-- deadlines, appointments, windows or periods (dates)
+Some databases here are not self-standing but depend on others.
+They have foreign keys that reference *other* databases.
 
-- forthcoming events, shows etc. which are intesting to attend, view, listen to...
+You can find dependencies by inspecting table definitions.
+Specifically, foreign keys may reference another table, as in
+  FOREIGN KEY (field) REFERENCES general.fields(field)
+found in the farming database.
+Therefore, database "general", as well as "geology" and "biology" should be loaded
+before any others so that no integrety violations take place.
 
-- (intimate/private/public) diary, day by day
+You can thus infer a hierarchy where
 
-- addresses, webpages, and telephone numbers (contacts for people, shops, organizations, websites...)
+1. general, geology and biology are self-standing
+2. general precedes farming
+   geology precedes farming
+   general precedes health
+   biology precedes health
 
+NOTE: Future adjustments are likely to make database "biology" and many others dependent on "general"
+      as "general" holds tables for languages (such as "English", "Spanish")
+      and relationship (such as "is a kind of", "is the same as").
+      Also, "farming" is likely to be redefined to depend on "biology",
+      which should then be loaded before "farming" is loaded.
+      Therefore:
+   biology will eventually precede farming
 
-- view by date, person, field
 
+# STEPS and PROCEDURES (for MySQL)
 
+1. Install a DBMS, such as a MySQL server
 
-- notes (texts, free format, they bear a title and a date, zettelkasten-like)
+2. Start it (on Linux it is running by default once installed):
+  /etc/init.d/mysql start status
+  sudo /etc/init.d/mysql start
+  sudo /etc/init.d/mysql stop
 
-- pieces of advice
+3. Create a database with CREATE DATABASE followed by some CREATE TABLE commands
 
-- quotes (by others; short and long)
+4. Populate its tables with the INSERT command
 
+5. Run queries etc.
 
-- TODOs (tasks; linked to dates such as deadlines, appointments and periods)
 
-- TOBUYs (prices, features, links to webpages, too; flexible, first come first served or FIFO)
+## EASY AND PERSISTENT LOADING
 
+DataBases can be easily loaded (third and fourth steps) through script "exec-mysql.sh",
+whose contents are:
 
-- new words (monolingual)
+  #!/bin/bash
+  # This script executes an SQL file on the local MySQL server
+  sudo mysql -uroot -pmsandbox < $1
 
-- word translations between two languages (such as: the German for "home" is "Wohnung")
 
-- texts to translate (into or from your mother tongue or from/into a foreign language)
+For instance:
+  exec-mysql.sh general-schema.sql # there is no "general-data.sql" file as yet
+  exec-mysql.sh geology.sql
+  exec-mysql.sh farming-schema.sql
+  exec-mysql.sh farming-data.sql
 
+NOTE:  general-schema.sql, which contains both schema definitions and insertions.
 
 
-- Ideas (your own ideas to develop; they may overlap your notes)
 
-- Themes (your own ideas as well as materials from elsewhere, possibly organized in sections and subsections, with a TOC and so on)
+# Databases
 
-- Books to read
+- *general*
+- *farming* (*plant_families.sql* and *biological-control.sql* can be run after both *farming-*.sql* have)
+- *health*
+- *creation*
 
-- Some outstanding, eternal themes are (one's) health, (one's) food, (one's) religious or spiritual life...
 
+# On *farming-users.sql*
 
-- templates
+This file contains some code for creating users specifically for the *farming* database.
+The lines could be easily rewritten to achieve the same for other tables.
+Basically, you get a 'farming-reader' (SELECT) and a 'farming-reader-writer' (all operations)
 
-- a mechanism for including pieces of text or information
 
+# On Initial and Final SQL Code
 
+Some SQL files (MySQL, but not SQLite) are preceded by code that suspends UNIQUE and FOREIGN KEY constraints,
+and delays COMMIT until after all insertions have been scheduled.
 
+After all insertions, previous settings are restored and a general COMMIT is effected.
 
-5. A RoleGraph:
+Maybe it is better to make do without those tricks...
 
-A RoleGraph is a hypergraph where each link has as many defined roles as its arity. Take a Prolog predicate such as `love/2`. The first argument of `love/2` has role "lover" and the second argument has role "loved".
 
-A relational table holding binary relationships between entities could be built with just three columns: predicate, first_argument, and second_argument.
 
-For n-ary relationships (the general case) you would need:
-- a table for holding relationship instances (columns ID, and relationship class, such as "love")
-- another table holding three columns: relationship_instance, entity, role (its role in the relationship)
-You would also want to have:
-- a table for matching relationship class ID to its name or description
-- a table for matching a role ID to its name or description
+# The Evolution of Database *farming*
 
+DataBase 'farming' is so called because it started as a broad farming database. Broad means that it includes some immediate ramifications like nutrition and the environment. Actually, farming is related to nearly everything else in the human world.
 
-6. A General DataBase (World)
+Some extensions are almost independent of farming:
 
-Some tables:
+1. health (files *farming-schema-health.sql* and *farming-data-health.sql*) )
+2. other culture, like some general theories, books, relationships (files *neither*)
 
-- `to_be_processed`: text (NOT NULL), field
+Over time both have been moved to 'health' and to 'creation'
 
-- `fields`: field, description, belongs_in_field
+I am aware that this is unlike a commercial database, which is kept running round the clock. Here all the schema and especially all the data should be written before they are fed into the database.
 
-- `terms`: definitions
-- `translations`: term, termlang, translation, translationlang
-- `languages`: language, code
-- `abbreviations`: word, abbreviation
 
-- `objects`: with fields object/name, description...
 
-- `roles`: role name, description, arity (DEFAULT 1)
-- `roles_in_relationships`: matches roles to relationships
+# HOW to USE a MySQL DATABASE (ONCE SCHEMA AND RECORDS HAVE BEEN LOADED)
 
-- `relationships`: name, description, arity
+* mysql> SHOW DATABASES;
+* USE mydatabase;
+* mysql> SHOW TABLES;
+* mysql> DESCRIBE aTable;
+* You may request to change the output from default (--table) to --html tables or --xml
+* To save all ouput in interactive mode to FILE.txt:
+    mysql>tee FILE.txt;
+* To get information on tables:
+  SHOW TABLES;
 
-- `binary_related`: left_obj, right_obj, relationship, left_role, right_role
+
+# TODOs
+
+[ ] farming.crop_group.code should be renamed to `language_code`
+
+(0) *general-schema.sql* used to contain its data or `INSERT`-ions, but now it is considered more convenient to keep the schema definition and the data separate, so it is to split into *general-schema.sql* and *general-data.sql*. This means that MySQL code should adapt to the change.
+
+(0) Modularize: same table in two different databases: *plant_families.sql* (done), TABLE plant_uses (currently in *farming-*.sql*)
+
+(0.0) SQL files should definitely be split into smaller files. First, you move dependent-upon code to the fore
+
+(0.1) same table loaded into two databases: the loading script should omit `USE aDataBase;` plus other pre and post code
+
+(0.2) a database ('db1') accesses a table in another database ('db2'): use dot (.) scoping, as in db2.anotherTable
+
+It is possible to connect two different databases in the same MySQL server with each other. This can be done by creating a Foreign Key constraint between tables in different databases. This relationship between tables allows you to enforce referential integrity and ensures that data remains consistent between the two databases.
+
+Here's an example of how you can create a Foreign Key constraint between two databases in the same MySQL server:
+
+    CREATE DATABASE db1;
+    CREATE DATABASE db2;
+    USE db1;
+    CREATE TABLE customers (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      name VARCHAR(50)
+    );
+    USE db2;
+    CREATE TABLE orders (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      customer_id INT,
+      FOREIGN KEY (customer_id) REFERENCES db1.customers(id)
+    );
+
+In this example, we create two databases, db1 and db2, and two tables, customers and orders. The orders table has a Foreign Key constraint that references the id field of the customers table in the db1 database. This allows you to maintain referential integrity between the two databases, even though they are in separate databases within the same MySQL server.
+
+(1) Some tables have two fields 'vname' and 'bname', while either should be enough
+    (It would be standard to choose 'bname', for "botanical name".)
+    This redundancy should be eliminated for the sake of consistency,
+    both in "farming-data.sql" and in "farming-schema.sql"
+
+    Possibly through a table named 'bname_to_vname',
+    which might include a 'language' field...
+
+    Or the other way round, use a broad term like 'name'
+    and then map names to names and unary relationships
+    like 'is_sp', 'is_subsp'
+(2) What about upper taxa, like families etc.? (Currently being dealt with in 'plant_families')
+
+(2) Table 'plant_varieties' adds information about 'fertilizer' and 'watering'
+    Should it not be merged with other tables, such as 'germination'?
+
+(3) Table 'species' only holds plants, as has fields 'climate' and 'soils'
+    Should it be renamed 'bspecies' ("botanical species")?
+
+(5) Tables base_dirs and files in 'general' seem to stand apart
+    and not bo be related to the others,
+    save for their referencing works(title)
+
+
+## Plant Families from an HTML Table
+
+The HTML table goes like:
+
+<table SQL-table="families">
+  <caption>Plant Families</caption>
+  <thead>
+    <tr>
+      <th colname='fname'>Family</th>
+      <th colname='traits'>Characteristics</th>
+      <th colname='description'>Description</th>
+      <th colname='membership'>Membership</th>
+      <th colname='inflorescence_and_flowers'>Inflorescence and Flowers</th>
+      <th colname='fruits_and_seeds'>Fruits and Seeds</th>
+      <th colname='phytochemistry'>Phytochemistry</th>
+      <th colname='photosynthesis'>Photosynthesis</th>
+      <th colname='distribution'>Distribution</th>
+      <th colname='economics'>Economic importance</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr> <td>Rubiaceae</td>
+         <td></td>
+         <td>
+           <p></p>
+         </td>
+         <td></td>
+
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+        </tr>
+  </tbody>
+
+</table>
+
+An XSTL script was written in the past to turn all rows into insertions
+but now usin HTML tables as source for SQL insertions is DEPRECATED by me,
+because, to begin with, MySQL can output to HTML when SELECT is called.
+
+
+
+# Assorted Items to Add
+
+(Some additions may have been already effected or just do not apply any more)
+
+Table 'mechanisms/pathways':
+'Kranz leaf anatomy'
+
+
+Table 'relationships':
+arity SHORTINT UNSIGNED NOT NULL
+'is_subsp' (1), 'is_sp' (1), 'edible' (1)
+
+Table 'terms':
+
+# Other
+
+domain > kingdom > phylum > class > order > family > genus > species
+Domains - {Archaea,	Bacteria,	Eukaryota}
+
+Microbial Control of Black Flies (Diptera: Simuliidae) With Bacillus thuringiensis subsp. israelensis
+
+Aminoacids (in SoyBeans)
