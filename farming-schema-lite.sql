@@ -17,10 +17,11 @@
 CREATE TABLE IF NOT EXISTS plants (
   bname         TEXT NOT NULL PRIMARY KEY,
   family        TEXT, -- NOT NULL, -- from 'in_family' in "plant_families.sql"
-  language_code TEXT NOT NULL DEFAULT 'en',
+  language_code TEXT DEFAULT 'en',
   life_type     TEXT,
   climate       TEXT,
-  wild       INTEGER DEFAULT NULL -- as oppesed to bred or genetically engineered
+  wild       INTEGER, -- as opposed to bred or genetically engineered
+  src           TEXT -- source of this piece of information
 -- FOREIGN KEY (life_type) REFERENCES biology.life_types(life_type), -- commented out because of fields like "woody biannual"
 -- FOREIGN KEY (climate)   REFERENCES           geology.climates(cname),
   -- FOREIGN KEY (soil)    REFERENCES soils(sname),
@@ -30,18 +31,20 @@ CREATE UNIQUE INDEX idx_varieties_bname
   ON plants(bname);
 
 CREATE TABLE IF NOT EXISTS vernacular ( -- non-scientific names of plants, animals
+  vernacular_id INTEGER NOT NULL PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   vname TEXT NOT NULL, -- several vname's may reference one bname (binomial name)
   bname TEXT NOT NULL,
-  code  TEXT           DEFAULT 'en',
-  PRIMARY KEY  (vname, code),
+  code  TEXT DEFAULT 'en',
   FOREIGN KEY (code)  REFERENCES languages(code)
 -- FOREIGN KEY (bname) REFERENCES plants(bname)
 ); -- [ WITHOUT ROWID]
 
-CREATE TABLE IF NOT EXISTS crop_groups ( -- non-scientific names of plants, animals
+-- 'crop_groups' specifies what crop_group a crop belongs in
+-- currently a crop_group is usually a plant family
+CREATE TABLE IF NOT EXISTS crop_groups (
   crop       TEXT NOT NULL PRIMARY KEY, -- 'vname' or variety name
   crop_group TEXT NOT NULL, -- references a 'life_type', usu. a plant family
-  code       TEXT NOT NULL DEFAULT 'en',
+  code       TEXT DEFAULT 'en',
   FOREIGN KEY (crop_group)  REFERENCES life_types(life_type),
   FOREIGN KEY (code)        REFERENCES languages(code)
 -- FOREIGN KEY (bname) REFERENCES plants(bname)
@@ -54,9 +57,8 @@ CREATE TABLE IF NOT EXISTS crop_care (
 ); -- [ WITHOUT ROWID]
 
 CREATE TABLE IF NOT EXISTS germination_conditions (
-  germination_id INTEGER PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  -- vname TEXT,
-  bname             TEXT NOT NULL,
+  -- germination_id INTEGER PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  bname             TEXT PRIMARY KEY,
   min_germ       INTEGER,
   max_germ       INTEGER,
   -- FOREIGN KEY (vname)  REFERENCES plants(vname),
@@ -64,8 +66,8 @@ CREATE TABLE IF NOT EXISTS germination_conditions (
 ); -- [ WITHOUT ROWID]
 
 CREATE TABLE IF NOT EXISTS soil_conditions (
-  soil_id INTEGER NOT NULL PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  bname      TEXT NOT NULL,
+  -- soil_id INTEGER NOT NULL PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  bname      TEXT PRIMARY KEY,
   min_soil_pH REAL,
   max_soil_pH REAL,
   soil        TEXT,
@@ -73,7 +75,7 @@ CREATE TABLE IF NOT EXISTS soil_conditions (
 ); -- [ WITHOUT ROWID]
 
 CREATE TABLE IF NOT EXISTS companion (
-  companion_id INTEGER PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  companion_id INTEGER NOT NULL PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   bname           TEXT NOT NULL,
   with_bname      TEXT NOT NULL,
   explanation     TEXT,
@@ -93,7 +95,7 @@ CREATE TABLE IF NOT EXISTS companion (
 -- ); -- [ WITHOUT ROWID]
 
 CREATE TABLE IF NOT EXISTS pests ( -- pests or infectious diseases
-  pest_id INTEGER PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  pest_id INTEGER NOT NULL PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   pname      TEXT NOT NULL,
   nature     TEXT, -- {fungal, bacterial, viral, nematode, molusc, arthropod, rodent, other}
   mechanism  TEXT,
@@ -123,16 +125,17 @@ CREATE TABLE IF NOT EXISTS plant_anatomy (
   field       TEXT
 ); -- [ WITHOUT ROWID]
 
+-- a 'term' is synonimous with another term ('with_term') in some way ('comparison')
 CREATE TABLE IF NOT EXISTS synonyms (
   synonym_id INTEGER PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  syn           TEXT NOT NULL,
+  term          TEXT NOT NULL,
   with_term     TEXT NOT NULL,
   comparison    TEXT,
   field         TEXT, -- an enumeration in 'anatomy', 'pathology', 'mineral'...
   FOREIGN KEY (with_term)  REFERENCES terms(term)
 ); -- [ WITHOUT ROWID]
 CREATE UNIQUE INDEX idx_synonyms_synonym
-  ON synonyms(syn);
+  ON synonyms(term, with_term);
 
 CREATE TABLE IF NOT EXISTS techniques (  -- techniques are a subclass of terms.
                                      -- Do they overlap with farming_practices?
@@ -166,7 +169,7 @@ CREATE TABLE IF NOT EXISTS farming_practices (
   practice_id INTEGER PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   practice       TEXT NOT NULL,
   description    TEXT,
-  theory         TEXT -- suggested approach
+  approach       TEXT -- suggested approach
 ); -- [ WITHOUT ROWID]
 CREATE UNIQUE INDEX idx_farm_practice
   ON farming_practices(practice);

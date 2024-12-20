@@ -6,77 +6,36 @@ Databases in SQL for farming, health, culture, and so on
 This project contains code for defining schema (databases and their tables)
 and for filling database structures (tables) with records and such.
 
-The alternative is, well, for the database administrator to define a schema or structure
+## Persistance
+
+The databases in this project are persistent: they are not erased
+when the server stops or should the database file be erased or the server updated...
+BECAUSE all the structure and all the records or data are held in SQL text files
+with extension `.sql` and containing SQL code.
+
+The alternative is for the database administrator to define a schema or structure
 and let the users contribute the records/rows/data over time.
 
 
 
 # WHAT DATABASES: FARMING-BIOLOGY-HEALTH-CREATION
 
+## Farming
 This database project started as a *farming* database. (Actually, I have always had *organic* farming in mind.) It includes tables for phytochemicals, life forms and other relations pertaining to biology, so a *biology* database was started, then a *geology* database. Nevertheless, I have commented out references to either *biology* or *geology* databases.
 
+## General
 Early on I deemed it useful to provide a general database with tables for languages and relationships. (The *general* database was born.)
 
+## Health
 Later on I saw that farming overlapped with health (nutrition, medicinal plants, chemicals etc.),
 and thus the *health* database was born.
 
-Any of *farming*, *biology* and *health* databases can be developed independently as long as FOREIGN KEY instegrity is not violated.
+Any of *farming*, *biology* and *health* databases can be developed independently as long as no FOREIGN KEY integrity is violated.
 
+## Creation
 Now, since alternative farming stems from created theories or approaches, another database arose named *creation* with tables for people (creators of theories, approaches, books etc.), their works and theories, explanations of phenomena etc. Culture at large.
 
-
-# SWITCH-OVER TO SQLITE
-
-Over the last month or so I have been learning and porting my former MySQL code to SQLite.
-
-I still keep a schema and a data file for each database, plus SQLite files have an `-lite` infix. Since I have started porting the *farming* database, the two associated SQL files are named: *farming-schema-lite.sql* and *farming-data-lite.sql*
-
-Data files mainly contain `INSERT` commands, so they are pretty straightforward to translate.
-
-SQLite schemas are slightly different from MySQL ones. To begin with, I don't think you can reference a database different from the one you last opened, so you should read those foreign schemata as well as data with `.read` In the case of the *farming* database, you first have to bring the *general* database in.
-
-
-# OTHER DATABASES HERE
-
-- *biological-control.sql: the SQL code is meant to be run *after* biology-XXX.sql
-
-- *plant_families.sql: the SQL code is meant to be run *after* biology-XXX.sql
-
-- *geology.sql: actually no longer required by the "farming" database, as already mentioned
-
-- *notes-schema.sql: a very immature (sketchy) database for holding notes; not an altogether bad idea, though
-
-
-
-# SQL CODE
-
-All SQL code has been tested on MySQL.
-
-Most databases are stored in a DATABASE-schema.sql file for its structure,
-to be loaded *before* a DATABASE-data.sql file containing the rows via INSERT-ions.
-
-It would take minor changes to get it to run on PostgreSQL,
-another free-of-charge open source DBMS (DataBase Management System),
-which is to a large extent complementary (far more feature-rich) to MySQL.
-
-(I don't know how easy it would be to port my SQL code to MariaDB. Largely painless, most probably.)
-
-Also, my discussion assumes MySQL is run on Linux,
-yet most of these instructions apply to Windows, too.
-
-
-# PERSISTANCE
-
-The databases in this project are persistent: they are not erased
-when the server stops or should the database file be erased or the server updated...
-BECAUSE all the structure and all the records or data are held in SQL text files
-with extension .sql and containing SQL code.
-
-The alternative is for the database administrator to define a schema or structure
-and let the users contribute the records/rows/data over time.
-
-
-# DEPENDENCIES
+## Dependencies
 
 Some databases here are not self-standing but depend on others.
 They have foreign keys that reference *other* databases.
@@ -92,9 +51,9 @@ You can thus infer a hierarchy where
 
 1. general, geology and biology are self-standing
 2. general precedes farming
-   geology precedes farming
-   general precedes health
-   biology precedes health
+3. geology precedes farming
+4. general precedes health
+5. biology precedes health
 
 NOTE: Future adjustments are likely to make database "biology" and many others dependent on "general"
       as "general" holds tables for languages (such as "English", "Spanish")
@@ -103,6 +62,58 @@ NOTE: Future adjustments are likely to make database "biology" and many others d
       which should then be loaded before "farming" is loaded.
       Therefore:
    biology will eventually precede farming
+
+
+# SWITCH-OVER TO SQLITE
+
+Over the last month or so I have been learning and porting my former MySQL code to SQLite.
+
+I still keep a schema and a data file for each database, plus SQLite files have an `-lite` infix. Since I have started porting the *farming* database, the two associated SQL files are named: *farming-schema-lite.sql* and *farming-data-lite.sql*
+
+Data files mainly contain `INSERT` commands, so they are pretty straightforward to translate.
+
+SQLite schemas are slightly different from MySQL ones. To begin with, I don't think you can reference a database different from the one you last opened, so you should read those foreign schemata as well as data with `.read` In the case of the *farming* database, you first have to bring the *general* database in.
+
+## INITIALIZING A SQLITE FARMING DATABASE
+```
+$ sqlite farming.db
+sqlite> .read general-schema-lite.sql
+sqlite> .read general-data.sql
+sqlite> .read farming-schema-lite.sql
+sqlite> .read farming-data.sql
+sqlite> .read farming-data-mason.sql
+```
+
+
+# OTHER (MINOR) DATABASES HERE
+
+- *biological-control.sql*: the SQL code is meant to be run *after* biology-XXX.sql
+
+- *plant_families.sql*: the SQL code is meant to be run *after* biology-XXX.sql
+
+- *geology.sql*: actually no longer required by the "farming" database, as already mentioned
+
+- *notes-schema.sql*: a very immature (sketchy) database for holding notes; not an altogether bad idea, though
+
+
+
+# SQL CODE
+
+All SQL code has been tested on MySQL. Besides, I am currently in the process of porting it to SQLite.
+
+Most databases are stored in a *DATABASE-schema.sql* file for its structure,
+to be loaded *before* a *DATABASE-data.sql* file containing the rows via INSERT-ions.
+
+Usually, only the schema files change for different Relational DataBase Management Systems.
+
+It would take minor changes to get it to run on PostgreSQL,
+another free-of-charge open source DBMS (DataBase Management System),
+which is to a large extent complementary (far more feature-rich) to MySQL.
+
+(I don't know how easy it would be to port my SQL code to MariaDB. Largely painless, most probably.)
+
+Also, my discussion assumes MySQL is run on Linux,
+yet nealy all of these instructions apply to Windows, too.
 
 
 # STEPS and PROCEDURES (for MySQL)
@@ -196,6 +207,8 @@ I am aware that this is unlike a commercial database, which is kept running roun
 
 
 # TODOs
+
+[ ] write on pseudocereals like quinoa, buck wheat, chia?
 
 [ ] farming.crop_group.code should be renamed to `language_code`
 

@@ -17,12 +17,13 @@ USE farming;
 
 CREATE TABLE plants (
 -- plant_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  bname  VARCHAR(45) NOT NULL,
-  family VARCHAR(50), -- NOT NULL, -- from 'in_family' in "plant_families.sql"
-  language_code VARCHAR(2) NOT NULL DEFAULT 'en',
-  life_type VARCHAR(50),
-  climate VARCHAR(255),
-  wild BOOL DEFAULT NULL, -- as oppesed to bred or genetically engineered
+  bname         VARCHAR(45) NOT NULL,
+  family        VARCHAR(50), -- NOT NULL, -- from 'in_family' in "plant_families.sql"
+  language_code VARCHAR(2) DEFAULT 'en',
+  life_type     VARCHAR(50),
+  climate       VARCHAR(255),
+  wild             BOOL, -- as oppesed to bred or genetically engineered
+  src           VARCHAR(50), -- source of this piece of information
   PRIMARY KEY (bname),
 -- FOREIGN KEY (life_type) REFERENCES biology.life_types(life_type), -- commented out because of fields like "woody biannual"
 -- FOREIGN KEY (climate)   REFERENCES           geology.climates(cname),
@@ -31,18 +32,21 @@ CREATE TABLE plants (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE vernacular ( -- non-scientific names of plants, animals
+  vernacular_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT;
   vname VARCHAR(45) NOT NULL, -- several vname's may reference one bname (binomial name)
   bname VARCHAR(45) NOT NULL,
-  code CHAR(2)      NOT NULL DEFAULT 'en',
-  PRIMARY KEY  (vname, code),
+  code CHAR(2)      DEFAULT 'en',
+  PRIMARY KEY  (vernacular_id),
   FOREIGN KEY (code)  REFERENCES general.languages(code)
 -- FOREIGN KEY (bname) REFERENCES plants(bname)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- 'crop_groups' specifies what crop_group a crop belongs in
+-- currently a crop_group is usually a plant family
 CREATE TABLE crop_groups ( -- non-scientific names of plants, animals
   crop       VARCHAR(45) NOT NULL, -- 'vname' or variety name
   crop_group VARCHAR(45) NOT NULL, -- references a 'life_type', usu. a plant family
-  code          CHAR(2)  NOT NULL DEFAULT 'en',
+  code          CHAR(2)  DEFAULT 'en',
   PRIMARY KEY  (crop),
   FOREIGN KEY (crop_group)  REFERENCES life_types(life_type),
   FOREIGN KEY (code)  REFERENCES general.languages(code)
@@ -57,22 +61,21 @@ CREATE TABLE crop_care (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE germination_conditions (
-  germination_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  -- vname VARCHAR(45),
+  -- germination_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   bname VARCHAR(45) NOT NULL,
   min_germ INT,
   max_germ INT,
-  PRIMARY KEY  (germination_id),
+  PRIMARY KEY (bname),
   -- FOREIGN KEY (vname)  REFERENCES plants(vname),
   FOREIGN KEY (bname)  REFERENCES plants(bname)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE soil_conditions (
-  soil_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  -- soil_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   bname VARCHAR(45) NOT NULL,
   min_soil_pH DECIMAL(2,1),
   max_soil_pH DECIMAL(2,1),
-  PRIMARY KEY (soil_id),
+  PRIMARY KEY (bname),
   soil varchar(50),
   FOREIGN KEY (bname)  REFERENCES plants(bname)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -127,16 +130,16 @@ CREATE TABLE plant_anatomy (
   field VARCHAR(255),
   PRIMARY KEY  (part_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
+-- a 'term' is synonimous with another term ('with_term') in some way ('comparison')
 CREATE TABLE synonyms (
   synonym_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  syn VARCHAR(108) NOT NULL,
+  term VARCHAR(108) NOT NULL,
   with_term VARCHAR(108) NOT NULL,
   comparison VARCHAR(255),
   field VARCHAR(255), -- an enumeration in 'anatomy', 'pathology', 'mineral'...
   PRIMARY KEY  (synonym_id),
   FOREIGN KEY (with_term)  REFERENCES terms(term),
-  KEY idx_synonyms_synonym (syn)
+  KEY idx_synonyms_synonym (term, with_term)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE techniques (  -- techniques are a subclass of terms
@@ -169,9 +172,9 @@ CREATE TABLE farming_theory_features (
 
 CREATE TABLE farming_practices (
   practice_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  practice VARCHAR(108) NOT NULL,
+  practice    VARCHAR(108) NOT NULL,
   description VARCHAR(1999),
-  theory VARCHAR(50), -- suggested approach
+  approach    VARCHAR(50), -- suggested approach
   PRIMARY KEY  (practice_id),
   KEY idx_farm_practice (practice)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

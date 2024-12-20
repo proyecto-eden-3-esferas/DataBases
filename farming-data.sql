@@ -465,20 +465,6 @@ INSERT INTO plant_anatomy (part, description) VALUES
 ('utricle', NULL);
 
 
-
-INSERT INTO techniques (term, approach) VALUES
--- ('', NULL),
--- ('', NULL),
--- ('', NULL),
--- ('', NULL),
--- ('', NULL),
-('double digging', NULL),
-('to bag', NULL),
-('to spray', NULL),
-('veggie circle beds', NULL),
-('worm tubes', NULL),
-('to coppice', NULL);
-
 -- TABLE 'farming_theories' mainly consists of a theory + a long discussion.
 -- Check the size of column 'description' VARCHAR(XXXX), possibly around 2000 characters maximum
 INSERT INTO farming_theories (theory, description) VALUES
@@ -532,18 +518,24 @@ only minimal feed (eg natural fertilisers) needing to be introduced from the out
 ('biodynamic', 'Farm manures should be carefully handled and stored'),
 ('biodynamic', 'Biodynamics believes there is an interaction between crop nutrients, water, energy (light, temperature) and special biodynamic preparations (ie sprays) which result in biodynamically produced food having unique characteristics.'),
 ('biodynamic', 'Plant selection is given particular importance. Generally, biodynamic growers emphasise the use of seed which has been chosen because it is well adapted to the site and method of growing being used.'),
-('biodynamic', 'Moon planting is often considered important. Many biodynamic growers believe better results can be achieved with both animals and plants if consideration is given to lunar cycles. They believe planting, for example, when the moon is in a particular phase; can result in a better crop.'),
-('biodynamic', 'DESCRIPTION');
+('biodynamic', 'Moon planting is often considered important. Many biodynamic growers believe better results can be achieved with both animals and plants if consideration is given to lunar cycles. They believe planting, for example, when the moon is in a particular phase; can result in a better crop.');
+-- ('biodynamic', 'DESCRIPTION')
 -- ('biodynamic', 'DESCRIPTION'),
 -- ('biodynamic', 'DESCRIPTION'),
 -- ('biodynamic', 'DESCRIPTION'),
 -- ('biodynamic', 'DESCRIPTION'),
 -- ('THEORY', 'DESCRIPTION'),
 
-INSERT INTO farming_practices (practice, description, theory) VALUES
--- ('PRACTICE', 'DESCRIPTION', 'THEORY'),
--- ('PRACTICE', 'DESCRIPTION', 'THEORY'),
--- ('PRACTICE', 'DESCRIPTION', 'no-dig'),
+INSERT INTO farming_practices (practice, description, approach) VALUES
+-- ('PRACTICE', 'DESCRIPTION', 'APPROACH'),
+-- ('PRACTICE', 'DESCRIPTION', 'APPROACH'),
+-- ('PRACTICE', 'DESCRIPTION', 'APPROACH'),
+('double digging', NULL, NULL),
+('to bag', NULL, NULL),
+('to spray', NULL, NULL),
+('veggie circle beds', NULL, NULL),
+('worm tubes', NULL, NULL),
+('to coppice', NULL, NULL),
 ('crop rotation', 'consists of growing different crops in succession in the same field, as
 opposed to continually growing the same crop', 'organic'),
 ('raised beds - one method', 'Build four walls for each bed from timber. Use a wood which will resist rotting such as red gum, jarrah, recycled railway sleepers or even treated pine. The dimensions of the box can be varied but commonly might be 20–30 cm or more high and at least 1 m wide and 1–3 m or more long. The box can be built straight on top of existing ground. There should be a little slope on the ground it is built over to ensure good drainage. It may also be necessary to drill a few holes near the base of the timber walls to ensure water is not trapped behind them. Weed growth under and around the box should be cleaned up before it is built. This may be done by burning, mowing, hand weeding, mulching, or a combination of techniques.\nThe box can be filled with good quality organic soil, compost, or some other soil substitute such as alternate layers of straw and compost from the compost heap or alternate layers of graded and composted pine bark, manure and soil. The growing medium must be friable, able to hold moisture, and free of disease and weeds (avoid materials, such as grass hay, or fresh manures that may hold large quantities of weed seeds).\nA commonly used watering technique in these beds is to set a 2 L plastic bottle (eg soft drink or milk) into the centre of the bed below soil level. Cut the top out, and make holes in the side. This can be filled with water, which will then seep through the holes into the surrounding bed. Mulching the surface may be desirable to assist with controlling water loss and reducing weeds', 'no-dig'),
