@@ -208,6 +208,11 @@ I am aware that this is unlike a commercial database, which is kept running roun
 
 # TODOs
 
+[ ] farming-schema-*.sql `REFERENCES` life_types(life_type),
+    which is found in the *biology* database
+- Should this constraint be lifted, or?
+- Should the biology
+
 [ ] write on pseudocereals like quinoa, buck wheat, chia?
 
 [ ] farming.crop_group.code should be renamed to `language_code`

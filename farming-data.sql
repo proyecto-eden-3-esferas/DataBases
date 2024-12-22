@@ -315,6 +315,11 @@ INSERT INTO pests (pname, nature, mechanism, part, vector, conditions) VALUES
 -- ('PNAME', 'NATURE', MECHANISM, PART, VECTOR, CONDITIONS),
 -- ('PNAME', 'NATURE', MECHANISM, PART, VECTOR, CONDITIONS),
 -- ('PNAME', 'NATURE', MECHANISM, PART, VECTOR, CONDITIONS),
+-- ('PNAME', 'NATURE', MECHANISM, PART, VECTOR, CONDITIONS),
+-- ('PNAME', 'NATURE', MECHANISM, PART, VECTOR, CONDITIONS),
+('Soybean dwarf virus (SbDV)', 'virus', NULL, NULL, 'aphids', 'EEUU and Japan'),
+('Soybean cyst nematode (SCN)', 'nematode', NULL, 'root', NULL, 'EEUU'),
+('Japanese beetle (Popillia japonica)', 'insect', 'voracious feeding habits on corn, soybeans, and various fruits', NULL, NULL, NULL),
 ('powdery mildew', NULL, NULL, NULL, NULL, NULL),
 ('Argentinian weevil', 'invasive weed', NULL, NULL, NULL, NULL),
 ('Fallopia japonica', 'invasive weed', NULL, NULL, NULL, NULL), -- Japanese knotweed

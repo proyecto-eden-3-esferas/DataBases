@@ -24,8 +24,8 @@ CREATE TABLE IF NOT EXISTS plants (
   src           TEXT -- source of this piece of information
 -- FOREIGN KEY (life_type) REFERENCES biology.life_types(life_type), -- commented out because of fields like "woody biannual"
 -- FOREIGN KEY (climate)   REFERENCES           geology.climates(cname),
-  -- FOREIGN KEY (soil)    REFERENCES soils(sname),
-  -- KEY idx_varieties_bname (bname)
+-- FOREIGN KEY    (soil)    REFERENCES soils(sname),
+-- KEY idx_varieties_bname (bname)
 ); -- [ WITHOUT ROWID]
 CREATE UNIQUE INDEX idx_varieties_bname
   ON plants(bname);
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS vernacular ( -- non-scientific names of plants, anima
   vernacular_id INTEGER NOT NULL PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   vname TEXT NOT NULL, -- several vname's may reference one bname (binomial name)
   bname TEXT NOT NULL,
-  code  TEXT DEFAULT 'en',
+  code  TEXT DEFAULT 'en', -- the language code of the vernacular
   FOREIGN KEY (code)  REFERENCES languages(code)
 -- FOREIGN KEY (bname) REFERENCES plants(bname)
 ); -- [ WITHOUT ROWID]
@@ -53,7 +53,8 @@ CREATE TABLE IF NOT EXISTS crop_groups (
 CREATE TABLE IF NOT EXISTS crop_care (
   bname      TEXT NOT NULL PRIMARY KEY,
   fertilizer TEXT, -- column imported from deleted table 'plant_varieties'
-  watering   TEXT   -- column imported from deleted table 'plant_varieties'
+  watering   TEXT,   -- column imported from deleted table 'plant_varieties'
+  other      TEXT
 ); -- [ WITHOUT ROWID]
 
 CREATE TABLE IF NOT EXISTS germination_conditions (
@@ -61,6 +62,8 @@ CREATE TABLE IF NOT EXISTS germination_conditions (
   bname             TEXT PRIMARY KEY,
   min_germ       INTEGER,
   max_germ       INTEGER,
+  moisture          TEXT,
+  other             TEXT
   -- FOREIGN KEY (vname)  REFERENCES plants(vname),
   FOREIGN KEY (bname)  REFERENCES plants(bname)
 ); -- [ WITHOUT ROWID]
@@ -98,11 +101,11 @@ CREATE TABLE IF NOT EXISTS pests ( -- pests or infectious diseases
   pest_id INTEGER NOT NULL PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   pname      TEXT NOT NULL,
   nature     TEXT, -- {fungal, bacterial, viral, nematode, molusc, arthropod, rodent, other}
-  mechanism  TEXT,
+  mechanism  TEXT, -- how the pest organism harms or parasitizes its host
   part       TEXT, -- The anatomical part that gets harmed.
   vector     TEXT, -- How the agent arrives onto or into the plant.
   conditions TEXT, -- Under what conditions is the plant more vulnerable?
-  enemies    TEXT  -- Under what conditions is the plant more vulnerable?
+  enemies    TEXT  -- predators or antagonists of the pest
   -- KEY idx_pests_name (pname)
 ); -- [ WITHOUT ROWID]
 CREATE UNIQUE INDEX idx_pests_name
