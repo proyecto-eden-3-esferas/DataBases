@@ -585,7 +585,7 @@ INSERT INTO phytochemicals (phytochemical, properties, human_nutrition, other) V
 ('ecdysteroid', NULL, NULL, NULL);
 
 
-INSERT INTO plant_uses (bname, field, its_uses) VALUES
+INSERT INTO plant_uses (bname, field, a_use) VALUES
 ('Tagetes', 'biological control', 'planted as a cover crop just prior to a nematode-susceptible crop, has been shown to suppress nematodes'),
 ('Panax ginseng', 'health', 'There is no high-quality evidence for ginseng having any health effect.\nBelieved that it may improve memory and cognition in otherwise healthy adults and that it may improve sexual function in adults with erectile dysfunction.'),
 ('Manihot esculenta', 'kitchen', '[...] is predominantly consumed in boiled form, but substantial quantities are processed to extract cassava starch, called tapioca, which is used for food, animal feed, and industrial purposes. The Brazilian farinha, and the related garri of West Africa, is an edible coarse flour obtained by grating cassava roots, pressing moisture off the obtained grated pulp, and finally drying it (and roasting in the case of both farinha and garri).\nCassava is the third-largest source of food carbohydrates in the tropics, after rice and maize. Cassava is a major staple food in the developing world, providing a basic diet for over half a billion people.\nCassava is classified as either sweet or bitter. Like many other roots and tubers, both bitter and sweet varieties of cassava contain toxins; the bitter varieties contain much larger amounts. Cassava must be properly prepared before consumption, as improper preparation can leave enough residual cyanide to cause cyanide poisoning.'),

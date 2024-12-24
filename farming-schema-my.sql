@@ -133,6 +133,7 @@ CREATE TABLE plant_anatomy (
   field VARCHAR(255),
   PRIMARY KEY  (part_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- a 'term' is synonimous with another term ('with_term') in some way ('comparison')
 CREATE TABLE synonyms (
   synonym_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -145,20 +146,20 @@ CREATE TABLE synonyms (
   KEY idx_synonyms_synonym (term, with_term)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE techniques (  -- techniques are a subclass of terms
-                           -- do they overlap with farming_practices?
-  technique_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  term VARCHAR(108) NOT NULL,
-  -- author VARCHAR(50), -- What about there being SEVERAL authors?
-  approach VARCHAR(50), -- suggested approach
-  PRIMARY KEY  (technique_id),
-  KEY idx_term (term),
-  FOREIGN KEY (term)  REFERENCES terms(term)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- CREATE TABLE techniques (  -- techniques are a subclass of terms
+--                            -- do they overlap with farming_practices?
+--   technique_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+--   term VARCHAR(108) NOT NULL,
+--   -- author VARCHAR(50), -- What about there being SEVERAL authors?
+--   approach VARCHAR(50), -- suggested approach
+--   PRIMARY KEY  (technique_id),
+--   KEY idx_term (term),
+--   FOREIGN KEY (term)  REFERENCES terms(term)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE farming_theories (  -- includes theories AND approaches
-  theory_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  theory VARCHAR(108) NOT NULL,
+  theory_id   SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  theory      VARCHAR(108) NOT NULL,
   description VARCHAR(1999),
   PRIMARY KEY  (theory_id),
   KEY idx_farm_theory (theory)
@@ -166,7 +167,7 @@ CREATE TABLE farming_theories (  -- includes theories AND approaches
 
 CREATE TABLE farming_theory_features (
   feature_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  theory VARCHAR(108) NOT NULL,
+  theory  VARCHAR(108) NOT NULL,
   feature VARCHAR(999),
   PRIMARY KEY  (feature_id),
   -- KEY idx_farm_feature (feature),
@@ -184,10 +185,10 @@ CREATE TABLE farming_practices (
 
 CREATE TABLE phytochemicals (
   phytochemical_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  phytochemical  VARCHAR(49) NOT NULL,
-  properties VARCHAR(255),
-  human_nutrition VARCHAR(255),
-  other VARCHAR(255),
+  phytochemical    VARCHAR(49) NOT NULL,
+  properties       VARCHAR(255),
+  human_nutrition  VARCHAR(255),
+  other            VARCHAR(255),
   PRIMARY KEY  (phytochemical_id),
   KEY idx_phytochemical (phytochemical)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -198,7 +199,7 @@ CREATE TABLE plant_uses ( -- plant uses
   uses_id  SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   bname    VARCHAR(99), -- NOT NULL,
   field    VARCHAR(48)   NOT NULL, -- {'kitchen', 'garden', 'medicinal', 'general'}
-  its_uses VARCHAR(2048) NOT NULL,
+  a_use    VARCHAR(2048) NOT NULL,
   PRIMARY KEY (uses_id),
   FOREIGN KEY (bname) REFERENCES plant_varieties(bname),
   FOREIGN KEY (field) REFERENCES general.fields(field)

@@ -116,7 +116,6 @@ CREATE TABLE IF NOT EXISTS terms (
   term        TEXT NOT NULL,
   description TEXT,
   field       TEXT -- an enumeration in 'pathology', 'mineral'...
-  -- KEY idx_terms_term (term)
 ); -- [ WITHOUT ROWID]
 CREATE UNIQUE INDEX idx_terms_term
   ON terms(term);
@@ -140,16 +139,16 @@ CREATE TABLE IF NOT EXISTS synonyms (
 CREATE UNIQUE INDEX idx_synonyms_synonym
   ON synonyms(term, with_term);
 
-CREATE TABLE IF NOT EXISTS techniques (  -- techniques are a subclass of terms.
-                                     -- Do they overlap with farming_practices?
-  technique_id INTEGER PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  term            TEXT NOT NULL,
-  -- author TEXT, -- What about there being SEVERAL authors?
-  approach        TEXT, -- suggested approach
-  FOREIGN KEY (term)  REFERENCES terms(term)
-); -- [ WITHOUT ROWID]
-CREATE UNIQUE INDEX idx_term
-  ON techniques(term);
+-- CREATE TABLE IF NOT EXISTS techniques (  -- techniques are a subclass of terms.
+--                                      -- Do they overlap with farming_practices?
+--   technique_id INTEGER PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+--   term            TEXT NOT NULL,
+--   -- author TEXT, -- What about there being SEVERAL authors?
+--   approach        TEXT, -- suggested approach
+--   FOREIGN KEY (term)  REFERENCES terms(term)
+-- ); -- [ WITHOUT ROWID]
+-- CREATE UNIQUE INDEX idx_term
+--   ON techniques(term);
 
 CREATE TABLE IF NOT EXISTS farming_theories (  -- includes theories AND approaches
   theory_id INTEGER PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -193,7 +192,8 @@ CREATE TABLE IF NOT EXISTS plant_uses ( -- plant uses
   uses_id  INTEGER PRIMARY KEY, -- SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
   bname       TEXT, -- NOT NULL,
   field       TEXT NOT NULL, -- {'kitchen', 'garden', 'medicinal', 'general'}
-  its_uses    TEXT NOT NULL,
+  -- NOTE: (bname,field) need not be unique; only (bname,field, a_use) must be unique
+  a_use       TEXT NOT NULL,
   FOREIGN KEY (bname) REFERENCES plant_varieties(bname),
   FOREIGN KEY (field) REFERENCES fields(field)
 ); -- [ WITHOUT ROWID]

@@ -97,7 +97,7 @@ INSERT INTO pests (pname, nature, mechanism, part, vector, conditions) VALUES
 -- ('PNAME', 'NATURE', MECHANISM, PART, VECTOR, CONDITIONS),
 ('nematodes',    NULL,      NULL, 'roots', NULL,      NULL);
 
--- INSERT INTO plant_uses (bname, field, its_uses) VALUES
+-- INSERT INTO plant_uses (bname, field, a_use) VALUES
 -- (BNAME, FIELD, ITS_USES),
 -- (BNAME, FIELD, ITS_USES),
 -- (BNAME, FIELD, ITS_USES),
