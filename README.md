@@ -95,6 +95,10 @@ sqlite> .read farming-data-mason.sql
 
 - *notes-schema.sql*: a very immature (sketchy) database for holding notes; not an altogether bad idea, though
 
+- fields, or subjects, might be described and prescribed in a database of their own, whose (same-named) main table would have an index column of fields or subjects as well as other columns for CDU code and description. What about *fields* and *fields.fields*?
+
+- morphemes and lexemes database(s) for Latin/Sanskrit/Greek etc.
+
 
 
 # SQL CODE
@@ -207,6 +211,8 @@ I am aware that this is unlike a commercial database, which is kept running roun
 
 
 # TODOs
+
+[ ] MongoDB
 
 [ ] farming-schema-*.sql `REFERENCES` life_types(life_type),
     which is found in the *biology* database

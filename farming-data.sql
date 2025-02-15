@@ -317,6 +317,11 @@ INSERT INTO pests (pname, nature, mechanism, part, vector, conditions) VALUES
 -- ('PNAME', 'NATURE', MECHANISM, PART, VECTOR, CONDITIONS),
 -- ('PNAME', 'NATURE', MECHANISM, PART, VECTOR, CONDITIONS),
 -- ('PNAME', 'NATURE', MECHANISM, PART, VECTOR, CONDITIONS),
+('hoverfly', 'dipterous fly of the family Syrphidae, with a typically hovering flight, esp. Syrphus ribesii, which mimics a wasp', NULL /*MECHANISM*/, NULL, NULL, NULL),
+('aphid', 'small, soft-bodied insect', 'mouthparts specially adapted for piercing and feed by sucking sap from plants', NULL, NULL, NULL),
+('blight', 'fungal disease', 'fungal spores are carried by insects, wind, water and animals from infected plants, and then deposited on soil', 'leaves, stems and fruits', NULL, 'moisture'),
+('mite', 'small to minute arachnid of the order Acarina', 'often parasitic on animals and plants, infest stored food products, and in some species transmit disease', NULL, NULL, NULL),
+
 ('Soybean dwarf virus (SbDV)', 'virus', NULL, NULL, 'aphids', 'EEUU and Japan'),
 ('Soybean cyst nematode (SCN)', 'nematode', NULL, 'root', NULL, 'EEUU'),
 ('Japanese beetle (Popillia japonica)', 'insect', 'voracious feeding habits on corn, soybeans, and various fruits', NULL, NULL, NULL),
@@ -342,6 +347,13 @@ INSERT INTO pests (pname, nature, mechanism, part, vector, conditions) VALUES
 ('tomato hornworms', NULL, NULL, NULL, NULL, NULL);
 
 INSERT INTO terms (term, description, field) VALUES
+('acre', '4046.86 square metres', NULL),
+('bracken', 'large, coarse ferns', 'botany'),
+('cloche', 'small, portable structures that are placed over fruit, veg and plants to offer protection and create a warm microclimate', 'farming'),
+('silage', 'fodder prepared by storing and fermenting green forage plants in a silo', 'farming'),
+('canola', 'a rapeseed oil that is very low in erucic acid content and high in monounsaturated fatty acids', NULL),
+('silo', 'a. tall cylindrical structure, usually beside a barn, in which fodder is stored; b. pit dug for the same purpose', 'farming'),
+('break', 'a yearly crop in a plot', 'farming'),
 ('consortia', 'mixtures of microorganisms', 'biological control'),
 ('stratification', NULL, NULL),
 ('stover', 'the leaves and stalks of field crops, such as corn (maize), sorghum or soybean that are commonly left in a field after harvesting the grain; similar to straw, the residue left after any cereal grain or grass has been harvested at maturity for its seed', 'farming'),

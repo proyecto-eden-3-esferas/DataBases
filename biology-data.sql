@@ -62,6 +62,7 @@ INSERT INTO life_types (life_type, description) VALUES
 ('spider', NULL),
 ('mollusk', NULL),
 ('nematode', 'also called roundworms or eelworms;  are a diverse animal phylum inhabiting a broad range of environments. Most species are free-living, feeding on microorganisms, but there are many that are parasitic. The parasitic worms (helminths) are the cause of soil-transmitted helminthiases'),
+('flatworm', 'Any of various parasitic and nonparasitic worms of the phylum Platyhelminthes, such as a tapeworm or a planarian, characteristically having a soft, flat, bilaterally symmetrical body and no body cavity. Also called platyhelminth.')
 ('earthworm', NULL),
 ('mite', NULL),
 ('moth', NULL),
@@ -148,6 +149,8 @@ clotting or coagulation; platelets important in all three steps', NULL),
 ('asexual propagation', 'the new plant is genetically identical to its parent (e.g. runners from strawberry plants)', 'plant breeding'),
 ('apomixis (self-cloning)', 'seeds are produced asexually and the new plant is genetically identical to its parent', 'plant breeding'),
 ('stem cell', '', ''),
+-- Plant Anatomy
+('cambium', NULL, 'plant anatomy')
 -- Anatomy
 ('malleus', '(hammer), the largest ear bone', 'ear bone'),
 ('incus', '', 'ear bone'),
