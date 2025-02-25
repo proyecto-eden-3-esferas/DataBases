@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS germination_conditions (
   min_germ       INTEGER,
   max_germ       INTEGER,
   moisture          TEXT,
-  other             TEXT
+  other             TEXT,
   -- FOREIGN KEY (vname)  REFERENCES plants(vname),
   FOREIGN KEY (bname)  REFERENCES plants(bname)
 ); -- [ WITHOUT ROWID]

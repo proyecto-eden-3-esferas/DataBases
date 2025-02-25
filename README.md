@@ -8,13 +8,13 @@ and for filling database structures (tables) with records and such.
 
 ## Persistance
 
-The databases in this project are persistent: they are not erased
+The databases in this project are meant to be "persistent": they are not erased
 when the server stops or should the database file be erased or the server updated...
 BECAUSE all the structure and all the records or data are held in SQL text files
 with extension `.sql` and containing SQL code.
 
 The alternative is for the database administrator to define a schema or structure
-and let the users contribute the records/rows/data over time.
+and let the users contribute the records/rows/data over time through INSERT's, UPDATE's, and DELETE's.
 
 
 
@@ -34,6 +34,12 @@ Any of *farming*, *biology* and *health* databases can be developed independentl
 
 ## Creation
 Now, since alternative farming stems from created theories or approaches, another database arose named *creation* with tables for people (creators of theories, approaches, books etc.), their works and theories, explanations of phenomena etc. Culture at large.
+
+## Buddhism
+
+Tables of the Buddha Families, the Paramitas, even the Cakras, Bijas, Nadis.
+
+Many Sanskrit names, often enough with non-ASCII characters. Remember that "c" is to be pronounced like "ch".
 
 ## Dependencies
 
@@ -75,6 +81,7 @@ Data files mainly contain `INSERT` commands, so they are pretty straightforward 
 SQLite schemas are slightly different from MySQL ones. To begin with, I don't think you can reference a database different from the one you last opened, so you should read those foreign schemata as well as data with `.read` In the case of the *farming* database, you first have to bring the *general* database in.
 
 ## INITIALIZING A SQLITE FARMING DATABASE
+Once `sqlite3` is running, you may use `.read` to run an executable SQL file:
 ```
 $ sqlite farming.db
 sqlite> .read general-schema-lite.sql
@@ -82,6 +89,21 @@ sqlite> .read general-data.sql
 sqlite> .read farming-schema-lite.sql
 sqlite> .read farming-data.sql
 sqlite> .read farming-data-mason.sql
+```
+
+## WORKING WITH A (ALREADY LOADED) DATABASE
+
+If you have loaded a database (`sqlite3> .read MYDATABASE.sql`) and run `.databases`, then you will get something like:
+```
+sqlite> .databases
+main: ~/Downloads/buddhism.db r/w
+temp: "" r/w
+```
+(No named database, just the name of the SQL file.)
+
+Run `.fullschema` to learn the schema:
+```
+.fullschema
 ```
 
 
