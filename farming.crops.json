@@ -1,0 +1,24 @@
+[{
+	"_id": {
+		"$oid": "6222894e4e50e72d44373d7b"
+	},
+	"English": "spinach",
+	"Spanish": "espinaca",
+	"botanical": "Spinacia oleracea",
+	"lifespan": "annual"
+},
+{
+	"_id": {
+		"$oid": "622289724e50e72d44373d7c"
+	},
+	"English": "lettuce",
+	"Spanish": "lechuga",
+	"lifespan": "annual",
+	"season": [
+		"spring",
+		"summer",
+		"autumn",
+		"winter"
+	]
+}]
+

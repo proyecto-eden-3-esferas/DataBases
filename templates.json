@@ -1,0 +1,94 @@
+{
+  "name": null,
+  "pronuciation": "//",
+  "lang": "en",
+  "genus": "",
+  "species": "",
+  "native-to": "",
+  "description": "",
+  "uses": [],
+  "cultivation": {
+    "history": null,
+    "climate": "WHATEVER",
+    "cultivars": null
+  }
+}
+
+{
+  "name":  null,
+  "type":  "term",
+  "field": null,
+  "culture": null,
+  "lang":  "en",
+  "definition": null,
+  "instances": [],
+  "discussion": [],
+  "related-to": []
+}
+{
+  "name": null,
+  "type": "note",
+  "topic": null,
+  "field": null,
+  "lang": "en",
+  "source": null,
+  "summary": null,
+  "content": null
+}
+
+{
+  "name": null,
+  "type": "book",
+  "topic": null,
+  "field": null,
+  "lang": "en",
+  "summary": null,
+}
+
+{
+  "name": null,
+  "type": "event",
+  "date": null,
+  "description": null
+}
+{
+  "name": null,
+  "type": "process",
+  "start-date": null,
+  "end-date  ": null,
+  "description": null
+}
+
+{
+  "name": null,
+  "lang": "en",
+  "type": "species",
+  "genus": null,
+  "species": null
+}
+
+{
+  "name": "cures",
+  "types": ["drug", "diet", "exercise", "quiet", "stillness", "surgery"]
+}
+{
+  "name": null,
+  "type": "cure",
+  "diseases": [],
+  "mechanism": null,
+  "description": null
+}
+{
+  "name": null,
+  "type": "disease",
+  "field": "health",
+  "causes": [],
+  "organs": [],
+  "mechanism": null,
+  "cures": []
+}
+
+
+
+
+

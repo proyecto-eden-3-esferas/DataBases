@@ -1,0 +1,135 @@
+{
+  "name": "pecan",
+  "pronuciation": "/pɪˈkæn/",
+  "lang": "en",
+  "genus": "Carya",
+  "species": "illinoinensis",
+  "native-to": "Southern United States and northern Mexico in the region of the Mississippi River",
+  "description": "a large deciduous tree, growing to 20–40 m (66–131 ft) in height, rarely to 44 m (144 ft).[10] It typically has a spread of 12–23 m (39–75 ft) with a trunk up to 2 m (6 ft 7 in) diameter. A 10-year-old sapling grown in optimal conditions will stand about 5 m (16 ft) tall. The leaves are alternate, 30–45 cm (12–18 in) long, and pinnate with 9–17 leaflets, each leaflet 5–12 cm (2–4+1⁄2 in) long and 2–6 cm (1–2+1⁄2 in) broad.",
+  "note": "a pecan, like the fruit of all other members of the hickory genus, is not truly a nut, but is technically a drupe. The husks are produced from the exocarp tissue of the flower, while the part known as the nut develops from the endocarp and contains the seed. The husk itself is aeneous, that is, brassy greenish-gold in color, oval to oblong in shape, 2.6–6 cm (1–2+3⁄8 in) long, and 1.5–3 cm (5⁄8–1+1⁄8 in) broad. The outer husk is 3–4 mm (1⁄8–5⁄32 in) thick, starts out green, and turns brown at maturity, at which time it splits off in four sections to release the thin-shelled seed.",
+  "genetics": "Pecan is a 32-chromosome species (1N = 16) that readily hybridizes with other 32-chromosome members of the Carya genus, such as Carya ovata, Carya laciniosa, Carya cordiformis and has been reported to hybridize with 64-chromosome species such as Carya tomentosa. Most such hybrids are unproductive. Hybrids are referred to as \"hicans\" to indicate their hybrid origin.",
+  "uses": ["The seed is an edible nut used as a snack and in various recipes, such as praline candy and pecan pie."],
+  "nutrition": "A pecan nut is 4% water, 72% fat, 9% protein, and 14% carbohydrates. In a 100 g reference amount, pecans provide 690 calories and are a rich source (20% or more of the Daily Value, DV) of dietary fiber (38% DV), manganese (214% DV), magnesium (34% DV), phosphorus (40% DV), zinc (48% DV), and thiamine (57% DV). Pecans are a moderate source (10–19% DV) of iron and B vitamins. Pecan fat content consists principally of monounsaturated fatty acids, mainly oleic acid (57% of total fat), and the polyunsaturated fatty acid, linoleic acid (30% of total fat).",
+  "nutrition-percentages": [
+    ["water", 4],
+    ["fat", 72],
+    ["protein", 9],
+    ["carbohydrates", 14]
+  ],
+  "cultivation": {
+    "history": "Pecans are one of the most recently domesticated of the major crops.",
+    "climate": "grow best where summers are long, hot and humid. The nut harvest for growers is typically around mid-October.",
+    "water": "Pecan trees require large quantities of water during the growing season, and most orchards in the region use flood irrigation to optimize consumptive water use and production of mature pecans.",
+    "pollination": "Generally, two or more trees of different cultivars must be present to pollinate each other.",
+    "cultivars": []
+  },
+  "pests": [
+    "pecan scab",
+    "hickory shuckworm",
+    "shuck decline",
+    "ambrosia beetles",
+    "twig girdlers",
+    "pecan nut casebearer",
+    "phylloxera",
+    "curculio",
+    "weevils",
+    "aphids"]
+}
+
+{
+  "name": "chicory",
+  "lang": "en",
+  "genus": "",
+  "species": ""
+}
+{
+  "name":  "drupe",
+  "type":  "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "a fruit with a single stone or pit, surrounded by a husk"
+}
+{
+  "name": "arbor",
+  "type": "term",
+  "field": "farming",
+  "lang": "en",
+  "definition": null
+}
+
+{
+  "name":  "protandrous",
+  "type":  "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "that sheds pollen before it can receive pollen"
+}
+{
+  "name":  "protogynous",
+  "type":  "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "that sheds pollen after becoming receptive to pollen"
+}
+{
+  "name":  "canker",
+  "type":  "term",
+  "field": "farming",
+  "lang":  "en",
+  "definition": null
+}
+{
+  "name":  "shuck decline",
+  "type":  "term",
+  "field": "farming",
+  "lang":  "en",
+  "definition": null
+}
+{
+  "name":  "chilling",
+  "type":  "term",
+  "field": "farming botany",
+  "lang":  "en",
+  "definition": null
+}
+{
+  "name":  "USDA Cultivation Zones",
+  "type":  "term",
+  "field": "farming",
+  "lang":  "en",
+  "definition": null
+}
+
+{
+  "type":    "quote",
+  "topic":   "purpose of farming",
+  "field":   "farming",
+  "lang":    "en",
+  "author":  "Masanobu Fukuoka",
+  "content": "The ultimate goal of farming is not the growing of crops, but the cultivation and perfection of human beings."
+}
+{
+  "name": "Permaculture's Three Ethical Principles",
+  "type": "note",
+  "topic": "Permaculture's Ethics",
+  "field": "permaculture",
+  "lang": "en",
+  "url": "https://ucanr.edu/blogs/blogcore/postdetail.cfm?postnum=13190#:~:text=Permaculture%20philosophy%20proceeds%20from%20three,self%2Cfamily%2C%20and%20culture.",
+  "source": [" Jan Rhoades", "Permaculture: A Gardening Philosophy", "March 19, 2014"],
+  "summary": null,
+  "content": [
+    "Permaculture philosophy proceeds from three ethical principles: Care for Earth, Care for People, Care for Community. Design for anything must be held up to these ethics– care of the earth is the prime goal, the root of sustainability. Care of people is rooted in respect for self,family, and culture. Reinvesting surplus creates equality, as everyone gets their fair share– no one takes more than they need.",
+    ""
+    ]
+}
+{
+  "name": null,
+  "type": "note",
+  "topic": null,
+  "field": null,
+  "lang": "en",
+  "url": "https://ucanr.edu/blogs/blogcore/postdetail.cfm?postnum=13190#:~:text=Permaculture%20philosophy%20proceeds%20from%20three,self%2Cfamily%2C%20and%20culture.",
+  "source": [" Jan Rhoades", "Permaculture: A Gardening Philosophy", "March 19, 2014"],
+  "summary": null,
+  "content": "Bill Mollison and David Holmgren, to describe a philosophical approach to living and gardening: permanent culture and permanent agriculture.  What sparked this line of thought was a reaction to the petroleum shortages of the era, food shortages, and the desire for self-reliance.  Combining philosophy and practical application, permaculture encompasses anything from recycling, reusing and regeneration, to simply observing."
+}
