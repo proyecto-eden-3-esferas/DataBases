@@ -35,19 +35,42 @@
     "weevils",
     "aphids"]
 }
-
 {
-  "name": "chicory",
+  "name": "peanut",
+  "pronuciation": "//",
   "lang": "en",
-  "genus": "",
-  "species": ""
+  "genus": "Arachis",
+  "species": "hypogaea",
+  "description": "",
+  "uses": [],
+  "cultivation": {
+    "history": null,
+    "climate": "WHATEVER",
+    "cultivars": null
+  }
 }
 {
-  "name":  "drupe",
-  "type":  "term",
-  "field": "botany",
-  "lang":  "en",
-  "definition": "a fruit with a single stone or pit, surrounded by a husk"
+  "name": "quinoa",
+  "pronuciation": "//",
+  "lang": "en",
+  "genus": "Chenopodium",
+  "species": "quinoa",
+  "informal-type": "pseudocereal",
+  "description": "",
+  "uses": [],
+  "cultivation": {
+    "history": null,
+    "climate": "WHATEVER",
+    "cultivars": null
+  }
+}
+
+{
+  "name": "gizzard",
+  "type": "term",
+  "field": "zoology",
+  "lang": "en",
+  "definition": null
 }
 {
   "name": "arbor",
@@ -57,27 +80,6 @@
   "definition": null
 }
 
-{
-  "name":  "protandrous",
-  "type":  "term",
-  "field": "botany",
-  "lang":  "en",
-  "definition": "that sheds pollen before it can receive pollen"
-}
-{
-  "name":  "protogynous",
-  "type":  "term",
-  "field": "botany",
-  "lang":  "en",
-  "definition": "that sheds pollen after becoming receptive to pollen"
-}
-{
-  "name":  "canker",
-  "type":  "term",
-  "field": "farming",
-  "lang":  "en",
-  "definition": null
-}
 {
   "name":  "shuck decline",
   "type":  "term",

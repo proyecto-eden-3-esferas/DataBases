@@ -17,12 +17,14 @@
 {
   "name":  null,
   "type":  "term",
+  "word-class": "noun",
   "field": null,
   "culture": null,
   "lang":  "en",
   "definition": null,
   "instances": [],
   "discussion": [],
+  "notes": [],
   "related-to": []
 }
 {
