@@ -7,6 +7,74 @@
   "description": null
 }
 {
+  "name": "ecologismo",
+  "lang": "es",
+  "type": null,
+  "field": "movimiento social",
+  "definition": null,
+  "description": null
+}
+{
+  "name": "ecología profunda",
+  "lang": "es",
+  "type": null,
+  "field": "ecologismo",
+  "source": "Wikipedia",
+  "definition": "La ecología profunda es una rama de la filosofía ecológica que considera a la humanidad parte de su entorno, proponiendo cambios culturales, políticos, sociales y económicos para lograr una convivencia armónica entre los seres humanos y el resto de los seres vivos.",
+  "description": null
+}
+{
+  "name": "ecología profunda",
+  "lang": "es",
+  "type": "quote",
+  "field": "ecologismo",
+  "source": "Ecologistas en Acción",
+  "author": "Arne Naess",
+  "content": "la ecología profunda o de amplio alcance (deep, long-range ecology) se distingue de la ecología superficial o de corto alcance (shallow, short-range ecology) en un cuestionamiento más hondo de las causas y fundamentos de la crisis ecológica. Partiendo del reconocimiento del valor inherente de la diversidad ecológica y cultural de todos los seres vivos, su enfoque no se limita a aquello que pone en peligro el bienestar o la supervivencia de la especie humana. La ecología profunda declara la interdependencia fundamental entre todos los fenómenos y el hecho de que, como individuos y como sociedades, estamos inmersos en (y finalmente dependientes de) los procesos cíclicos de la naturaleza.",
+  "related": ["sostenibilidad", "ecologismo", "interdependencia"]
+}
+{
+  "name": "ecología profunda",
+  "lang": "es",
+  "type": null,
+  "field": "ecologismo",
+  "source": "Ecologistas en Acción",
+  "definition": "",
+  "description": null
+}
+{
+   "name": "Arne Naess",
+   "lang": "en",
+   "field": "deep ecology",
+   "nationality": "Norwegian"
+}
+{
+  "title":   "Ecología profunda controvertida",
+  "lang":    "es",
+  "content": "Las posiciones defendidas por la ecología profunda han sido objeto de tantas controversias y críticas que merece la pena indagar en las razones que indujeron, por ejemplo, al cineasta y ecologista de moda, Al Gore, a calificarla como una filosofía “intrínsecamente misántropa” en la que el ser humano es “un alien en la Tierra” [1], o al intelectual francés Luc Ferry a concluir que “se puede decir legítimamente que la ecología profunda hunde algunas de sus raíces en el nazismo y alza sus ramas hasta las esferas más extremas del izquierdismo cultural” [2]. Y observamos que, en casi todos los casos, el pretendido radicalismo de la ecología profunda estriba en su crítica del antropocentrismo y de aquellos fundamentos culturales de Occidente que han abocado al mundo a la crisis multidimensional que enfrenta desde hace tiempo.",
+  "source":  "Ecologistas en Acción"
+}
+{
+  "name": "ecología profunda",
+  "lang": "es",
+  "type": null,
+  "field": "ecologismo",
+  "source": null,
+  "definition": null,
+  "description": null
+}
+{
+  "name": "ecología profunda",
+  "lang": "es",
+  "type": null,
+  "field": "ecologismo",
+  "source": null,
+  "definition": null,
+  "description": null
+}
+
+
+{
   "name": "convergent evolution",
   "lang": "en",
   "type": null,
@@ -15,4 +83,13 @@
   "description": null
 }
 
-
+{
+  "name":    "butoh significa bailar con sombras",
+  "type":    "quote",
+  "topic":   "butoh",
+  "field":   "art",
+  "lang":    "es",
+  "source":  "Cerezos en flor",
+  "summary": null,
+  "content": "Todo el mundo tiene sombra. Todo el mundo puede bailar butoh. Coger sombras. Cuantas más sombras."
+}
