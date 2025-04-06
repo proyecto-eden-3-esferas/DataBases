@@ -7,6 +7,14 @@
   "description": null
 }
 {
+  "name": "unívoco",
+  "lang": "es",
+  "type": null,
+  "field": "general",
+  "definition": null,
+  "examples": []
+}
+{
   "name": "ecologismo",
   "lang": "es",
   "type": null,
