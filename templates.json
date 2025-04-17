@@ -1,21 +1,6 @@
 {
-  "name": null,
-  "pronuciation": "//",
-  "lang": "en",
-  "genus": "",
-  "species": "",
-  "native-to": "",
-  "description": "",
-  "uses": [],
-  "cultivation": {
-    "history": null,
-    "climate": "WHATEVER",
-    "cultivars": null
-  }
-}
-
-{
   "name":  null,
+  "pronuciation": "//",
   "type":  "term",
   "word-class": "noun",
   "field": null,
@@ -27,6 +12,7 @@
   "notes": [],
   "related-to": []
 }
+
 {
   "name": null,
   "type": "note",
@@ -49,6 +35,15 @@
 
 {
   "name": null,
+  "type": "todo",
+  "topic": null,
+  "field": null,
+  "lang": "en",
+  "notes": [],
+  "content": null
+}
+{
+  "name": null,
   "type": "event",
   "date": null,
   "description": null
@@ -61,13 +56,6 @@
   "description": null
 }
 
-{
-  "name": null,
-  "lang": "en",
-  "type": "species",
-  "genus": null,
-  "species": null
-}
 
 {
   "name": "cures",

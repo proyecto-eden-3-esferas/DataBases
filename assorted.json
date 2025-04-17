@@ -1,4 +1,219 @@
 {
+  "term": "deity",
+  "definition": "",
+  "discussion": null
+}
+
+
+
+{
+  "type": "quote",
+  "author": "Neal Stephenson",
+  "content": "Where serious and competent people need to get things done in the real world, all considerations of tradition and protocol fly out of the window."
+}
+{
+  "type": "quote",
+  "author": "Neal Stephenson",
+  "content": "The only thing that can effect a change in personality is something that physically rewires the brain and/or alters the body's chemical milieu."
+}
+{
+  "type": "quote",
+  "author": "Neal Stephenson",
+  "content": "The future is there, looking back at us, trying to make sense of the fiction we will have become."
+}
+{
+  "type": "quote",
+  "author": "Neal Stephenson",
+  "content": "Any property that is open to common use gets destroyed. Because everyone has incentive to use it to the max, but no one has incentive to maintain."
+}
+{
+  "type": "quote",
+  "author": "Neal Stephenson",
+  "content": "Well, all information looks like noise until you break the code."
+}
+
+{
+  "name": "How to Recycle  Wipes"
+}
+{
+  "name": "OneDrive on Linux",
+  "field": "computing",
+  "approach": "free lunch"
+}
+{
+  "name": "write JSON documents on concepts",
+  "list": [
+    "hack",
+    "orthodox",
+    "heterodox",
+    "sense and reference",
+
+    "maitri",
+    "karuna",
+
+    "parallelism",
+    "orthonormal",
+    "indexes",
+    "homeomorphism",
+    "peer",
+
+    "Hindu tantra",
+
+    "homoiconicity",
+    "peer-to-peer",
+    "shell (computing)",
+    "text editor",
+    "text processor",
+    "knowledge base",
+    "URI",
+    "URL",
+
+    "empathy"
+    "corruption",
+    "big pharma",
+    "animalism",
+    "agribusiness",
+
+    "tribe",
+
+    "tribology",
+    "lexicon",
+    "lexicology",
+    "upcycling",
+    "decompose",
+    "analysis",
+    "synthesis",
+    "allegory",
+    "solidarity",
+    "compliance",
+    "encyclopaedia",
+    "fiddle",
+    "avidya",
+    "advaita",
+    "duality",
+    "manicheism",
+    "monism",
+    "vested interests",
+    "accomodate",
+    "intimacy",
+    "sensuality",
+    "egotism",
+
+    "thermonuclear",
+    "tamper",
+    "predetonate",
+    "strategic bombing",
+    "nuclear winter",
+    "fallout",
+
+    "syntax highlighting",
+    "semaphore (in operating systems programming)",
+    "good faith",
+    "quality",
+    "abstraction",
+    "formalism",
+    "notation",
+    "mediation",
+
+    "sign",
+    "signal",
+    "semiotics",
+    "noise",
+    "interpretation",
+    "version",
+    "sentience",
+
+    "isotope",
+    "quantum entanglement",
+    "degree-of-freedom",
+    "entropy",
+    "enthalpy",
+    "heat",
+
+    "crystall",
+    "gel",
+    "colloid",
+    "phase",
+
+    "figure-of-speech",
+    "idiolect",
+    "sincretism",
+    "eclectic",
+    "approach",
+    "synergy",
+    "monolithic",
+    "modular",
+    "servant/servitude",
+    "overlord",
+    "war",
+    "defense",
+    "logistics",
+    "painting",
+    "esthetics",
+
+    "rare-earth"
+
+  ]
+}
+{
+  "name":  "menial",
+  "pronuciation": "//",
+  "type":  "term",
+  "word-class": "adj",
+  "field": null,
+  "culture": null,
+  "lang":  "en",
+  "definition": null,
+  "instances": [],
+  "discussion": [],
+  "notes": [],
+  "related-to": []
+}
+{
+  "name":  "mind-numbing",
+  "pronuciation": "//",
+  "type":  "term",
+  "word-class": "adj",
+  "field": null,
+  "culture": null,
+  "lang":  "en",
+  "definition": null,
+  "instances": [],
+  "discussion": [],
+  "notes": [],
+  "related-to": []
+}
+{
+  "name":  "drudgery",
+  "pronuciation": "//",
+  "type":  "term",
+  "word-class": "noun",
+  "field": null,
+  "culture": null,
+  "lang":  "en",
+  "definition": null,
+  "instances": [],
+  "discussion": [],
+  "notes": [],
+  "related-to": []
+}
+{
+  "name":  "toil",
+  "pronuciation": "//",
+  "type":  "term",
+  "word-class": "verb",
+  "field": null,
+  "culture": null,
+  "lang":  "en",
+  "definition": null,
+  "instances": [],
+  "discussion": [],
+  "notes": [],
+  "related-to": []
+}
+
+
+{
   "name": "catarsis",
   "lang": "es",
   "type": null,

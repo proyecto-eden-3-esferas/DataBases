@@ -1,0 +1,360 @@
+{
+  "name":  "annual",
+  "type":  "term",
+  "field": "botany",
+  "culture": null,
+  "lang":  "en",
+  "definition": "a herb that completes its growing cycle (growth, flowering, and death) within the same season",
+  "instances": [],
+  "discussion": [],
+  "notes": [],
+  "related-to": ["biennial", "grass", "herbaceous"]
+}
+{
+  "name": "marcescence",
+  "type": "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "when leaves are not abscissed (dropped) in the autumn and instead remain on the tree until the spring",
+  "instances": ["beech", "oak"]
+}
+{
+  "name":  "biennial",
+  "type":  "term",
+  "field": "botany",
+  "culture": null,
+  "lang":  "en",
+  "definition": "a herb that completes its growing cycle (growth, flowering, and death) in two years",
+  "instances": ["beet", "carrot"],
+  "discussion": ["the vegetative (nonreproductive) plant growth takes place from seed during the first year, and flowers and fruit develop during the second"],
+  "notes": [],
+  "related-to": ["annual", "grass", "herbaceous"]
+}
+
+{
+  "name":  "stem",
+  "type":  "term",
+
+  "field": "botany",
+  "subfield": "anatomy",
+  "lang":  "en",
+  "definition": "an aerial axis of the plant that bears leaves and flowers and conducts water and minerals from the roots and food from the site of synthesis to areas where it is to be used",
+  "discussion": [],
+  "notes": [],
+  "related-to": ["root", "branch", "leaf"]
+}
+{
+  "name":  "bud",
+  "type":  "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "dormant shoot",
+  "discussion": [],
+  "notes": [],
+  "related-to": ["branch"]
+}
+{
+  "name":  "terminal bud",
+  "type":  "term",
+  "field": "botany",
+  "subfield": "anatomy",
+  "lang":  "en",
+  "definition": "a bud formed at the apex of a stem",
+  "related-to": ["bud", "stem"]
+}
+{
+  "name":  "node",
+  "type":  "term",
+  "field": "botany",
+  "subfield": "anatomy",
+  "lang":  "en",
+  "definition": "the area where a leaf attaches to the stem",
+  "related-to": ["node", "leaf", "stem", "bud"]
+}
+{
+  "name":  "internode",
+  "type":  "term",
+  "field": "botany",
+  "subfield": "anatomy",
+  "lang":  "en",
+  "definition": "the region between successive nodes",
+  "related-to": ["node", "leaf", "stem", "bud"]
+}
+{
+  "name":  "tendril",
+  "type":  "term",
+  "field": "botany",
+  "subfield": "anatomy",
+  "lang":  "en",
+  "definition": "rope-like leaves or leaf parts modified to provide support",
+  "related-to": ["leaf"]
+}
+{
+  "name":  "rhizome",
+  "type":  "term",
+  "field": "botany",
+  "subfield": "anatomy",
+  "culture": "science",
+  "lang":  "en",
+  "definition": "horizontal, usually subterranean shoot with scale leaves and adventitious roots on the underside",
+  "functions": ["vegetative reproduction", "food storage"],
+  "discussion": [],
+  "instances": ["banana", "most grasses", "bamboo", "sugarcane"],
+  "notes": ["Most rhizomes are perennial, sending up new shoots from the nodes and spreading the colony.",
+            "Often the terminal bud of a rhizome becomes upright and then flowers, with a rhizome axillary bud becoming a renewal shoot."],
+  "related-to": ["shoot", "tuber"]
+}
+{
+  "name":  "stolon",
+  "type":  "term",
+  "field": "botany",
+  "subfield": "anatomy",
+  "culture": "science",
+  "lang":  "en",
+  "definition": "slender creeping stem that grows above the soil surface",
+  "synonyms": ["runner"],
+  "notes": ["stolons have scale leaves and can develop roots and, therefore, new plants, either terminally or at a node"]
+  "instances": ["strawberry"],
+  "related-to": ["stem"]
+}
+{
+  "name":  "corm",
+  "type":  "term",
+  "field": "botany",
+  "subfield": "anatomy",
+  "culture": "science",
+  "lang":  "en",
+  "definition": "a short, upright shoot system with a thick, hard stem covered with thin membranous scale leaves",
+  "instances": ["gladiolus"],
+  "discussion": ["usually hard and fibrous and function for overwintering and drought resistance"],
+  "notes": [],
+  "related-to": []
+}
+{
+  "name":  "hypocotyl",
+  "type":  "term",
+  "field": "botany",
+  "subfield": "anatomy",
+  "culture": "science",
+  "lang":  "en",
+  "definition": "a transition region between the main stem of a plant and the root system",
+  "discussion": [],
+  "notes": [],
+  "related-to": []
+}
+{
+  "name":  "petiole",
+  "type":  "term",
+  "field": "botany",
+  "culture": "science",
+  "lang":  "en",
+  "definition": "a stalk that connects the blade with the leaf base",
+  "discussion": [],
+  "notes": [],
+  "related-to": ["leaf"]
+}
+{
+  "name":  "stipule",
+  "type":  "term",
+  "field": "botany",
+  "culture": "science",
+  "lang":  "en",
+  "definition": "develops at the base of a leaf and protects the developing blade",
+  "discussion": [],
+  "notes": [],
+  "related-to": ["leaf"]
+}
+{
+  "name":  "cladode",
+  "type":  "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "shoot systems in which leaves do not develop; rather, the stems become flattened and assume the photosynthetic functions of the plant",
+  "instances": ["asparagus", "euphorbia", "cactus", "palm", "bird-of-paradise"],
+  "synonyms": ["cladophyll", "phylloclade"],
+  "related-to": ["stem", "photosynthesis"]
+}
+{
+  "name":  "dichotomous branching",
+  "type":  "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "[when] the branches form as a result of an equal division of a terminal bud (i.e., a bud formed at the apex of a stem) into two equal branches that are not derived from axillary buds, although axillary buds are present elsewhere on the plant body",
+  "instances": ["cactus", "palm", "bird-of-paradise"],
+  "related-to": ["branch", "terminal bud"]
+}
+{
+  "name":  "monopodial branching",
+  "type":  "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "[when] the terminal bud continues to grow as a central leader shoot and the lateral branches remain subordinate",
+  "notes": ["results in pyramidal overall shape"],
+  "instances": ["beech"],
+  "related-to": ["branch", "terminal bud"]
+}
+{
+  "name":  "sympodial branching",
+  "type":  "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "[when] the terminal bud ceases to grow (usually because a terminal flower has formed) and an axillary bud or buds become new leader shoots, called renewal shoots",
+  "notes": ["results in candelabra-like overall shape"],
+  "instances": ["Joshua tree"],
+  "related-to": ["branch", "terminal bud"]
+}
+{
+  "name":  "epiphytic",
+  "type":  "term",
+  "word-class": "adj",
+  "field": null,
+  "culture": null,
+  "lang":  "en",
+  "definition": null,
+  "instances": [],
+  "discussion": [],
+  "notes": [],
+  "related-to": []
+}
+{
+  "name":  "pneumatophore",
+  "type":  "term",
+  "field": null,
+  "culture": null,
+  "lang":  "en",
+  "definition": "lateral root that grows upward (negative geotropism) for varying distances and functions as the site of oxygen intake for the submerged primary root system",
+  "instances": [],
+  "discussion": [],
+  "notes": [],
+  "related-to": []
+}
+{
+  "name":  "tuber",
+  "type":  "term",
+  "field": null,
+  "culture": null,
+  "lang":  "en",
+  "definition": "modified, fleshy, underground stem",
+  "instances": [],
+  "discussion": [],
+  "notes": [],
+  "related-to": []
+}
+{
+  "name":  "drupe",
+  "type":  "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "simple fleshy fruit that usually contains a single seed",
+  "instances": ["cherry", "peach", "olive", "mango", "walnut", "dogwood"],
+  "discussion": "As a simple fruit, a drupe is derived from a single ovary of an individual flower. The outer layer of the ovary wall is a thin skin or peel, the middle layer is thick and usually fleshy (though sometimes tough, as in the almond, or fibrous, as in the coconut), and the inner layer, known as the pit, or putamen, is hard and stony. The pit, which is often confused with the seed itself, usually has one seed or, rarely, two or three, in which case only one develops fully.",
+  "notes": ["In some aggregate fruits, such as the raspberry and blackberry—which are not true berries—many small drupes are clumped together. Formally, these fruits are called aggregates of drupelets. Such fruits are formed of numerous fused carpels (ovule-containing structures) from a single flower."]
+}
+{
+  "name":  "bract",
+  "type":  "term",
+
+  "field": "botany",
+  "culture": "science",
+  "lang":  "en",
+  "definition": "small green leaflike structure that grows just below flowers",
+  "instances": [],
+  "discussion": [],
+  "notes": [],
+  "related-to": []
+}
+{
+  "name":  "pericarp",
+  "type":  "term",
+  "field": "botany",
+  "culture": "science",
+  "lang":  "en",
+  "definition": "seed coat",
+  "related-to": []
+}
+{
+  "name":  "samara",
+  "type":  "term",
+  "field": "botany",
+  "culture": "science",
+  "lang":  "en",
+  "definition": "one-winged propeller type of fruit",
+  "instances": ["maple"],
+  "related-to": []
+}
+{
+  "name": "dehiscent",
+  "type": "term",
+  "word-class": "adj",
+  "field": "botany",
+  "lang": "en",
+  "definition": null
+}
+{
+  "name": "viscid",
+  "type": "term",
+  "word-class": "adj",
+  "field": "botany",
+  "lang": "en",
+  "definition": null
+}
+{
+  "name": "diaspore",
+  "type": "term",
+  "field": "botany",
+  "lang": "en",
+  "definition": null
+}
+
+{
+  "name": "xylem",
+  "type": "term",
+  "field": "botany",
+  "subfield": "tissue",
+  "lang": "en",
+  "definition": "vascular tissue"
+}
+{
+  "name": "phloem",
+  "type": "term",
+  "field": "botany",
+  "subfield": "tissue",
+  "lang": "en",
+  "definition": "vascular tissue"
+}
+{
+  "name": "saurochory",
+  "type": "term",
+  "field": "botany",
+  "lang": "en",
+  "definition": "dispersal by reptiles"
+}
+
+{
+  "name":  "geocarpy",
+  "type":  "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "either the production of fruits underground or the active burying of fruits by the mother plant"
+}
+{
+  "name":  "protandrous",
+  "type":  "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "that sheds pollen before it can receive pollen"
+}
+{
+  "name":  "protogynous",
+  "type":  "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "that sheds pollen after becoming receptive to pollen"
+}
+{
+  "name":  "canker",
+  "type":  "term",
+  "field": "farming",
+  "lang":  "en",
+  "definition": null
+}

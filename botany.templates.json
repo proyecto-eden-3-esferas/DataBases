@@ -1,0 +1,24 @@
+{
+  "name": null,
+  "lang": "en",
+  "type": "species",
+  "genus": null,
+  "species": null
+}
+
+
+{
+  "name": null,
+  "pronuciation": "//",
+  "lang": "en",
+  "genus": "",
+  "species": "",
+  "native-to": "",
+  "description": "",
+  "uses": [],
+  "cultivation": {
+    "history": null,
+    "climate": "WHATEVER",
+    "cultivars": null
+  }
+}
