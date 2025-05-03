@@ -1,4 +1,16 @@
 {
+  "name": "forb"
+}
+
+{
+  "name": "purslane",
+  "genus": "Portulaca",
+  "species": "oleracea",
+  "family": "Portulacaceae",
+  "description": "a weed and ancient vegetable, uses both C4 and CAM photosynthesis"
+}
+
+{
   "name": "beech",
   "lang": "en",
   "genus": "Fagus",

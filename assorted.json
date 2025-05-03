@@ -1,9 +1,222 @@
 {
-  "term": "deity",
+  "term": "***",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "***",
+  "lang": "en",
+  "field": "***",
   "definition": "",
   "discussion": null
 }
 
+{
+  "term": "curated (pages)",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+
+{
+  "term": "Bayesian",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "Markov Chain",
+  "lang": "en",
+  "field": "probability",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "pastiche",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "espiritismo",
+  "lang": "es",
+  "field": "espíritu",
+  "definition": "",
+  "discussion": null
+}
+
+
+{
+  "term": "deterrence",
+  "lang": "en",
+  "field": "nuclear war",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "ablation",
+  "lang": "en",
+  "field": "nuclear weapons",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "deconstruction",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "hermeneutics",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "asyndeton",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "deismo",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "teismo",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "burocracia",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+
+
+{
+  "term": "vaselina industrial",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "Agenda 2030",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+
+{
+  "term": "agency",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "democracy",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "representation",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "paranomasia",
+  "lang": "en",
+  "field": "***",
+  "definition": "",
+  "discussion": null
+}
+
+{
+  "term": "ataraxia",
+  "lang": "en",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "anacrusis",
+  "lang": "en",
+  "field": "rhetoric",
+  "definition": "",
+  "discussion": null
+}
+{
+  "term": "entelechia",
+  "lang": "en",
+  "field": "metaphysics",
+  "definition": "",
+  "discussion": null
+}
+
+
+
+{
+  "term": "eudaimonia",
+  "lang": "en",
+  "definition": "",
+  "discussion": null
+}
+
+{
+  "term": "deity",
+  "lang": "en",
+  "definition": "",
+  "discussion": null
+}
+{
+  "name": "Wayback Machine",
+  "pronounciation": "/weɪbæk maˈʃin/",
+  "definition": "un servicio y una base de datos que contiene copias de una enorme cantidad de páginas o sitios de Internet. Como consecuencia de este proyecto, también se puede consultar la historia y las modificaciones de las páginas a través del tiempo"
+}
+{
+  "term": "Agenda 2030",
+  "definition": [
+  ],
+  "discussion": null
+}
+{
+  "term": "quadratic voting",
+  "definition": "a voting system that encourages voters to express their true relative intensity of preference between multiple options or elections",
+  "explanation": "Quadratic voting works by having voters allocate \"credits\" (which are either real currencies or artificially distributed tokens) to various issues. The number of votes to add is determined by a quadratic cost function, meaning that to vote n times for a given option, n^2 credits are required to be allocated (for example, 3 votes would cost 9 credits). Because the quadratic cost function makes each additional vote more expensive, voters are incentivized to allocate their credits to reflect their true relative preferences between different options, as opposed to previous proposals for storable votes where voters may choose to allocate all their votes to a single cause and not accurately represent their true preferences.",
+  "discussion": [
+    "By doing so, quadratic voting seeks to mitigate tyranny of the majority by enabling participants to trade influence over issues they don't care about for influence over issues they do."
+  ]
+}
+
+{
+  "term": "endergonic",
+  "definition": "a reaction that requires energy to be driven",
+  "notes": [
+    "Endergonic means \"absorbing energy in the form of work\".",
+    "The activation energy for the reaction is typically larger than the overall energy of the exergonic reaction (1). Endergonic reactions are nonspontaneous."
+  ]
+}
 
 
 {
@@ -80,6 +293,7 @@
     "lexicon",
     "lexicology",
     "upcycling",
+    "reification"
     "decompose",
     "analysis",
     "synthesis",
@@ -115,6 +329,8 @@
     "notation",
     "mediation",
 
+    "space",
+
     "sign",
     "signal",
     "semiotics",
@@ -122,6 +338,7 @@
     "interpretation",
     "version",
     "sentience",
+
 
     "isotope",
     "quantum entanglement",
@@ -150,6 +367,13 @@
     "logistics",
     "painting",
     "esthetics",
+
+    "statics",
+    "kinematics",
+    "dynamics",
+
+    "cybernetics",
+    "cyborg",
 
     "rare-earth"
 

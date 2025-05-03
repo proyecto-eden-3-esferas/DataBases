@@ -3,39 +3,48 @@
   "lang": "es",
   "definition": "emblema de una familia o tribu; puede incluir un objeto natural, un animal o un espíritu",
   "notes": [
-    "En las tribus australianas, un tótem es un animal, domestico o no, más raramente una planta, que se identifica con la tribu. Los individuos que tienen el mismo tótem deben respetar su vida y abstenerse de comer su carne. Los miembros de un mismo tótem no deben tener relaciones sexuales."
+    "En las tribus australianas, un tótem es un animal, domestico o no, más raramente una planta, que se identifica con la tribu. Los individuos que tienen el mismo tótem deben respetar su vida y abstenerse de comer su carne. Los miembros de un mismo tótem no deben tener relaciones sexuales.",
     "la palabra tótem popularizó tras la publicación por Sigmund Freud del libro \"Tótem y tabú\" en 1912, donde se establecía una similitud entre la psicología de los pueblos primitivos y la de los enfermos con neurosis."
   ]
 }
-
 {
   "term": "clan",
   "lang": "es",
   "definition": "familia numerosa, un grupo de personas de ascendencia común o un grupo de familias muy unidas e interrelacionadas",
   "notes": []
 }
+
 {
   "term": "tribu",
   "lang": "es",
-  "definition": "",
+  "definition": "grupo social primitivo de un mismo origen, real o supuesto, cuyos miembros suelen tener en común usos y costumbres",
   "notes": []
 }
 {
   "term": "nación",
   "lang": "es",
-  "definition": "",
-  "notes": []
+  "definition": "conjunto de los habitantes de un país regido por el mismo Gobierno",
+  "notes": [
+    "también puede referirse a un grupo de personas que comparten una historia, tradiciones, cultura y, a menudo, un idioma, incluso si el grupo no posee un territorio político propio"
+  ]
 }
 {
   "term": "pueblo",
   "lang": "es",
-  "definition": "",
-  "notes": []
+  "definition": "conjunto de habitantes de un territorio, unidos por vínculos políticos o culturales",
+  "examples": [
+    "El pueblo andaluz.",
+    "El pueblo nicaragüense.",
+    "El pueblo judío."
+  ],
+  "notes": [
+    "también, conjunto de personas que tienen un origen étnico común"
+  ]
 }
 {
   "term": "etnia",
   "lang": "es",
-  "definition": "",
+  "definition": "características sociales y culturales, la procedencia o las experiencias compartidas por un grupo de personas; esto abarca aspectos como el idioma, la religión, las creencias, los valores y los comportamientos que suelen pasar de una generación a la siguiente",
   "notes": []
 }
 
@@ -124,9 +133,15 @@
 }
 
 {
-  "term": "",
-  "lang": "es",
-  "definition": "",
+  "term": "cyberpunk",
+  "lang": "en",
+  "field": "literary genre",
+  "definition": "a subgenre of science fiction in a dystopian futuristic setting said to focus on a combination of \"low-life and high tech\"; it features futuristic technological and scientific achievements, such as artificial intelligence and cyberware, juxtaposed with societal collapse, dystopia or decay",
+  "authors": [
+    " William Gibson",
+    "Bruce Sterling",
+    "Pat Cadigan"
+  ],
   "notes": []
 }
 
