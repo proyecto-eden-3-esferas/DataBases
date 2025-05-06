@@ -1,3 +1,4 @@
+[
 {
   "name": "pecan",
   "pronuciation": "/pɪˈkæn/",
@@ -34,7 +35,7 @@
     "curculio",
     "weevils",
     "aphids"]
-}
+},
 {
   "name": "peanut",
   "pronuciation": "//",
@@ -48,7 +49,7 @@
     "climate": "WHATEVER",
     "cultivars": null
   }
-}
+},
 {
   "name": "quinoa",
   "pronuciation": "//",
@@ -63,7 +64,7 @@
     "climate": "WHATEVER",
     "cultivars": null
   }
-}
+},
 
 {
   "name": "gizzard",
@@ -71,14 +72,14 @@
   "field": "zoology",
   "lang": "en",
   "definition": null
-}
+},
 {
   "name": "arbor",
   "type": "term",
   "field": "farming",
   "lang": "en",
   "definition": null
-}
+},
 
 {
   "name":  "shuck decline",
@@ -86,21 +87,21 @@
   "field": "farming",
   "lang":  "en",
   "definition": null
-}
+},
 {
   "name":  "chilling",
   "type":  "term",
   "field": "farming botany",
   "lang":  "en",
   "definition": null
-}
+},
 {
   "name":  "USDA Cultivation Zones",
   "type":  "term",
   "field": "farming",
   "lang":  "en",
   "definition": null
-}
+},
 
 {
   "type":    "quote",
@@ -109,7 +110,7 @@
   "lang":    "en",
   "author":  "Masanobu Fukuoka",
   "content": "The ultimate goal of farming is not the growing of crops, but the cultivation and perfection of human beings."
-}
+},
 {
   "name": "Permaculture's Three Ethical Principles",
   "type": "note",
@@ -123,7 +124,7 @@
     "Permaculture philosophy proceeds from three ethical principles: Care for Earth, Care for People, Care for Community. Design for anything must be held up to these ethics– care of the earth is the prime goal, the root of sustainability. Care of people is rooted in respect for self,family, and culture. Reinvesting surplus creates equality, as everyone gets their fair share– no one takes more than they need.",
     ""
     ]
-}
+},
 {
   "name": "Permaculture as a Philosophy",
   "type": "note",
@@ -135,3 +136,4 @@
   "summary": null,
   "content": "Bill Mollison and David Holmgren, to describe a philosophical approach to living and gardening: permanent culture and permanent agriculture.  What sparked this line of thought was a reaction to the petroleum shortages of the era, food shortages, and the desire for self-reliance.  Combining philosophy and practical application, permaculture encompasses anything from recycling, reusing and regeneration, to simply observing."
 }
+]

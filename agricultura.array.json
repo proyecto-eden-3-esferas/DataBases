@@ -1,0 +1,56 @@
+[
+{
+  "name":  "maleza",
+  "type":  "term",
+  "field": "farming",
+  "lang":  "es",
+  "definition": "cualquier planta que crece de forma silvestre o espontánea en una zona cultivada o controlada por el ser humano como cultivos agrícolas o jardines",
+  "notes": [
+    "Cualquier planta pueda ser considerada mala hierba si crece en un lugar donde los seres humanos desean que crezca otra planta"
+  ],
+  "synonyms": [
+    "mala hierba",
+    "hierba mala",
+    "yuyo",
+    "planta arvense",
+    "adventicia",
+    "planta adventicia",
+    "planta espontánea",
+    "planta indeseable"
+  ]
+},
+{
+  "term": "malherbología",
+  "lang": "es",
+  "definition": "ciencia que se dedica al estudio de las malezas",
+  "notes": [
+    "relativamente moderna"
+  ]
+},
+{
+  "name": "bardana",
+  "lang": "es",
+  "benefits": []
+{
+  "name": "trébol",
+  "lang": "es",
+  "benefits": [
+    "alberga bacterias fijadoras de nitrógeno en sus raíces"
+  ]
+},
+{
+  "name": "diente de león",
+  "lang": "es",
+  "benefits": [
+    "aporta nutrientes (como el calcio y el nitrógeno) desde las profundidades del suelo con su raíz pivotante",
+    "rompe el suelo en los campos excesivamente cultivados, ayudando a los cultivos a desarrollar sistemas de raíces más profundos"
+  ]
+}
+{
+  "term": "buenezas",
+  "source": "ecólogo argentino Eduardo H. Rapoport",
+  "definition": "plantas espontáneas comestibles que eran combatidas en los cultivos tradicionales",
+  "instances": ["diente de león (Taraxacum)", "Chenopodium album", "bardana"],
+  "notes": ["su intención era destacar sus propiedades alimenticias e invertir la connotación negativa de malezas"]
+}
+]

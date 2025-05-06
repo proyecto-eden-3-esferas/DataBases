@@ -70,7 +70,6 @@
   "genus":   "Dioscorea",
   "species": "esculenta"
 }
- (
 {
   "name": "common turmeric",
   "lang": "en",
@@ -122,7 +121,7 @@
 {
   "name": "milkweed",
   "lang": "en",
-  "family": "Apocynaceae",
+  "family": "Apocynaceae"
 }
 {
   "name": "Venus flytrap",
@@ -140,6 +139,6 @@
 {
   "name": "sedge",
   "lang": "en",
-  "genus": "Cyperaceae",
+  "genus": "Cyperaceae"
 }
 
