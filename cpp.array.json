@@ -1,0 +1,134 @@
+[
+  {
+    "title": "characters allowed in identifiers",
+    "language": "c++",
+    "start-characters":     ["letters", "_"],
+    "non-start-characters": ["letters", "digits", "_"]
+  },
+
+  {
+    "term": "inline",
+    "type": "keyword",
+    "language": "c++",
+    "original-intent": "to serve as an indicator to the optimizer that inline substitution of a function is preferred over function call, that is, "
+  },
+  {
+    "term": "inline substitution",
+    "language": "cpp",
+    "type": "concept",
+    "description": "instead of executing the function call's CPU instruction to transfer control to the function body, a copy of the function body is executed without generating the call",
+    "benefits" : [ "avoids overhead created by the function call (passing the arguments and retrieving the result)" ],
+    "drawbacks": [ "it may result in a larger executable as the code for the function has to be repeated multiple times"],
+    "notes": [
+      "since inline substitution is unobservable in the standard semantics, compilers are free to use inline substitution for any function that's not marked inline, and are free to generate function calls to any function marked inline",
+      ""
+    ]
+  },
+  {
+    "term": "translation unit",
+    "language": "cpp",
+    "type": "concept",
+    "definition": "a .cpp file that is compiled by itself (including the h files it #includes)"
+  },
+  {
+    "term": "external linkage",
+    "language": "cpp",
+    "type": "concept",
+    "description": ""
+  },
+
+  {
+    "term": "BitmaskType",
+    "language": "c++",
+    "definition": "a type that can be used to represent a set of constant values or any combination of those values",
+    "implementation": [
+      "integer type",
+      "std::bitset",
+      "enumerations (scoped and unscoped) with additional operator overloads"
+    ],
+    "expressions": [
+      {"code": "X |= Y", "action": "sets the value Y in the object X"},
+      {"code": "X &= ~Y", "action": "clears the value Y in the object X"},
+      {"code": "X & Y", "action": "nonzero result indicates that the value Y is set in the object X"}
+    ],
+    "instances": [
+      {"name": "std::chars_format", "version": "c++17"},
+      {"name": "std::ctype_base::mask"},
+      {"name": "std::ios_base::fmtflags"},
+      {"name": "std::ios_base::iostate"},
+      {"name": "std::ios_base::openmode"},
+      {"name": "std::regex_traits::char_class_type"},
+      {"name": "std::regex_constants::syntax_option_type"},
+      {"name": "std::regex_constants::match_flag_type"},
+      {"name": "std::launch"},
+      {"name": "std::filesystem::perms"},
+      {"name": "std::filesystem::perm_options"},
+      {"name": "std::filesystem::copy_options"},
+      {"name": "std::filesystem::directory_options"}
+    ]
+  },
+
+  {
+    "name": "openmode",
+    "class": "ios_base",
+    "implementation": "typedef",
+    "language": "c++",
+    "namespace": "std",
+    "header": "ios",
+    "description": [
+      "specifies available file open flags",
+      "a BitmaskType"
+    ],
+    "constants": [
+      {"name": "app", "meaning": "seek to the end of stream before each write"},
+      {"name": "binary", "meaning": "open in binary mode"},
+      {"name": "in", "meaning": "open for reading"},
+      {"name": "out", "meaning": "open for writing"},
+      {"name": "trunc", "meaning": "discard the contents of the stream when opening"},
+      {"name": "ate", "meaning": "seek to the end of stream immediately after open"},
+      {"name": "noreplace", "meaning": "open in exclusive mode", "version": "c++23"}
+    ]
+  },
+
+  {
+    "name": "ios_base",
+    "type": "OOP class",
+    "language": "c++",
+    "namespace": "std",
+    "header": "ios",
+    "description": [
+      "a multipurpose class that serves as the base class for all IO stream classes",
+      ""
+    ],
+    "member-functions": [
+      {"category": "formatting", "members": []},
+      {"category": "locale", "members": []},
+      {"category": "miscellaneous", "members": []},
+      {"category": "internal extensible array", "members": []}
+    ],
+    "exception-classes" : [
+      {
+        "name": "failure",
+        "header": "ios"
+      }
+    ],
+    "contents": [
+        "state information: stream status flags.",
+        "control information: flags that control formatting of both input and output sequences and the imbued locale.",
+        "private storage: indexed extensible data structure that allows both long and void* members, which may be implemented as two arbitrary-length arrays or a single array of two-element structs or another container.",
+        "callbacks: arbitrary number of user-defined functions to be called from imbue(), std::basic_ios::copyfmt(), and ~ios_base()."
+
+    ],
+    "notes": [
+      "Typical implementation holds member constants corresponding to all values of fmtflags, iostate, openmode, and seekdir shown below, member variables to maintain current precision, width, and formatting flags, the exception mask, the buffer error state, a resizeable container holding the callbacks, the currently imbued locale, the private storage, and a static integer variable for xalloc()."
+    ]
+
+  },
+
+  {
+    "name": "std::ws",
+    "language": "c++",
+    "action": "Extracts as many whitespace characters as possible from the current position in the input sequence.",
+    "discussion": "The extraction stops as soon as a non-whitespace character is found. These extracted whitespace characters are discarded."
+  }
+]

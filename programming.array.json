@@ -1,0 +1,68 @@
+[
+  {
+    "term": "Application Programming Interface",
+    "acronym": "API",
+    "field": "computing",
+    "subfield": "software",
+    "definition": "a set of rules and protocols that enable different software applications to communicate and interact with each other",
+    "benefits": [
+      "It serves as a bridge between systems, allowing them to exchange data or functionality without needing to understand the details of each other’s implementation."
+    ]
+  },
+  {
+    "term": "symbolic programming",
+    "field": "computing",
+    "definition": "a programming paradigm in which the program can manipulate its own formulas and program components as if they were plain data.",
+    "description": "Through symbolic programming, complex processes can be developed that build other more intricate processes by combining smaller units of logic or functionality. Thus, such programs can effectively modify themselves and appear to \"learn\", which makes them better suited for applications such as artificial intelligence, expert systems, natural language processing, and computer games.",
+    "languages": "languages that support symbolic programming include homoiconic languages"
+  },
+
+  {
+    "term": "homoiconicity",
+    "etimology": "from the Greek words homo- meaning \"the same\" and icon meaning \"representation\"",
+    "definition": "a language is homoiconic if a program written in it can be manipulated as data using the language",
+    "discussion": [
+      "The program's internal representation can thus be inferred just by reading the program itself. This property is often summarized by saying that the language treats code as data.",
+      "In a homoiconic language, the primary representation of programs is also a data structure in a primitive type of the language itself. This makes metaprogramming easier than in a language without this property: reflection in the language (examining the program's entities at runtime) depends on a single, homogeneous structure, and it does not have to handle several different structures that would appear in a complex syntax. Homoiconic languages typically include full support of syntactic macros, allowing the programmer to express transformations of programs in a concise way."],
+    "notes": [
+      "The informality of the property arises from the fact that, strictly, this applies to almost all programming languages. No consensus exists on a precise definition of the property."
+    ],
+    "instances": ["Wolfram Language", "Lisp", "Prolog", "Julia"],
+    "related-topics": [
+      "Concatenative programming language",
+      "Language-oriented programming",
+      "Symbolic programming",
+      "Self-modifying code",
+      "Metaprogramming",
+      "Reification"
+    ]
+  },
+
+  {
+    "synonims": ["logic-based artificial intelligence"],
+    "field": "artificial intelligence",
+    "term": "symbolic artificial intelligence",
+    "definition": "the collection of all methods in artificial intelligence research that are based on high-level symbolic (human-readable) representations of problems, logic and search",
+    "tools": ["logic programming", "production rules", "semantic nets", "frames"],
+    "applications-developed": ["knowledge-based systems (in particular, expert systems)", "symbolic mathematics", "automated theorem provers", "ontologies", "the semantic web", "automated planning", "scheduling systems"],
+    "notes": [
+      "The Symbolic AI paradigm led to seminal ideas in search, symbolic programming languages, agents, multi-agent systems, the semantic web, and the strengths and limitations of formal knowledge and reasoning systems"
+    ],
+    "history": [
+      "Symbolic AI was the dominant paradigm of AI research from the mid-1950s until the mid-1990s.[4] Researchers in the 1960s and the 1970s were convinced that symbolic approaches would eventually succeed in creating a machine with artificial general intelligence and considered this the ultimate goal of their field.[citation needed] An early boom, with early successes such as the Logic Theorist and Samuel's Checkers Playing Program, led to unrealistic expectations and promises and was followed by the first AI Winter as funding dried up.[5][6] A second boom (1969–1986) occurred with the rise of expert systems, their promise of capturing corporate expertise, and an enthusiastic corporate embrace.[7][8] That boom, and some early successes, e.g., with XCON at DEC, was followed again by later disappointment.[8] Problems with difficulties in knowledge acquisition, maintaining large knowledge bases, and brittleness in handling out-of-domain problems arose. Another, second, AI Winter (1988–2011) followed.[9] Subsequently, AI researchers focused on addressing underlying problems in handling uncertainty and in knowledge acquisition.[10] Uncertainty was addressed with formal methods such as hidden Markov models, Bayesian reasoning, and statistical relational learning.[11][12] Symbolic machine learning addressed the knowledge acquisition problem with contributions including Version Space, Valiant's PAC learning, Quinlan's ID3 decision-tree learning, case-based learning, and inductive logic programming to learn relations.[13]",
+      "Neural networks, a subsymbolic approach, had been pursued from early days and reemerged strongly in 2012. Early examples are Rosenblatt's perceptron learning work, the backpropagation work of Rumelhart, Hinton and Williams,[14] and work in convolutional neural networks by LeCun et al. in 1989.[15] However, neural networks were not viewed as successful until about 2012: \"Until Big Data became commonplace, the general consensus in the Al community was that the so-called neural-network approach was hopeless. Systems just didn't work that well, compared to other methods. ... A revolution came in 2012, when a number of people, including a team of researchers working with Hinton, worked out a way to use the power of GPUs to enormously increase the power of neural networks.\"[16] Over the next several years, deep learning had spectacular success in handling vision, speech recognition, speech synthesis, image generation, and machine translation. However, since 2020, as inherent difficulties with bias, explanation, comprehensibility, and robustness became more apparent with deep learning approaches; an increasing number of AI researchers have called for combining the best of both the symbolic and neural network approaches[17][18] and addressing areas that both approaches have difficulty with, such as common-sense reasoning."
+    ]
+  },
+  {
+    "title": "characters allowed in identifiers",
+    "language": "javascript",
+    "start-characters": ["letters", "_"],
+    "non-start-characters": ["letters", "digits", "_"]
+  },
+  {
+    "title": "characters allowed in identifiers",
+    "language": "json",
+    "start-characters":     ["letters", "_"],
+    "non-start-characters": ["letters", "digits", "_"]
+  }
+]

@@ -1,0 +1,20 @@
+[
+
+  {
+    "term": "parallax (effects)",
+    "field": "computing",
+    "definition": null
+  },
+
+  {
+    "term": "ethereum",
+    "field": null,
+    "definition": "decentralised mining network and software development platform rolled into one",
+    "source": "Vitalik Buterin"
+  },
+  {
+    "term": "blockchain",
+    "field": "computing",
+    "definition": "a cryptographic transaction ledger"
+  }
+]

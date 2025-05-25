@@ -1,17 +1,48 @@
+[
+{ "name": "Core Principles in a Field",
+  "type": "quote",
+  "author": "John Reed",
+  "content": "When you first study a field, it seems like you have to memorize a zillion things. You don’t. What you need is to identify the three-to-five core principles that govern the field. The million things you thought you had to memorize are various combinations of the core principles."
+},
 {
-  "term": "***",
+  "term": "parameter",
   "lang": "en",
-  "field": "***",
+  "field": "functions",
+  "subfield": null,
+  "definition": [
+  "a numerical or other measurable factor forming one of a set that defines a system or sets the conditions of its operation",
+  "an element of a system that is useful, or critical, when identifying the system, or when evaluating its performance, status, condition, etc.",
+  "a characteristic that defines or classifies a system, often used to set limits or conditions; it can be a variable in a mathematical equation or a fixed value that influences how something is done or performed."
+  ],
+  "notes": [
+    "In statistics, parameters are characteristics of an entire population, such as the average age of teachers in the United States"
+  ],
+  "discussion": null
+},
+{
+  "term": "emergent property",
+  "lang": "en",
+  "field": "systems",
+  "subfield": null,
   "definition": "",
   "discussion": null
-}
+},
+
+{
+  "term": "pith",
+  "lang": "en",
+  "field": "botany",
+  "subfield": "anatomy",
+  "definition": "",
+  "discussion": null
+},
 {
   "term": "ethnobotany",
   "lang": "en",
   "field": "anthropology",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "vegetative (reproduction)",
   "lang": "en",
@@ -19,35 +50,35 @@
   "subfield": "reproduction",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "monocarpic",
   "lang": "en",
   "field": "botany",
   "definition": "each rosette dies after flowering and fruitin",
   "discussion": null
-}
+},
 {
   "term": "cantala",
   "lang": "en",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "henequen",
   "lang": "en",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "sisal",
   "lang": "en",
   "field": "fibre",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "pulque",
   "lang": "es",
@@ -57,7 +88,7 @@
     "its origins date back to the Early Classic period (AD 150–650), was used in religious rituals to honor the Aztec goddess, Mayahuel, and was regularly consumed by Aztec nobility"
   ],
   "discussion": null
-}
+},
 
 
 {
@@ -66,7 +97,7 @@
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 
 {
   "term": "Bayesian",
@@ -74,28 +105,28 @@
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "Markov Chain",
   "lang": "en",
   "field": "probability",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "pastiche",
   "lang": "en",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "espiritismo",
   "lang": "es",
   "field": "espíritu",
   "definition": "",
   "discussion": null
-}
+},
 
 
 {
@@ -104,122 +135,129 @@
   "field": "nuclear war",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "ablation",
   "lang": "en",
   "field": "nuclear weapons",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "deconstruction",
   "lang": "en",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "hermeneutics",
   "lang": "en",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "asyndeton",
   "lang": "en",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "deismo",
   "lang": "en",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "teismo",
   "lang": "en",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "burocracia",
   "lang": "en",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 
 
 {
   "term": "vaselina industrial",
-  "lang": "en",
+  "lang": "es",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
+{
+  "name": "conseguir vaselina industrial",
+  "type": "task",
+  "lang": "es",
+  "field": "***",
+  "discussion": null
+},
 {
   "term": "Agenda 2030",
   "lang": "en",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 
 {
   "term": "agency",
   "lang": "en",
-  "field": "***",
-  "definition": "",
+  "field": null,
+  "definition": "the sense of control that you feel in your life, your capacity to influence your own thoughts and behavior, and have faith in your ability to handle a wide range of tasks and situations. Your sense of agency helps you to be psychologically stable, yet flexible in the face of conflict or change",
   "discussion": null
-}
+},
 {
   "term": "democracy",
   "lang": "en",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "representation",
   "lang": "en",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "paranomasia",
   "lang": "en",
   "field": "***",
   "definition": "",
   "discussion": null
-}
+},
 
 {
   "term": "ataraxia",
   "lang": "en",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "anacrusis",
   "lang": "en",
   "field": "rhetoric",
   "definition": "",
   "discussion": null
-}
+},
 {
   "term": "entelechia",
   "lang": "en",
   "field": "metaphysics",
   "definition": "",
   "discussion": null
-}
+},
 
 
 
@@ -228,25 +266,25 @@
   "lang": "en",
   "definition": "",
   "discussion": null
-}
+},
 
 {
   "term": "deity",
   "lang": "en",
   "definition": "",
   "discussion": null
-}
+},
 {
   "name": "Wayback Machine",
   "pronounciation": "/weɪbæk maˈʃin/",
   "definition": "un servicio y una base de datos que contiene copias de una enorme cantidad de páginas o sitios de Internet. Como consecuencia de este proyecto, también se puede consultar la historia y las modificaciones de las páginas a través del tiempo"
-}
+},
 {
   "term": "Agenda 2030",
   "definition": [
   ],
   "discussion": null
-}
+},
 {
   "term": "quadratic voting",
   "definition": "a voting system that encourages voters to express their true relative intensity of preference between multiple options or elections",
@@ -254,7 +292,7 @@
   "discussion": [
     "By doing so, quadratic voting seeks to mitigate tyranny of the majority by enabling participants to trade influence over issues they don't care about for influence over issues they do."
   ]
-}
+},
 
 {
   "term": "endergonic",
@@ -263,43 +301,43 @@
     "Endergonic means \"absorbing energy in the form of work\".",
     "The activation energy for the reaction is typically larger than the overall energy of the exergonic reaction (1). Endergonic reactions are nonspontaneous."
   ]
-}
+},
 
 
 {
   "type": "quote",
   "author": "Neal Stephenson",
   "content": "Where serious and competent people need to get things done in the real world, all considerations of tradition and protocol fly out of the window."
-}
+},
 {
   "type": "quote",
   "author": "Neal Stephenson",
   "content": "The only thing that can effect a change in personality is something that physically rewires the brain and/or alters the body's chemical milieu."
-}
+},
 {
   "type": "quote",
   "author": "Neal Stephenson",
   "content": "The future is there, looking back at us, trying to make sense of the fiction we will have become."
-}
+},
 {
   "type": "quote",
   "author": "Neal Stephenson",
   "content": "Any property that is open to common use gets destroyed. Because everyone has incentive to use it to the max, but no one has incentive to maintain."
-}
+},
 {
   "type": "quote",
   "author": "Neal Stephenson",
   "content": "Well, all information looks like noise until you break the code."
-}
+},
 
 {
   "name": "How to Recycle  Wipes"
-}
+},
 {
   "name": "OneDrive on Linux",
   "field": "computing",
   "approach": "free lunch"
-}
+},
 {
   "name": "write JSON documents on concepts",
   "list": [
@@ -328,7 +366,7 @@
     "URI",
     "URL",
 
-    "empathy"
+    "empathy",
     "corruption",
     "big pharma",
     "animalism",
@@ -340,7 +378,7 @@
     "lexicon",
     "lexicology",
     "upcycling",
-    "reification"
+    "reification",
     "decompose",
     "analysis",
     "synthesis",
@@ -425,7 +463,7 @@
     "rare-earth"
 
   ]
-}
+},
 {
   "name":  "menial",
   "pronuciation": "//",
@@ -439,7 +477,7 @@
   "discussion": [],
   "notes": [],
   "related-to": []
-}
+},
 {
   "name":  "mind-numbing",
   "pronuciation": "//",
@@ -453,7 +491,7 @@
   "discussion": [],
   "notes": [],
   "related-to": []
-}
+},
 {
   "name":  "drudgery",
   "pronuciation": "//",
@@ -467,7 +505,7 @@
   "discussion": [],
   "notes": [],
   "related-to": []
-}
+},
 {
   "name":  "toil",
   "pronuciation": "//",
@@ -481,7 +519,7 @@
   "discussion": [],
   "notes": [],
   "related-to": []
-}
+},
 
 
 {
@@ -491,7 +529,7 @@
   "field": "psicología",
   "definition": "f. Purificación, liberación o transformación interior suscitadas por una experiencia vital profunda.",
   "description": null
-}
+},
 {
   "name": "unívoco",
   "lang": "es",
@@ -499,7 +537,7 @@
   "field": "general",
   "definition": null,
   "examples": []
-}
+},
 {
   "name": "ecologismo",
   "lang": "es",
@@ -507,7 +545,7 @@
   "field": "movimiento social",
   "definition": null,
   "description": null
-}
+},
 {
   "name": "ecología profunda",
   "lang": "es",
@@ -516,7 +554,7 @@
   "source": "Wikipedia",
   "definition": "La ecología profunda es una rama de la filosofía ecológica que considera a la humanidad parte de su entorno, proponiendo cambios culturales, políticos, sociales y económicos para lograr una convivencia armónica entre los seres humanos y el resto de los seres vivos.",
   "description": null
-}
+},
 {
   "name": "ecología profunda",
   "lang": "es",
@@ -526,7 +564,7 @@
   "author": "Arne Naess",
   "content": "la ecología profunda o de amplio alcance (deep, long-range ecology) se distingue de la ecología superficial o de corto alcance (shallow, short-range ecology) en un cuestionamiento más hondo de las causas y fundamentos de la crisis ecológica. Partiendo del reconocimiento del valor inherente de la diversidad ecológica y cultural de todos los seres vivos, su enfoque no se limita a aquello que pone en peligro el bienestar o la supervivencia de la especie humana. La ecología profunda declara la interdependencia fundamental entre todos los fenómenos y el hecho de que, como individuos y como sociedades, estamos inmersos en (y finalmente dependientes de) los procesos cíclicos de la naturaleza.",
   "related": ["sostenibilidad", "ecologismo", "interdependencia"]
-}
+},
 {
   "name": "ecología profunda",
   "lang": "es",
@@ -535,19 +573,19 @@
   "source": "Ecologistas en Acción",
   "definition": "",
   "description": null
-}
+},
 {
    "name": "Arne Naess",
    "lang": "en",
    "field": "deep ecology",
    "nationality": "Norwegian"
-}
+},
 {
   "title":   "Ecología profunda controvertida",
   "lang":    "es",
   "content": "Las posiciones defendidas por la ecología profunda han sido objeto de tantas controversias y críticas que merece la pena indagar en las razones que indujeron, por ejemplo, al cineasta y ecologista de moda, Al Gore, a calificarla como una filosofía “intrínsecamente misántropa” en la que el ser humano es “un alien en la Tierra” [1], o al intelectual francés Luc Ferry a concluir que “se puede decir legítimamente que la ecología profunda hunde algunas de sus raíces en el nazismo y alza sus ramas hasta las esferas más extremas del izquierdismo cultural” [2]. Y observamos que, en casi todos los casos, el pretendido radicalismo de la ecología profunda estriba en su crítica del antropocentrismo y de aquellos fundamentos culturales de Occidente que han abocado al mundo a la crisis multidimensional que enfrenta desde hace tiempo.",
   "source":  "Ecologistas en Acción"
-}
+},
 {
   "name": "ecología profunda",
   "lang": "es",
@@ -556,7 +594,7 @@
   "source": null,
   "definition": null,
   "description": null
-}
+},
 {
   "name": "ecología profunda",
   "lang": "es",
@@ -565,8 +603,7 @@
   "source": null,
   "definition": null,
   "description": null
-}
-
+},
 
 {
   "name": "convergent evolution",
@@ -575,7 +612,7 @@
   "field": "evolution",
   "definition": "the independent development of the same characteristic in unrelated taxa",
   "description": null
-}
+},
 
 {
   "name":    "butoh significa bailar con sombras",
@@ -587,3 +624,4 @@
   "summary": null,
   "content": "Todo el mundo tiene sombra. Todo el mundo puede bailar butoh. Coger sombras. Cuantas más sombras."
 }
+]

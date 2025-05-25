@@ -7,10 +7,10 @@
 }
 
 
-
 {
   "name": "access",
   "values": ["public", "protected", "private", null],
+  "const": false,
   "mutable": null
 }
 {

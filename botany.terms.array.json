@@ -1,5 +1,23 @@
 [
 {
+  "name":  "CO2 compensation point",
+  "type":  "term",
+  "field": "botany",
+  "subfield": "physiology",
+  "lang":  "en",
+  "definition": null,
+  "related-to": ["photosynthesis"]
+},
+{
+  "name":  "facultative CAM plant",
+  "type":  "term",
+  "field": "botany",
+  "subfield": "physiology",
+  "lang":  "en",
+  "definition": null,
+  "related-to": ["photosynthesis", "CAM"]
+},
+{
   "name":  "annual",
   "type":  "term",
   "field": "botany",
@@ -112,7 +130,7 @@
   "lang":  "en",
   "definition": "slender creeping stem that grows above the soil surface",
   "synonyms": ["runner"],
-  "notes": ["stolons have scale leaves and can develop roots and, therefore, new plants, either terminally or at a node"]
+  "notes": ["stolons have scale leaves and can develop roots and, therefore, new plants, either terminally or at a node"],
   "instances": ["strawberry"],
   "related-to": ["stem"]
 },
@@ -305,7 +323,7 @@
   "field": "botany",
   "subfield": "lifeform",
   "lang":  "en",
-  "definition":
+  "definition": ""
 },
 {
   "name":  "liverwort",
@@ -329,7 +347,7 @@
   "field": "botany",
   "subfield": "lifeform",
   "lang":  "en",
-  "definition":
+  "definition": ""
 },
 {
   "name":  "fern",
@@ -337,7 +355,7 @@
   "field": "botany",
   "subfield": "lifeform",
   "lang":  "en",
-  "definition":
+  "definition": ""
 },
 {
   "name":  "cactus",

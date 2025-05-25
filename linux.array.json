@@ -1,0 +1,18 @@
+[
+{
+  "term": "joulnald.conf",
+  "type": "configuration file",
+  "location": "/etc/systemd/journald.conf",
+  "field": "computing",
+  "subfield": "linux",
+  "discussion": null,
+  "definition": null
+},
+{
+  "term": null,
+  "field": "computing",
+  "subfield": "linux",
+  "discussion": null,
+  "definition": null
+}
+]
