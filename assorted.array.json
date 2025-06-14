@@ -1,4 +1,176 @@
 [
+
+{
+  "title": "El Reino de Dios es como un grano de mostaza",
+  "lang": "es",
+  "field": "wisdom",
+  "subfield": null,
+  "discussion": [
+    "Muchas cosas grandes empiezan siendo pequeñas",
+    "A menudo nos cuesta apreciar la grandeza y consecuencias de algo simple"
+  ],
+  "related-to": [
+    "kill a revolution in the bud",
+    "El Principito obsesionado con arrancar baobabs incipientes"
+  ]
+},
+
+{
+  "topic": "expresión corporal",
+  "lang": "es",
+  "field": "human",
+  "subfield": null,
+  "discussion": ""
+},
+
+{
+  "topic": "etymology",
+  "lang": "en",
+  "field": "linguistics",
+  "subfield": "lexicology",
+  "definition": "",
+  "discussion": ""
+},
+
+{
+  "topic": "ataques con drones a Rusia en E. de Siberia",
+  "lang": "es",
+  "field": "war",
+  "date": "",
+  "subfield": "recent developments",
+  "discussion": ""
+},
+
+{
+  "term": "alpha radiation",
+  "lang": "en",
+  "field": "nuclear physics",
+  "symbol": "α",
+  "definition": [
+    "consist of two protons and two neutrons bound together into a particle identical to a helium-4 nucleus"
+  ],
+  "energy": "about 5 MeV"
+},
+{
+  "term": "beta radiation",
+  "lang": "en",
+  "field": "nuclear physics",
+  "symbol": "β",
+  "definition": [
+    "a high-energy, high-speed electron or positron emitted by the radioactive decay of an atomic nucleus, known as beta decay"
+  ],
+  "notes": [
+    "There are two forms of beta decay, β− decay and β+ decay, which produce electrons and positrons, respectively"
+  ]
+},
+{
+  "term": "gamma radiation",
+  "lang": "en",
+  "field": "nuclear physics",
+  "symbol": "γ",
+  "definition": [
+    "consists of the shortest wavelength electromagnetic waves, typically shorter than those of X-rays"
+  ],
+  "origin": [
+    "high energy interactions like the radioactive decay of atomic nuclei",
+    "astronomical events like solar flares"
+  ],
+  "energy": "from a few kiloelectronvolts (keV) to approximately 8 megaelectronvolts (MeV), corresponding to the typical energy levels in nuclei with reasonably long lifetimes",
+  "notes": [
+    "The energy ranges of gamma rays and X-rays overlap in the electromagnetic spectrum, so the terminology for these electromagnetic waves varies between scientific disciplines",
+    "Gamma rays are ionizing radiation and are thus hazardous to life. They can cause DNA mutations, cancer and tumors, and at high doses burns and radiation sickness. Due to their high penetration power, they can damage bone marrow and internal organs. Unlike alpha and beta rays, they easily pass through the body and thus pose a formidable radiation protection challenge, requiring shielding made from dense materials such as lead or concrete. On Earth, the magnetosphere protects life from most types of lethal cosmic radiation other than gamma rays."
+  ]
+},
+
+{
+  "term": "casuística",
+  "lang": "es",
+  "field": "law",
+  "definition": [
+    "En la ética aplicada, la casuística se refiere al razonamiento basado en casos. Se utiliza en cuestiones éticas y jurídicas, y a menudo representa una crítica del razonamiento basado en principios o reglas. La casuística es utilizar la razón para resolver problemas morales aplicando reglas teóricas a instancias específicas."]
+},
+{
+  "term": "ablation",
+  "lang": "en",
+  "field": "health",
+  "subfield": "surgery",
+  "definition": []
+},
+
+{
+  "term": "nuclear proliferation",
+  "lang": "en",
+  "field": "nuclear weapons",
+  "definition": []
+},
+{
+  "term": "ablation",
+  "lang": "en",
+  "field": "nuclear weapons",
+  "subfield": "thermonuclear weapons",
+  "definition": []
+},
+{
+  "title": "North Korean Nuclear Test",
+  "lang": "en",
+  "year": 2017,
+  "field": "nuclear weapons",
+  "subfield": "thermonuclear weapons",
+  "subsubfield": "thermonuclear weapons test",
+  "yield": {"unit": "kT", "amount": 300,}
+  "definition": []
+},
+{
+  "term": "doomsday device",
+  "lang": "en",
+  "field": "nuclear weapons",
+  "subfield": "thermonuclear weapons",
+  "definition": []
+},
+
+{
+  "term": "abiotic stress",
+  "lang": "en",
+  "field": "biology",
+  "subfield": null,
+  "definition": []
+},
+{
+  "term": "drought tolerance",
+  "lang": "en",
+  "field": "farming",
+  "subfield": null,
+  "definition": []
+},
+{
+  "title": "nitrogen fixation under water stress",
+  "lang": "en",
+  "field": "farming",
+  "subfield": null,
+  "definition": []
+},
+{
+  "term": "dehiscent",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "botany",
+  "definition": ["releasing their seeds by splitting open along two seams"]
+},
+{
+  "term": "commodity",
+  "lang": "en",
+  "field": "economics",
+  "subfield": null,
+  "definition": []
+},
+{
+  "term": "commoditization",
+  "lang": "en",
+  "field": "economics",
+  "subfield": null,
+  "definition": [],
+  "related-to": ["money", "growth", "free-of-charge"]
+},
 { "name": "Core Principles in a Field",
   "type": "quote",
   "author": "John Reed",
@@ -28,36 +200,6 @@
   "discussion": null
 },
 
-{
-  "term": "pith",
-  "lang": "en",
-  "field": "botany",
-  "subfield": "anatomy",
-  "definition": "",
-  "discussion": null
-},
-{
-  "term": "ethnobotany",
-  "lang": "en",
-  "field": "anthropology",
-  "definition": "",
-  "discussion": null
-},
-{
-  "term": "vegetative (reproduction)",
-  "lang": "en",
-  "field": "botany",
-  "subfield": "reproduction",
-  "definition": "",
-  "discussion": null
-},
-{
-  "term": "monocarpic",
-  "lang": "en",
-  "field": "botany",
-  "definition": "each rosette dies after flowering and fruitin",
-  "discussion": null
-},
 {
   "term": "cantala",
   "lang": "en",
@@ -274,11 +416,7 @@
   "definition": "",
   "discussion": null
 },
-{
-  "name": "Wayback Machine",
-  "pronounciation": "/weɪbæk maˈʃin/",
-  "definition": "un servicio y una base de datos que contiene copias de una enorme cantidad de páginas o sitios de Internet. Como consecuencia de este proyecto, también se puede consultar la historia y las modificaciones de las páginas a través del tiempo"
-},
+
 {
   "term": "Agenda 2030",
   "definition": [

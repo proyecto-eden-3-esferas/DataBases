@@ -1,3 +1,34 @@
+[
+{
+  "term": "pith",
+  "lang": "en",
+  "field": "botany",
+  "subfield": "anatomy",
+  "definition": "",
+  "discussion": null
+},
+{
+  "term": "ethnobotany",
+  "lang": "en",
+  "field": "anthropology",
+  "definition": "",
+  "discussion": null
+},
+{
+  "term": "vegetative (reproduction)",
+  "lang": "en",
+  "field": "botany",
+  "subfield": "reproduction",
+  "definition": "",
+  "discussion": null
+},
+{
+  "term": "monocarpic",
+  "lang": "en",
+  "field": "botany",
+  "definition": "each rosette dies after flowering and fruitin",
+  "discussion": null
+},
 {
   "name":  "annual",
   "type":  "term",
@@ -9,7 +40,7 @@
   "discussion": [],
   "notes": [],
   "related-to": ["biennial", "grass", "herbaceous"]
-}
+},
 {
   "name": "marcescence",
   "type": "term",
@@ -17,7 +48,7 @@
   "lang":  "en",
   "definition": "when leaves are not abscissed (dropped) in the autumn and instead remain on the tree until the spring",
   "instances": ["beech", "oak"]
-}
+},
 {
   "name":  "biennial",
   "type":  "term",
@@ -29,7 +60,7 @@
   "discussion": ["the vegetative (nonreproductive) plant growth takes place from seed during the first year, and flowers and fruit develop during the second"],
   "notes": [],
   "related-to": ["annual", "grass", "herbaceous"]
-}
+},
 
 {
   "name":  "stem",
@@ -42,7 +73,7 @@
   "discussion": [],
   "notes": [],
   "related-to": ["root", "branch", "leaf"]
-}
+},
 {
   "name":  "bud",
   "type":  "term",
@@ -52,7 +83,7 @@
   "discussion": [],
   "notes": [],
   "related-to": ["branch"]
-}
+},
 {
   "name":  "terminal bud",
   "type":  "term",
@@ -61,7 +92,7 @@
   "lang":  "en",
   "definition": "a bud formed at the apex of a stem",
   "related-to": ["bud", "stem"]
-}
+},
 {
   "name":  "node",
   "type":  "term",
@@ -70,7 +101,7 @@
   "lang":  "en",
   "definition": "the area where a leaf attaches to the stem",
   "related-to": ["node", "leaf", "stem", "bud"]
-}
+},
 {
   "name":  "internode",
   "type":  "term",
@@ -79,7 +110,7 @@
   "lang":  "en",
   "definition": "the region between successive nodes",
   "related-to": ["node", "leaf", "stem", "bud"]
-}
+},
 {
   "name":  "tendril",
   "type":  "term",
@@ -88,7 +119,7 @@
   "lang":  "en",
   "definition": "rope-like leaves or leaf parts modified to provide support",
   "related-to": ["leaf"]
-}
+},
 {
   "name":  "rhizome",
   "type":  "term",
@@ -103,7 +134,7 @@
   "notes": ["Most rhizomes are perennial, sending up new shoots from the nodes and spreading the colony.",
             "Often the terminal bud of a rhizome becomes upright and then flowers, with a rhizome axillary bud becoming a renewal shoot."],
   "related-to": ["shoot", "tuber"]
-}
+},
 {
   "name":  "stolon",
   "type":  "term",
@@ -116,7 +147,7 @@
   "notes": ["stolons have scale leaves and can develop roots and, therefore, new plants, either terminally or at a node"]
   "instances": ["strawberry"],
   "related-to": ["stem"]
-}
+},
 {
   "name":  "corm",
   "type":  "term",
@@ -129,7 +160,7 @@
   "discussion": ["usually hard and fibrous and function for overwintering and drought resistance"],
   "notes": [],
   "related-to": []
-}
+},
 {
   "name":  "hypocotyl",
   "type":  "term",
@@ -141,7 +172,7 @@
   "discussion": [],
   "notes": [],
   "related-to": []
-}
+},
 {
   "name":  "petiole",
   "type":  "term",
@@ -152,7 +183,7 @@
   "discussion": [],
   "notes": [],
   "related-to": ["leaf"]
-}
+},
 {
   "name":  "stipule",
   "type":  "term",
@@ -163,7 +194,7 @@
   "discussion": [],
   "notes": [],
   "related-to": ["leaf"]
-}
+},
 {
   "name":  "cladode",
   "type":  "term",
@@ -173,7 +204,7 @@
   "instances": ["asparagus", "euphorbia", "cactus", "palm", "bird-of-paradise"],
   "synonyms": ["cladophyll", "phylloclade"],
   "related-to": ["stem", "photosynthesis"]
-}
+},
 {
   "name":  "dichotomous branching",
   "type":  "term",
@@ -182,7 +213,7 @@
   "definition": "[when] the branches form as a result of an equal division of a terminal bud (i.e., a bud formed at the apex of a stem) into two equal branches that are not derived from axillary buds, although axillary buds are present elsewhere on the plant body",
   "instances": ["cactus", "palm", "bird-of-paradise"],
   "related-to": ["branch", "terminal bud"]
-}
+},
 {
   "name":  "monopodial branching",
   "type":  "term",
@@ -192,7 +223,7 @@
   "notes": ["results in pyramidal overall shape"],
   "instances": ["beech"],
   "related-to": ["branch", "terminal bud"]
-}
+},
 {
   "name":  "sympodial branching",
   "type":  "term",
@@ -202,7 +233,7 @@
   "notes": ["results in candelabra-like overall shape"],
   "instances": ["Joshua tree"],
   "related-to": ["branch", "terminal bud"]
-}
+},
 {
   "name":  "epiphytic",
   "type":  "term",
@@ -215,7 +246,7 @@
   "discussion": [],
   "notes": [],
   "related-to": []
-}
+},
 {
   "name":  "pneumatophore",
   "type":  "term",
@@ -227,7 +258,7 @@
   "discussion": [],
   "notes": [],
   "related-to": []
-}
+},
 {
   "name":  "tuber",
   "type":  "term",
@@ -239,7 +270,7 @@
   "discussion": [],
   "notes": [],
   "related-to": []
-}
+},
 {
   "name":  "drupe",
   "type":  "term",
@@ -249,7 +280,7 @@
   "instances": ["cherry", "peach", "olive", "mango", "walnut", "dogwood"],
   "discussion": "As a simple fruit, a drupe is derived from a single ovary of an individual flower. The outer layer of the ovary wall is a thin skin or peel, the middle layer is thick and usually fleshy (though sometimes tough, as in the almond, or fibrous, as in the coconut), and the inner layer, known as the pit, or putamen, is hard and stony. The pit, which is often confused with the seed itself, usually has one seed or, rarely, two or three, in which case only one develops fully.",
   "notes": ["In some aggregate fruits, such as the raspberry and blackberry—which are not true berries—many small drupes are clumped together. Formally, these fruits are called aggregates of drupelets. Such fruits are formed of numerous fused carpels (ovule-containing structures) from a single flower."]
-}
+},
 {
   "name":  "bract",
   "type":  "term",
@@ -262,7 +293,7 @@
   "discussion": [],
   "notes": [],
   "related-to": []
-}
+},
 {
   "name":  "pericarp",
   "type":  "term",
@@ -271,7 +302,7 @@
   "lang":  "en",
   "definition": "seed coat",
   "related-to": []
-}
+},
 {
   "name":  "samara",
   "type":  "term",
@@ -281,7 +312,7 @@
   "definition": "one-winged propeller type of fruit",
   "instances": ["maple"],
   "related-to": []
-}
+},
 {
   "name": "dehiscent",
   "type": "term",
@@ -289,7 +320,7 @@
   "field": "botany",
   "lang": "en",
   "definition": null
-}
+},
 {
   "name": "viscid",
   "type": "term",
@@ -297,14 +328,14 @@
   "field": "botany",
   "lang": "en",
   "definition": null
-}
+},
 {
   "name": "diaspore",
   "type": "term",
   "field": "botany",
   "lang": "en",
   "definition": null
-}
+},
 
 {
   "name": "xylem",
@@ -313,7 +344,7 @@
   "subfield": "tissue",
   "lang": "en",
   "definition": "vascular tissue"
-}
+},
 {
   "name": "phloem",
   "type": "term",
@@ -321,14 +352,14 @@
   "subfield": "tissue",
   "lang": "en",
   "definition": "vascular tissue"
-}
+},
 {
   "name": "saurochory",
   "type": "term",
   "field": "botany",
   "lang": "en",
   "definition": "dispersal by reptiles"
-}
+},
 
 {
   "name":  "geocarpy",
@@ -336,25 +367,26 @@
   "field": "botany",
   "lang":  "en",
   "definition": "either the production of fruits underground or the active burying of fruits by the mother plant"
-}
+},
 {
   "name":  "protandrous",
   "type":  "term",
   "field": "botany",
   "lang":  "en",
   "definition": "that sheds pollen before it can receive pollen"
-}
+},
 {
   "name":  "protogynous",
   "type":  "term",
   "field": "botany",
   "lang":  "en",
   "definition": "that sheds pollen after becoming receptive to pollen"
-}
+},
 {
   "name":  "canker",
   "type":  "term",
   "field": "farming",
   "lang":  "en",
   "definition": null
-}
+},
+]

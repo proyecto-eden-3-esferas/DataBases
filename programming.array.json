@@ -1,5 +1,63 @@
 [
   {
+  "term": "token",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": ""
+  },
+  {
+  "term": "expression",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": ""
+  },
+  {
+  "term": "statement",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": ""
+  },
+
+  {
+  "term": "elixir",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "subsubfield": "programming-language",
+  "features": [
+    "functional", "concurrent", "general-purpose",
+    "compiles into BEAM byte code via Erlang Abstract Format"
+  ]
+},
+{
+  "term": "erlang",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "subsubfield": "programming-language",
+  "features": ["immutable data", "pattern matching", "open source", "general purpose", "functional", "concurrency", "distribution", "fault tolerance", "hot swapping", "dynamic typing"],
+  "uses": ["to build massively scalable soft real-time systems with requirements on high availability"],
+  "description": [
+  ],
+  "OTP" : {
+    "description": "a set of Erlang libraries and design principles providing middle-ware to develop these systems",
+    "includes": [
+      "own distributed database",
+      "applications to interface to other languages",
+      "debugging and release handling tools"]
+  },
+  "quotes": [
+    {
+      "author": "Joe Armstrong",
+      "content": "If Java is 'write once, run anywhere', then Erlang is 'write once, run forever"
+    }
+  ]
+},
+
+  {
     "term": "Application Programming Interface",
     "acronym": "API",
     "field": "computing",
@@ -15,6 +73,18 @@
     "definition": "a programming paradigm in which the program can manipulate its own formulas and program components as if they were plain data.",
     "description": "Through symbolic programming, complex processes can be developed that build other more intricate processes by combining smaller units of logic or functionality. Thus, such programs can effectively modify themselves and appear to \"learn\", which makes them better suited for applications such as artificial intelligence, expert systems, natural language processing, and computer games.",
     "languages": "languages that support symbolic programming include homoiconic languages"
+  },
+
+  {
+    "term": "maximal munch",
+    "field": "computing",
+    "subfield": "parsing",
+    "source": "https://cppreference.com",
+    "context": "the rule used in phase 3 when decomposing the source file into preprocessing tokens",
+    "discussion": "If the input has been parsed into preprocessing tokens up to a given character (otherwise, the next preprocessing token will not be parsed, which makes the parsing order unique), the next preprocessing token is generally taken to be the longest sequence of characters that could constitute a preprocessing token, even if that would cause subsequent analysis to fail. This is commonly known as maximal munch.
+
+",
+    "instances": []
   },
 
   {

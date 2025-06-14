@@ -1,4 +1,23 @@
 {
+  "unit": "meter",
+  "amount": 0,
+}
+
+{
+  "topic": "TOPIC",
+  "title": null,
+  "lang": "en",
+  "field": "general",
+  "subfield": null,
+  "discussion": ""
+}
+
+{
+  "unit": "meter",
+  "dimension": "length"
+}
+
+{
   "name":  null,
   "pronuciation": "//",
   "type":  "term",

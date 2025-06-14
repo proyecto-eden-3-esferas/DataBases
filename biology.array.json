@@ -1,7 +1,22 @@
 [
-{
-  "term": "coenobia",
-  "lang": "en",
-  "definition": "a type of colony with a fixed number of interconnected cells embedded in a common matrix before release from the parental colony"
-}
+  {
+    "term": "functional genomics",
+    "lang": "en",
+    "field": "biology",
+    "subfield": "genetics",
+    "definition": []
+  },
+  {
+    "title": "essential aminoacids",
+    "lang": "en",
+    "type": "list",
+    "field": "health",
+    "content": []
+  },
+
+  {
+    "term": "coenobia",
+    "lang": "en",
+    "definition": "a type of colony with a fixed number of interconnected cells embedded in a common matrix before release from the parental colony"
+  }
 ]
