@@ -1,6 +1,82 @@
 [
 
 {
+  "term": "methodology",
+  "lang": "en",
+  "field": null,
+  "definition": "",
+  "instances": []
+},
+
+{
+  "term": "token",
+  "lang": "en",
+  "field": "civilization",
+  "definition": "something that you do, or a thing that you give someone, that expresses your feelings or intentions, although it might have little practical effect",
+  "instances": ["As a token of our gratitude for all that you have done, we would like you to accept this small gift."]
+},
+
+{
+  "term": "aphids",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "zoology",
+  "subsubfield": "entomology",
+  "description": "soft bodied, pear-shaped insects that suck/feed on plant sap",
+  "notes": [
+    "aphids are a familiar garden pest and seldom cause major damage",
+    "aphids are also a favorite food source of ladybugs, lacewings, and other beneficial insects"
+  ]
+},
+
+{
+  "term": "stub",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "",
+  "examples": []
+},
+
+{
+  "term": "oxalic acid",
+  "lang": "en",
+  "field": "biochemistry",
+  "description": ""
+},
+{
+  "term": "saponin",
+  "lang": "en",
+  "field": "biochemistry",
+  "description": ""
+},
+
+{
+  "term": "ethnobotany",
+  "lang": "en",
+  "field": "anthropology",
+  "definition": "",
+  "discussion": null
+},
+{
+  "term": "vegetative (reproduction)",
+  "lang": "en",
+  "field": "botany",
+  "subfield": "reproduction",
+  "definition": "",
+  "discussion": null
+},
+
+
+{
+  "title": "El Reino de Dios es como un grano de mostaza",
+  "lang": "en",
+  "field": "nutrition",
+  "type": "fact",
+  "content": "many grain legumes are deficient in the sulfur-containing amino acids cystine and methionine"
+},
+
+{
   "title": "El Reino de Dios es como un grano de mostaza",
   "lang": "es",
   "field": "wisdom",
@@ -469,7 +545,7 @@
 },
 
 {
-  "name": "How to Recycle  Wipes"
+  "name": "How to Recycle Wipes"
 },
 {
   "name": "OneDrive on Linux",

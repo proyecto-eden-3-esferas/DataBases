@@ -1,0 +1,53 @@
+[
+{
+  "English": "spinach",
+  "Spanish": "espinaca",
+  "botanical": "Spinacia oleracea",
+  "lifespan": "annual"
+},
+{
+  "English": "lettuce",
+  "Spanish": "lechuga",
+  "lifespan": "annual",
+  "season": [
+    "spring",
+    "summer",
+    "autumn",
+    "winter"
+  ]
+},
+
+{
+  "English": "cellery",
+  "Spanish": "apio",
+  "botanical": "Apium graveolens",
+  "family": "Apiaceae",
+  "eaten": [
+    "stalks",
+    "leaves",
+    "hypocotyl"
+  ],
+  "flowers": {
+    "colour": "creamy white",
+    "diameter": [
+      2,
+      3,
+      "mm"
+    ],
+    "form": [
+      "umbels",
+      "dense",
+      "compound"
+    ]
+  },
+  "cultivars": [
+    "graveolens",
+    "rapaceum",
+    "secalinum"
+  ],
+  "cultivation": "The plants are raised from seed, sown either in a hot bed or in the open garden according to the season of the year, and, after one or two thinnings and transplantings, they are, on attaining a height of 15–20 cm (6–8 in), planted out in deep trenches for convenience of blanching, which is effected by earthing up to exclude light from the stems. Development of self-blanching varieties of celery, which do not need to be earthed up, dominate both the commercial and amateur market.",
+  "preservation": "Celery stalk may be preserved through pickling by first removing the leaves, then boiling the stalks in water before finally adding vinegar, salt, and vegetable oil"
+}
+
+
+]

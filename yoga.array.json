@@ -1,0 +1,71 @@
+[
+{
+  "name":  "yoga",
+  "type":  "term",
+  "field": "spiritual body",
+  "culture": "Hindu",
+  "lang":  "en",
+  "definition": null,
+  "instances": [],
+  "discussion": [
+    "The purpose of yoga is moksha, liberation and hence immortality in the state of samadhi, union, which is the meaning of \"yoga\" as described in the Patanjalayayogasastra. This is obstructed by blockages in the nadis, which allow the vital air, prana, to languish in the Ida and Pingala channels. The unblocking of the channels is therefore a vital function of yoga. The various practices of yoga, including the preliminary purifications or satkarmas, the yogic seals or mudras, visualisation, breath restraint or pranayama, and the repetition of mantras work together to force the prana to move from the Ida and Pingala into the central Sushumna channel. The mudras in particular close off various openings, thus trapping prana and directing it towards the Sushumna. This allows kundalini to rise up the Sushumna channel, leading to liberation."
+  ],
+  "related-to": ["mantra", "moksha", "kundalini", "pranayama", "mudra", "ida", "pingala", "sushuma", "prana"]
+},
+
+{
+  "term": "nadi",
+  "pronounciation": "/nāḍī/",
+  "field": "spiritual body",
+  "culture": "Hindu",
+  "literal-meaning": "tube, pipe, nerve, blood vessel, pulse",
+  "definition": "a term for the channels through which, in traditional Indian medicine and spiritual theory, the energies such as prana of the physical body, the subtle body and the causal body are said to flow",
+  "instances": ["ida", "sushuma", "pingala"],
+  "discussion": [
+    "nadis are said to connect at special points of intensity, the chakras.",
+    "All nadis are said to originate from one of two centres; the heart and the kanda.",
+    "The three principal nadis run from the base of the spine to the head, and are the ida on the left, the sushumna in the centre, and the pingala on the right.",
+    "Ultimately the goal is to unblock these nadis to bring liberation.",
+    "In hatha yoga theory, nadis carry prana, life force energy. In the physical body, the nadis are channels carrying air, water, nutrients, blood and other bodily fluids around and are similar to the arteries, veins, capillaries, bronchioles, nerves, lymph canals and so on.[1] In the subtle and the causal body, the nadis are channels for so-called cosmic, vital, seminal, mental, intellectual, etc. energies (collectively described as prana) and are important for sensations, consciousness and the spiritual aura."
+  ],
+  "related-to": ["chakras", "kanda", "kundalini", "yoga", "moksha"]
+},
+
+{
+  "term": "kanda",
+  "field": "spiritual body",
+  "culture": "Hindu",
+  "definition": "an egg-shaped bulb in the pelvic area, just below the navel"
+},
+
+{
+  "term": "ida",
+  "pronounciation": "idā",
+  "field": "spiritual body",
+  "culture": "Hindu",
+  "instance-of": "nadi",
+  "definition": "left-hand nadi",
+  "discussion": "Associated with lunar energy. The word ida means \"comfort\" in Sanskrit. Idā has a moonlike nature and feminine energy with a cooling effect. It courses from the left testicle to the left nostril and corresponds to the Ganges river."
+},
+
+{
+  "term": "pingala",
+  "field": "spiritual body",
+  "culture": "Hindu",
+  "instance-of": "nadi",
+  "definition": "right-hand nadi",
+  "literal-meaning": "\"orange\" or \"tawny\" in Sanskrit",
+  "discussion": "Associated with solar energy. Pingala has a sunlike nature and masculine energy. Its temperature is heating and courses from the right testicle to the right nostril. It corresponds to the river Yamuna."
+
+},
+
+{
+  "term": "sushuma",
+  "field": "spiritual body",
+  "culture": "Hindu",
+  "instance-of": "nadi",
+  "definition": "central nadi",
+  "discussion": "The most important channel. It connects the base chakra to the crown chakra. It is important in Yoga and Tantra. It corresponds to the river Saraswati."
+}
+
+]

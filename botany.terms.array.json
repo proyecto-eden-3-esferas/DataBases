@@ -1,5 +1,28 @@
 [
 {
+  "term": "pith",
+  "lang": "en",
+  "field": "botany",
+  "subfield": "anatomy",
+  "definition": "",
+  "discussion": null
+},
+{
+  "term": "ethnobotany",
+  "lang": "en",
+  "field": "anthropology",
+  "definition": "",
+  "discussion": null
+},
+{
+  "term": "vegetative (reproduction)",
+  "lang": "en",
+  "field": "botany",
+  "subfield": "reproduction",
+  "definition": "",
+  "discussion": null
+},
+{
   "name":  "CO2 compensation point",
   "type":  "term",
   "field": "botany",
@@ -17,38 +40,7 @@
   "definition": null,
   "related-to": ["photosynthesis", "CAM"]
 },
-{
-  "name":  "annual",
-  "type":  "term",
-  "field": "botany",
-  "culture": null,
-  "lang":  "en",
-  "definition": "a herb that completes its growing cycle (growth, flowering, and death) within the same season",
-  "instances": [],
-  "discussion": [],
-  "notes": [],
-  "related-to": ["biennial", "grass", "herbaceous"]
-},
-{
-  "name": "marcescence",
-  "type": "term",
-  "field": "botany",
-  "lang":  "en",
-  "definition": "when leaves are not abscissed (dropped) in the autumn and instead remain on the tree until the spring",
-  "instances": ["beech", "oak"]
-},
-{
-  "name":  "biennial",
-  "type":  "term",
-  "field": "botany",
-  "culture": null,
-  "lang":  "en",
-  "definition": "a herb that completes its growing cycle (growth, flowering, and death) in two years",
-  "instances": ["beet", "carrot"],
-  "discussion": ["the vegetative (nonreproductive) plant growth takes place from seed during the first year, and flowers and fruit develop during the second"],
-  "notes": [],
-  "related-to": ["annual", "grass", "herbaceous"]
-},
+
 {
   "name":  "stem",
   "type":  "term",
@@ -97,6 +89,49 @@
   "definition": "the region between successive nodes",
   "related-to": ["node", "leaf", "stem", "bud"]
 },
+{
+  "term": "monocarpic",
+  "lang": "en",
+  "field": "botany",
+  "definition": "each rosette dies after flowering and fruiting",
+  "discussion": null
+},
+
+{
+  "name":  "annual",
+  "type":  "term",
+  "field": "botany",
+  "culture": null,
+  "lang":  "en",
+  "definition": "a herb that completes its growing cycle (growth, flowering, and death) within the same season",
+  "instances": [],
+  "discussion": [],
+  "notes": [],
+  "related-to": ["biennial", "grass", "herbaceous"]
+},
+{
+  "name":  "biennial",
+  "type":  "term",
+  "field": "botany",
+  "culture": null,
+  "lang":  "en",
+  "definition": "a herb that completes its growing cycle (growth, flowering, and death) in two years",
+  "instances": ["beet", "carrot"],
+  "discussion": ["the vegetative (nonreproductive) plant growth takes place from seed during the first year, and flowers and fruit develop during the second"],
+  "notes": [],
+  "related-to": ["annual", "grass", "herbaceous"]
+},
+
+{
+  "name": "marcescence",
+  "type": "term",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "when leaves are not abscissed (dropped) in the autumn and instead remain on the tree until the spring",
+  "instances": ["beech", "oak"]
+},
+
+
 {
   "name":  "tendril",
   "type":  "term",
@@ -147,6 +182,7 @@
   "notes": [],
   "related-to": []
 },
+
 {
   "name":  "hypocotyl",
   "type":  "term",
@@ -219,6 +255,19 @@
   "notes": ["results in candelabra-like overall shape"],
   "instances": ["Joshua tree"],
   "related-to": ["branch", "terminal bud"]
+},
+{
+  "name":  "epiphytic",
+  "type":  "term",
+  "word-class": "adj",
+  "field": null,
+  "culture": null,
+  "lang":  "en",
+  "definition": null,
+  "instances": [],
+  "discussion": [],
+  "notes": [],
+  "related-to": []
 },
 {
   "name": "epibiont",

@@ -109,9 +109,9 @@
   },
 
   {
+    "term": "symbolic artificial intelligence",
     "synonims": ["logic-based artificial intelligence"],
     "field": "artificial intelligence",
-    "term": "symbolic artificial intelligence",
     "definition": "the collection of all methods in artificial intelligence research that are based on high-level symbolic (human-readable) representations of problems, logic and search",
     "tools": ["logic programming", "production rules", "semantic nets", "frames"],
     "applications-developed": ["knowledge-based systems (in particular, expert systems)", "symbolic mathematics", "automated theorem provers", "ontologies", "the semantic web", "automated planning", "scheduling systems"],
@@ -123,14 +123,41 @@
       "Neural networks, a subsymbolic approach, had been pursued from early days and reemerged strongly in 2012. Early examples are Rosenblatt's perceptron learning work, the backpropagation work of Rumelhart, Hinton and Williams,[14] and work in convolutional neural networks by LeCun et al. in 1989.[15] However, neural networks were not viewed as successful until about 2012: \"Until Big Data became commonplace, the general consensus in the Al community was that the so-called neural-network approach was hopeless. Systems just didn't work that well, compared to other methods. ... A revolution came in 2012, when a number of people, including a team of researchers working with Hinton, worked out a way to use the power of GPUs to enormously increase the power of neural networks.\"[16] Over the next several years, deep learning had spectacular success in handling vision, speech recognition, speech synthesis, image generation, and machine translation. However, since 2020, as inherent difficulties with bias, explanation, comprehensibility, and robustness became more apparent with deep learning approaches; an increasing number of AI researchers have called for combining the best of both the symbolic and neural network approaches[17][18] and addressing areas that both approaches have difficulty with, such as common-sense reasoning."
     ]
   },
+
+
   {
-    "title": "characters allowed in identifiers",
+    "title": "javascript escape sequences",
+    "field": "computing",
+    "subfield": "escape sequences",
+    "language": "javascript",
+    "list": [
+      {"sequence": "\\'", "interpretation": "single quote"},
+      {"sequence": "\\\"", "interpretation": "double quote"},
+      {"sequence": "\\\\", "interpretation": "backslash"},
+      {"sequence": "\\n", "interpretation": "new line"},
+      {"sequence": "\\r", "interpretation": "carriage return"},
+      {"sequence": "\\t", "interpretation": "tab"},
+      {"sequence": "\\b", "interpretation": "backspace"},
+      {"sequence": "\\f", "interpretation": "form feed"},
+      {"sequence": "\\v", "interpretation": "vertical tab"},
+      {"sequence": "\\0", "interpretation": "null character (U+0000 <control-0000> ) (only if the next character is not a decimal digit; else it is an octal escape sequence)"},
+      {"sequence": "\\xFF", "interpretation": "character represented by the hexadecimal byte FF"},
+      {"sequence": "", "interpretation": ""},
+
+      {"sequence": "", "interpretation": ""},
+      {"sequence": "", "interpretation": ""},
+      {"sequence": "", "interpretation": ""}
+    ]
+  },
+
+  {
+    "title": "characters allowed in javascript identifiers",
     "language": "javascript",
     "start-characters": ["letters", "_"],
     "non-start-characters": ["letters", "digits", "_"]
   },
   {
-    "title": "characters allowed in identifiers",
+    "title": "characters allowed in JSON identifiers",
     "language": "json",
     "start-characters":     ["letters", "_"],
     "non-start-characters": ["letters", "digits", "_"]

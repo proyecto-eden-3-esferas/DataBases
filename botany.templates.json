@@ -8,6 +8,18 @@
 
 
 {
+  "name": "",
+  "other_name": [""],
+  "nombre": "",
+  "genera": "",
+  "edible": false,
+  "growable": false,
+  "wild": true,
+  "includes": []
+}
+
+
+{
   "name": null,
   "pronuciation": "//",
   "lang": "en",

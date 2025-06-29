@@ -1,0 +1,146 @@
+[
+{
+  "name": "forb"
+},
+
+{
+  "name": "purslane",
+  "genus": "Portulaca",
+  "species": "oleracea",
+  "family": "Portulacaceae",
+  "description": "a weed and ancient vegetable, uses both C4 and CAM photosynthesis"
+},
+
+{
+  "name": "beech",
+  "lang": "en",
+  "genus": "Fagus",
+  "definition": "a large tree with smooth grey bark, glossy leaves, and hard, pale fine-grained timber"
+},
+{
+  "name": "European beech",
+  "lang": "en",
+  "genus": "Fagus",
+  "species": "sylvatica",
+  "size": [
+    "a large tree, capable of reaching heights of up to 50 metres (160 feet) tall[4] and 3 m (10 ft) trunk diameter, though more typically 25–35 m (82–115 ft) tall and up to 1.5 m (5 ft) trunk diameter. A 10-year-old sapling will stand about 4 m (13 ft) tall",
+    "Like most trees, its form depends on the location: in forest areas, F. sylvatica grows to over 30 m (100 ft), with branches being high up on the trunk. In open locations, it will become much shorter (typically 15–24 m or 50–80 ft) and more massive."
+  ],
+  "lifespan": "Undisturbed, has a lifespan of 300 years; one tree at the Valle Cervara site was more than 500 years old—the oldest known in the northern hemisphere.[ In cultivated forest stands trees are normally harvested at 80–120 years of age.[6] 30 years are needed to attain full maturity (as compared to 40 for American beech).",
+  "leaves": [
+    "alternate, simple, and entire or with a slightly crenate margin, 5–10 cm (2–3+7⁄8 in) long and 3–7 cm (1.2–2.8 in) broad, with 6–7 veins on each side of the leaf (as opposed to 7–10 veins in F. orientalis). When crenate, there is one point at each vein tip, never any points between the veins",
+    "are often not abscissed (dropped) in the autumn and instead remain on the tree until the spring (marcescence). This particularly occurs when trees are saplings or when plants are clipped as a hedge (making beech hedges attractive screens, even in winter), but it also often continues to occur on the lower branches when the tree is mature."
+  ],
+  "buds": "long and slender, 15–30 mm (5⁄8–1+1⁄8 in) long and 2–3 mm (3⁄32–1⁄8 in) thick, but thicker, up to 4–5 mm (1⁄8–1⁄4 in), where the buds include flower buds.",
+  "flowers": "Small quantities of seeds may be produced around 10 years of age, but not a heavy crop until the tree is at least 30 years old. F. sylvatica male flowers are borne in the small catkins which are a hallmark of the Fagales order (beeches, chestnuts, oaks, walnuts, hickories, birches, and hornbeams). The female flowers produce beechnuts, small triangular nuts 15–20 mm (5⁄8–3⁄4 in) long and 7–10 mm (1⁄4–3⁄8 in) wide at the base; there are two nuts in each cupule, maturing in the autumn 5–6 months after pollination. Flower and seed production is particularly abundant in years following a hot, sunny and dry summer, though rarely for two years in a row."
+},
+
+{
+  "name": "chicory",
+  "lang": "en",
+  "genus": "",
+  "species": ""
+},
+{
+  "name": "garden pea",
+  "lang": "en",
+  "genus": "Pisum",
+  "species": "sativum"
+},
+{
+  "name": "grape",
+  "lang": "en",
+  "genus": "Vitis",
+  "species": "vinifera"
+},
+{
+  "name": "Joshua tree",
+  "lang": "en",
+  "genus": "Yucca",
+  "species": "brevifolia"
+},
+{
+  "name":    "Yellow poplar",
+  "lang":    "en",
+  "genus":   "Liriodendron",
+  "species": "tulipifera"
+},
+{
+  "name":    "yam",
+  "lang":    "en",
+  "genus":   "Dioscorea",
+  "species": "esculenta"
+},
+{
+  "name": "common turmeric",
+  "lang": "en",
+  "genus": "Curcuma",
+  "species": "longa"
+},
+{
+  "name": "basil",
+  "lang": "en",
+  "genus": "Ocimum",
+  "species": "basilicum",
+  "notes": ["the simple leaves are arranged oppositely along the stems"]
+},
+{
+  "name": "nasturtium",
+  "lang": "en",
+  "genus": "Tropaeolum",
+  "species": "majus"
+},
+{
+  "name": "spurge",
+  "lang": "en",
+  "genus": "Euphorbia",
+  "species": "venata"
+},
+{
+  "name": "Jack-go-to-bed-at-noon",
+  "lang": "en",
+  "genus": "Tragopogon"
+},
+{
+  "name": "honeysuckle",
+  "lang": "en",
+  "genus": "Lonicera",
+  "species": "tellmanniana"
+},
+{
+  "name": "dandelion",
+  "lang": "en",
+  "genus": "Taraxacum",
+  "species": "officinale"
+},
+{
+  "name": "Water hyacinth",
+  "lang": "en",
+  "genus": "Eichhornia",
+  "species": "crassipes"
+},
+{
+  "name": "milkweed",
+  "lang": "en",
+  "family": "Apocynaceae"
+},
+{
+  "name": "Venus flytrap",
+  "lang": "en",
+  "genus": "Dionaea",
+  "species": "muscipula"
+},
+{
+  "name": "American basswood",
+  "other-names": ["American linden"],
+  "lang": "en",
+  "genus": "Tilia",
+  "species": "americana"
+},
+{
+  "name": "sedge",
+  "lang": "en",
+  "genus": "Cyperaceae"
+}
+
+]

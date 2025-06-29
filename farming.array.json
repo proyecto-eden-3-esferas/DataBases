@@ -66,13 +66,7 @@
   }
 },
 
-{
-  "name": "gizzard",
-  "type": "term",
-  "field": "zoology",
-  "lang": "en",
-  "definition": null
-},
+
 {
   "name": "arbor",
   "type": "term",

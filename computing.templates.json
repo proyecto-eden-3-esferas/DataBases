@@ -1,0 +1,67 @@
+{
+  "name": null,
+  "type": "site",
+  "field": "internet",
+  "web-address": null,
+  "description": null
+}
+
+
+{
+  "name": "access",
+  "values": ["public", "protected", "private", null],
+  "const": false,
+  "mutable": null
+}
+{
+  "name": null,
+  "type": "typedef",
+  "prototype": null,
+  "access": null
+}
+{
+  "name": null,
+  "type": "variable",
+  "storage": "signed int",
+  "atomic": true,
+  "const": false,
+  "mutable": null,
+  "reference": false,
+  "access": null
+}
+
+{
+  "name": null,
+  "type": "function",
+  "return-type": "void",
+  "workings": null,
+  "access": null,
+  "returns": null,
+  "state_change": null,
+  "static-vars":  [],
+  "throws": [],
+  "caveats": [],
+  "const": null,
+  "usage": [],
+  "examples": []
+}
+
+{
+  "name": null,
+  "type": "cpp_class",
+  "purpose": null,
+  "workings": null,
+  "supers": [],
+  "enums": [],
+  "typedefs": [],
+  "inner-classes": [],
+  "friends": [],
+  "vars": [],
+  "funcs": [],
+  "static-vars":  [],
+  "static-funcs": [],
+  "ctors": [],
+  "destructor": null,
+  "usage": [],
+  "examples": []
+}

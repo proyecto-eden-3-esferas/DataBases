@@ -1,0 +1,40 @@
+[
+{
+  "English": "dill",
+  "Spanish": "eneldo",
+  "botanical": "Anethum graveolens",
+  "family": "Apiaceae",
+  "eaten": ["leaves", "seeds"],
+  "growth": "Dill grows up to 40–60 cm (16–24 in), with slender hollow stems and alternate, finely divided, softly delicate leaves 10–20 cm (4–8 in) long. The ultimate leaf divisions are 1–2 mm (1⁄32–3⁄32 in) broad, slightly broader than the similar leaves of fennel, which are threadlike, less than 1 mm (1⁄16 in) broad, but harder in texture. The flowers are white to yellow, in small umbels 2–9 cm (1–3+1⁄2 in) diameter. The seeds are 4–5 mm (3⁄16–3⁄16 in) long and 1 mm (1⁄16 in) thick, and straight to slightly curved with a longitudinally ridged surface",
+  "cultivation": [
+    "Successful cultivation requires warm to hot summers with high sunshine levels; even partial shade will reduce the yield substantially. It also prefers rich, well-drained soil. The seeds are viable for three to ten years. The plants are somewhat monocarpic and quickly die after \"bolting\" (producing seeds). High temperatures may quicken bolting.",
+    "The seed is harvested by cutting the flower heads off the stalks when the seed is beginning to ripen. The seed heads are placed upside down in a paper bag and left in a warm, dry place for a week. The seeds then separate from the stems easily for storage in an airtight container."
+  ]
+},
+
+{
+  "English": "chives",
+  "Spanish": "cebollino",
+  "botanical": "Allium schoenoprasum",
+  "family": "Amaryllidaceae",
+  "eaten": ["leaves", "flowers"],
+  "culinary_type": "herb",
+  "culinary": [
+    "The green stalks (scapes) and the unopened, immature flower buds are diced and used as an ingredient for omelettes, fish, potatoes, soups, and many other dishes. The edible flowers can be used in salads.",
+    "Chives are cultivated both for their culinary uses and for their ornamental value; the violet flowers are often used in ornamental dry bouquets. The flowers are also edible and are used in salads,or used to make Blossom vinegars."
+  ],
+  "properties": ["insect-repellent", "lots of nectar"],
+  "lifespan": "perennial",
+  "cultivation": [
+    "Chives thrive in well-drained soil, rich in organic matter, with a pH of 6-7 and full sun.[11] They can be grown from seed and mature in summer, or early the following spring. Typically, chives need to be germinated at a temperature of 15 to 20 °C (60-70 °F) and kept moist. They can also be planted under a cloche or germinated indoors in cooler climates, then planted out later. After at least four weeks, the young shoots should be ready to be planted out. They are also easily propagated by division.",
+    "In cold regions, chives die back to the underground bulbs in winter, with the new leaves appearing in early spring. Chives starting to look old can be cut back to about 2–5 cm. When harvesting, the needed number of stalks should be cut to the base.[37] During the growing season, the plant continually regrows leaves, allowing for a continuous harvest.",
+    "Chives are susceptible to damage by leek moth larvae, which bore into the leaves or bulbs of the plant."
+  ]
+},
+
+{ 
+  "English": "parsley",
+  "Spanish": "perejil",
+  "culinary_type": "herb"
+  
+}
