@@ -6,6 +6,98 @@
   "subfield": "programming",
   "definition": ""
   },
+
+  {
+    "term": "stub",
+    "lang": "en",
+    "field": "computing",
+    "subfield": "programming",
+    "definition": "a short and simple placeholder for a function or method that is not yet written for production needs;  it generally contains just enough code to allow it to be used – a declaration with any parameters, and if applicable, a return value.",
+    "examples": [
+      "function ReadThermometer(Source source)
+    return 28
+  end function"
+    ],
+    "uses": [
+      "to implement an interface that is defined but for which the implementation is not available"
+    ]
+  },
+
+  {
+    "term": "mock object",
+    "lang": "en",
+    "field": "computing",
+    "subfield": "programming",
+    "definition": "an object that imitates a production object in limited ways",
+    "uses": [
+      "a programmer might use a mock object as a test double for software testing"
+    ]
+  },
+
+  {
+    "term": "shim",
+    "lang": "en",
+    "field": "computing",
+    "subfield": "programming",
+    "definition": "a library that transparently intercepts API calls and changes the arguments passed, handles the operation itself or redirects the operation elsewhere",
+    "uses": [
+      "to support an old API in a newer environment, or a new API in an older environment",
+      "for running programs on different software platforms than they were developed for"
+    ],
+    "instances": [
+      "bind.so is a shim library for Linux that allows any application, regardless of permissions, to bind to a listening socket or specify outgoing IP address.[5] It uses the LD_PRELOAD mechanism, which allows shims and other libraries to be loaded into any program"
+    ]
+  },
+
+  {
+    "term": "glue code",
+    "lang": "en",
+    "field": "computing",
+    "subfield": "programming",
+    "definition": "code that allows components to interoperate that otherwise are incompatible",
+    "uses": [
+      "to access existing libraries",
+      "to map objects to a database using object-relational mapping"
+    ],
+    "instances": [
+    ],
+    "notes": [
+      "glue code describes language bindings or foreign function interfaces such as the Java Native Interface (JNI)"
+      "the adapter pattern describes glue code as a software design pattern",
+      "glue code may be written in the same language as the code it is gluing together, or in a separate glue language",
+      "glue code can be key to rapid prototyping"
+    ]
+  },
+
+  {
+  "term": "scope",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "the area of the program where an item (be it variable, constant, function, etc.) that has an identifier name is recognized"
+  },
+  {
+  "term": "bound (variable)",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "a symbol that has been given a value by assignment or in a function call"
+  },
+  {
+  "term": "placeholder",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "a symbol that will later be replaced by some value"
+  },
+  {
+  "term": "binding",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "subsubfield": "software library",
+  "definition": "wrapper libraries that bridge two programming languages, so that a library written for one language can be used in another language"
+  },
   {
   "term": "expression",
   "lang": "en",

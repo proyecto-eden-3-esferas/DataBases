@@ -4,7 +4,94 @@
   "term": "methodology",
   "lang": "en",
   "field": null,
-  "definition": "",
+  "definition": "a system of methods used in a particular area of study or activity",
+  "instances": []
+},
+{
+  "term": "futurism",
+  "lang": "en",
+  "field": ["art", "society"],
+  "type": "movement",
+  "definition": "an artistic and social movement that originated in Italy, and to a lesser extent in other countries, in the early 20th century",
+  "values": [
+    "dynamism",
+    "speed",
+    "technology",
+    "youth",
+    "violence",
+    "objects such as the car, the airplane, and the industrial city"
+  ],
+  "origin": {"place": "Italy"},
+  "time": "early 20th century",
+  "notes": [
+    "Many Italian Futurists supported Fascism in the hope of modernizing a country divided between the industrialising north and the rural, archaic South.",
+    "Like the Fascists, the Futurists were Italian nationalists, laborers, disgruntled war veterans, radicals, admirers of violence, and opposed to parliamentary democracy"
+  ],
+  "figures": []
+},
+{
+  "term": "Ten Thousand Hours",
+  "lang": "en",
+  "field": null,
+  "definition": "ten thousand hours is the average number of hours across disciplines that research shows it takes to become an expert",
+  "notes": [
+    "based on research by Anders Ericsson",
+    "popularized in Malcolm Gladwell’s book Outliers"
+  ]
+},
+{
+  "term": "dataism",
+  "lang": "en",
+  "field": null,
+  "definition": "a concept that views the universe, including human beings, as systems processing data; it assumes that the value of everything is determined by its contribution to data processing; it sees data as the fundamental organizing principle of reality, with information flows as the primary driver of progress and understanding",
+  "instances": [],
+  "origin": {"name": "David Brooks", "year": 2013},
+  "notes": [
+    "it originates in the emerging significance of big data",
+    "the term has been expanded to describe what historian Yuval Noah Harari, in his book Homo Deus: A Brief History of Tomorrow from 2015, calls an emerging ideology or even a new form of religion, in which \"information flow\" is the \"supreme value\""
+  ]
+
+},
+{
+  "term": "surveillance capitalism",
+  "lang": "en",
+  "field": "political economics",
+  "definition": "the widespread collection and commodification of personal data by corporations",
+  "notes": [
+    "surveillance capitalism is considered distinct from government surveillance, although the two can be mutually reinforcing"
+  ]
+},
+{
+  "term": "surrogacy",
+  "lang": "en",
+  "field": null,
+  "definition": null,
+  "instances": []
+},
+{
+  "term": "transhumanism",
+  "lang": "en",
+  "field": ["philosophical", "intellectual"],
+  "definition": "a philosophical and intellectual movement that advocates the enhancement of the human condition by developing and making widely available new and future technologies that can greatly enhance longevity, cognition, and well-being",
+  "instances": []
+},
+{
+  "term": "gray goo",
+  "lang": "en",
+  "field": ["philosophical", "intellectual"],
+  "definition":
+{
+  "term": "venture capital",
+  "lang": "en",
+  "field": null,
+  "definition": null,
+  "instances": []
+},
+{
+  "term": "overfitting",
+  "lang": "en",
+  "field": "modeling",
+  "definition": "the production of an analysis that corresponds too closely or exactly to a particular set of data, and may therefore fail to fit to additional data or predict future observations reliably",
   "instances": []
 },
 
@@ -27,15 +114,6 @@
     "aphids are a familiar garden pest and seldom cause major damage",
     "aphids are also a favorite food source of ladybugs, lacewings, and other beneficial insects"
   ]
-},
-
-{
-  "term": "stub",
-  "lang": "en",
-  "field": "computing",
-  "subfield": "programming",
-  "definition": "",
-  "examples": []
 },
 
 {

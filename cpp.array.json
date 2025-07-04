@@ -7,6 +7,80 @@
   },
 
   {
+    "name": "std::ostream::flush()",
+    "type": "function",
+    "action": "synchronizes the associated stream buffer with its controlled output sequence",
+    "prototype": ["ostream& flush();"],
+    "notes": [
+      "A manipulator exists with the same name and behavior",
+      "std::endl inserts a new line and also flushes"
+    ]
+  },
+
+  {
+    "name": "istream::sync()",
+    "type": "function",
+    "action": "synchronize input buffer",
+    "prototype": [""],
+    "notes": [
+    ]
+  },
+
+  {
+    "name": "std::istream::seekg",
+    "type": "function",
+    "prototype": [
+      "istream& seekg (streampos pos);",
+      "istream& seekg (streamoff off, ios_base::seekdir way);"
+    ],
+    "list": [
+      {"of": "seekdir", "value": "beg", "meaning": "beginning of the stream"},
+      {"of": "seekdir", "value": "cur", "meaning": "current position in the stream"},
+      {"of": "seekdir", "value": "end", "meaning": "end of the stream"}
+    ],
+    "instances": [],
+    "notes": [
+      "clears the eofbit flag, if set before the call"
+    ],
+    "errors": [
+      {"flag": "eofbit"},
+      {"flag": "failbit", "error": "either the construction of sentry failed, or the internal call to pubseekpos (1) or pubseekoff (2) failed (i.e., either function returned -1"},
+      {"flag": "badbit", "error": "another error occurred on the stream (such as when the function catches an exception thrown by an internal operation); when set, the integrity of the stream may have been affected"}
+    ]
+  },
+
+  {
+    "name": "std::filesystem::resize_file",
+    "version": "c++17",
+    "std-library": "filesystem",
+    "scope": "std::filesystem",
+    "action": "changes the size of the regular file named by p as if by POSIX truncate: if the file size was previously larger than new_size, the remainder of the file is discarded; if the file was previously smaller than new_size, the file size is increased and the new area appears as if zero-filled.",
+    "prototype": [
+      "void resize_file(const std::filesystem::path& p,
+                        std::uintmax_t new_size );",
+      "void resize_file(const std::filesystem::path& p,
+                        std::uintmax_t new_size,
+                        std::error_code& ec ) noexcept;"
+    ],
+    "throws": ["std::filesystem::filesystem_error"],
+    "notes": ["sets a std::error_code& parameter to the OS API error code if an OS API call fails, and executes ec.clear() if no errors occur"]
+  },
+  {
+    "name": "std::filesystem::file_size",
+    "version": "c++17",
+    "std-library": "filesystem",
+    "scope": "std::filesystem",
+    "prototype": [
+      "std::uintmax_t file_size( const std::filesystem::path& p );",
+      "std::uintmax_t file_size( const std::filesystem::path& p,
+                          std::error_code& ec ) noexcept;"
+    ],
+    "throws": ["std::filesystem::filesystem_error"],
+    "notes": ["sets a std::error_code& parameter to the OS API error code if an OS API call fails, and executes ec.clear() if no errors occur"]
+  },
+
+
+  {
     "term": "inline",
     "type": "keyword",
     "language": "c++",

@@ -38,6 +38,7 @@
   "field": "computing",
   "definition": "a name pattern becoming expanded into a list of names matching that pattern",
   "notes": []
+},
 {
   "term":  "escape character",
   "lang":  "en",
@@ -52,11 +53,22 @@
     "In the telecommunications field, escape characters are used to indicate that the following characters are encoded differently. This is used to alter control characters that would otherwise be noticed and acted on by the underlying telecommunications hardware, such as illegal characters. In this context, the use of escape characters is often referred to as quoting."
   ]
 },
+
 {
   "term": "buffer",
   "lang": "en",
   "field": "computing",
   "definition": null
+},
+{
+  "term": "dirty bit",
+  "lang": "en",
+  "field": "computing",
+  "definition": "a flag used to indicate whether a block of memory or data has been modified since it was last written to a slower storage medium (like disk)",
+  "uses": [
+    "caching",
+    "virtual memory management"
+  ]
 },
 {
   "term":  "ignored escaping",
@@ -69,11 +81,20 @@
   "term": "flush",
   "lang": "en",
   "field": "computing",
-  "definition": null
+  "definition": "the process of clearing out or cleaning data from a buffer or cache"
+},
+
+{
+  "term": "adware",
+  "lang": "en",
+  "field": "computing",
+  "definition": "software with, often unwanted, adverts",
+  "notes": [ ]
 },
 
 {
   "term": "ethereum",
+  "lang": "en",
   "field": null,
   "definition": "decentralised mining network and software development platform rolled into one",
   "source": "Vitalik Buterin"
