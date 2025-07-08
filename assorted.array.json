@@ -1,4 +1,127 @@
 [
+{
+  "term": "parasitoid",
+  "lang": "en",
+  "field": "biology",
+  "effects": [],
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "historicism",
+  "lang": "en",
+  "field": "culture",
+  "definition": ""
+
+},
+{
+  "term": "holistic",
+  "lang": "en",
+  "field": "culture",
+  "definition": ""
+
+},
+{
+  "term": "appropriate technology",
+  "lang": "en",
+  "definition": "",
+  "instances": [
+  ]
+},
+{
+  "term": "monolithic",
+  "lang": "en",
+  "field": "systems",
+  "definition": "",
+  "opposite": "modular",
+  "instances": []
+},
+{
+  "term": "modular",
+  "lang": "en",
+  "field": "systems",
+  "definition": "",
+  "opposite": "monolithic",
+  "instances": []
+},
+{
+  "term": "yield",
+  "lang": "en",
+  "field": "systems",
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "theoretical limit",
+  "lang": "en",
+  "field": "systems",
+  "definition": "",
+  "instances": [
+    {"name": "Betz limit", "definition": ""},
+    {"name": "speed of light", "definition": "speed of light in vacuum"}
+  ]
+},
+
+{
+  "name": "Silent Spring",
+  "author": "Rachel Carson",
+  "type": "book",
+  "topic": "the extent of environmental damage caused by insecticides"
+},
+{
+  "term": "tolerance",
+  "lang": "en",
+  "field": "engineering",
+  "definition": "",
+  "instances": []
+},
+
+{
+  "term": "humanure",
+  "lang": "en",
+  "field": null,
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "dry composting toilet",
+  "lang": "en",
+  "field": null,
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "synergy",
+  "lang": "en",
+  "field": "systems",
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "hugel kultur",
+  "lang": "en",
+  "field": "farming",
+  "subfield": "organic farming",
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "heirloom variety",
+  "lang": "en",
+  "field": "farming",
+  "subfield": "organic farming",
+  "definition": "",
+  "instances": []
+},
+
+
+
+{
+  "term": "makers",
+  "field": "movement",
+  "definition": "",
+  "instances": []
+}
 
 {
   "term": "methodology",
@@ -66,6 +189,13 @@
   "lang": "en",
   "field": null,
   "definition": null,
+  "instances": []
+},
+{
+  "term": "phenology",
+  "lang": "en",
+  "field": null,
+  "definition": "the study of cyclic and seasonal natural phenomena, especially in relation to climate and plant and animal life",
   "instances": []
 },
 {

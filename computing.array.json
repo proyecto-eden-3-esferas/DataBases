@@ -29,7 +29,7 @@
   ],
   "instances": [
     "\"The highest summit\"",
-    "\"Mary\\\'s choice\""
+    "\"Mary's choice\""
   ]
 },
 {
@@ -55,11 +55,89 @@
 },
 
 {
+  "term": "operating system",
+  "lang": "en",
+  "field": "computing",
+  "definition": "a collection of software that manages a computer's hardware and applications by allocating resources, including memory, CPU, input/output devices and file storage",
+  "functions": [
+    {"name": "managing computer hardware"},
+    {"name": "running applications"},
+    {"name": "enabling users to communicate with computers through a user-friendly interface"},
+    {"name": "processor management", "definition": "allocating various tasks to a processor and giving it enough time to function"},
+    {"name": "memory management", "definition": "allocating and deallocating memory across different processes"},
+    {"name": "device management", "definition": "controlling the workings of input-output devices, including receiving and communicating requests, performing tasks and interacting with peripheral devices such as printers and cameras"},
+    {"name": "file management", "definition": "tracking information that supports file system storage and maintaining integrity of data"},
+    {"name": "security", "definition": "ensuring the confidentiality and integrity of data, including protecting against unauthorised or malicious access and relaying vulnerabilities"},
+    {"name": "error detection", "definition": "checking for external threats, malicious software and hardware changes"},
+    {"name": "job scheduling", "definition": "determining which applications need to run in which order"}
+  ],
+  "components": [
+  ],
+  "instances": [
+    {"name": "Microsoft Windows", "notes": ["the most widely used global operating system, the market leader of desktop OS since the early 1990s"]},
+    {"name": "Android"},
+    {"name": "Linux"},
+    {"name": "macOS"},
+    {"name": "iOS",
+     "notes": [
+       "the second most widely used mobile OS",
+       "iOS was developed solely for use with Apple hardware devices such as the iPhone, iPad, iPod and other handheld devices"
+     ]},
+    {"name": "ChromeOS",
+     "notes": [
+      "developed for use with tablets and netbooks",
+      "an intuitive, secure and straightforward OS"
+     ]}
+  ],
+  "kinds": [
+    {"name": "Multi-tasking operating system"},
+    {"name": "Multi-processing operating system"},
+    {"name": "Time-sharing operating system"},
+    {"name": "Real-time operating system"},
+    {"name": "Multi-programming batch operating system"},
+    {"name": "Distributed operating system"},
+    {"name": "Network operating system"},
+    {"name": "Simple batch operating system"},
+    {"name": "Mobile operating system  "}
+  ]
+},
+
+
+{
   "term": "buffer",
   "lang": "en",
   "field": "computing",
   "definition": null
 },
+{
+  "term": "asynchronous",
+  "lang": "en",
+  "field": "computing",
+  "definition": null
+},
+{
+  "term": "concurrent",
+  "lang": "en",
+  "field": "computing",
+  "definition": null
+},
+
+{
+  "term": "process",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "operating systems",
+  "definition": null
+},
+
+{
+  "term": "thread",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "operating systems",
+  "definition": null
+},
+
 {
   "term": "dirty bit",
   "lang": "en",
@@ -146,8 +224,8 @@
     "The Symbolic AI paradigm led to seminal ideas in search, symbolic programming languages, agents, multi-agent systems, the semantic web, and the strengths and limitations of formal knowledge and reasoning systems"
   ],
   "history": [
-    "Symbolic AI was the dominant paradigm of AI research from the mid-1950s until the mid-1990s.[4] Researchers in the 1960s and the 1970s were convinced that symbolic approaches would eventually succeed in creating a machine with artificial general intelligence and considered this the ultimate goal of their field.[citation needed] An early boom, with early successes such as the Logic Theorist and Samuel's Checkers Playing Program, led to unrealistic expectations and promises and was followed by the first AI Winter as funding dried up.[5][6] A second boom (1969–1986) occurred with the rise of expert systems, their promise of capturing corporate expertise, and an enthusiastic corporate embrace.[7][8] That boom, and some early successes, e.g., with XCON at DEC, was followed again by later disappointment.[8] Problems with difficulties in knowledge acquisition, maintaining large knowledge bases, and brittleness in handling out-of-domain problems arose. Another, second, AI Winter (1988–2011) followed.[9] Subsequently, AI researchers focused on addressing underlying problems in handling uncertainty and in knowledge acquisition.[10] Uncertainty was addressed with formal methods such as hidden Markov models, Bayesian reasoning, and statistical relational learning.[11][12] Symbolic machine learning addressed the knowledge acquisition problem with contributions including Version Space, Valiant's PAC learning, Quinlan's ID3 decision-tree learning, case-based learning, and inductive logic programming to learn relations.[13]",
-    "Neural networks, a subsymbolic approach, had been pursued from early days and reemerged strongly in 2012. Early examples are Rosenblatt's perceptron learning work, the backpropagation work of Rumelhart, Hinton and Williams,[14] and work in convolutional neural networks by LeCun et al. in 1989.[15] However, neural networks were not viewed as successful until about 2012: \"Until Big Data became commonplace, the general consensus in the Al community was that the so-called neural-network approach was hopeless. Systems just didn't work that well, compared to other methods. ... A revolution came in 2012, when a number of people, including a team of researchers working with Hinton, worked out a way to use the power of GPUs to enormously increase the power of neural networks.\"[16] Over the next several years, deep learning had spectacular success in handling vision, speech recognition, speech synthesis, image generation, and machine translation. However, since 2020, as inherent difficulties with bias, explanation, comprehensibility, and robustness became more apparent with deep learning approaches; an increasing number of AI researchers have called for combining the best of both the symbolic and neural network approaches[17][18] and addressing areas that both approaches have difficulty with, such as common-sense reasoning."
+    "Symbolic AI was the dominant paradigm of AI research from the mid-1950s until the mid-1990s. Researchers in the 1960s and the 1970s were convinced that symbolic approaches would eventually succeed in creating a machine with artificial general intelligence and considered this the ultimate goal of their field.[citation needed] An early boom, with early successes such as the Logic Theorist and Samuel's Checkers Playing Program, led to unrealistic expectations and promises and was followed by the first AI Winter as funding dried up. A second boom (1969–1986) occurred with the rise of expert systems, their promise of capturing corporate expertise, and an enthusiastic corporate embrace. That boom, and some early successes, e.g., with XCON at DEC, was followed again by later disappointment. Problems with difficulties in knowledge acquisition, maintaining large knowledge bases, and brittleness in handling out-of-domain problems arose. Another, second, AI Winter (1988–2011) followed. Subsequently, AI researchers focused on addressing underlying problems in handling uncertainty and in knowledge acquisition. Uncertainty was addressed with formal methods such as hidden Markov models, Bayesian reasoning, and statistical relational learning. Symbolic machine learning addressed the knowledge acquisition problem with contributions including Version Space, Valiant's PAC learning, Quinlan's ID3 decision-tree learning, case-based learning, and inductive logic programming to learn relations.",
+    "Neural networks, a subsymbolic approach, had been pursued from early days and reemerged strongly in 2012. Early examples are Rosenblatt's perceptron learning work, the backpropagation work of Rumelhart, Hinton and Williams, and work in convolutional neural networks by LeCun et al. in 1989. However, neural networks were not viewed as successful until about 2012: \"Until Big Data became commonplace, the general consensus in the Al community was that the so-called neural-network approach was hopeless. Systems just didn't work that well, compared to other methods. ... A revolution came in 2012, when a number of people, including a team of researchers working with Hinton, worked out a way to use the power of GPUs to enormously increase the power of neural networks.\" Over the next several years, deep learning had spectacular success in handling vision, speech recognition, speech synthesis, image generation, and machine translation. However, since 2020, as inherent difficulties with bias, explanation, comprehensibility, and robustness became more apparent with deep learning approaches; an increasing number of AI researchers have called for combining the best of both the symbolic and neural network approaches and addressing areas that both approaches have difficulty with, such as common-sense reasoning."
   ]
 }
 

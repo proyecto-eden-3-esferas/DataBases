@@ -56,11 +56,8 @@
     "scope": "std::filesystem",
     "action": "changes the size of the regular file named by p as if by POSIX truncate: if the file size was previously larger than new_size, the remainder of the file is discarded; if the file was previously smaller than new_size, the file size is increased and the new area appears as if zero-filled.",
     "prototype": [
-      "void resize_file(const std::filesystem::path& p,
-                        std::uintmax_t new_size );",
-      "void resize_file(const std::filesystem::path& p,
-                        std::uintmax_t new_size,
-                        std::error_code& ec ) noexcept;"
+"void resize_file(const std::filesystem::path& p,\\n  std::uintmax_t new_size );",
+"void resize_file(const std::filesystem::path& p,\\n  std::uintmax_t new_size,\\n  std::error_code& ec ) noexcept;"
     ],
     "throws": ["std::filesystem::filesystem_error"],
     "notes": ["sets a std::error_code& parameter to the OS API error code if an OS API call fails, and executes ec.clear() if no errors occur"]
@@ -71,9 +68,8 @@
     "std-library": "filesystem",
     "scope": "std::filesystem",
     "prototype": [
-      "std::uintmax_t file_size( const std::filesystem::path& p );",
-      "std::uintmax_t file_size( const std::filesystem::path& p,
-                          std::error_code& ec ) noexcept;"
+"std::uintmax_t file_size( const std::filesystem::path& p );",
+"std::uintmax_t file_size( const std::filesystem::path& p,\\n  std::error_code& ec ) noexcept;"
     ],
     "throws": ["std::filesystem::filesystem_error"],
     "notes": ["sets a std::error_code& parameter to the OS API error code if an OS API call fails, and executes ec.clear() if no errors occur"]

@@ -1,4 +1,39 @@
 [
+
+{
+  "term": "strongly typed",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "associative array",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "dictionary",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "dynamic binding",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "subsubfield": "OOP",
+  "definition": "",
+  "instances": []
+},
+
   {
   "term": "token",
   "lang": "en",
@@ -14,9 +49,10 @@
     "subfield": "programming",
     "definition": "a short and simple placeholder for a function or method that is not yet written for production needs;  it generally contains just enough code to allow it to be used – a declaration with any parameters, and if applicable, a return value.",
     "examples": [
-      "function ReadThermometer(Source source)
-    return 28
-  end function"
+      ["function ReadThermometer(Source source)",
+       "return 28",
+       "end function"
+      ]
     ],
     "uses": [
       "to implement an interface that is defined but for which the implementation is not available"
@@ -62,7 +98,7 @@
     "instances": [
     ],
     "notes": [
-      "glue code describes language bindings or foreign function interfaces such as the Java Native Interface (JNI)"
+      "glue code describes language bindings or foreign function interfaces such as the Java Native Interface (JNI)",
       "the adapter pattern describes glue code as a software design pattern",
       "glue code may be written in the same language as the code it is gluing together, or in a separate glue language",
       "glue code can be key to rapid prototyping"
@@ -173,9 +209,7 @@
     "subfield": "parsing",
     "source": "https://cppreference.com",
     "context": "the rule used in phase 3 when decomposing the source file into preprocessing tokens",
-    "discussion": "If the input has been parsed into preprocessing tokens up to a given character (otherwise, the next preprocessing token will not be parsed, which makes the parsing order unique), the next preprocessing token is generally taken to be the longest sequence of characters that could constitute a preprocessing token, even if that would cause subsequent analysis to fail. This is commonly known as maximal munch.
-
-",
+    "discussion": "If the input has been parsed into preprocessing tokens up to a given character (otherwise, the next preprocessing token will not be parsed, which makes the parsing order unique), the next preprocessing token is generally taken to be the longest sequence of characters that could constitute a preprocessing token, even if that would cause subsequent analysis to fail. This is commonly known as maximal munch.",
     "instances": []
   },
 
