@@ -1,5 +1,31 @@
 [
-
+{
+  "term": "symbolic programming",
+  "field": "computing",
+  "definition": "a programming paradigm in which the program can manipulate its own formulas and program components as if they were plain data.",
+  "description": "Through symbolic programming, complex processes can be developed that build other more intricate processes by combining smaller units of logic or functionality. Thus, such programs can effectively modify themselves and appear to \"learn\", which makes them better suited for applications such as artificial intelligence, expert systems, natural language processing, and computer games.",
+  "languages": "languages that support symbolic programming include homoiconic languages"
+},
+{
+  "term": "homoiconicity",
+  "etimology": "from the Greek words homo- meaning \"the same\" and icon meaning \"representation\"",
+  "definition": "a language is homoiconic if a program written in it can be manipulated as data using the language",
+  "discussion": [
+    "The program's internal representation can thus be inferred just by reading the program itself. This property is often summarized by saying that the language treats code as data.",
+    "In a homoiconic language, the primary representation of programs is also a data structure in a primitive type of the language itself. This makes metaprogramming easier than in a language without this property: reflection in the language (examining the program's entities at runtime) depends on a single, homogeneous structure, and it does not have to handle several different structures that would appear in a complex syntax. Homoiconic languages typically include full support of syntactic macros, allowing the programmer to express transformations of programs in a concise way."],
+  "notes": [
+    "The informality of the property arises from the fact that, strictly, this applies to almost all programming languages. No consensus exists on a precise definition of the property."
+  ],
+  "instances": ["Wolfram Language", "Lisp", "Prolog", "Julia"],
+  "related-topics": [
+    "Concatenative programming language",
+    "Language-oriented programming",
+    "Symbolic programming",
+    "Self-modifying code",
+    "Metaprogramming",
+    "Reification"
+  ]
+},
 {
   "term": "strongly typed",
   "lang": "en",
@@ -251,6 +277,14 @@
   },
 
 
+  {
+    "name": "npm",
+    "field": "computing",
+    "subfield": "node.js",
+    "language": "javascript",
+    "definition": "the standard package manager for Node.js",
+    "description": "npm installs, updates and manages downloads of dependencies of your project"
+  },
   {
     "title": "javascript escape sequences",
     "field": "computing",

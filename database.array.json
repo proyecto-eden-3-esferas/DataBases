@@ -1,0 +1,51 @@
+[
+{
+  "term":  "SPARQL",
+  "lang":  "en",
+  "field": "computing",
+  "subfield": "databases",
+  "definition": "an RDF query language able to retrieve and manipulate data stored in Resource Description Framework format"
+},
+{
+  "term":  "Resource Description Framework",
+  "acronym": "RDF",
+  "lang":  "en",
+  "field": "computing",
+  "subfield": "databases",
+  "definition": ""
+{
+  "term":  "object-oriented database",
+  "acronym": null,
+  "synonyms": [],
+  "lang":  "en",
+  "field": "computing",
+  "subfield": "databases",
+  "definition": "essentially a persistent object store for software written in an object-oriented programming language with an application programming interface API for storing and retrieving objects, and little or no specific support for querying",
+  "features": [
+  ],
+  "advantages": [
+    "containers like sets and lists",
+    "arbitrary user-defined datatypes",
+    "nested objects"
+  ]
+},
+{
+  "term":  "object–relational database [management system]",
+  "acronym": "ORD",
+  "synonyms": ["object–relational database [management system]"],
+  "lang":  "en",
+  "field": "computing",
+  "subfield": "databases",
+  "definition": "a database management system (DBMS) similar to a relational database, but with an object-oriented database model",
+  "features": [
+    "objects",
+    "classes",
+    "inheritance",
+    "supports custom data types",
+    "supports definition of methods"
+  ],
+  "notes": [
+    "provides a middle ground between relational databases and object-oriented databases"
+  ]
+}
+]

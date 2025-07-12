@@ -1,11 +1,120 @@
 [
 {
+  "term": "doomsday device",
+  "lang": "en",
+  "definition": "a hypothetical construction – usually a weapon or weapons system – which could destroy all life on a planet, particularly Earth, or destroy the planet itself",
+  "notes": [
+    "Most hypothetical constructions rely on hydrogen bombs being made arbitrarily large, assuming there are no concerns about delivering them to a target (see Teller–Ulam design) or that they can be \"salted\" with materials designed to create long-lasting and hazardous fallout (e.g., a cobalt bomb)"
+  ],
+  "instances": [
+    {"name": "Sundial",    "yield": "10GT"},
+    {"name": "Gnomon",     "yield":  "1GT"},
+    {"name": "Tsar Bomba", "yield": "100MT"}
+  ]
+},
+{
+  "term": "othering",
+  "lang": "en",
+  "definition": "our tendency to cast people and groups in irreconcilable terms",
+  "notes": [
+  ],
+  "instances": [
+  ]
+},
+{
+  "term": "template",
+  "lang": "en",
+  "definition": ""
+},
+
+{
+  "term": "state of affairs",
+  "lang": "en",
+  "definition": ""
+},
+{
+  "term": "fact",
+  "lang": "en",
+  "definition": "",
+  "notes": [
+    "translates poorly to idiomatic Spanish"
+  ],
+  "instances": [
+    "The Earth orbits the Sun",
+    "Morocco is predominantly muslim",
+    "Spain has more on the order of 100,000 laws"
+  ]
+},
+{
+  "term": "inventio",
+  "lang": "en",
+  "field": "rhetoric",
+  "definition": "",
+  "instances": [
+  ]
+},
+{
+  "term": "impedance",
+  "lang": "en",
+  "field": "systems",
+  "definition": "",
+  "instances": [
+  ]
+},
+{
+  "term": "entropy",
+  "lang": "en",
+  "field": "systems",
+  "subfield": "thermodynamics"
+  "definition": "",
+  "instances": [
+  ]
+},
+
+{
+  "term": "green compost material",
+  "lang": "en",
+  "field": "farming",
+  "subfield": "composting",
+  "definition": "",
+  "instances": [
+    "grass clippings",
+    "fresh manure",
+    "coffee grounds",
+    "plant trimmings",
+    "vegetable excess"
+  ]
+},
+{
+  "term": "brown compost material",
+  "lang": "en",
+  "field": "farming",
+  "subfield": "composting",
+  "definition": "",
+  "instances": [
+    "black-and-white newspapers (color ink is toxic to plants)",
+    "dead leaves",
+    "straw",
+    "woodstove ash"
+  ]
+},
+
+
+{
   "term": "parasitoid",
   "lang": "en",
   "field": "biology",
   "effects": [],
   "definition": "",
   "instances": []
+},
+
+{
+  "term": "plug tray",
+  "lang": "en",
+  "field": "farming",
+  "definition": "",
+  "benefits": []
 },
 {
   "term": "historicism",
@@ -19,7 +128,18 @@
   "lang": "en",
   "field": "culture",
   "definition": ""
-
+},
+{
+  "term": "upcycling",
+  "lang": "en",
+  "field": "sustainability",
+  "definition": ""
+},
+{
+  "term": "downcycling",
+  "lang": "en",
+  "field": "sustainability",
+  "definition": ""
 },
 {
   "term": "appropriate technology",
@@ -57,8 +177,10 @@
   "field": "systems",
   "definition": "",
   "instances": [
-    {"name": "Betz limit", "definition": ""},
-    {"name": "speed of light", "definition": "speed of light in vacuum"}
+    {"name": "Betz limit",     "field": "windturbines"},
+    {"name": "speed of light", "definition": "speed of light in vacuum"},
+    {"name": "Shockley-", "field": "photosynthesis"},
+    {"name": "Second Law", "field": "thermodynamics"}
   ]
 },
 
@@ -121,7 +243,7 @@
   "field": "movement",
   "definition": "",
   "instances": []
-}
+},
 
 {
   "term": "methodology",
@@ -209,7 +331,8 @@
   "term": "gray goo",
   "lang": "en",
   "field": ["philosophical", "intellectual"],
-  "definition":
+  "definition": ""
+},
 {
   "term": "venture capital",
   "lang": "en",
@@ -401,7 +524,7 @@
   "field": "nuclear weapons",
   "subfield": "thermonuclear weapons",
   "subsubfield": "thermonuclear weapons test",
-  "yield": {"unit": "kT", "amount": 300,}
+  "yield": {"unit": "kT", "amount": 300},
   "definition": []
 },
 {
