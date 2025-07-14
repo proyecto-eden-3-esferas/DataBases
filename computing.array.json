@@ -1,5 +1,22 @@
 [
 {
+  "term": "algorithm",
+  "field": "computing",
+  "lang": "en",
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "abstraction",
+  "field": "computing",
+  "definition": "the process of generalizing concrete details, such as attributes, away from the study of objects and systems to focus attention on details of greater importance",
+  "instances": [
+    "the usage of abstract data types to separate usage from working representations of data within programs",
+    "the concept of functions or subroutines which represent a specific way of implementing control flow",
+    "the process of reorganizing common behavior from groups of non-abstract classes into abstract classes using inheritance and sub-classes, as seen in object-oriented programming languages"]
+},
+
+{
   "name": "Wayback Machine",
   "pronounciation": "/weɪbæk maˈʃin/",
   "lang": "es",

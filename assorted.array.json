@@ -1,5 +1,21 @@
 [
 {
+  "term": "convention",
+  "lang": "en",
+  "field": "society",
+  "definition": "",
+  "instances": []
+},
+
+{
+  "term": "compute",
+  "field": "information",
+  "wordclass": "verb",
+  "lang": "en",
+  "definition": "",
+  "instances": []
+},
+{
   "term": "doomsday device",
   "lang": "en",
   "definition": "a hypothetical construction – usually a weapon or weapons system – which could destroy all life on a planet, particularly Earth, or destroy the planet itself",
@@ -54,6 +70,15 @@
   ]
 },
 {
+  "term": "scrapbook",
+  "lang": "en",
+  "field": null,
+  "definition": "",
+  "instances": [
+  ]
+},
+
+{
   "term": "impedance",
   "lang": "en",
   "field": "systems",
@@ -65,7 +90,7 @@
   "term": "entropy",
   "lang": "en",
   "field": "systems",
-  "subfield": "thermodynamics"
+  "subfield": "thermodynamics",
   "definition": "",
   "instances": [
   ]

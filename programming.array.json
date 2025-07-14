@@ -1,7 +1,20 @@
 [
+
+{
+  "term": "map",
+  "field": "computing",
+  "subfield": "programming",
+  "subsubfield": "ADT",
+  "definition": "a data structure that associates values (the keys) with other values",
+  "synonyms": ["associative array", "dictionary"],
+  "instances": []
+},
+
+
 {
   "term": "symbolic programming",
   "field": "computing",
+  "subfield": "programming",
   "definition": "a programming paradigm in which the program can manipulate its own formulas and program components as if they were plain data.",
   "description": "Through symbolic programming, complex processes can be developed that build other more intricate processes by combining smaller units of logic or functionality. Thus, such programs can effectively modify themselves and appear to \"learn\", which makes them better suited for applications such as artificial intelligence, expert systems, natural language processing, and computer games.",
   "languages": "languages that support symbolic programming include homoiconic languages"
@@ -34,22 +47,7 @@
   "definition": "",
   "instances": []
 },
-{
-  "term": "associative array",
-  "lang": "en",
-  "field": "computing",
-  "subfield": "programming",
-  "definition": "",
-  "instances": []
-},
-{
-  "term": "dictionary",
-  "lang": "en",
-  "field": "computing",
-  "subfield": "programming",
-  "definition": "",
-  "instances": []
-},
+
 {
   "term": "dynamic binding",
   "lang": "en",
@@ -83,6 +81,14 @@
     "uses": [
       "to implement an interface that is defined but for which the implementation is not available"
     ]
+  },
+
+  {
+    "term": "callback",
+    "lang": "en",
+    "field": "computing",
+    "subfield": "programming",
+    "definition": ""
   },
 
   {
@@ -262,7 +268,7 @@
 
   {
     "term": "symbolic artificial intelligence",
-    "synonims": ["logic-based artificial intelligence"],
+    "synonyms": ["logic-based artificial intelligence"],
     "field": "artificial intelligence",
     "definition": "the collection of all methods in artificial intelligence research that are based on high-level symbolic (human-readable) representations of problems, logic and search",
     "tools": ["logic programming", "production rules", "semantic nets", "frames"],
