@@ -1,3 +1,4 @@
+const assorted_a =
 [
 
 {
@@ -11,8 +12,9 @@
     "Bruce Sterling",
     "Pat Cadigan"
   ],
-  "notes": []
-}
+  "notes": [],
+  "advantages": null
+},
 
 {
   "term": "arsenic",
@@ -1210,3 +1212,5 @@
   "content": "Todo el mundo tiene sombra. Todo el mundo puede bailar butoh. Coger sombras. Cuantas más sombras."
 }
 ]
+;
+

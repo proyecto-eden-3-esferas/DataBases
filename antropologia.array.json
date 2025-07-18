@@ -1,7 +1,248 @@
 [
 {
-  "term": "totem",
+  "term": "convention",
+  "lang": "en",
+  "field": "anthropology",
+  "subfield": "society",
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "contubernio",
   "lang": "es",
+  "field": "anthropology",
+  "subfield": "society",
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "mafia",
+  "lang": "es",
+  "fields": ["anthropology", "politics"],
+  "subfield": "society",
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "saga",
+  "lang": "es",
+  "field": "anthropology",
+  "subfield": "society",
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "adagio",
+  "lang": "es",
+  "fields": ["anthropology", "politics"],
+  "subfield": "society",
+  "definition": "",
+  "instances": []
+},
+
+
+{
+  "term": "rito de iniciación",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "compensación",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "territorio",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "blood money",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "rito",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "mito",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "divinidad",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "arcaico",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "leyenda",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "héroe",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "epónimo",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "intimidad",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "elopement",
+  "lang": "en",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "compensación",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "tabú",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "hermandad",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "guerrero",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "samurai",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "prostituta",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "proxeneta",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+
+{
+  "term": "intercambio de regalos",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "solidaridad",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "vendetta",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "prócer",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "covada",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "comensalidad",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "matriarcado",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "patriarcado",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "grupo cerrado",
+  "definition": ""
+},
+{
+  "term": "grupo abierto",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "incesto",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "uso",
+  "lang": "es",
+  "field": "anthropology",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "meme",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": ""
+},
+{
+  "term": "tótem",
+  "lang": "es",
+  "field": "anthropology",
   "definition": "emblema de una familia o tribu; puede incluir un objeto natural, un animal o un espíritu",
   "notes": [
     "En las tribus australianas, un tótem es un animal, domestico o no, más raramente una planta, que se identifica con la tribu. Los individuos que tienen el mismo tótem deben respetar su vida y abstenerse de comer su carne. Los miembros de un mismo tótem no deben tener relaciones sexuales.",
@@ -11,6 +252,7 @@
 {
   "term": "clan",
   "lang": "es",
+  "field": "anthropology",
   "definition": "familia numerosa, un grupo de personas de ascendencia común o un grupo de familias muy unidas e interrelacionadas",
   "notes": []
 },
@@ -18,12 +260,14 @@
 {
   "term": "tribu",
   "lang": "es",
+  "field": "anthropology",
   "definition": "grupo social primitivo de un mismo origen, real o supuesto, cuyos miembros suelen tener en común usos y costumbres",
   "notes": []
 },
 {
   "term": "nación",
   "lang": "es",
+  "field": "anthropology",
   "definition": "conjunto de los habitantes de un país regido por el mismo Gobierno",
   "notes": [
     "también puede referirse a un grupo de personas que comparten una historia, tradiciones, cultura y, a menudo, un idioma, incluso si el grupo no posee un territorio político propio"
@@ -32,6 +276,7 @@
 {
   "term": "pueblo",
   "lang": "es",
+  "field": "anthropology",
   "definition": "conjunto de habitantes de un territorio, unidos por vínculos políticos o culturales",
   "examples": [
     "El pueblo andaluz.",
@@ -45,6 +290,7 @@
 {
   "term": "etnia",
   "lang": "es",
+  "field": "anthropology",
   "definition": "características sociales y culturales, la procedencia o las experiencias compartidas por un grupo de personas; esto abarca aspectos como el idioma, la religión, las creencias, los valores y los comportamientos que suelen pasar de una generación a la siguiente",
   "notes": []
 },
@@ -52,6 +298,7 @@
 {
   "term": "cresta",
   "lang": "es",
+  "field": "anthropology",
   "definition": "emblema o diseño formal utilizado como símbolo para representar una familia, pueblo, grupo u organización. Para muchas tribus de la costa noroeste del Pacífico, la cresta representa una entidad con la cual el clan afirma tener una relación significativa",
   "notes": []
 },
@@ -59,44 +306,25 @@
 {
   "term": "potlach",
   "lang": "es",
+  "field": "anthropology",
   "definition": "ceremonia para conmemorar eventos importantes en la vida del anfitrión, tales como un matrimonio, el nacimiento y nombramiento de un niño, el duelo de un fallecido, un nuevo rango social y la transferencia de derechos; estas ceremonias a menudo incluían muchos invitados, discursos, banquetes, regalos y presentaciones de baile",
-  "notes": []
-},
-
-
-{
-  "term": "género",
-  "field": "orientación sexual"
-  "lang": "es",
-  "definition": "",
-  "notes": []
-},
-
-{
-  "term": "asexual",
-  "field": "orientación sexual"
-  "lang": "es",
-  "definition": "",
-  "notes": []
-},
-{
-  "term": "orientación sexual",
-  "lang": "es",
-  "definition": "",
   "notes": []
 },
 
 {
   "term": "cultura",
   "lang": "es",
+  "field": "anthropology",
+  "subfield": "culture",
   "definition": "",
   "notes": []
 },
 
 {
   "term": "difusionismo",
-  "field": "cultura",
   "lang": "es",
+  "field": "anthropology",
+  "subfield": "culture",
   "definition": "",
   "notes": []
 },
@@ -104,7 +332,7 @@
 {
   "term": "funcionalismo",
   "lang": "es",
-  "field": "cultura",
+  "field": "anthropology",
   "definition": "",
   "notes": []
 },
@@ -112,16 +340,128 @@
 {
   "term": "animismo",
   "lang": "es",
-  "field": "antropología cultural",
+  "field": "anthropology",
   "definition": "creencia que atribuye vida, intencionalidad, voluntad o sentimientos parecidos a los del hombre a todos los objetos de la naturaleza",
   "notes": [
     "el animismo es una forma de antropocentrismo"
   ]
 },
+{
+  "term": "atavismo",
+  "lang": "es",
+  "field": "anthropology",
+  "definition": "",
+  "instances": [ ]
+},
+
+{
+  "term": "Euskal Herria",
+  "lang": "eu",
+  "translation": [{"lang": "es", "term": "pueblo vasco"}],
+  "field": "anthropology",
+  "definition": "",
+  "instances": [ ]
+},
+{
+  "term": "euskaldun",
+  "lang": "eu",
+  "translation": [{"lang": "es", "term": "que posee lo vasco"}],
+  "field": "anthropology",
+  "definition": "",
+  "notes": [
+    "asociado con conocer y hablar la lengua vasca o euskera"
+  ]
+},
+
+{
+  "term": "yamamaro",
+  "lang": "es",
+  "field": "anthropology",
+  "subfield": "ethnic group",
+  "definition": "",
+  "instances": [ ]
+},
+{
+  "term": "gitano",
+  "lang": "es",
+  "field": "anthropology",
+  "subfield": "ethnic group",
+  "from": "India",
+  "definition": "",
+  "instances": [ ]
+},
+{
+  "term": "pasiego",
+  "lang": "es",
+  "field": "anthropology",
+  "subfield": "ethnic group",
+  "definition": "",
+  "instances": [ ]
+},
+{
+  "term": "maragato",
+  "lang": "es",
+  "field": "anthropology",
+  "subfield": "ethnic group",
+  "land": "Bierzo",
+  "definition": "",
+  "instances": [ ]
+},
+{
+  "term": "sami",
+  "lang": "es",
+  "synonyms": ["lapón"],
+  "field": "anthropology",
+  "subfield": "ethnic group",
+  "land": "Laponia",
+  "definition": "",
+  "instances": [ ]
+},
+{
+  "term": "innuit",
+  "lang": "es",
+  "field": "anthropology",
+  "subfield": "ethnic group",
+  "definition": "",
+  "instances": [ ]
+},
+{
+  "term": "esquimal",
+  "lang": "es",
+  "field": "anthropology",
+  "subfield": "ethnic group",
+  "definition": "",
+  "instances": [ ]
+},
+{
+  "term": "bosquimano",
+  "lang": "es",
+  "field": "anthropology",
+  "subfield": "ethnic group",
+  "definition": "",
+  "instances": [ ]
+},
+{
+  "term": "árabe",
+  "lang": "es",
+  "field": "anthropology",
+  "subfield": "ethnic group",
+  "definition": "",
+  "instances": [ ]
+},
+
+
+
+
+
+
+
+
 
 {
   "term": "antropocentrismo",
   "lang": "es",
+  "field": "anthropology",
   "definition": "",
   "notes": []
 },
@@ -129,20 +469,8 @@
 {
   "term": "antropología",
   "lang": "es",
+  "field": "anthropology",
   "definition": "",
-  "notes": []
-},
-
-{
-  "term": "cyberpunk",
-  "lang": "en",
-  "field": "literary genre",
-  "definition": "a subgenre of science fiction in a dystopian futuristic setting said to focus on a combination of \"low-life and high tech\"; it features futuristic technological and scientific achievements, such as artificial intelligence and cyberware, juxtaposed with societal collapse, dystopia or decay",
-  "authors": [
-    " William Gibson",
-    "Bruce Sterling",
-    "Pat Cadigan"
-  ],
   "notes": []
 }
 
