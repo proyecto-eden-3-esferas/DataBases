@@ -1,9 +1,134 @@
 [
+{
+  "saying": "If opportunity doesn't knock, build a door",
+  "lang": "en",
+  "field": "",
+  "keywords": ["chance", "proactive", "networking", "taking control"],
+  "meaning": "One should not passively wait for opportunities to arise, but rather actively create them. It encourages taking initiative and being proactive in pursuing one's goals. This can involve developing skills, networking, and taking calculated risks. Ultimately, it's about taking control of one's destiny and not relying solely on chance.",
+  "notes": []
+},
+
+{
+  "term": "networking",
+  "lang": "en",
+  "field": "society",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+
+{
+  "term": "paradigm ",
+  "lang": "en",
+  "definition": "an example or pattern; esp an outstandingly clear or typical example",
+  "instances": []
+},
+{
+  "term": "normalcy",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "accountable",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "eclecticism",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "syncretism",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "scepticism",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "pragmatism",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "comply",
+  "lang": "en",
+  "field": "general",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+
+{
+  "term": "utility",
+  "lang": "en",
+  "field": "economics",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "flat rate",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+
+{
+  "name": "ASML",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "chapuza",
+  "lang": "es",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "lexicon",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+
 
 {
   "term": "cyberpunk",
   "lang": "en",
   "field": "literature",
+  "subfield": "sci-fi",
+  "keywords": ["dystopian"],
   "subfield": "literary genre",
   "definition": "a subgenre of science fiction in a dystopian futuristic setting said to focus on a combination of \"low-life and high tech\"; it features futuristic technological and scientific achievements, such as artificial intelligence and cyberware, juxtaposed with societal collapse, dystopia or decay",
   "authors": [
@@ -12,12 +137,13 @@
     "Pat Cadigan"
   ],
   "notes": []
-}
+},
 
 {
   "term": "arsenic",
   "lang": "en",
   "field": "chemistry",
+  "keywords": ["heavy metal", "poisonous"],
   "definition": "",
   "notes": []
 },

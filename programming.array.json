@@ -282,50 +282,11 @@
     ]
   },
 
-
-  {
-    "name": "npm",
-    "field": "computing",
-    "subfield": "node.js",
-    "language": "javascript",
-    "definition": "the standard package manager for Node.js",
-    "description": "npm installs, updates and manages downloads of dependencies of your project"
-  },
-  {
-    "title": "javascript escape sequences",
-    "field": "computing",
-    "subfield": "escape sequences",
-    "language": "javascript",
-    "list": [
-      {"sequence": "\\'", "interpretation": "single quote"},
-      {"sequence": "\\\"", "interpretation": "double quote"},
-      {"sequence": "\\\\", "interpretation": "backslash"},
-      {"sequence": "\\n", "interpretation": "new line"},
-      {"sequence": "\\r", "interpretation": "carriage return"},
-      {"sequence": "\\t", "interpretation": "tab"},
-      {"sequence": "\\b", "interpretation": "backspace"},
-      {"sequence": "\\f", "interpretation": "form feed"},
-      {"sequence": "\\v", "interpretation": "vertical tab"},
-      {"sequence": "\\0", "interpretation": "null character (U+0000 <control-0000> ) (only if the next character is not a decimal digit; else it is an octal escape sequence)"},
-      {"sequence": "\\xFF", "interpretation": "character represented by the hexadecimal byte FF"},
-      {"sequence": "", "interpretation": ""},
-
-      {"sequence": "", "interpretation": ""},
-      {"sequence": "", "interpretation": ""},
-      {"sequence": "", "interpretation": ""}
-    ]
-  },
-
-  {
-    "title": "characters allowed in javascript identifiers",
-    "language": "javascript",
-    "start-characters": ["letters", "_"],
-    "non-start-characters": ["letters", "digits", "_"]
-  },
   {
     "title": "characters allowed in JSON identifiers",
     "language": "json",
     "start-characters":     ["letters", "_"],
     "non-start-characters": ["letters", "digits", "_"]
   }
+
 ]

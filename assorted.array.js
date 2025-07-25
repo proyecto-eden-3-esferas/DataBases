@@ -1153,15 +1153,6 @@ const assorted_a =
   "related": ["sostenibilidad", "ecologismo", "interdependencia"]
 },
 {
-  "name": "ecología profunda",
-  "lang": "es",
-  "type": null,
-  "field": "ecologismo",
-  "source": "Ecologistas en Acción",
-  "definition": "",
-  "description": null
-},
-{
    "name": "Arne Naess",
    "lang": "en",
    "field": "deep ecology",
@@ -1173,27 +1164,9 @@ const assorted_a =
   "content": "Las posiciones defendidas por la ecología profunda han sido objeto de tantas controversias y críticas que merece la pena indagar en las razones que indujeron, por ejemplo, al cineasta y ecologista de moda, Al Gore, a calificarla como una filosofía “intrínsecamente misántropa” en la que el ser humano es “un alien en la Tierra” [1], o al intelectual francés Luc Ferry a concluir que “se puede decir legítimamente que la ecología profunda hunde algunas de sus raíces en el nazismo y alza sus ramas hasta las esferas más extremas del izquierdismo cultural” [2]. Y observamos que, en casi todos los casos, el pretendido radicalismo de la ecología profunda estriba en su crítica del antropocentrismo y de aquellos fundamentos culturales de Occidente que han abocado al mundo a la crisis multidimensional que enfrenta desde hace tiempo.",
   "source":  "Ecologistas en Acción"
 },
-{
-  "name": "ecología profunda",
-  "lang": "es",
-  "type": null,
-  "field": "ecologismo",
-  "source": null,
-  "definition": null,
-  "description": null
-},
-{
-  "name": "ecología profunda",
-  "lang": "es",
-  "type": null,
-  "field": "ecologismo",
-  "source": null,
-  "definition": null,
-  "description": null
-},
 
 {
-  "name": "convergent evolution",
+  "term": "convergent evolution",
   "lang": "en",
   "type": null,
   "field": "evolution",

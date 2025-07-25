@@ -7,12 +7,26 @@
   "definition": "an RDF query language able to retrieve and manipulate data stored in Resource Description Framework format"
 },
 {
+  "term":  "InnoDB",
+  "lang":  "en",
+  "field": "computing",
+  "subfield": "databases",
+  "keywords": ["storage engine", "MySQL", "MariaDB", "ACID", "relational database"],
+  "definition": "storage engine for MySQL and MariaDB databases, known for its reliability and performance in handling large databases and complex web applications",
+  "notes": [
+    "the default storage engine in MySQL since version 5.5.5",
+    "it offers ACID-compliant transaction support, including features like atomicity, consistency, isolation, and durability",
+    "foreign key support"
+  ]
+},
+{
   "term":  "Resource Description Framework",
   "acronym": "RDF",
   "lang":  "en",
   "field": "computing",
   "subfield": "databases",
   "definition": ""
+},
 {
   "term":  "object-oriented database",
   "acronym": null,

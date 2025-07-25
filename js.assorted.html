@@ -7,18 +7,21 @@
     <meta name="description" content="JavaScript Array Test/Demonstration/etc"/>
 
 
-    <script type="text/javascript" src="./filters.js"></script>
-    <script type="text/javascript" src="./maps.js"   ></script>
+    <script type="text/javascript" src="./filters.js">       </script>
+    <script type="text/javascript" src="./maps.js">          </script>
     <script type="text/javascript" src="./assorted.array.js"></script>
-
     <script type="text/javascript">
-const result_array = assorted_a.filter(e => {return e.name != undefined;}).map(e => e.name);
+
+const strings_from_named_objects = assorted_a.filter(e => {return e.name != undefined;}).map(e => `${e.name} (${e.field})`);
+console.log(strings_from_named_objects);
+
 console.log(assorted_a[0]);
 console.log("array    is typeof:", typeof assorted_a);
 console.log("array[0] is typeof:", typeof assorted_a[0]);
 console.log("array[0].term is typeof:", typeof assorted_a[0].term);
 console.log("array[0].name is typeof:", typeof assorted_a[0].name);
 console.log("array[0].advantages is typeof:", typeof assorted_a[0].advantages);
+console.log("array[0].term    is itself   a string:",  is_a_string(assorted_a[0].term));
 console.log("array[0].term    is made up of strings:", is_made_up_of_strings(assorted_a[0].term));
 console.log("array[0].authors is made up of strings:", is_made_up_of_strings(assorted_a[0].authors));
 console.log("array[0] has keys:", Object.keys(assorted_a[0]));
@@ -41,11 +44,22 @@ console.log(assorted_a.map(term_and_field));
 
       <script type="text/javascript">
 let list = document.getElementById("list");
-let   li = document.createElement("li");
-li.innerHTML = JSON.stringify(result_array[0]);
-list.appendChild(li);
+strings_from_named_objects.forEach( obj => {
+    let   li = document.createElement("li");
+    li.innerHTML = JSON.stringify(obj);
+    list.appendChild(li);
+  }
+)
 
-document.getElementById("result").innerHTML = JSON.stringify( result_array[1] );
+document.getElementById("result").innerHTML = JSON.stringify( strings_from_named_objects[1] );
+
+console.log("objects having field=ecologismo: ",
+            assorted_a.filter(
+  obj => objInObj({field: "ecologismo"}, obj)
+  )
+);
+
+console.log("Is objin included in obj?", objInObj({field: "general"}, {name: "unívoco", field: "general"}));
       </script>
 
     </main>
