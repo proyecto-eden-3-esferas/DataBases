@@ -12,7 +12,9 @@
     <script type="text/javascript" src="./assorted.array.js"></script>
     <script type="text/javascript">
 
-const strings_from_named_objects = assorted_a.filter(e => {return e.name != undefined;}).map(e => `${e.name} (${e.field})`);
+const strings_from_named_objects =
+  assorted_a.filter(e => {return e.name != undefined;})
+            .map(e => `${e.name} (${e.field})`);
 console.log(strings_from_named_objects);
 
 console.log(assorted_a[0]);
@@ -39,10 +41,8 @@ console.log(assorted_a.map(term_and_field));
       <ul id="list">
         <li>An Item...</li>
       </ul>
-
-
-
       <script type="text/javascript">
+document.getElementById("result").innerHTML = JSON.stringify( strings_from_named_objects[1] );
 let list = document.getElementById("list");
 strings_from_named_objects.forEach( obj => {
     let   li = document.createElement("li");
@@ -50,15 +50,11 @@ strings_from_named_objects.forEach( obj => {
     list.appendChild(li);
   }
 )
-
-document.getElementById("result").innerHTML = JSON.stringify( strings_from_named_objects[1] );
-
 console.log("objects having field=ecologismo: ",
             assorted_a.filter(
   obj => objInObj({field: "ecologismo"}, obj)
   )
 );
-
 console.log("Is objin included in obj?", objInObj({field: "general"}, {name: "unívoco", field: "general"}));
       </script>
 

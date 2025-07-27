@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Array Test</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="JavaScript Array Test/Demonstration/etc"/>
+    <style>
+textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+    </style>
+
+    <!-- Bring in filter function / predicate 'objInObj' from "./filters.js" -->
+    <script type="text/javascript" src="./filters.js">       </script>
+
+    <!-- Bring in filter 'assorted'' from "./assorted.array.js" -->
+    <script type="text/javascript" src="./assorted.array.js"></script>
+
+<!--
+This script just defines functions:
+  - JSONParseById(id): returns a parse object, array...
+  - makeObjWithFieldsByObj(inObj, showObj): returns an object with only the fields where 'showObj equals 1
+  - ArrayTestShowReturnResult(testObj, showObj, res)
+possibly to be included in a library file ('mongo.js')
+-->
+    <script type="text/javascript">
+function JSONParseById (id) {
+  return JSON.parse( document.getElementById(id).value );
+}
+function makeObjWithFieldsByObj (inObj, showObj) {
+  let keyArray = Object.keys(showObj);
+  if( keyArray.length == 0) {
+    console.log("keyArray.length == 0");
+    return inObj;
+  }
+  let resObj = {};
+  keyArray.forEach(k => {
+    if(showObj[k]==1)
+      resObj[k] = inObj[k];
+  })
+  return resObj;
+}
+function ArrayTestShowReturnResult(arr /* an array of objects */,
+                                   tst, /* the id of element such as textarea to hold test object */
+                                   shw, /* the id of element such as textarea to hold show object */
+                                   res /*  the id of element such as textarea to hold result object */
+                                   ) {
+  let testObj = JSONParseById(tst);
+  let showObj = JSONParseById(shw);
+  console.log("In ArrayTestShowReturnResult(tst,shw,res): testObj is", testObj, ", of type ", typeof testObj);
+  console.log("In ArrayTestShowReturnResult(tst,shw,res): showObj is", showObj, ", of type ", typeof showObj);
+  /* generate an array that
+     [x] passes the filter, and
+     [x] has a field only if 'shw' has its key set to 1:
+  */
+  console.log("Is 'arr' an array? ", Array.isArray(arr));
+  console.log("Type of 'arr'? ", typeof arr);
+  console.log("'arr': ", arr);
+  let resultArray = arr.filter(o => {return objInObj(testObj,o)})
+                              .map(o => {return makeObjWithFieldsByObj(o,showObj)});
+  console.log("resultArray has ", resultArray.length, " element(s)");
+  //finally, show the result in the last, large textarea:
+  document.getElementById(res).innerHTML = JSON.stringify(resultArray);
+}
+    </script>
+
+  </head>
+  <body lang="en">
+
+    <main>
+      <h1>JavaScript Array: Test/Demonstrate MongoDB-Style <code>find</code></h1>
+
+      <div>
+        <p>Write an object which all of your result objects must include:</p>
+        <textarea id="testObj" rows="6" cols="50" placeholder="{}"></textarea>
+        <p>Write an object where</p>
+        <ul>
+          <li><code><var>key</var>: 0</code> means <q>hide variable <var>key</var></q>, and</li>
+          <li><code><var>key</var>: 1</code> means <q>show variable <var>key</var></q></li>
+        </ul>
+        <textarea id="showObj" rows="6" cols="50" placeholder="{_id: 0}"></textarea>
+        <p id="result-caption">These are the objects that have been filtered and mapped:</p>
+        <textarea id="result" rows="10" cols="50" placeholder="[obj0, obj1...]"></textarea>
+        <button onclick="ArrayTestShowReturnResult(assorted_a, 'testObj', 'showObj', 'result')">Process!</button>
+      </div>
+
+      <script type="text/javascript">
+      </script>
+
+    </main>
+
+  </body>
+
+</html>
