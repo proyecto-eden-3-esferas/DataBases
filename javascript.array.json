@@ -31,6 +31,26 @@
     "non-start-characters": ["letters", "digits", "_"]
   },
   {
+    "term": "innerHTML",
+    "language": "javascript",
+    "field": "programming",
+    "definition": "the raw HTML markup inside an element",
+    "notes": [
+      "innerHTML does not ignore styling or return only visible text"
+    ],
+    "see": ["value"]
+  },
+  {
+    "term": "value",
+    "language": "javascript",
+    "field": "programming",
+    "definition": "holds the user's value entered or selected in a form field",
+    "notes": [
+      "specifically for form elements like <input>, <select>, and <textarea>"
+    ],
+    "see": ["innerHTML"]
+  },
+  {
     "title": "javascript escape sequences",
     "field": "computing",
     "subfield": "escape sequences",

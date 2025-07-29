@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test general.js library</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Test JavaScript general.js Library"/>
+
+
+    <script type="text/javascript" src="./general.js">       </script>
+    <script type="text/javascript">
+let arr = [1, 2, 3];
+inPlaceMap(arr, (e) => e + 1);
+console.log(arr);
+
+let SQLArray = [3, 4.4, "alas", "O\'Neil", null, undefined, true, false, {term: "chromium", kind: "metal", owner: "O\'Neil"}];
+SQLArray.forEach(c => console.log(printSQLCell(c)));
+//console.log("Last, the type of undefined seems to be, well: ", typeof undefined);
+    </script>
+
+  </head>
+  <body lang="en">
+
+    <main>
+      <h1>Testing JavaScript Library-File <cite>general.js</cite></h1>
+      <p>This file tests functions in <cite>general.js</cite> through JavaScript&apos;s <code>console.log()</code> function. To see the results and debug the code, hold down <q>CTRL+SHIFT</q> then press <q>i</q>.</p>
+
+      <pre id="result">EMPTY</pre>
+      <ul id="list">
+        <li>An Item...</li>
+      </ul>
+      <script type="text/javascript"> </script>
+
+    </main>
+
+  </body>
+
+</html>

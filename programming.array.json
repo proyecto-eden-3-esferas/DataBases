@@ -83,12 +83,23 @@
     ]
   },
 
+
+
   {
     "term": "callback",
     "lang": "en",
     "field": "computing",
     "subfield": "programming",
+    "subsubfield": "function",
     "definition": ""
+  },
+  {
+    "term": "funfunction",
+    "lang": "en",
+    "field": "computing",
+    "subfield": "programming",
+    "subsubfield": "function",
+    "definition": "a function that returns a function"
   },
 
   {
@@ -166,6 +177,30 @@
   "subsubfield": "software library",
   "definition": "wrapper libraries that bridge two programming languages, so that a library written for one language can be used in another language"
   },
+
+  {
+  "term": "shallow copy",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "",
+  "opposite": "deep copy",
+  "instances": [
+    {"code": "const shCopy = {...original};", "language": "javascript"}
+  ]
+  },
+  {
+  "term": "deep copy",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "",
+  "opposite": "shallow copy",
+  "instances": [
+    {"code": "const dpCopy = JSON.parse(JSON.stringify(original));", "language": "javascript"}
+  ]
+  },
+
   {
   "term": "expression",
   "lang": "en",
