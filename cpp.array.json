@@ -8,6 +8,7 @@
 
   {
     "name": "std::ostream::flush()",
+    "language": "c++",
     "type": "function",
     "action": "synchronizes the associated stream buffer with its controlled output sequence",
     "prototype": ["ostream& flush();"],
@@ -19,6 +20,7 @@
 
   {
     "name": "istream::sync()",
+    "language": "c++",
     "type": "function",
     "action": "synchronize input buffer",
     "prototype": [""],
@@ -28,6 +30,7 @@
 
   {
     "name": "std::istream::seekg",
+    "language": "c++",
     "type": "function",
     "prototype": [
       "istream& seekg (streampos pos);",
@@ -50,7 +53,180 @@
   },
 
   {
+    "name": "std::inserter",
+    "language": "c++",
+    "std-library": "iterator",
+    "action": "Constructs an insert iterator that inserts new elements into c in successive locations starting at the position pointed by it.",
+    "prototype": [
+    "template <class Container>",
+    "insert_iterator<Container> inserter (Container& c, typename Container::iterator it);"
+    ],
+    "examples": [
+      {
+        "code": [
+"#include <iostream>     // std::cout",
+"#include <iterator>     // std::front_inserter",
+"#include <list>         // std::list",
+"#include <algorithm>    // std::copy",
+"",
+"int main () {",
+"  std::list<int> foo,bar;",
+"  for (int i=1; i<=5; i++)",
+"  { foo.push_back(i); bar.push_back(i*10); }",
+"",
+"  std::list<int>::iterator it = foo.begin();",
+"  advance (it,3);",
+"",
+"  std::copy (bar.begin(),bar.end(),std::inserter(foo,it));",
+"",
+"  std::cout << \"foo contains:\";",
+"  for ( std::list<int>::iterator it = foo.begin(); it!= foo.end(); ++it )",
+"     std::cout << ' ' << *it;",
+"  std::cout << '\n';",
+"",
+"  return 0;",
+"}"
+        ],
+        "output": "1 2 3 10 20 30 40 50 4 5"
+      }
+    ]
+  },
+
+  {
+    "name": "std::insert_iterator",
+    "language": "c++",
+    "std-library": "iterator",
+    "action": "allow algorithms that usually overwrite elements (such as copy) to instead insert new elements at a specific position in the container",
+    "procedure": "using the assignment operator on the insert_iterator (both while being dereferenced or not), causes the container to expand by one element, which is initialized to the value assigned",
+    "constructors": [
+      { "prototype": [
+"template <class Container>",
+"insert_iterator<Container>::insert_iterator(",
+"  Container& x,",
+"  typename Container::iterator i)"
+      ]
+      }
+    ],
+    "examples": [
+      {
+      "code": [
+"#include <iostream>     // std::cout",
+"#include <iterator>     // std::insert_iterator",
+"#include <list>         // std::list",
+"#include <algorithm>    // std::copy",
+
+"int main () {",
+"  std::list<int> foo, bar;",
+"  for (int i=1; i<=5; i++)",
+"  { foo.push_back(i); bar.push_back(i*10); }",
+"",
+"  std::list<int>::iterator it = foo.begin();",
+"  advance(it,3);",
+"",
+"  std::insert_iterator< std::list<int> > insert_it (foo,it);",
+"",
+"  std::copy (bar.begin(),bar.end(),insert_it);",
+"",
+"  std::cout << \"foo:\";",
+"  for ( std::list<int>::iterator it = foo.begin(); it!= foo.end(); ++it )",
+"     std::cout << ' ' << *it;",
+"  std::cout << '\n';",
+"",
+"  return 0;",
+"}"
+      ],
+      "output": ["1 2 3 10 20 30 40 50 4 5"]
+      }
+    ]
+  },
+
+  {
+    "name": "std::back_insert_iterator",
+    "std-library": "iterator",
+    "language": "c++",
+    "prototypes": [
+      {
+        "prototype": [
+"template< class Container >",
+"class back_insert_iterator",
+"    : public std::iterator<std::output_iterator_tag, void, void, void, void>"
+        ],
+        "version": "until C++17"
+      },
+      {
+        "prototype": [
+"template< class Container >",
+"class back_insert_iterator;"
+        ],
+        "version": "since C++17"
+      }
+    ],
+    "action": "appends elements to a container for which it was constructed: the container's push_back() member function is called whenever the iterator (whether dereferenced or not) is assigned to",
+    "notes": [
+      "The type of Container needs to have a push_back member function (such as the standard containers vector, deque and list)",
+      "incrementing the std::back_insert_iterator is a no-op"
+    ],
+    "examples": [
+      {"code": [
+"#include <algorithm>",
+"#include <iostream>",
+"#include <iterator>",
+"#include <vector>",
+" ",
+"int main()",
+"{",
+"    std::vector<int> v;",
+" ",
+"    std::generate_n(",
+"        std::back_insert_iterator<std::vector<int>>(v),",
+"            // Or use std::back_inserter helper",
+"            // Or use std::back_insert_iterator(v) C++17's syntax",
+"        10,",
+"        [n = 0]() mutable { return ++n; }",
+"    );",
+" ",
+"    for (int n : v)",
+"        std::cout << n << ' ';",
+"    std::cout << '\n';",
+"}"
+      ],
+      "output": ["1 2 3 4 5 6 7 8 9 10"]
+      }
+    ]
+    
+  },
+  {
+    "name": "std::back_inserter",
+    "std-library": "iterator",
+    "language": "c++",
+    "action": "constructs a std::back_insert_iterator for the container c with the type deduced from the type of the argument; the iterator can be used to add elements to the end of the container c",
+    "prototype": ["template< class Container >",
+"std::back_insert_iterator<Container> back_inserter( Container& c );"],
+    "examples": [
+      {
+      "code": [
+"#include <algorithm>",
+"#include <iostream>",
+"#include <iterator>",
+"#include <vector>",
+"int main()",
+"{",
+"    std::vector<int> v{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};",
+"    std::fill_n(std::back_inserter(v), 3, -1);",
+"    for (int n : v)",
+"        std::cout << n << ' ';",
+"    std::cout << '\n';",
+"}"
+      ],
+      "output": ["1 2 3 4 5 6 7 8 9 10 -1 -1 -1"]
+    }
+    ],
+    "notes": []
+  },
+
+  {
     "name": "std::filesystem::resize_file",
+    "language": "c++",
     "version": "c++17",
     "std-library": "filesystem",
     "scope": "std::filesystem",
@@ -64,6 +240,7 @@
   },
   {
     "name": "std::filesystem::file_size",
+    "language": "c++",
     "version": "c++17",
     "std-library": "filesystem",
     "scope": "std::filesystem",
@@ -96,7 +273,7 @@
   },
   {
     "term": "translation unit",
-    "language": "cpp",
+    "language": "c++",
     "type": "concept",
     "definition": "a .cpp file that is compiled by itself (including the h files it #includes)"
   },

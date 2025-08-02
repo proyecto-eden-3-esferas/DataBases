@@ -1,0 +1,139 @@
+[
+
+{
+  "name": "thiamine",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "B1",
+  "dv": [0, "mg"],
+  "notes": []
+},
+{
+  "name": "riboflavin",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "B2",
+  "dv": [0, "mg"],
+  "notes": []
+},
+{
+  "name": "niacin",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "niacin",
+  "dv": [0, "mg"],
+  "notes": []
+},
+{
+  "name": "",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "B6",
+  "dv": [0, "mg"],
+  "notes": []
+},
+{
+  "name": "folate",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "B9",
+  "dv": [0, "mg"],
+  "notes": []
+},
+{
+  "name": "",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "C",
+  "dv": [0, "mg"],
+  "notes": []
+},
+
+
+{
+  "name": "iron",
+  "field": "nutrition",
+  "type": "mineral",
+  "shortname": "Fe",
+  "dv": [0, "mg"],
+  "notes": []
+},
+{
+  "name": "calcium",
+  "field": "nutrition",
+  "type": "mineral",
+  "shortname": "Ca",
+  "dv": [0, "mg"],
+  "notes": []
+},
+{
+  "name": "magnesium",
+  "field": "nutrition",
+  "type": "mineral",
+  "shortname": "Mg",
+  "dv": [0, "mg"],
+  "notes": []
+},
+{
+  "name": "manganese",
+  "field": "nutrition",
+  "type": "mineral",
+  "shortname": "",
+  "dv": [0, "mg"],
+  "notes": []
+},
+{
+  "name": "phosphorus",
+  "field": "nutrition",
+  "type": "mineral",
+  "shortname": "P",
+  "dv": [0, "mg"],
+  "notes": []
+},
+{
+  "name": "potassium",
+  "field": "nutrition",
+  "type": "mineral",
+  "shortname": "K",
+  "dv": [0, "mg"],
+  "notes": []
+},
+{
+  "name": "zinc",
+  "field": "nutrition",
+  "type": "mineral",
+  "shortname": "Zn",
+  "dv": [0, "mg"],
+  "notes": []
+},
+
+
+{
+  "name": "dock",
+  "scientific": "Rumex spp.",
+  "nutrition": {
+    "protein": [2,   "g"],
+    "fat":     [0.7, "g"],
+    "carbohydrates": [3.2, "g", {"dietary fiber": [2.9, "gr"]}],
+    "vitamins": {
+      "A equiv": [200, "ug", 22],
+      "B1": [0.04, "mg", 3, "thiamine"],
+      "B2": [0.1, "mg", 8, "riboflavin"],
+      "B3": [0.5, "mg", 3, "niacin"],
+      "B6": [0.122, "mg", 7],
+      "B9": [13, "ug", 3, "folate"],
+      "C":  [48, "mg", 53]
+    },
+    "minerals": {
+      "calcium": [44, "mg", 3],
+      "iron": [2.4, "mg", 13],
+      "magnesium": [103, "mg", 25],
+      "manganese": [0.239, "mg", 15],
+      "phosphorus": [63, "mg", 5],
+      "potassium": [390, "mg", 13],
+      "zinc": [0.2, "mg", 2]
+    }
+  }
+}
+
+]

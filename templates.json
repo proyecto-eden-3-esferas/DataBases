@@ -1,7 +1,25 @@
 {
+  "translations": [
+    { "word": "word", "lang": "en" },
+    { "word": "palabra", "lang": "es" },
+    { "word": "mot", "lang": "fr" },
+    { "word": "Wort", "lang": "de" }
+  ]
+}
+{
+  "translations": [
+    ["en", "word"],
+    ["es", "palabra"],
+    ["fr", "mot"],
+    ["de", "Wort"]
+  ]
+}
+
+{
   "unit": "meter",
   "amount": 0,
 }
+{ "amount": [ 3, "gr"] }
 
 {
   "topic": "TOPIC",

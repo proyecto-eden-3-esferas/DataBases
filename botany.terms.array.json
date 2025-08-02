@@ -1,5 +1,39 @@
 [
 {
+  "name": "oxalic acid",
+  "field": "chemistry",
+  "subfield": "biochemistry",
+  "family": "carboxylic acids",
+  "description": " a colourless, crystalline, toxic organic compound",
+  "toxic": true,
+  "uses": [
+    "[used] as an acid rinse in laundries, where it is effective in removing rust and ink stains because it converts most insoluble iron compounds into a soluble complex ion. For the same reason, it is the chief constituent of many commercial preparations used for removing scale from automobile radiators"
+  ]
+
+},
+{
+  "name": "carboxylic acid",
+  "field": "chemistry",
+  "subfield": "biochemistry",
+  "description": "any of a class of organic compounds in which a carbon (C) atom is bonded to an oxygen (O) atom by a double bond and to a hydroxyl group (―OH) by a single bond. A fourth bond links the carbon atom to a hydrogen (H) atom or to some other univalent combining group.",
+  "instances" : ["lactic acid", "citric acid", "formic acid", "acetic acid", "palmitic acid", "stearic acid", "acrylic acid", "oleic acid"]
+},
+{
+  "name": "fatty acid",
+  "field": "chemistry",
+  "subfield": "biochemistry",
+  "description": null
+},
+
+{
+  "term": "polymer",
+  "field": "chemistry",
+  "definition": "long-chain molecule"
+},
+
+
+
+{
   "term": "pith",
   "lang": "en",
   "field": "botany",

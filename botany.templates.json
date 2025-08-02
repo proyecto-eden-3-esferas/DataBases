@@ -3,7 +3,8 @@
   "lang": "en",
   "type": "species",
   "genus": null,
-  "species": null
+  "species": null,
+  "germination": [min, max]
 }
 
 

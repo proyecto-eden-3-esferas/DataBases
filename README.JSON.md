@@ -2,14 +2,67 @@
 
 This stash contains JSON documents.
 
-Each %.array.json file contains an array of JSON documents.
+Each *%.array.json* file contains an array of JSON documents.
 
-They can --and are partly meant to --be loaded into a database.
+They can --and are partly meant to --be loaded into a database as tables (relational) or collections (MongoDB).
 
-You could load all my JSON files about farming, botany and biology into one database or one MongoDB collection,
+You could load all my JSON files about farming, botany and biology into one database or just one MongoDB collection,
 or only those closely related to farming (crops, herbs).
 
-You could load all my JSON files into one single database.
+Finally, you could load all my JSON files into one single database.
+
+# Schemata
+
+No schema-enforcement has been implemented as yet. (Go on reading, though.)
+
+## Schema-Defining Files
+
+Some schema are suggested in files containing templates, notably:
+- templates.json
+- botany.templates.json
+- computing.templates.json
+
+## Emergent Guidelines
+
+Besides, the process of writing a database in such a flexible format (as JSON is) naturally results in the generations of schema and guidelines for representing information. Some of them:
+
+- `["TOPIC", ["CHARACTERISTIC_1", "CHARACTERISTIC_2"...] ]`
+
+- A difference is seen between an instance (an existing element of a class of beings) and an example (something contrived or created so as to illustrate a point)
+
+- Terms, Names and Titles
+
+- Differences:
+```
+{
+  "difference": ["A", "B"...],
+  "points": [],
+  "see-also": []
+}
+```
+
+- For code samples:
+```
+"examples": [
+  {
+    "comment" : "COMMENT",
+    "code": [
+      "LINE1",
+      "LINE2"...
+    ],
+    "output": [OUTPUT]
+  }
+]
+```
+
+- ranges: `[min, max]` and `[min, typical, max]`
+
+- amount: `[n, units]`, as in `[4, "m2"]`
+
+- for nutrition, state how much (protein, fat, etc.) a given foodstuff has per 100 grams, usually in grams (g) or miligrams (mg)
+DV (Daily Value) represents the recommended amounts of nutrients to consume or not exceed each day, primarily used on food and supplement labels. The %DV (Percent Daily Value) indicates how much a single serving of a food, or a given amount such as 100 grams, contributes to your daily intake of that nutrient.
+Therefore, a single component should lool like `"calcium: [44, "mg", "3"]`, to mean there is 44 mg of calcium per 100mg, which is 3 percen of the daily recommended intake.
+
 
 
 # Manipulating JSON through JavaScript
@@ -87,6 +140,15 @@ yoga.array.json
 
 # TODOs
 
+[ ] a collection/array of objects (in, say, *nutrients.array.json*) representing nutrients:
+- recommended amounts
+- deficiencies
+- usefulness
+- foodstuffs contributing them
+
+[ ] change ARRAY_SUFFIX in Makefile from "_a" to "Array"
+[ ] write Makefile rules to change specific names in templates for js-dynamic HTML pages
+
 [ ] check up on *farming.crops.json*
 [ ] check up on *crops.former.json*
 
@@ -96,11 +158,16 @@ yoga.array.json
 
 [ ] move crops pecan (`"name": "pecan"`) and peanut (`"name": "peanut"`) into *farming.array.json* into *crops.array.json*
 
+[ ] write a JavaScript `toHTMLNote(obj, hLevel=2)` after writing
+[ ] `toHTMLTermNote( obj, hLevel=2)`
+[ ] `toHTMLNameNote( obj, hLevel=2)`
+[ ] `toHTMLTitleNote(obj, hLevel=2)`
+[ ] `toHTMLCropNote( obj, hLevel=2)`
 
 # Deviant Formats
 
 Some files hold JSON documents in "deviant" formats, that is they do not adhere to an agreed structure because they were written a long time ago.
 
 Some of them are:
-- crops.array.json
+- crops.array.json, which is being re-structured
 - herbs.array.json
