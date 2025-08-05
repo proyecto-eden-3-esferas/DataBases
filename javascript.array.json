@@ -1,12 +1,101 @@
 [
-
   {
     "term": "falsy values",
     "language": "javascript",
     "lang": "en",
     "definition": "values that resolve to the Boolean false",
     "opposite": "truthy values",
-    "list": [ "false", "0", "empty string", "null", "undefined", "NaN"]
+    "list": [ "false", "0", "empty string", "null", "undefined", "NaN"],
+    "test": null,
+    "examples": []
+  },
+
+  {
+    "name": "in",
+    "language": "javascript",
+    "type": "operator",
+    "syntax": "PROPERTY_NAME in OBJECT",
+    "action": "returns true for direct or inherited properties",
+    "examples": [
+      {"code": [
+"const example = {};",
+"example.prop = \"exists\";",
+
+"\"prop\" in example; // true",
+"\"toString\" in example; // true",
+"\"hasOwnProperty\" in example; // true"
+      ]}
+    ]
+  },
+  {
+    "name": "Object.hasOwn(OBJ, PROPERTY)",
+    "language": "javascript",
+    "type": "method",
+    "action": "returns true for direct, non-inherited properties",
+    "examples": [
+      {"code": [
+"const example = {};",
+"example.prop = \"exists\";",
+
+"// `hasOwn` will only return true for direct properties:",
+"Object.hasOwn(example, \"prop\"); // true",
+"Object.hasOwn(example, \"toString\"); // false",
+"Object.hasOwn(example, \"hasOwnProperty\"); // false"
+      ]}
+    ],
+    "see": ["in"]
+  },
+
+  {
+    "title": "checking for the existence of a property",
+    "methods": [
+      {"description": "Object.hasOwn(OBJ, PROPERTY)", "example": []},
+      {"description": "through the 'in' operator", "syntax": "", "example": [
+"const hero = { name: 'Batman' };",
+"console.log('toString' in hero);              // => true",
+"console.log(hero.hasOwnProperty('toString')); // => false"]},
+      {"description": "comparing with 'undefined'", "example": [
+"const hero = { name: 'Batman' };",
+"console.log(hero.name !== undefined);     // => true"
+      ]}
+    ]
+  },
+
+  {
+  "difference": ["for/in", "for/of"],
+  "language": "javascript",
+  "points": [
+    ["iterates over all enumerable string properties of an object (ignoring properties keyed by symbols), including inherited enumerable properties",1],
+    ["uses property enumeration ","uses the array's iterator"]
+  ],
+  "examples": [
+    {
+     "code": [
+"const object = { a: 1, b: 2, c: 3 };",
+
+"for (const property in object) {",
+"  console.log(`${property}: ${object[property]}`);",
+"}"],
+     "output": [
+"// \"a: 1\"",
+"// \"b: 2\"",
+"// \"c: 3\"",
+"    ]}," ]
+     },
+
+    {"code": [
+    ],
+     "output": []},
+
+    {"code": [
+    ],
+     "output": []},
+
+    {"code": [
+    ],
+     "output": []}
+  ],
+  "see-also": []
   },
   {
     "name": "Array.sort()",

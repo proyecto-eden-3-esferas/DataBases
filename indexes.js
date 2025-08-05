@@ -1,52 +1,100 @@
 /* Some functions for generating an index as a Map.
+ * It would be used by an application whose knowledge database is a set of JSON objects
  * Their first argument is an array of objects ('objs')
- * The ensueing  Map maps a key (an atomic value, or a short array or object)
-   to an Object
+ * The ensueing  Map maps a key (an atomic value, a short array or a short object)
+   to an Object or an Index
+ * TODO
+ [ ] Use hashes?
  *
  */
 
-
-/* function makeOneIdfierIndex(objs,idfier) produces a map
- * from an array of objects and an identifier string
- * (for example "name", or "title", or "term"...)
- * TODO:
-   [ ] Store all identifier values in a Set,
-       then issue an exception if an already existing one is generated.
- *
+/* Function 'firstKeyIn(obj, arrOfKeys) returns the first key in 'arrOfKeys'
+ * that is also found in 'obj'
  */
-function makeOneIdfierIndex (objs, idfier) {
-  let idxMap = new Map();
-  function add_as_entry (obj) {
-    if (obj.keys().includes(idfier)) {
-      // if obj.get(idfier) has already occured, raise exception
-      idxMap.set(obj.get(idfier), obj);
-    }
+function firstKeyIn(obj, arrOfKeys) {
+  for( k of arrOfKeys) {
+    if(k in obj)
+      return k;
   }
-  objs.forEach(add_as_entry);
+  return null;
+}
+/* Function 'firstKeyInOrString(obj,keys)' returns 'keys' if 'keys' is a string
+ * otherwise returns firstKeyIn(obj,keys)
+ * on the assumption that keys is an array of keys */
+function firstKeyInOrString(obj, keys) {
+  if(typeof keys == "string")
+    return keys;
+  else
+    return firstKeyIn(obj,keys);
+}
+/* 'firstValIn' returns the first value in 'obj' whose key is in 'arrOfKeys',
+ * an array of strings, and null otherwise */
+function firstValIn(obj, arrOfKeys) {
+  for( k of arrOfKeys) {
+    if(k in obj)
+      return obj[k];
+  }
+  return null;
+}
+/* 'firstValInOrString(obj, keys)' either
+ * returns obj[keys] if 'keys' is a string
+ * or assumes 'keys' is an array of strings meant as keys and
+ * returns firstValIn(obj,keys) */
+function firstValInOrString(obj, keys) {
+  if(typeof keys == "string")
+    return obj[keys];
+  else
+    return firstValIn(obj,keys);
+}
+
+/* Functions *makeKey*(obj, ...) return a value in 'obj'
+   to be used as the key in an index map.
+ * For instance, given
+   {
+     "name": "Chris",
+     "phone": "51382728"
+   }
+   then an index would be expected to map "Chris" to the whole object
+ * The values that an index key maps to are either object references
+ or array indexes (if each object lives in an array of like objects)
+ */
+let defaultMakeKeyArr    = ["term","name","word","title"];
+let defaultMakeKeyArr2ry = ["subsubfield","subfield","field","type"];
+function defaultMakeKey(o, i, a) {return o[firstKeyIn(o, defaultMakeKeyArr)];}
+//function defaultMakeKey(o, i, a) {return o["term"] ?? o["name"] ?? o["word"] ?? o["title"];}
+function makePairKey(o, i, a,
+                     arr1 = defaultMakeKeyArr,
+                     arr2 = defaultMakeKeyArr2ry) {
+  return [
+    o[firstKeyInOrString(o,arr1)],
+    o[firstKeyInOrString(o,arr2)]
+  ]
+}
+
+function     objMakeVal(o, i, a) {return o;}
+function   indexMakeVal(o, i, a) {return i;}
+function makeIndex(objsArr, makeKey = defaultMakeKey, makeVal = objMakeVal) {
+  let idxMap = new Map();
+  objsArr.forEach((o,i,a) => {
+    idxMap.set(makeKey(o,i,a), makeVal(o,i,a))
+  });
   return idxMap;
 }
 
-/* function makeAnyIdfierIndex(objs,idfiers) produces a map
- * from an array of objects and an array of words qualifying as identifiers
- * (for example ["name", "title", "term"])
- * TODO:
-   [ ] Store all identifier values in a Set,
-       then issue an exception if an already existing one is generated.
- *
- */
-function makeAnyIdfierIndex (objs, idfiers) {
-  let idxMap = new Map();
-  function add_as_entry (obj) {
-    let objKeys = obj.keys();
-    let k = "";
-    idfiers.forEach( w => {
-      if(objKeys.includes(w)) {
-        // if obj.get(idfier) has already occured, raise exception
-        k = w;
-      }
-    });
-    idxMap.set(obj.get(k), obj);
-  } // end of add_as_entry(e,i,arr)
-  objs.forEach(add_as_entry);
+function makeUniqueIndex(objsArr, makeKey = defaultMakeKey, makeVal = objMakeVal) {
+  let  idxMap = new Map();
+  let keysSet = new Set();
+  objsArr.forEach((o,i,a) => {
+    let k = makeKey(o,i,a);
+    if(keysSet.has(k))
+      throw [
+        "Key: \"" + k + "\" occurrs again: not unique! Index: ",
+        i // 'i' is the index into 'arr', which enables supplying a richer key
+      ];
+    else {
+      keysSet.add(k);
+      idxMap.set(makeKey(o,i,a), makeVal(o,i,a))
+    }
+  });
   return idxMap;
 }

@@ -1,5 +1,23 @@
 [
 {
+  "name": "contentEditable",
+  "language": "HTML",
+  "action": "sets or returns if the content of an element is editable",
+  "examples": [
+    {"code": "<p id=\"myP\" contenteditable=\"true\">I am editable.</p>"},
+    {"code": "document.getElementById(\"myP\").contentEditable;",
+     "comment": "Returns true if 'myP' is editable"},
+    {"code": "document.getElementById(\"myP\").contentEditable = \"true\";",
+     "comment": "sets the content of 'myP' to be editable"},
+    {"code": [
+"<p id='input' contenteditable='true'>EMPTY</p>",
+"<button onclick='console.log(document.getElementById('input').innerHTML);'>Click Me!</button>"
+    ],
+    "comment": "set paragraph to contenteditable, wait for the user to write something else, then press button to read it"}
+  ]
+},
+
+{
   "term": "algorithm",
   "field": "computing",
   "lang": "en",

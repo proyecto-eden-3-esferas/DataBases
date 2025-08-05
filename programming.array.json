@@ -1,6 +1,38 @@
 [
 
 {
+  "name": "fundamental control structures",
+  "list": ["sequence", "selection", "iteration"]
+},
+
+{
+  "term": "programming",
+  "definition": "the discipline of translating our intentions to some notation that a computer is able to understand",
+  "notes": [
+    "we call this notation a programming language"
+  ]
+},
+
+{
+  "term": "linter",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": null
+},
+
+{
+  "term": "algorithm",
+  "definition": "",
+  "requirements": [
+    "The steps must terminate after a finite number of steps. An algorithm cannot run forever. (A program may run forever, as long as the computer on which it runs remains operational. That program would not be an implementation of an algorithm; it would just be a computational process.)",
+    "The steps must be precise, so that we can execute them without confusion.",
+    "The algorithm may operate on some input; in the case of Euclid’s algorithm, it operates on two integers.",
+    "The algorithm has some output; that is the whole purpose of the algorithm: to produce something as a result. In Euclid’s algorithm, that is the greatest common divisor.",
+    "The algorithm must be effective. A human should be able to execute each step in a reasonable amount of time with pen and paper."
+  ]
+},
+
+{
   "term": "map",
   "field": "computing",
   "subfield": "programming",

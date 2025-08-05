@@ -1,3 +1,8 @@
+[ ] Is Hamas entrenched in Palestinian society?
+[ ] Trump threatens to send two nuclear submarines near Russia
+[ ] Russia delenda est
+[ ] Trump legislation on professional gamblers
+
 # INTRODUCTION
 
 This stash contains JSON documents.
@@ -40,6 +45,7 @@ Besides, the process of writing a database in such a flexible format (as JSON is
   "see-also": []
 }
 ```
+Now, property *points* could be an array of 2-element subarrays, one subarray for each aspect.
 
 - For code samples:
 ```
@@ -139,6 +145,8 @@ yoga.array.json
 
 
 # TODOs
+
+[ ] Functions producing/returning initializing code for C++
 
 [ ] a collection/array of objects (in, say, *nutrients.array.json*) representing nutrients:
 - recommended amounts
