@@ -1,4 +1,22 @@
 {
+  "name": "",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "B1",
+  "dv": [0, "mg"],
+  "notes": []
+}
+
+{
+  "name": "",
+  "field": "nutrition",
+  "type": "mineral",
+  "shortname": "Fe",
+  "dv": [0, "mg"],
+  "notes": []
+}
+
+{
   "translations": [
     { "word": "word", "lang": "en" },
     { "word": "palabra", "lang": "es" },

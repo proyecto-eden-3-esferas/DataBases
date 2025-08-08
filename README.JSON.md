@@ -1,8 +1,3 @@
-[ ] Is Hamas entrenched in Palestinian society?
-[ ] Trump threatens to send two nuclear submarines near Russia
-[ ] Russia delenda est
-[ ] Trump legislation on professional gamblers
-
 # INTRODUCTION
 
 This stash contains JSON documents.
@@ -15,6 +10,14 @@ You could load all my JSON files about farming, botany and biology into one data
 or only those closely related to farming (crops, herbs).
 
 Finally, you could load all my JSON files into one single database.
+
+# Sources
+## Sources for Nutrition:
+- https://www.nia.nih.gov/health/vitamins-and-supplements/vitamins-and-minerals-older-adults
+- https://medlineplus.gov/ency/article/002399.htm
+- https://www.nhs.uk/conditions/vitamins-and-minerals/
+## Health
+- https://www.dentalhealth.org/dry-mouth
 
 # Schemata
 
@@ -30,6 +33,8 @@ Some schema are suggested in files containing templates, notably:
 ## Emergent Guidelines
 
 Besides, the process of writing a database in such a flexible format (as JSON is) naturally results in the generations of schema and guidelines for representing information. Some of them:
+
+- In an array holding strings, qualifications should be written in round brackets, as in `"green vegetables (such as peas)"`
 
 - `["TOPIC", ["CHARACTERISTIC_1", "CHARACTERISTIC_2"...] ]`
 

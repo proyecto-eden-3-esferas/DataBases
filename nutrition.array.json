@@ -1,11 +1,173 @@
 [
 
 {
+  "term": "micronutrient",
+  "lang": "en",
+  "field": "nutrition",
+  "definition": null,
+  "list": ["vitamin", "mineral"],
+  "notes": [ ]
+},
+
+{
+  "term": "bioavailability",
+  "lang": "en",
+  "field": "nutrition",
+  "definition": null
+},
+
+{
+  "term": "vitamin",
+  "lang": "en",
+  "field": "nutrition",
+  "definition": "essential organic compounds that the body needs in small amounts for various metabolic processes and to maintain overall health",
+  "notes": [
+    "vital for growth, development, and proper bodily function",
+    "since the body cannot produce most vitamins, they must be obtained through diet"
+  ],
+  "warnings": ["excessive intake of certain vitamins can be harmful"],
+  "source": "google/AI Overview"
+
+},
+{
+  "term": "mineral",
+  "lang": "en",
+  "definition": "inorganic elements present in soil and water, which are absorbed by plants or consumed by animals",
+  "notes": [
+    "some diuretics commonly prescribed to lower blood pressure can deplete the body’s stores of magnesium, potassium, and calcium"
+  ]
+},
+
+{
+  "term": "fortified (food)",
+  "lang": "en",
+  "field": "nutrition",
+  "definition": ""
+},
+{
+  "term": "dietary supplement",
+  "lang": "en",
+  "field": "nutrition",
+  "definition": ""
+},
+
+{
+  "name": "types of vitamins",
+  "content": [
+    {"name": "fat-soluble",
+     "list": ["A", "D", "E", "K"],
+     "notes": [
+       "stored in the liver and fatty tissues",
+       "be very careful about taking large amounts of fat-soluble vitamin supplements as these can build up in your body and may cause harmful effects"
+     ]
+    },
+    {"name": "water-soluble",
+     "list": ["B", "C"],
+     "notes": ["not stored in the body for long periods"]
+    }
+  ]
+},
+
+{
+  "term": "Recommended Dietary Allowance",
+  "shortname": "RDA",
+  "definition": "The average daily level of intake that is enough to meet the nutrient needs of nearly all (97% to 98%) healthy people. An RDA is an intake level based on scientific research evidence."
+},
+{
+  "term": "Adequate Intake",
+  "shortname": "AI",
+  "definition": "This level is established when there is not enough scientific research evidence to develop an RDA. It is set at a level that is thought to ensure enough nutrition."
+},
+
+{
+  "name": "choline",
+  "field": "nutrition",
+  "type": null,
+  "shortname": null,
+  "food-sources": [ "organ meats", "poultry", "egg yolks", "dairies", "peanuts", "cruciferous vegetables", "beans", "nuts", "whole grains"],
+  "use": [
+    "normal functioning of the brain and nervous system",
+    "used to synthesize acetylcholine, a neurotransmitter involved in muscle control and numerous functions of the nervous system",
+    "involved in early development of the brain, gene expression, cell membrane signaling, and brain metabolism"
+  ],
+  "dv": [[425,550], "mg"],
+  "notes": [
+    "lack of choline can cause swelling in the liver",
+    "although humans synthesize choline in the liver, the amount produced naturally is insufficient to meet cellular functions",
+    "a structural component of phospholipids and cell membranes",
+    "present in breast milk and is commonly added as an ingredient to baby foods",
+    "not formally classified as a vitamin despite being an essential nutrient with an amino acid–like structure and metabolism",
+    "stored in the cell membranes and organelles as phospholipids, and inside cells as phosphatidylcholines and glycerophosphocholines",
+    "wikipedia recommends 425 mg for women, 550 mg for men, per day"
+  ]
+},
+{
+  "name": "carnitine",
+  "field": "nutrition",
+  "type": null,
+  "shortname": "carnitine",
+  "food-sources": ["red meat", "poultry", "fish", "dairy"],
+  "use": ["helps the body to change fatty acids into energy",
+          "heart and brain function",
+          "Swelling (inflammation) of the heart (myocarditis)",
+          "muscle movement",
+          "many other body processes"
+  ],
+  "overdose": [ "low blood pressure", "nausea", "diarrhea", "fish-like body odor" ],
+  "dv": [[2,2], "g"],
+  "notes": [
+    "made in the human brain, liver, and kidneys",
+    "derived from an amino acid",
+    "the generic term for several compounds, including L-carnitine, acetyl-L-carnitine, and propionyl-L-carnitine",
+    "naturally present in many foods—especially animal origin",
+    "dietary carnitine has a bioavailability of about 63% to 75%",
+    "available as a dietary supplement",
+    "increases sperm count and sperm movement in males with fertility problems"
+  ]
+},
+
+{
+  "name": "retinol",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "A",
+  "food-sources": ["egg yolk", "cheese", "milk", "yoghurt", "fortified dairies", "carrots", "mangoes", "dark-colored fruits", "dark leafy vegetables", "liver", "beef", "", "oily fish – such as salmon, sardines, trout, herring or mackerel"],
+  "use": [
+    "helps form and maintain healthy teeth, bones, soft tissue, mucous membranes, and skin",
+    "helping your body's natural defence against illness and infection (the immune system) work properly",
+    "helping vision in dim light",
+    "keeping skin and the lining of some parts of the body, such as the nose, healthy"
+  ],
+  "dv": [[700, 800], "ug"],
+  "notes": [
+    "you can also get vitamin A by including good sources of beta-carotene in your diet, as the body can convert this into retinol",
+    "some research suggests that having more than an average of 1.5 mg (1,500 µg) a day of vitamin A over many years may affect your bones, making them more likely to fracture when you're older. This is particularly important for older people, especially women, who are already at increased risk of osteoporosis, a condition that weakens bones."
+  ]
+},
+{
+  "name": "beta-carotene",
+  "field": "nutrition",
+  "type": null,
+  "food-sources": [
+    "yellow, red and green (leafy) vegetables, such as spinach, carrots, sweet potatoes and red peppers",
+    "yellow fruit, such as mango, papaya and apricots"
+  ],
+  "use": [],
+  "dv": [0, "mg"],
+  "notes": []
+},
+
+{
   "name": "thiamine",
   "field": "nutrition",
   "type": "vitamin",
   "shortname": "B1",
-  "dv": [0, "mg"],
+  "use": [
+    "helps the body cells change carbohydrates into energy: getting enough carbohydrates is very important during pregnancy and breastfeeding",
+    "essential for heart function and healthy nerve cells"
+  ],
+  "food-sources": ["pork", "meat", "fish", "whole grains", "dried milk", "egg", "enriched bread and flour", "lean meats", "legumes (dried beans)", "nuts", "seeds", "organ meats", "peas"],
+  "dv": [[1.1, 1.2], "mg"],
   "notes": []
 },
 {
@@ -13,23 +175,65 @@
   "field": "nutrition",
   "type": "vitamin",
   "shortname": "B2",
-  "dv": [0, "mg"],
+  "use": [
+    "works with the other B vitamins",
+    "important for body growth",
+    "important for the production of red blood cells"
+  ],
+  "food-sources": ["eggs", "liver", "kidneys", "lean meat", "asparagus", "broccoli"],
+  "dv": [[1.1, 1.3], "mg"],
   "notes": []
 },
 {
   "name": "niacin",
   "field": "nutrition",
   "type": "vitamin",
-  "shortname": "niacin",
-  "dv": [0, "mg"],
+  "shortname": "B3",
+  "use": [
+    "helps maintain healthy skin and nerves",
+    "has triglyceride-lowering effects at higher doses"
+  ],
+  "food-sources": ["nuts", "legumes", "grains", "poultry", "lean meats", "beef", "avocado", "eggs", "enriched breads and fortified cereals", "fish (tuna and salt-water fish)", "potato"],
+  "dv": [[14, 16], "mg"],
   "notes": []
 },
 {
-  "name": "",
+  "name": "pantothenic acid",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "B5",
+  "food-sources": [ "avocado", "broccoli", "kale", "vegetables in the cabbage family", "eggs", "legumes", "lentils", "milk", "mushroom", "organ meats", "poultry", "white and sweet potatoes", "whole-grain cereals"],
+  "dv": [[5, 5], "mg"],
+  "use": ["essential for the metabolism of food",
+          "plays a role in the production of hormones and cholesterol"
+  ]
+},
+{
+  "name": "pyridoxine",
   "field": "nutrition",
   "type": "vitamin",
   "shortname": "B6",
-  "dv": [0, "mg"],
+  "use": [
+    "helps form red blood cells and maintain brain function",
+    "plays an important role in the proteins that are part of many chemical reactions in the body"
+  ],
+  "food-sources": ["fish", "beef liver", "potatoes", "starchy vegetables", "non-citrus fruit", "avocado", "banana", "legumes (dried beans)", "meat", "nuts", "poultry", "whole grains"],
+  "dv": [[1.4, 1.5], "mg"],
+  "notes": [
+    "milling and processing (of grains) emoves a lot of B6"
+  ]
+},
+{
+  "name": "biotin",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "B7",
+  "use": [
+    "essential for the metabolism of proteins and carbohydrates",
+    "essential for the production of hormones and cholesterol"
+  ],
+  "food-sources": [ "chocolate", "cereal", "egg yolk", "legumes", "milk", "nuts", "organ meats (liver, kidney)", "pork", "yeast"],
+  "dv": [[30,30], "ug"],
   "notes": []
 },
 {
@@ -37,15 +241,92 @@
   "field": "nutrition",
   "type": "vitamin",
   "shortname": "B9",
-  "dv": [0, "mg"],
+  "use": [
+    "works with vitamin B12 to help form red blood cells",
+    "needed for the production of DNA, which controls tissue growth and cell function",
+    "many foods are now fortified with folate in the form of folic acid"
+  ],
+  "food-sources": ["broccoli", "brussel sprouts", "spinach", "romaine lettuce", "green, leafy vegetables", "oranges", "nuts", "lentils", "beans", "peas", "asparagus", "beets", "brewer's yeast", "dried beans (cooked pinto, navy, kidney, and lima)", "fortified cereals", "peanut butter", "wheat germ"],
+  "dv": [[400,400], "ug"],
+  "notes": [
+    "any woman who is pregnant should be sure to get enough folate; low levels of folate are linked to birth defects such as spina bifida and anencephaly. For the folate to be effective, it must be taken in the first few weeks of conception, often before a woman knows she is pregnant. Yet in the U.S., half of all pregnancies are unplanned. That’s why the Centers for Disease Control and Prevention recommend that all women of childbearing age (ages 15 to 45) consume 600 micrograms a day of folic acid."
+  ]
+},
+{
+  "name": "B12",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "B12",
+  "food-sources": ["meat", "fish", "poultry", "milk", "eggs", "soymilk", "fortified foods", "dairy products", "organ meats (liver and kidney)", "shellfish"],
+  "use": [
+    "helps form red blood cells",
+    "helps maintain the central and peripheral nervous systems",
+    "important for metabolism"
+  ],
+  "dv": [[2.4, 2.4], "ug"],
+  "notes": [
+    "some people over age 50 have trouble absorbing the vitamin B12 found naturally in foods",
+    "animal sources of vitamin B12 are absorbed much better by the body than plant sources",
+    "the National Academy of Medicine, in fact, recommends that people over the age of 50 eat foods fortified with vitamin B12 or take vitamin B12 pills that are better absorbed than from food sources"]
+},
+{
+  "name": "ascorbic acid",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "C",
+  "food-sources": ["citrus fruits", "tomatoes", "potatoes", "broccoli", "brussels sprouts", "cabbage", "cauliflower", "spinach", "vegetables", "strawberries", "fruits"],
+  "use": [
+    "antioxidant",
+    "promotes healthy teeth and gums",
+    "helps the body absorb iron",
+    "helps maintain healthy tissue",
+    "essential for wound healing"
+  ],
+  "dv": [[75,90], "mg"],
+  "notes": ["smokers should add 35 milligrams"]
+},
+{
+  "name": "calciferol",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "D",
+  "food-sources": ["fatty fish", "fish liver oils", "fortified milk and milk products", "fortified cereals"],
+  "dv": [[18,18], "ug"],
+  "notes": [
+    "also known as the \"sunshine vitamin,\" since it is made by the body after being in the sun. Ten to 15 minutes of sunshine 3 times a week is enough to produce the body's requirement for most people at most latitudes. People who do not live in sunny places may not make enough vitamin D",
+    "It is very hard to get enough vitamin D from food sources alone"
+  ]
+},
+{
+  "title": "Getting enough D",
+  "lang": "en",
+  "type": "discussion",
+  "text": ["For most people, the best way to get enough vitamin D is taking a supplement because it is hard to get enough through food. Although some foods are fortified with vitamin D, few foods contain it naturally. Vitamin D supplements are available in two forms: vitamin D2 (\"ergocalciferol\" or pre-vitamin D) and vitamin D3 (\"cholecalciferol\"). Both are also naturally occurring forms that are produced in the presence of the sun’s ultraviolet-B (UVB) rays, but D2 is produced in plants and fungi and D3 in animals, including humans. Vitamin D production in the skin is the primary natural source of vitamin D, but many people have insufficient levels because they live in places where sunlight is limited in winter, or because they have limited sun exposure. Also, people with darker skin tend to have lower blood levels of vitamin D because the pigment (melanin) acts like a shade, reducing production of vitamin D."]
+},
+{
+  "name": "alpha-tocopherol",
+  "field": "nutrition",
+  "type": "vitamin",
+  "shortname": "E",
+  "uses": [
+    "helps the body form red blood cells",
+    "helps the bod use vitamin K"
+  ],
+  "food-sources": ["peanuts", "almonds", "nuts", "papaya", "mango", "vegetable oils", "broccoli", "spinach", "asparagus", "turnip", "green vegetables", "margarine (made from safflower, corn, and sunflower oil)", "oils (safflower, corn, and sunflower)", "wheat germ and wheat germ oil"],
+  "dv": [[15,15], "mg"],
   "notes": []
 },
 {
   "name": "",
   "field": "nutrition",
   "type": "vitamin",
-  "shortname": "C",
-  "dv": [0, "mg"],
+  "shortname": "K",
+  "use": [
+    "essential for blood to coagulate normally",
+    "some studies suggest that it is important for bone health"
+  ],
+  "food-sources": ["spinach", "leafy vegetables", "kale",  "cabbage", "cauliflower", "broccoli", "brussels sprouts", "asparagus", "collard", "turnip", "blueberries", "figs", "some fruits", "cheese", "eggs", "different meats", "fish", "liver", "beef"],
+  "dv": [[90, 120], "ug"],
   "notes": []
 },
 
@@ -55,56 +336,210 @@
   "field": "nutrition",
   "type": "mineral",
   "shortname": "Fe",
-  "dv": [0, "mg"],
-  "notes": []
+  "use": [
+    "for making red blood cells, which carry oxygen around the body"
+  ],
+  "food-sources": [ "liver (but avoid this during pregnancy)", "red meat", "beans, such as red kidney beans, edamame beans and chickpeas", "nuts", "dried fruit, such as dried apricots", "fortified breakfast cereals", "soy bean flour"],
+  "dv": [[15, 9], "mg"],
+  "notes": [
+    "a lack of iron can lead to iron deficiency anaemia",
+    "non-menstruating women need only take 9 mg per day"
+  ]
 },
 {
   "name": "calcium",
   "field": "nutrition",
   "type": "mineral",
   "shortname": "Ca",
-  "dv": [0, "mg"],
-  "notes": []
+  "food-sources": ["dairy", "some forms of tofu", "dark-green leafy vegetables", "soybeans", "canned sardines", "salmon with bones"],
+  "dv": [[1100,1100], "mg"],
+  "notes": [
+    "good for strong bones and teeth"
+  ]
+},
+{
+  "name": "chloride",
+  "field": "nutrition",
+  "type": "mineral",
+  "shortname": "Cl",
+  "food-sources": null,
+  "dv": [[2,2], "g"],
+  "notes": [
+    "good for strong bones and teeth"
+  ]
 },
 {
   "name": "magnesium",
   "field": "nutrition",
   "type": "mineral",
   "shortname": "Mg",
-  "dv": [0, "mg"],
-  "notes": []
+  "use": [
+    "turn the food we eat into energy",
+    "make sure the parathyroid glands, which produce hormones important for bone health, work normally"
+  ],
+  "food-sources": ["dietary fiber", "spinach", "green leafy vegetables", "whole grains", "legumes", "nuts", "seeds", "breakfast cereals", "wholemeal bread", "fortified foods", "tap water", "mineral water", "bottled drinking water"],
+  "dv": [[270,300], "mg"],
+  "notes": [
+    "taking high doses of magnesium (more than 400mg) for a short time can cause diarrhoea",
+    "Harvard recommends 320 mg for women, 420 mg for men"]
 },
 {
   "name": "manganese",
   "field": "nutrition",
   "type": "mineral",
-  "shortname": "",
-  "dv": [0, "mg"],
-  "notes": []
+  "shortname": "Mn",
+  "use": ["helps make and activate some of the enzymes in the body"],
+  "food-sources": [
+    "bread",
+    "nuts",
+    "breakfast cereals (especially wholegrain)",
+    "green vegetables (such as peas)"
+  ],
+  "dv": [[1.8, 2.3], "mg"],
+  "notes": [
+    "For most people, taking 4mg or less of manganese supplements a day is unlikely to cause any harm. For older people, who may be more sensitive to manganese, taking 0.5mg or less of manganese supplements a day is unlikely to cause any harm."
+  ]
+},
+{
+  "name": "molibdenum",
+  "field": "nutrition",
+  "type": "mineral",
+  "shortname": "Mb",
+  "uses": ["helps make and activate some of the proteins involved in chemical reactions (enzymes) that help with repairing and making genetic material"],
+  "dv": [[45,45], "ug"],
+  "notes": [
+    "foods that grow above ground tend to be higher in molybdenum than foods that grow below the ground, such as potatoes or carrots",
+    "some evidence to suggest taking molybdenum supplements might cause joint pain"
+  ]
 },
 {
   "name": "phosphorus",
   "field": "nutrition",
   "type": "mineral",
   "shortname": "P",
-  "dv": [0, "mg"],
-  "notes": []
+  "use": [
+    "helps build strong bones and teeth",
+    "helps release energy from food"
+  ],
+  "food-sources": ["red meat", "dairy foods", "fish", "poultry", "bread", "brown rice", "oats"],
+  "dv": [550, "mg"],
+  "overdose": [
+    {"scale": "short term", "effects": ["diarrhoea", "stomach pain"]},
+    {"scale":  "long term", "effects": "reduce the amount of calcium in the body, which means bones are more likely to fracture"}
+  ],
+  "notes": [
+    "taking 250mg or less a day of phosphorus supplements on top of the phosphorous you get from your diet is unlikely to cause any harm",
+    "Harvard recommends 700 mg / day"]
 },
 {
   "name": "potassium",
   "field": "nutrition",
   "type": "mineral",
   "shortname": "K",
-  "dv": [0, "mg"],
-  "notes": []
+  "use": [
+    "helps control the balance of fluids in the body",
+    "helps the heart muscle work properly"
+  ],
+  "food-sources": ["dried apricots", "bananas",
+                  "lentils", "beans and pulses",
+                  "potatoes", "beef", "chicken", "turkey", "meat", "dairies",
+                  "some vegetables (such as broccoli, parsnips and brussels sprouts)",
+                  "nuts and seeds",
+                  "fish"
+  ],
+  "dv": [[3500, 3500], "mg"],
+  "overdose": ["tomach pain", "feeling sick", "diarrhoea"],
+  "notes": ["Harvard recommends [2600,3400] mg DV, that is much less for women"]
 },
+{
+  "name": "sodium",
+  "field": "nutrition",
+  "type": "mineral",
+  "shortname": "Na",
+  "food-sources": [],
+  "dv": [[2300,2300], "mg"],
+  "notes": [
+    "Men 51 and older should reduce their sodium intake to 2,300 mg each day. That is about 1 teaspoon of salt and includes sodium added during manufacturing or cooking as well as at the table when eating. If you have high blood pressure or prehypertension, limiting sodium intake to 1,500 mg per day, about 2/3 teaspoon of salt, may be helpful.",
+    "Harvard recommends [1500,1500] mg DV"
+  ]
+},
+{
+  "name": "iodine",
+  "field": "nutrition",
+  "type": "mineral",
+  "shortname": "I",
+  "food-sources": [ "cows' milk and dairy products", "eggs", "sea fish", "shellfish"],
+  "use": [
+    "helps make thyroid hormones, which help keep cells and the metabolic rate (the speed at which chemical reactions take place in the body) healthy",
+    "iodine can also be found in plant foods, such as cereals and grains, but the levels vary depending on the amount of iodine in the soil where the plants are grown"
+  ],
+  "dv": [140, "ug"],
+  "notes": ["Taking high doses of iodine for long periods of time could change the way your thyroid gland works. This can lead to a wide range of different symptoms, such as weight gain."]
+},
+{
+  "name": "fluoride",
+  "field": "nutrition",
+  "type": "mineral",
+  "shortname": "F",
+  "use": [
+    "help dental health by strengthening the tooth enamel, making it more resistant to tooth decay",
+    "reduces the amount of acid that the bacteria on your teeth produce"
+  ],
+  "dv": [[3,4], "mg"],
+  "notes": [
+    "found in all drinking water, yet the amount varies from area to area",
+    "the addition of fluoride to water has been researched for over 60 years, and water fluoridation has been proven to reduce tooth decay by 40 to 60 percent",
+    "having 0.7 to 1.2 parts of fluoride for every million parts of water (0.7ppm to 1.2ppm) has been shown to have the best effect",
+    "some countries add fluoride to their table salt and milk instead of to the water supplies",
+    "children who have fluoride when their teeth are developing tend to have shallower grooves in their teeth, so plaque can be more easily removed",
+    "one cup of tea can contain between 0.3 milligrams and 0.5 milligrams of fluoride, and if you drink it with milk your teeth will also benefit from the calcium. It is best to drink tea without sugar to reduce the risk of tooth decay even more"
+  ]
+},
+
 {
   "name": "zinc",
   "field": "nutrition",
   "type": "mineral",
   "shortname": "Zn",
-  "dv": [0, "mg"],
-  "notes": []
+  "use": [
+    "making new cells and enzymes",
+    "processing carbohydrate, fat and protein in food",
+    "wound healing"
+  ],
+  "food-sources": [ "meat", "shellfish", "dairies", "bread", "cereal products (such as wheatgerm)" ],
+  "dv": [[7, 9.5], "mg"],
+  "overdose": ["reduces the amount of copper the body can absorb, which can lead to anaemia and weakening of the bones"],
+  "notes": ["Harvard recommends [3,11] mg DV"]
+},
+
+{
+  "name": "chromium",
+  "food-sources": [ "meat", "nuts", "cereal grains" ],
+  "dv": [ [25, 35], "ug"]
+},
+{
+  "name": "copper",
+  "shortname": "Cu",
+  "food-sources": ["nuts", "shellfish", "offal"],
+  "dv": [ [1, 1], "mg"],
+  "notes": [
+    "Taking high doses of copper could cause: stomach pain, sickness, diarrhoea, damage to the liver and kidneys (if taken for a long time)",
+    "recommended daily intake ranges between 900 and 1100 ug"]
+},
+{
+  "name": "selenium",
+  "shortname": "Se",
+  "food-sources": [ "brazil nuts", "fish", "meat", "eggs" ],
+  "use": [
+    "helps the immune system work properl",
+    "in reproduction",
+    "helps prevent damage to cells and tissues"
+  ],
+  "dv": [ [60,75], "ug"],
+  "overdose": ["selenosis, a condition that, in its mildest form, can lead to loss of hair and nails"],
+  "notes": [
+    "Taking high doses of copper could cause: stomach pain, sickness, diarrhoea, damage to the liver and kidneys (if taken for a long time)",
+    "Harvar recommend [55,55] ug DV"]
 },
 
 

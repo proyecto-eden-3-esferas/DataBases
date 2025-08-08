@@ -1,0 +1,91 @@
+[
+  {
+    "term": "enamel",
+    "language": "en",
+    "field": "health",
+    "subfield": "dentistry",
+    "definition": null,
+    "examples": [],
+    "notes": []
+  },
+  {
+    "term": "plaque",
+    "language": "en",
+    "field": "health",
+    "subfield": "dentistry",
+    "definition": "a thin, sticky film of bacteria that constantly forms on your teeth",
+    "examples": [],
+    "notes": []
+  },
+  {
+    "title": "fluoride toothpaste",
+    "field": "health",
+    "subfield": "dentistry",
+    "type": "advice",
+    "content": [
+      "Most toothpastes now contain fluoride, and most people get their fluoride this way. Fluoride toothpaste is very effective in preventing tooth decay. The amount of fluoride in toothpaste is usually enough to reduce decay.",
+      "In areas where the water supply has fluoride added, fluoride toothpaste gives extra protection.",
+      "All children up to three years old should use a toothpaste with a fluoride level of at least 1000ppm (parts per million). After three years old they should use a toothpaste that contains 1350ppm to 1500ppm.",
+      "Parents should supervise their children's brushing, and use only a pea-sized smear of fluoride toothpaste until they are about 7 years old.",
+      "Spit out after brushing and do not rinse with water, so that the fluoride stays on your teeth longer."
+    ]
+  },
+  {
+    "name": "types of fluoride in toothpastes",
+    "field": "health",
+    "subfield": "dentistry",
+    "type": "list",
+    "list": [
+      "stannous fluoride",
+      "sodium fluoride",
+      "sodium monofluorophosphate"
+    ]
+  },
+
+  {
+    "term": null,
+    "language": "en",
+    "field": "health",
+    "subfield": null,
+    "definition": null,
+    "examples": [],
+    "notes": []
+  },
+  {
+    "term": null,
+    "language": "en",
+    "field": "health",
+    "subfield": null,
+    "definition": null,
+    "examples": [],
+    "notes": []
+  },
+  {
+    "term": null,
+    "language": "en",
+    "field": "health",
+    "subfield": null,
+    "definition": null,
+    "examples": [],
+    "notes": []
+  },
+  {
+    "term": null,
+    "language": "en",
+    "field": "health",
+    "subfield": null,
+    "definition": null,
+    "examples": [],
+    "notes": []
+  },
+  {
+    "term": null,
+    "language": "en",
+    "field": "health",
+    "subfield": null,
+    "definition": null,
+    "examples": [],
+    "notes": []
+  }
+
+]
