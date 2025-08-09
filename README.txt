@@ -1,3 +1,16 @@
+WARNING
+-------
+Files:
+- templates.json
+- biology.array.json
+- health.array.json
+- README.JSON.md
+- assorted.array.json
+- nutrition.array.json
+were added to my pages, not to my databases, by mistake
+
+
+
 Some of the files hold JSON documents with a machine-generated id field:
 - farming.crops.json
 - crops.json

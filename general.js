@@ -1,3 +1,8 @@
+/* Some General Functions (and Classes)
+ * TODO
+[ ] Write initializer code for C++ containers, possibly in 'cpp-initializer.js'
+ */
+
 function inPlaceMap(arr, func) {
   arr.forEach( (e,i,a) => {a[i] = func(e);});
 }
@@ -29,9 +34,20 @@ function saveText(text, fileName="saved.txt") {
   link.download = fileName;
   link.click();
 }
+/* BEWARE:
+(1) HTML elements like <textarea> are read by their 'value' attribute, whereas
+    HTML elements like <p>, <pre> etc. are read by their 'innerHTML' attribute
+    Function saveTextFromIdToId('TEXTAREAID', 'FILENAMEID') is meant for a <textarea> elem.
+(2) Remember duly to quote your IDs, filenames and text, usually between single quotes
+ */
 function saveTextFromIdToId(textareaId, fileNameId) {
   var text     = document.getElementById(textareaId).value;
   var fileName = document.getElementById(fileNameId).value;
+  saveText(text,fileName);
+}
+function saveTextFromIdToIdinnerHTML(textareaId, fileNameId) {
+  var text     = document.getElementById(textareaId).innerHTML;
+  var fileName = document.getElementById(fileNameId).innerHTML;
   saveText(text,fileName);
 }
 

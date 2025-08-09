@@ -60,8 +60,33 @@ function firstValInOrString(obj, keys) {
  */
 let defaultMakeKeyArr    = ["term","name","word","title"];
 let defaultMakeKeyArr2ry = ["subsubfield","subfield","field","type"];
+
+
+
+/* The following, nearly-identical functions return:
+ * either a 2-array [KEY, INDEX],
+ *     or a 3-array [KEY, INDEX, ARRAY],
+ * The latter may come in useful for building indexes over several arrays
+ *
+ */
+function makeKeyIndexArray(   o, i, a, arrOfKeys = defaultMakeKeyArr) {
+  return [ firstValIn(o, arrOfKeys), i];
+}
+function makeKeyIndexArrArray(o, i, a, arrOfKeys = defaultMakeKeyArr) {
+  return [ firstValIn(o, arrOfKeys), i, a];
+}
+/* NOOOOOOOOOO !!!
+ * What I want is a map from a key (say, a name) to a (non-empty) array of indeces
+ * like "Faust" maps to [2,4]
+ * or to an array of index+array-ref
+ * like: "Faust" maps to [[2,OBJ-REF],[4,OBJ-REF]]
+ */
+
+
 function defaultMakeKey(o, i, a) {return o[firstKeyIn(o, defaultMakeKeyArr)];}
 //function defaultMakeKey(o, i, a) {return o["term"] ?? o["name"] ?? o["word"] ?? o["title"];}
+
+// Function 'makePairKey' returns a 2-element-array, which is printed as a dull "elem0,elem1"
 function makePairKey(o, i, a,
                      arr1 = defaultMakeKeyArr,
                      arr2 = defaultMakeKeyArr2ry) {
@@ -71,12 +96,21 @@ function makePairKey(o, i, a,
   ]
 }
 
+
 function     objMakeVal(o, i, a) {return o;}
 function   indexMakeVal(o, i, a) {return i;}
 function makeIndex(objsArr, makeKey = defaultMakeKey, makeVal = objMakeVal) {
   let idxMap = new Map();
   objsArr.forEach((o,i,a) => {
-    idxMap.set(makeKey(o,i,a), makeVal(o,i,a))
+    idxMap.set(makeKey(o,i,a), makeVal(o,i,a));
+  });
+  return idxMap;
+}
+// Make a Map from keys (using 'makeKey') to array indeces:
+function makeIndexToIndex(objsArr, makeKey = defaultMakeKey) {
+  let idxMap = new Map();
+  objsArr.forEach((o,i,a) => {
+    idxMap.set(makeKey(o,i,a), i);
   });
   return idxMap;
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test contenteditable Attribute</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Test contenteditable attribute and build a primitive text editor"/>
+    <script type="text/javascript" src="./general.js">       </script>
+  </head>
+  <body lang="en">
+
+    <main>
+      <h1>Testing HTML <code>contenteditable</code> Attribute</h1>
+
+      <p>Type some text in the following field (in place of <code>EMPTY</code>):</p>
+      <textarea id='text' contenteditable='true'>EMPTY</textarea>
+
+      <p>Then type a file name in the following field (in place of <code>FILENAME.txt</code>):</p>
+      <textarea id='filename' contenteditable='true'>FILENAME.txt</textarea>
+
+      <p>Now, press the button below to save your juicy text:</p>
+      <button onclick="saveTextFromIdToId('text','filename')">Click Me to Save your Text!</button>
+      <button onclick="console.log(document.getElementById('text').innerHTML);">Click Me to Log your Text!</button>
+
+    </main>
+
+  </body>
+
+</html>
