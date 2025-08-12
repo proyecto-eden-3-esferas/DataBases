@@ -1,4 +1,4 @@
-const assorted_a =
+const assortedArray =
 [
 
 {

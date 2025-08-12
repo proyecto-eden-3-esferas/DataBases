@@ -13,22 +13,22 @@
     <script type="text/javascript">
 
 const strings_from_named_objects =
-  assorted_a.filter(e => {return e.name != undefined;})
+  assortedArray.filter(e => {return e.name != undefined;})
             .map(e => `${e.name} (${e.field})`);
 console.log(strings_from_named_objects);
 
-console.log(assorted_a[0]);
-console.log("array    is typeof:", typeof assorted_a);
-console.log("array[0] is typeof:", typeof assorted_a[0]);
-console.log("array[0].term is typeof:", typeof assorted_a[0].term);
-console.log("array[0].name is typeof:", typeof assorted_a[0].name);
-console.log("array[0].advantages is typeof:", typeof assorted_a[0].advantages);
-console.log("array[0].term    is itself   a string:",  is_a_string(assorted_a[0].term));
-console.log("array[0].term    is made up of strings:", is_made_up_of_strings(assorted_a[0].term));
-console.log("array[0].authors is made up of strings:", is_made_up_of_strings(assorted_a[0].authors));
-console.log("array[0] has keys:", Object.keys(assorted_a[0]));
+console.log(assortedArray[0]);
+console.log("array    is typeof:", typeof assortedArray);
+console.log("array[0] is typeof:", typeof assortedArray[0]);
+console.log("array[0].term is typeof:", typeof assortedArray[0].term);
+console.log("array[0].name is typeof:", typeof assortedArray[0].name);
+console.log("array[0].advantages is typeof:", typeof assortedArray[0].advantages);
+console.log("array[0].term    is itself   a string:",  is_a_string(assortedArray[0].term));
+console.log("array[0].term    is made up of strings:", is_made_up_of_strings(assortedArray[0].term));
+console.log("array[0].authors is made up of strings:", is_made_up_of_strings(assortedArray[0].authors));
+console.log("array[0] has keys:", Object.keys(assortedArray[0]));
 
-console.log(assorted_a.map(term_and_field));
+console.log(assortedArray.map(term_and_field));
     </script>
 
   </head>
@@ -51,7 +51,7 @@ strings_from_named_objects.forEach( obj => {
   }
 )
 console.log("objects having field=ecologismo: ",
-            assorted_a.filter(
+            assortedArray.filter(
   obj => objInObj({field: "ecologismo"}, obj)
   )
 );

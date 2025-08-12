@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test cpp.js library</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Test JavaScript index.js Library"/>
+
+
+    <script type="text/javascript" src="./general.js">       </script>
+    <script type="text/javascript" src="./indexes.js">       </script>
+    <script type="text/javascript" src="./cpp.js">       </script>
+    <script type="text/javascript">
+let arr = [
+  {"term":  "water",
+   "field": "general",
+   "num": 43},
+  {"name":  "Earth",
+   "type":  "planet",
+   "num": 4},
+  {"title": "D'Faust",
+   "type":  "play",
+   "num": 5},
+  {"name":  "\"Faust\"",
+   "type":  "word",
+   "num": 5}
+];
+
+
+arr.forEach( (o,i,a, cppPrefix="myObj.emplace_back") => {
+    console.log( cppPrefix + "(",
+                 printCpp( firstValIn(o, ["term","name","word","title"]           )), ",",
+                 printCpp( firstValIn(o, ["subsubfield","subfield","field","type"])), ",",
+                 printCpp(            o.num                                        ),
+                 ");\n"
+               );
+  }
+);
+
+    </script>
+
+  </head>
+  <body lang="en">
+
+    <main>
+      <h1>Testing JavaScript Library-File <cite>cpp.js</cite></h1>
+      <p>This file tests functions in <cite>cpp.js</cite> through JavaScript&apos;s <code>console.log()</code> function. To see the results and debug the code, hold down <q>CTRL+SHIFT</q> then press <q>i</q>.</p>
+    </main>
+
+  </body>
+
+</html>

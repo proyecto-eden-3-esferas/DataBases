@@ -1,6 +1,8 @@
 ARRAY_PREFIX = ""
-ARRAY_SUFFIX = "_a"
+ARRAY_SUFFIX = "Array"
 DROPBOX_SUBDIR = /home/francisco/Dropbox/JSON_files/
+
+HTML_TO_SAVE = js.assorted.find.html js.assorted.html js.test-*.html
 
 %.array.js: %.array.json
 	echo "\nconst $(ARRAY_PREFIX)$*$(ARRAY_SUFFIX) = " > $@
@@ -10,4 +12,4 @@ DROPBOX_SUBDIR = /home/francisco/Dropbox/JSON_files/
 	echo "done!"
 
 save_to_dropbox:
-	cp --update *.json *.js Makefile *.md *.txt $(DROPBOX_SUBDIR)
+	cp --update $(HTML_TO_SAVE) *.json *.js Makefile *.md *.txt $(DROPBOX_SUBDIR)

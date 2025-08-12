@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test text.js library</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Test JavaScript index.js Library"/>
+
+
+    <!--
+    <script type="text/javascript" src="./general.js">       </script>
+    <script type="text/javascript" src="./indexes.js">       </script>
+    -->
+    <script type="text/javascript" src="./text.js">       </script>
+    <script type="text/javascript">
+    let myText = "Object-Relational Mapping (ORM) is a technique that converts data between object-oriented programming languages and relational databases. It creates a \"bridge\" that allows developers to interact with databases using the familiar syntax of their programming language, rather than writing raw SQL queries. This simplifies database interactions, increases productivity, and speeds up development.";
+
+    //let myWords = makeWordArrayWithHyphens(myText).filter( (o,i,a) => {return filterOutWordsInSet(o,grammaticalWordsSet);});
+    let myWords = makeWordArrayWithHyphensExcept(myText, grammaticalWordsSet);
+    console.log("Array myWords is: ", myWords);
+
+    let countMap = countWords(myWords);
+    console.log("countMap has size: ", countMap.size);
+    console.log(countMap);
+    for([w,cnt] of countMap)
+      console.log(`${w} occurs ${cnt} time(s).`);
+
+    let freqMap = makeFreqMap(countMap);
+    //console.log("'freqMap' is: ", freqMap);
+    printFreqMap(freqMap);
+
+    /*
+    console.log("In order too diagnose some issues, array 'myWords' will be printed:");
+    myWords.forEach( (w,i,a) => console.log(w));
+    */
+
+    </script>
+
+  </head>
+  <body lang="en">
+
+    <main>
+      <h1>Testing JavaScript Library-File <cite>text.js</cite></h1>
+      <p>This file tests functions in <cite>text.js</cite> through JavaScript&apos;s <code>console.log()</code> function. To see the results and debug the code, hold down <q>CTRL+SHIFT</q> then press <q>i</q>.</p>
+    </main>
+
+  </body>
+
+</html>
