@@ -252,12 +252,22 @@
     "notes": ["sets a std::error_code& parameter to the OS API error code if an OS API call fails, and executes ec.clear() if no errors occur"]
   },
 
+  {
+    "term": "sentinel",
+    "type": "concept",
+    "language": "c++",
+    "meaning": "specifies the end of a range",
+    "notes" : [
+      "for the containers of the STL, the end iterator is the sentinel",
+      "with C++20, the type of the sentinel can be different from the type of the begin iterator"
+    ]
+  },
 
   {
     "term": "inline",
     "type": "keyword",
     "language": "c++",
-    "original-intent": "to serve as an indicator to the optimizer that inline substitution of a function is preferred over function call, that is, "
+    "original-intent": "to serve as an indicator to the optimizer that inline substitution of a function is preferred over function call"
   },
   {
     "term": "inline substitution",

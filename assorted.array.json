@@ -9,6 +9,24 @@
 },
 
 {
+  "term": "projection",
+  "lang": "en",
+  "field": null,
+  "keywords": ["set", "subset", "mapping"],
+  "definition": "a mapping of a set into a subset of its",
+  "notes": []
+},
+
+{
+  "term": "internet govenance",
+  "lang": "en",
+  "field": null,
+  "keywords": [],
+  "definition": null,
+  "notes": []
+},
+
+{
   "term": "networking",
   "lang": "en",
   "field": "society",

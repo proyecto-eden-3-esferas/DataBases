@@ -12,16 +12,63 @@
     "we call this notation a programming language"
   ]
 },
+{
+  "term": "syntactic sugar",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "syntax within a programming language that is designed to make things easier to read or to express",
+  "notes": [
+    "a construct in a language is syntactic sugar if it can be removed from the language without any effect on what the language can do: functionality and expressive power will remain the same",
+    "language processors, including compilers and static analyzers, often expand sugared constructs into their more verbose equivalents before processing, a process sometimes called \"desugaring\""
+  ],
+  "examples": [
+    "a parameter called by reference is syntactic sugar for technically passing a pointer as the parameter, but syntactically handling it as the variable itself, to avoid constant pointer de-referencing in the code inside the function.",
+    "in the ES6 version of JavaScript, arrow functions have a short form (x) => x + 1, which is equivalent to the longer form (x) => { return x + 1; }"
 
+  ]
+},
+{
+  "term": "sugared type",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "data types with core syntactic support",
+  "instances": [
+    "quote-delimited strings",
+    "curly braces for object and record types",
+    "square brackets for arrays"
+  ]
+},
 {
   "term": "linter",
   "field": "computing",
   "subfield": "programming",
   "definition": null
 },
+{
+  "term": "view",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "a range that doesn't own the elements that the begin/end points to",
+  "notes": ["cheap to create, copy and move"]
+},
+{
+  "term": "predicate",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "",
+  "notes": [""]
+},
+{
+  "term": "lazy evaluation",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "whatever transformation is applied, it is performed at the moment you request an element, not when the view is created"
+},
 
 {
   "term": "algorithm",
+  "field": "computing",
+  "subfield": "programming",
   "definition": "",
   "requirements": [
     "The steps must terminate after a finite number of steps. An algorithm cannot run forever. (A program may run forever, as long as the computer on which it runs remains operational. That program would not be an implementation of an algorithm; it would just be a computational process.)",
@@ -30,6 +77,13 @@
     "The algorithm has some output; that is the whole purpose of the algorithm: to produce something as a result. In Euclid’s algorithm, that is the greatest common divisor.",
     "The algorithm must be effective. A human should be able to execute each step in a reasonable amount of time with pen and paper."
   ]
+},
+{
+  "term": "topological sort",
+  "field": "computing",
+  "subfield": "programming",
+  "subsubfield": "algorithms",
+  "definition": ""
 },
 
 {
