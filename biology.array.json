@@ -6,6 +6,26 @@
   "subfield": "genetics",
   "definition": []
 },
+
+{
+  "name": "convergent evolution",
+  "lang": "en",
+  "type": null,
+  "field": "evolution",
+  "definition": "the independent development of the same characteristic in unrelated taxa",
+  "description": null
+},
+
+
+{
+  "term": "vegetative (reproduction)",
+  "lang": "en",
+  "field": "botany",
+  "subfield": "reproduction",
+  "definition": "",
+  "discussion": null
+},
+
 {
   "term": "enzyme",
   "lang": "en",
@@ -17,6 +37,19 @@
   "type": "list",
   "field": "health",
   "content": []
+},
+
+{
+  "term": "oxalic acid",
+  "lang": "en",
+  "field": "biochemistry",
+  "description": ""
+},
+{
+  "term": "saponin",
+  "lang": "en",
+  "field": "biochemistry",
+  "description": ""
 },
 
 {
@@ -32,5 +65,7 @@
   "lang": "en",
   "definition": null
 }
+
+
 
 ]

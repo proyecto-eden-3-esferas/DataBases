@@ -36,6 +36,7 @@
     "weevils",
     "aphids"]
 },
+
 {
   "name": "peanut",
   "pronuciation": "//",
@@ -50,6 +51,7 @@
     "cultivars": null
   }
 },
+
 {
   "name": "quinoa",
   "pronuciation": "//",
@@ -70,9 +72,13 @@
 {
   "name": "arbor",
   "type": "term",
-  "field": "farming",
+  "field": "gardening",
   "lang": "en",
-  "definition": null
+  "definition": "a structure, often made of wood, that creates a shaded walkway or doorway, often in a garden setting",
+  "notes": [
+    "agroforestry integrates trees into farming systems, offering benefits like improved soil health and water quality, while garden arbors, also known as arbours or pergolas, create shaded spaces and focal points in gardens",
+    "can add aesthetic appeal to a garden and create a sense of enclosure or transition"
+  ]
 },
 
 {
@@ -80,14 +86,16 @@
   "type":  "term",
   "field": "farming",
   "lang":  "en",
-  "definition": null
+  "definition": "a disorder where the outer shell (shuck) of the pecan nut turns black and sticks tightly to the shell, often due to stress from a heavy crop load",
+  "notes": [
+    "the first symptom of shuck decline is a thin, dark, necrotic line on the inner shuck, which then spreads to the outer surface of the shuck"
+  ]
 },
 {
-  "name":  "chilling",
-  "type":  "term",
+  "term":  "chilling",
   "field": "farming botany",
   "lang":  "en",
-  "definition": null
+  "definition": "related to chill hours, a measure of the accumulated cold temperatures needed for certain crops to properly break dormancy and flower/fruit"
 },
 {
   "name":  "USDA Cultivation Zones",
@@ -96,6 +104,138 @@
   "lang":  "en",
   "definition": null
 },
+
+
+{
+  "term": "green compost material",
+  "lang": "en",
+  "field": "farming",
+  "subfield": "composting",
+  "definition": "",
+  "instances": [
+    "grass clippings",
+    "fresh manure",
+    "coffee grounds",
+    "plant trimmings",
+    "vegetable excess"
+  ]
+},
+{
+  "term": "brown compost material",
+  "lang": "en",
+  "field": "farming",
+  "subfield": "composting",
+  "definition": "",
+  "instances": [
+    "black-and-white newspapers (color ink is toxic to plants)",
+    "dead leaves",
+    "straw",
+    "woodstove ash"
+  ]
+},
+
+
+{
+  "term": "parasitoid",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "ecology",
+  "effects": ["death of its host"],
+  "definition": "an organism, typically an insect, that spends a significant portion of its life attached to or within a single host organism, ultimately killing it",
+  "notes": [
+    "they are distinct from parasites because they inevitably lead to the host's demise, unlike parasites which can live on or in a host without necessarily causing death",
+    "the share characteristics with both predators and parasites"
+  ],
+  "instances": []
+},
+
+{
+  "term": "ectoparatisitism",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "ecology",
+  "subsubfield": "parasitism",
+  "definition": "paralysing the host and living outside it"
+},
+
+
+{
+  "term": "plug tray",
+  "lang": "en",
+  "field": "farming",
+  "definition": "",
+  "benefits": []
+},
+
+{
+  "term": "hugel kultur",
+  "lang": "en",
+  "field": "farming",
+  "subfield": "organic farming",
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "heirloom variety",
+  "lang": "en",
+  "field": "farming",
+  "subfield": "organic farming",
+  "definition": "",
+  "instances": []
+},
+
+{
+  "term": "humanure",
+  "lang": "en",
+  "field": null,
+  "definition": "",
+  "instances": []
+},
+{
+  "term": "dry composting toilet",
+  "lang": "en",
+  "field": null,
+  "definition": "",
+  "instances": []
+},
+
+
+{
+  "term": "aphids",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "zoology",
+  "subsubfield": "entomology",
+  "description": "soft bodied, pear-shaped insects that suck/feed on plant sap",
+  "notes": [
+    "aphids are a familiar garden pest and seldom cause major damage",
+    "aphids are also a favorite food source of ladybugs, lacewings, and other beneficial insects"
+  ]
+},
+
+{
+  "term": "abiotic stress",
+  "lang": "en",
+  "field": "biology",
+  "subfield": null,
+  "definition": []
+},
+{
+  "term": "drought tolerance",
+  "lang": "en",
+  "field": "farming",
+  "subfield": null,
+  "definition": []
+},
+{
+  "title": "nitrogen fixation under water stress",
+  "lang": "en",
+  "field": "farming",
+  "subfield": null,
+  "definition": []
+},
+
+
 
 {
   "type":    "quote",

@@ -1,6 +1,14 @@
 [
 
 {
+  "term":  "chilling",
+  "field": "nutrition",
+  "subfield": "preserving",
+  "lang":  "en",
+  "definition": "the process of reducing the temperature of perishable products, like meat or produce, to slow down microbial growth and enzymatic reactions, thereby extending shelf life and preserving quality"
+},
+
+{
   "term": "micronutrient",
   "lang": "en",
   "field": "nutrition",

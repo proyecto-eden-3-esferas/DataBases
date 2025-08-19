@@ -1,5 +1,14 @@
 [
 {
+  "term": "compute",
+  "field": "information",
+  "wordclass": "verb",
+  "lang": "en",
+  "definition": "",
+  "instances": []
+},
+
+{
   "name": "contentEditable",
   "language": "HTML",
   "action": "sets or returns if the content of an element is editable",

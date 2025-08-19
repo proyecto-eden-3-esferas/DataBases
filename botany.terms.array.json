@@ -157,6 +157,15 @@
 },
 
 {
+  "term": "dehiscent",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "botany",
+  "definition": ["releasing their seeds by splitting open along two seams"]
+},
+
+
+{
   "name": "marcescence",
   "type": "term",
   "field": "botany",

@@ -1,0 +1,94 @@
+[
+{
+  "term": "internet governance",
+  "lang": "en",
+  "field": "politics",
+  "keywords": [],
+  "definition": null,
+  "notes": []
+},
+
+{
+  "term": "quadratic voting",
+  "definition": "a voting system that encourages voters to express their true relative intensity of preference between multiple options or elections",
+  "explanation": "Quadratic voting works by having voters allocate \"credits\" (which are either real currencies or artificially distributed tokens) to various issues. The number of votes to add is determined by a quadratic cost function, meaning that to vote n times for a given option, n^2 credits are required to be allocated (for example, 3 votes would cost 9 credits). Because the quadratic cost function makes each additional vote more expensive, voters are incentivized to allocate their credits to reflect their true relative preferences between different options, as opposed to previous proposals for storable votes where voters may choose to allocate all their votes to a single cause and not accurately represent their true preferences.",
+  "discussion": [
+    "By doing so, quadratic voting seeks to mitigate tyranny of the majority by enabling participants to trade influence over issues they don't care about for influence over issues they do."
+  ]
+},
+
+
+{
+  "term": "networking",
+  "lang": "en",
+  "field": "society",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+
+  {
+    "term": "prepper",
+    "field": "politics",
+    "lang": "en",
+    "definition": null,
+    "notes": [
+      "prepping is a rational response to global, social, and political systems that are failing to produce credible narratives of continued stability. Left with a sense of foreboding fueled by disease outbreaks, increasing government dysfunctionality, eroding critical infrastructure, nuclear brinksmanship, and an accelerating climate crisis, people all over the world are responding predictably - by hunkering down"
+    ]
+  },
+  {
+    "term": "gig worker",
+    "lang": "en",
+    "field": "economics",
+    "definition": "workers that enter into formal agreements with on-demand companies to provide services to the company's clients",
+    "instances": ["independent contractors", "online platform workers", "contract firm workers", "on-demand workers", "temporary workers"],
+    "notes": [ ]
+  },
+  {
+    "term": "network effect",
+    "lang": "en",
+    "field": "economics",
+    "definition": "",
+    "instances": [],
+    "notes": [ ]
+  },
+  {
+    "term": "sick leave",
+    "lang": "en",
+    "field": "economics",
+    "definition": "",
+    "notes": [ ]
+  },
+  {
+    "term": "platform capitalism",
+    "lang": "en",
+    "field": "economics",
+    "definition": "the activities of companies to operate as platforms...",
+    "action": ["facilitate interactions between two or more distinct groups of users/agents"],
+    "components": [
+      "technical development",
+      "network effects",
+      "(in many cases) the cultivation of ecosystems of independent contributors"
+    ],
+    "instances": ["Google", "Facebook", "Twitter", "Apple", "Microsoft", "Uber", "Airbnb", "Amazon"],
+    "disadvantages": [
+      "technological unemployment",
+      "the displacement of traditional jobs with precarious forms of labor",
+      "declining tax revenues"
+    ],
+    "notes": [
+      "often involves the use of application programming interfaces (APIs) and software development kits (SDKs), which allow third-party developers to integrate with platforms, decentralizing data collection while centralizing data processing",
+      "some scholars have compared the role of digital platforms to traditional infrastructure, such as railroads and utilities",
+      "network effects: the value of a platform increases as more users participate"
+    ]
+  },
+
+  {
+    "term": "enshittification",
+    "synonyms": ["crapification"],
+    "lang": "en",
+    "field": "economics",
+    "definition": "a pattern in which online two-sided products and services decline in quality over time",
+    "discussion": "initially, vendors create high-quality offerings to attract users, then they degrade those offerings to better serve business customers (such as advertisers), and finally degrade their services to users and business customers to maximize profits for shareholders"
+  }
+]

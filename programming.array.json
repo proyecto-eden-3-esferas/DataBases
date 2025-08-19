@@ -7,13 +7,32 @@
 
 {
   "term": "programming",
+  "lang": "en",
   "definition": "the discipline of translating our intentions to some notation that a computer is able to understand",
   "notes": [
     "we call this notation a programming language"
   ]
 },
 {
+  "term": "application programming interface",
+  "shortname": "API",
+  "lang": "en",
+  "definition": "",
+  "notes": [ ]
+},
+{
+  "term": "software development kits",
+  "shortname": "SDK",
+  "lang": "en",
+  "definition": "",
+  "notes": [ ]
+},
+
+
+
+{
   "term": "syntactic sugar",
+  "lang": "en",
   "field": "computing",
   "subfield": "programming",
   "definition": "syntax within a programming language that is designed to make things easier to read or to express",
@@ -37,6 +56,35 @@
     "curly braces for object and record types",
     "square brackets for arrays"
   ]
+},
+{
+  "term": "multithreading",
+  "field": "computing",
+  "subfield": "programming",
+  "subsubfield": "networking",
+  "definition": "a technique where a program is divided into smaller units of execution called threads"
+},
+{
+  "term": "thread",
+  "field": "computing",
+  "subfield": "programming",
+  "subsubfield": "networking",
+  "definition": "each thread runs independently but shares resources like memory, allowing tasks to be performed simultaneously",
+  "benefits": [
+    "leverages multiple CPU cores to execute tasks in parallel, reducing overall execution time",
+    "keeps applications responsive by running background operations without blocking the main thread. For example, in a word document, one thread does auto-formatting along with the main thread",
+    "makes it easier to handle large workloads or multiple simultaneous operations, such as in servers or real-time systems"
+  ],
+  "notes": [
+    "helps improve performance by utilizing multiple CPU cores efficiently",
+    "support was introduced in C++11 with the inclusion of <thread> header"
+  ]
+},
+{
+  "term": "coroutine",
+  "field": "computing",
+  "subfield": "programming",
+  "definition": "a function that can suspend itself"
 },
 {
   "term": "linter",
