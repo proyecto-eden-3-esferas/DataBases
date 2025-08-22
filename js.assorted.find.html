@@ -5,76 +5,18 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="JavaScript Array Test/Demonstration/etc"/>
-    <style>
-textarea {
-  margin-bottom: 10px;
-  padding: 10px;
-  font-size: 16px;
-  width: 300px;
-}
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-    </style>
+    <link rel="stylesheet" type="text/css" href="stylesheet.en.css"/>
 
-    <!-- Bring in filter function / predicate 'objInObj' from "./filters.js" -->
-    <script type="text/javascript" src="./filters.js">       </script>
+    <!--
+    get 'objInObj(OBJIN, OBJ)' and 'makeObjWithFieldsByObj(INOBJ, PROJOBJ)'
+    from "./filters.js"
+    -->
+    <script type="text/javascript" src="./general.js">  </script>
+    <script type="text/javascript" src="./filters.js">  </script>
+    <script type="text/javascript" src="./mongo.js">    </script>
 
     <!-- Bring in filter 'assorted'' from "./assorted.array.js" -->
     <script type="text/javascript" src="./assorted.array.js"></script>
-
-<!--
-This script just defines functions:
-  - JSONParseById(id): returns a parse object, array...
-  - makeObjWithFieldsByObj(inObj, projObj): returns an object with only the fields where 'projObj equals 1
-  - ArrayTestShowReturnResult(testObj, projObj, res)
-possibly to be included in a library file ('mongo.js')
--->
-    <script type="text/javascript">
-// parse object whose id is 'id' and return its content
-function JSONParseById (id) {
-  return JSON.parse( document.getElementById(id).value );
-}
-/* Return a trimmed down version of 'inObj'
- * that includes a field only if it has value 1 in 'whoObj' */
-function makeObjWithFieldsByObj (inObj, projObj) {
-  let keyArray = Object.keys(projObj);
-  if( keyArray.length == 0) {
-    console.log("keyArray.length == 0");
-    return inObj;
-  }
-  let resObj = {};
-  keyArray.forEach(k => {
-    if(projObj[k]==1)
-      resObj[k] = inObj[k];
-  })
-  return resObj;
-}
-function ArrayTestShowReturnResult(arr /* an array of objects */,
-                                   tst, /* the id of element such as textarea to hold test object */
-                                   shw, /* the id of element such as textarea to hold show object */
-                                   res /*  the id of element such as textarea to hold result object */
-                                   ) {
-  let testObj = JSONParseById(tst);
-  let projObj = JSONParseById(shw);
-  console.log("In ArrayTestShowReturnResult(tst,shw,res): testObj is", testObj, ", of type ", typeof testObj);
-  console.log("In ArrayTestShowReturnResult(tst,shw,res): projObj is", projObj, ", of type ", typeof projObj);
-  /* generate an array that
-     [x] passes the filter, and
-     [x] has a field only if 'shw' has its key set to 1:
-  */
-  console.log("Is 'arr' an array? ", Array.isArray(arr));
-  console.log("Type of 'arr'? ", typeof arr);
-  console.log("'arr': ", arr);
-  let resultArray = arr.filter(o => {return objInObj(testObj,o)})
-                              .map(o => {return makeObjWithFieldsByObj(o,projObj)});
-  console.log("resultArray has ", resultArray.length, " element(s)");
-  //finally, show the result in the last, large textarea:
-  document.getElementById(res).innerHTML = JSON.stringify(resultArray);
-}
-    </script>
 
   </head>
   <body lang="en">
@@ -82,22 +24,27 @@ function ArrayTestShowReturnResult(arr /* an array of objects */,
     <main>
       <h1>JavaScript Array: Test/Demonstrate MongoDB-Style <code>find</code></h1>
 
-      <div>
-        <p>Write an object which all of your result objects must include:</p>
-        <textarea id="testObj" rows="6" cols="50" placeholder="{}"></textarea>
-        <p>Write an object where</p>
-        <ul>
-          <li><code><var>key</var>: 0</code> means <q>hide variable <var>key</var></q>, and</li>
-          <li><code><var>key</var>: 1</code> means <q>show variable <var>key</var></q></li>
-        </ul>
-        <textarea id="projObj" rows="6" cols="50" placeholder="{_id: 0}"></textarea>
-        <p id="result-caption">These are the objects that have been filtered and mapped:</p>
-        <textarea id="result" rows="10" cols="50" placeholder="[obj0, obj1...]"></textarea>
-        <button onclick="ArrayTestShowReturnResult(assorted_a, 'testObj', 'projObj', 'result')">Process!</button>
+      <div class="solid">
+        <p>Write an object which all of your result objects must include. For example, <code>{"field": "systems"}</code> will filter out objects whose key <q>field</q> has a value of <q>systems</q></p>
+        <textarea id="testObj" rows="4" cols="50" placeholder='{"term": 1, "definition": 1}'></textarea>
       </div>
 
-      <script type="text/javascript">
-      </script>
+      <div class="solid">
+        <p>Write an object with all of its keys matching integer</p>
+        <ul>
+          <li><strong>1</strong>: show these keys and their values (<i>see</i> example below), or</li>
+          <li><strong>0</strong>: show all key-value pairs but these. For example, <code>{"_id": 0}</code> conveniently drops the <var>_id</var> field and shows all others.</li>
+        </ul>
+        <p>For example, type <code>{"term": 1, "definition": 1}</code> to retrieve the fields <q>term</q> and <q>definition</q>.</p>
+        <p><strong>Note</strong> As yet, only value == 1 is honoured, while == 0 is ignored.</p>
+        <textarea id="projObj" rows="4" cols="50" placeholder="{_id: 0}"></textarea>
+      </div>
+
+      <div class="solid">
+        <p id="result-caption">These are the objects that have been filtered and mapped:</p>
+        <textarea id="result" rows="10" cols="80" placeholder="[obj0, obj1...]"></textarea>
+        <button onclick="ArrayTestShowWriteResultIntoValueAttr(assortedArray, 'testObj', 'projObj', 'result')">Process!</button>
+      </div>
 
     </main>
 

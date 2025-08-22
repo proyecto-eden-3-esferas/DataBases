@@ -3,6 +3,18 @@
 [ ] Write initializer code for C++ containers, possibly in 'cpp-initializer.js'
  */
 
+// parse object whose id is 'id' and return its content
+// works for <button> <input> <option>
+function getValueAttributeById (id) {
+  return JSON.parse( document.getElementById(id).value );
+}
+// analogous, for remaining elements, get innerHTML attribute:
+function getInnerHTMLAttributeById (id) {
+  return JSON.parse( document.getElementById(id).innerHTML );
+}
+
+
+
 function inPlaceMap(arr, func) {
   arr.forEach( (e,i,a) => {a[i] = func(e);});
 }

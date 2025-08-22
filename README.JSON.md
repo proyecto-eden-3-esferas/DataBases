@@ -22,28 +22,46 @@ or only those closely related to farming (crops, herbs).
 
 Finally, you could load all my JSON files into one single database.
 
-# Sources
-## Sources for Nutrition:
+# TODOs
+
+# On Writing JSON Notes
+
+## Sources
+### Sources for Nutrition:
 - https://www.nia.nih.gov/health/vitamins-and-supplements/vitamins-and-minerals-older-adults
 - https://medlineplus.gov/ency/article/002399.htm
 - https://www.nhs.uk/conditions/vitamins-and-minerals/
-## Health
+### Health
 - https://www.dentalhealth.org/dry-mouth
 
-# Schemata
+
+## Schemata
 
 No schema-enforcement has been implemented as yet. (Go on reading, though.)
 
-## Schema-Defining Files
+### Schema-Defining Files
 
 Some schema are suggested in files containing templates, notably:
 - templates.json
 - botany.templates.json
 - computing.templates.json
 
-## Emergent Guidelines
+### Tables:
+A table is an object with type=table, a name, an optional caption, an optional header row, and a body of rows, like this:
+{
+  "title": "WHATEVER",
+  "type": "table",
+  "caption": null,
+  "hr": ["A", "B", ...],
+  "trs": [
+    [e_00, e01],
+    [e_10, e11]
+  ]
+}
 
-Besides, the process of writing a database in such a flexible format (as JSON is) naturally results in the generations of schema and guidelines for representing information. Some of them:
+### Emergent Guidelines
+
+Besides, the process of writing a database in such a flexible format (as JSON is) naturally results in the generations of schemata and guidelines for representing information. Some of them:
 
 - In an array holding strings, qualifications should be written in round brackets, as in `"green vegetables (such as peas)"`
 
@@ -51,7 +69,7 @@ Besides, the process of writing a database in such a flexible format (as JSON is
 
 - A difference is seen between an instance (an existing element of a class of beings) and an example (something contrived or created so as to illustrate a point)
 
-- Terms, Names and Titles
+- An object usually has an identifier field: term, name, title, word
 
 - Differences:
 ```
@@ -63,7 +81,7 @@ Besides, the process of writing a database in such a flexible format (as JSON is
 ```
 Now, property *points* could be an array of 2-element subarrays, one subarray for each aspect.
 
-- For code samples:
+- Concerning code samples, they are represented like this:
 ```
 "examples": [
   {
@@ -76,6 +94,7 @@ Now, property *points* could be an array of 2-element subarrays, one subarray fo
   }
 ]
 ```
+Note that each line of code is a string, otherwise a syntax error is flagged.
 
 - ranges: `[min, max]` and `[min, typical, max]`
 
@@ -84,6 +103,20 @@ Now, property *points* could be an array of 2-element subarrays, one subarray fo
 - for nutrition, state how much (protein, fat, etc.) a given foodstuff has per 100 grams, usually in grams (g) or miligrams (mg)
 DV (Daily Value) represents the recommended amounts of nutrients to consume or not exceed each day, primarily used on food and supplement labels. The %DV (Percent Daily Value) indicates how much a single serving of a food, or a given amount such as 100 grams, contributes to your daily intake of that nutrient.
 Therefore, a single component should lool like `"calcium: [44, "mg", "3"]`, to mean there is 44 mg of calcium per 100mg, which is 3 percen of the daily recommended intake.
+
+## Common Fields:
+- "name" | "title" | "term" | "word" (string)
+- "lang": {"en"|"es"|"de"|"fr"} (string)
+- "field", "subfield", "subsubfield" (string, rarely an array of strings)
+- alternatively, "topic"
+- "definition": (string)
+- "discussion": (optional)
+- "type": {"classfication", "list", ...}
+- "examples" (array of strings, arrays, objects)
+- "instances" (array of strings, arrays, objects)
+- "keywords" (array of strings)
+- "notes" (array of strings)
+- "list": (array)
 
 
 
@@ -162,15 +195,15 @@ yoga.array.json
 
 # TODOs
 
-[ ] Functions producing/returning initializing code for C++
+[x] Functions producing/returning initializing code for C++
 
-[ ] a collection/array of objects (in, say, *nutrients.array.json*) representing nutrients:
+[x] a collection/array of objects (in, say, *nutrients.array.json*) representing nutrients:
 - recommended amounts
 - deficiencies
 - usefulness
 - foodstuffs contributing them
 
-[ ] change ARRAY_SUFFIX in Makefile from "_a" to "Array"
+[x] change ARRAY_SUFFIX in Makefile from "_a" to "Array"
 [ ] write Makefile rules to change specific names in templates for js-dynamic HTML pages
 
 [ ] check up on *farming.crops.json*

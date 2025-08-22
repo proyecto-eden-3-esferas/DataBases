@@ -1,0 +1,13 @@
+@import "stylesheet.css";
+
+/* This stylesheet is meant for Spanish pages.
+ * It imports "stylesheet.css", with classless colours meant for English pages.
+*/
+
+body { background-color: khaki; }
+nav {  border: 3px solid darkkhaki; }
+footer { border: 3px solid orange; }
+nav div { border: 3px solid indianred; }
+aside {  border: 3px dotted orange; }
+header { border: 1px solid yellow; }
+hr {width: 66%;}

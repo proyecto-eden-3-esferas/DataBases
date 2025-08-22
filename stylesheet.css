@@ -1,0 +1,167 @@
+/* This stylesheet is meant for all pages.
+ * TODOs:
+ * remove all colour styling in no class sections.
+ * See sections for classes in the latter part
+*/
+
+
+/* @media (max-width: 800px) * { * {font-size: 4vw;} } */
+/* Phone */
+only screen and (max-width:320px)
+* {font-size: 4vw;}
+
+/* Tablet */
+only screen and (min-width:321px) and (max-width:768px)
+* {font-size: 3vw;}
+
+/* Desktop */
+only screen and (min-width:769px)
+* {font-size: 2.25vw;}
+
+body {
+  margin: 0;
+  padding: 2%;
+  /*background-color: cornsilk;*/
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid red;
+}
+/*main > nav {border: 3px solid black;}*/
+footer {
+  border: 3px solid red;
+}
+nav div {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid indianred;
+}
+aside {
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 3px dotted red;
+}
+
+nav * {
+  margin: 0.2em;
+  padding: 0.2em;
+}
+header {
+  border: 1px solid yellow;
+}
+del {
+  display: none;
+}
+ins {
+  text-decoration: none;
+}
+
+hr {width: 66%;}
+
+
+@media (max-width: 800px) nav {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+/* * {background: lavenderblush1} */
+dl > dt {font-weight: bold}
+
+
+/* Styling for elements handled through JavaScript */
+textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+div.solid {
+  border-style: solid;
+  border-width: 1px;
+  margin:       4px;
+}
+
+/* Sections for classes mainly set colour */
+
+body.pensamiento         { background-color: azure;}
+body.pensamiento nav     { background-color: azure;
+                           border-color: darkslategray;}
+body.pensamiento footer  { background-color: azure;}
+body.pensamiento nav div { border-color: darkslateblue;}
+body.pensamiento header  { border-color: azure;}
+
+/* Class religion for spirituality in Spanish, class spirit for spirituality in English */
+body.religion         { background-color: lightsalmon;}
+body.religion nav     { background-color: coral;
+                        border-color: red;}
+body.religion footer  { background-color: coral;}
+body.religion nav div { border-color: red;}
+body.religion header  { border-color: white;}
+
+/* class tecnologia (Spanish), originally cloned from class computing (English) */
+
+body.tecnologia         { background-color: lightcyan;}
+body.tecnologia nav     { background-color: powderblue;
+                          border-color: blue;}
+body.tecnologia footer  { background-color: cyan;}
+body.tecnologia nav div { border-color: blue;}
+body.tecnologia header  { border-color: blue;}
+
+
+/* Sections meant for English pages */
+
+body.spirit         { background-color: lavender;}
+body.spirit nav     { background-color: mistyrose;
+                      border-color: orchid;}
+body.spirit footer  { background-color: lightgreen;}
+body.spirit nav div { border-color: pink;}
+body.spirit header  { border-color: thistle;}
+
+
+body.computing         { background-color: lightcyan;}
+body.computing nav     { background-color: powderblue;
+                         border-color: blue;}
+body.computing footer  { background-color: cyan;}
+body.computing nav div { border-color: blue;}
+body.computing header  { border-color: blue;}
+
+body.technology         { background-color: thistle;}
+body.technology nav     { background-color: lightcyan;
+                          border-color: blue;}
+body.technology footer  { background-color: lightcyan;}
+body.technology nav div { border-color: blue;}
+body.technology header  { border-color: blue;}
+
+
+body.science         { background-color: wheat;}
+body.science nav     { background-color: bisque;
+                       border-color: orange;}
+body.science footer  { background-color: wheat;}
+body.science nav div { border-color: red;}
+body.science header  { border-color: wheat;}
+body.science hr { border-color: red;}
+
+
+
+body.biology         { background-color: bisque;}
+body.biology nav     { background-color: wheat;
+                       border-color: brown;}
+body.biology footer  { background-color: wheat;}
+body.biology nav div { border-color: brown;}
+body.biology header  { border-color: wheat;}
+
+body.farming         { background-color: palegreen;}
+body.farming nav     { background-color: greenyellow;
+                       border-color: green;}
+body.farming footer  { background-color: lightgreen;}
+body.farming nav div { border-color: lime;}
+body.farming header  { border-color: lime;}

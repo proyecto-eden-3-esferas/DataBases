@@ -1,0 +1,15 @@
+@import "stylesheet.css";
+
+/* This stylesheet is meant for English pages.
+ * It imports "stylesheet.css", with some classless colours (meant for English pages).
+*/
+
+body { background-color: cornsilk; }
+nav { border: 3px solid red; }
+div { border: 1px solid red; }
+/*main nav {border: 3px solid black;}*/
+footer { border: 3px solid red; }
+nav div { border: 3px solid indianred; }
+aside { border: 3px dotted red; }
+header { border: 1px solid yellow; }
+hr {width: 66%;}

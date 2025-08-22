@@ -19,11 +19,84 @@
   },
 
   {
+    "name": "std::generator",
+    "language": "c++",
+    "type": "function",
+    "header": "generator",
+    "description": "coroutine type for implementing generator coroutines",
+    "action": null,
+    "prototype": [""],
+    "notes": [
+    ]
+  },
+  {
+    "name": "std::ranges::elements_of",
+    "language": "c++",
+    "type": "function",
+    "action": "",
+    "header": "generator",
+    "description": "coroutine type for implementing generator coroutines",
+    "action": null,
+    "prototype": [""],
+    "notes": [
+      "handy when you want to call a generator recursively"
+    ]
+  },
+
+
+  {
+    "name": "co_return",
+    "language": "c++",
+    "type": "keyword",
+    "action": "",
+    "header": "",
+    "description": "",
+    "action": null,
+    "prototype": [""],
+    "notes": [ ]
+  },
+  {
+    "name": "co_yield",
+    "language": "c++",
+    "type": "keyword",
+    "action": "",
+    "header": "",
+    "description": "",
+    "action": null,
+    "prototype": [""],
+    "notes": [ ]
+  },
+  {
+    "name": "co_await",
+    "language": "c++",
+    "type": "keyword",
+    "action": "",
+    "header": "",
+    "description": "",
+    "action": null,
+    "prototype": [""],
+    "notes": [ ]
+  },
+
+
+  {
+    "title": "GCC Update",
+    "language": ["c", "c++"]
+  },
+  {
+    "term": "rolling release distribution",
+    "language": ["c", "c++"],
+    "definition": "it automatically updates [GCC] to the latest version as it becomes available",
+    "instances": ["Arch", "OpenSuSE Tumbleweed"]
+  },
+
+
+  {
     "name": "istream::sync()",
     "language": "c++",
     "type": "function",
     "action": "synchronize input buffer",
-    "prototype": [""],
+    "prototype": null,
     "notes": [
     ]
   },

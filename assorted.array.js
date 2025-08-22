@@ -1,10 +1,179 @@
-const assortedArray =
+
+const assortedArray = 
 [
+{
+  "saying": "If opportunity doesn't knock, build a door",
+  "lang": "en",
+  "field": "",
+  "keywords": ["chance", "proactive", "networking", "taking control"],
+  "meaning": "One should not passively wait for opportunities to arise, but rather actively create them. It encourages taking initiative and being proactive in pursuing one's goals. This can involve developing skills, networking, and taking calculated risks. Ultimately, it's about taking control of one's destiny and not relying solely on chance.",
+  "notes": []
+},
+
+{
+  "term": "medidas universales de bastidores",
+  "lang": "es",
+  "field": "art",
+  "subfield": "painting",
+  "keywords": ["format", "painting", "standard"],
+  "list": [],
+  "notes": []
+},
+{
+  "term": "projection",
+  "lang": "en",
+  "field": null,
+  "keywords": ["set", "subset", "mapping"],
+  "definition": "a mapping of a set into a subset of its",
+  "notes": []
+},
+{
+  "term": "wormhole",
+  "lang": "en",
+  "field": "physics",
+  "subfield": "astrophysics",
+  "keywords": ["relativity", "space-time"],
+  "definition": "a theoretical passage or \"tunnel\" through space-time that could create shortcuts for long journeys across the universe",
+  "notes": [
+    "predicted by the theory of general relativity"
+  ]
+},
+
+{
+  "term": "reciprocal",
+  "lang": "en",
+  "field": null,
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "hierarchy",
+  "lang": "en",
+  "field": null,
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+
+{
+  "term": "paradigm",
+  "lang": "en",
+  "definition": "an example or pattern; esp. an outstandingly clear or typical example",
+  "instances": []
+},
+{
+  "term": "fact sheet",
+  "lang": "en",
+  "definition": null,
+  "instances": []
+},
+{
+  "term": "normalcy",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "the state of being normal, usual, or expected; a return to a previous, familiar, and generally accepted condition, often after a period of disruption or abnormality",
+  "notes": []
+},
+{
+  "term": "accountable",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "eclecticism",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "syncretism",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "scepticism",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "pragmatism",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "comply",
+  "lang": "en",
+  "field": "general",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+
+{
+  "term": "utility",
+  "lang": "en",
+  "field": "economics",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "flat rate",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+
+{
+  "name": "ASML",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "a Dutch multinational corporation that designs and manufactures photolithography systems used in the production of integrated circuits; a leading supplier to the semiconductor industry and the sole supplier of extreme ultraviolet (EUV) lithography machines",
+  "notes": []
+},
+{
+  "term": "chapuza",
+  "lang": "es",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+{
+  "term": "lexicon",
+  "lang": "en",
+  "field": "",
+  "keywords": [],
+  "definition": "",
+  "notes": []
+},
+
 
 {
   "term": "cyberpunk",
   "lang": "en",
   "field": "literature",
+  "subfield": "sci-fi",
+  "keywords": ["dystopian"],
   "subfield": "literary genre",
   "definition": "a subgenre of science fiction in a dystopian futuristic setting said to focus on a combination of \"low-life and high tech\"; it features futuristic technological and scientific achievements, such as artificial intelligence and cyberware, juxtaposed with societal collapse, dystopia or decay",
   "authors": [
@@ -12,26 +181,18 @@ const assortedArray =
     "Bruce Sterling",
     "Pat Cadigan"
   ],
-  "notes": [],
-  "advantages": null
+  "notes": []
 },
 
 {
   "term": "arsenic",
   "lang": "en",
   "field": "chemistry",
+  "keywords": ["heavy metal", "poisonous"],
   "definition": "",
   "notes": []
 },
 
-{
-  "term": "compute",
-  "field": "information",
-  "wordclass": "verb",
-  "lang": "en",
-  "definition": "",
-  "instances": []
-},
 {
   "term": "doomsday device",
   "lang": "en",
@@ -82,7 +243,7 @@ const assortedArray =
   "term": "inventio",
   "lang": "en",
   "field": "rhetoric",
-  "definition": "",
+  "definition": "the process of discovering and developing ideas, arguments, and evidence to support a particular claim or position",
   "instances": [
   ]
 },
@@ -108,56 +269,16 @@ const assortedArray =
   "lang": "en",
   "field": "systems",
   "subfield": "thermodynamics",
-  "definition": "",
+  "definition": "a measure of the disorder or randomness of a system",
   "instances": [
   ]
 },
 
-{
-  "term": "green compost material",
-  "lang": "en",
-  "field": "farming",
-  "subfield": "composting",
-  "definition": "",
-  "instances": [
-    "grass clippings",
-    "fresh manure",
-    "coffee grounds",
-    "plant trimmings",
-    "vegetable excess"
-  ]
-},
-{
-  "term": "brown compost material",
-  "lang": "en",
-  "field": "farming",
-  "subfield": "composting",
-  "definition": "",
-  "instances": [
-    "black-and-white newspapers (color ink is toxic to plants)",
-    "dead leaves",
-    "straw",
-    "woodstove ash"
-  ]
-},
 
 
-{
-  "term": "parasitoid",
-  "lang": "en",
-  "field": "biology",
-  "effects": [],
-  "definition": "",
-  "instances": []
-},
 
-{
-  "term": "plug tray",
-  "lang": "en",
-  "field": "farming",
-  "definition": "",
-  "benefits": []
-},
+
+
 {
   "term": "historicism",
   "lang": "en",
@@ -165,12 +286,14 @@ const assortedArray =
   "definition": ""
 
 },
+
 {
   "term": "holistic",
   "lang": "en",
   "field": "culture",
   "definition": ""
 },
+
 {
   "term": "upcycling",
   "lang": "en",
@@ -190,6 +313,7 @@ const assortedArray =
   "instances": [
   ]
 },
+
 {
   "term": "monolithic",
   "lang": "en",
@@ -241,42 +365,13 @@ const assortedArray =
 },
 
 {
-  "term": "humanure",
-  "lang": "en",
-  "field": null,
-  "definition": "",
-  "instances": []
-},
-{
-  "term": "dry composting toilet",
-  "lang": "en",
-  "field": null,
-  "definition": "",
-  "instances": []
-},
-{
   "term": "synergy",
   "lang": "en",
   "field": "systems",
   "definition": "",
   "instances": []
 },
-{
-  "term": "hugel kultur",
-  "lang": "en",
-  "field": "farming",
-  "subfield": "organic farming",
-  "definition": "",
-  "instances": []
-},
-{
-  "term": "heirloom variety",
-  "lang": "en",
-  "field": "farming",
-  "subfield": "organic farming",
-  "definition": "",
-  "instances": []
-},
+
 
 
 
@@ -396,48 +491,6 @@ const assortedArray =
   "field": "civilization",
   "definition": "something that you do, or a thing that you give someone, that expresses your feelings or intentions, although it might have little practical effect",
   "instances": ["As a token of our gratitude for all that you have done, we would like you to accept this small gift."]
-},
-
-{
-  "term": "aphids",
-  "lang": "en",
-  "field": "biology",
-  "subfield": "zoology",
-  "subsubfield": "entomology",
-  "description": "soft bodied, pear-shaped insects that suck/feed on plant sap",
-  "notes": [
-    "aphids are a familiar garden pest and seldom cause major damage",
-    "aphids are also a favorite food source of ladybugs, lacewings, and other beneficial insects"
-  ]
-},
-
-{
-  "term": "oxalic acid",
-  "lang": "en",
-  "field": "biochemistry",
-  "description": ""
-},
-{
-  "term": "saponin",
-  "lang": "en",
-  "field": "biochemistry",
-  "description": ""
-},
-
-{
-  "term": "ethnobotany",
-  "lang": "en",
-  "field": "anthropology",
-  "definition": "",
-  "discussion": null
-},
-{
-  "term": "vegetative (reproduction)",
-  "lang": "en",
-  "field": "botany",
-  "subfield": "reproduction",
-  "definition": "",
-  "discussion": null
 },
 
 
@@ -577,34 +630,7 @@ const assortedArray =
   "definition": []
 },
 
-{
-  "term": "abiotic stress",
-  "lang": "en",
-  "field": "biology",
-  "subfield": null,
-  "definition": []
-},
-{
-  "term": "drought tolerance",
-  "lang": "en",
-  "field": "farming",
-  "subfield": null,
-  "definition": []
-},
-{
-  "title": "nitrogen fixation under water stress",
-  "lang": "en",
-  "field": "farming",
-  "subfield": null,
-  "definition": []
-},
-{
-  "term": "dehiscent",
-  "lang": "en",
-  "field": "biology",
-  "subfield": "botany",
-  "definition": ["releasing their seeds by splitting open along two seams"]
-},
+
 {
   "term": "commodity",
   "lang": "en",
@@ -779,20 +805,6 @@ const assortedArray =
 
 
 {
-  "term": "vaselina industrial",
-  "lang": "es",
-  "field": "***",
-  "definition": "",
-  "discussion": null
-},
-{
-  "name": "conseguir vaselina industrial",
-  "type": "task",
-  "lang": "es",
-  "field": "***",
-  "discussion": null
-},
-{
   "term": "Agenda 2030",
   "lang": "en",
   "field": "***",
@@ -872,14 +884,6 @@ const assortedArray =
   ],
   "discussion": null
 },
-{
-  "term": "quadratic voting",
-  "definition": "a voting system that encourages voters to express their true relative intensity of preference between multiple options or elections",
-  "explanation": "Quadratic voting works by having voters allocate \"credits\" (which are either real currencies or artificially distributed tokens) to various issues. The number of votes to add is determined by a quadratic cost function, meaning that to vote n times for a given option, n^2 credits are required to be allocated (for example, 3 votes would cost 9 credits). Because the quadratic cost function makes each additional vote more expensive, voters are incentivized to allocate their credits to reflect their true relative preferences between different options, as opposed to previous proposals for storable votes where voters may choose to allocate all their votes to a single cause and not accurately represent their true preferences.",
-  "discussion": [
-    "By doing so, quadratic voting seeks to mitigate tyranny of the majority by enabling participants to trade influence over issues they don't care about for influence over issues they do."
-  ]
-},
 
 {
   "term": "endergonic",
@@ -925,132 +929,7 @@ const assortedArray =
   "field": "computing",
   "approach": "free lunch"
 },
-{
-  "name": "write JSON documents on concepts",
-  "list": [
-    "hack",
-    "orthodox",
-    "heterodox",
-    "sense and reference",
 
-    "maitri",
-    "karuna",
-
-    "parallelism",
-    "orthonormal",
-    "indexes",
-    "homeomorphism",
-    "peer",
-
-    "Hindu tantra",
-
-    "homoiconicity",
-    "peer-to-peer",
-    "shell (computing)",
-    "text editor",
-    "text processor",
-    "knowledge base",
-    "URI",
-    "URL",
-
-    "empathy",
-    "corruption",
-    "big pharma",
-    "animalism",
-    "agribusiness",
-
-    "tribe",
-
-    "tribology",
-    "lexicon",
-    "lexicology",
-    "upcycling",
-    "reification",
-    "decompose",
-    "analysis",
-    "synthesis",
-    "allegory",
-    "solidarity",
-    "compliance",
-    "encyclopaedia",
-    "fiddle",
-    "avidya",
-    "advaita",
-    "duality",
-    "manicheism",
-    "monism",
-    "vested interests",
-    "accomodate",
-    "intimacy",
-    "sensuality",
-    "egotism",
-
-    "thermonuclear",
-    "tamper",
-    "predetonate",
-    "strategic bombing",
-    "nuclear winter",
-    "fallout",
-
-    "syntax highlighting",
-    "semaphore (in operating systems programming)",
-    "good faith",
-    "quality",
-    "abstraction",
-    "formalism",
-    "notation",
-    "mediation",
-
-    "space",
-
-    "sign",
-    "signal",
-    "semiotics",
-    "noise",
-    "interpretation",
-    "version",
-    "sentience",
-
-
-    "isotope",
-    "quantum entanglement",
-    "degree-of-freedom",
-    "entropy",
-    "enthalpy",
-    "heat",
-
-    "crystall",
-    "gel",
-    "colloid",
-    "phase",
-
-    "figure-of-speech",
-    "idiolect",
-    "sincretism",
-    "eclectic",
-    "approach",
-    "synergy",
-    "monolithic",
-    "modular",
-    "servant/servitude",
-    "overlord",
-    "war",
-    "defense",
-    "logistics",
-    "painting",
-    "esthetics",
-
-    "statics",
-    "kinematics",
-    "dynamics",
-
-    "cybernetics",
-    "cyborg",
-
-    "rare-earth"
-
-  ]
-},
 {
   "name":  "menial",
   "pronuciation": "//",
@@ -1153,6 +1032,15 @@ const assortedArray =
   "related": ["sostenibilidad", "ecologismo", "interdependencia"]
 },
 {
+  "name": "ecología profunda",
+  "lang": "es",
+  "type": null,
+  "field": "ecologismo",
+  "source": "Ecologistas en Acción",
+  "definition": "",
+  "description": null
+},
+{
    "name": "Arne Naess",
    "lang": "en",
    "field": "deep ecology",
@@ -1164,15 +1052,25 @@ const assortedArray =
   "content": "Las posiciones defendidas por la ecología profunda han sido objeto de tantas controversias y críticas que merece la pena indagar en las razones que indujeron, por ejemplo, al cineasta y ecologista de moda, Al Gore, a calificarla como una filosofía “intrínsecamente misántropa” en la que el ser humano es “un alien en la Tierra” [1], o al intelectual francés Luc Ferry a concluir que “se puede decir legítimamente que la ecología profunda hunde algunas de sus raíces en el nazismo y alza sus ramas hasta las esferas más extremas del izquierdismo cultural” [2]. Y observamos que, en casi todos los casos, el pretendido radicalismo de la ecología profunda estriba en su crítica del antropocentrismo y de aquellos fundamentos culturales de Occidente que han abocado al mundo a la crisis multidimensional que enfrenta desde hace tiempo.",
   "source":  "Ecologistas en Acción"
 },
-
 {
-  "term": "convergent evolution",
-  "lang": "en",
+  "name": "ecología profunda",
+  "lang": "es",
   "type": null,
-  "field": "evolution",
-  "definition": "the independent development of the same characteristic in unrelated taxa",
+  "field": "ecologismo",
+  "source": null,
+  "definition": null,
   "description": null
 },
+{
+  "name": "ecología profunda",
+  "lang": "es",
+  "type": null,
+  "field": "ecologismo",
+  "source": null,
+  "definition": null,
+  "description": null
+},
+
 
 {
   "name":    "butoh significa bailar con sombras",

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Write (Blob)</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.en.css"/>
+    <meta name="description" content="JavaScript Template for Writing to a File through a Blob"/>
+    <!--
+    <meta name="keywords" content="KW1, KW2, KW3"/>
+    <meta name="author" content="AUTHOR"/>
+    -->
+    <style>
+textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+    </style>
+    <script type="text/javascript"
+            src="/home/francisco/former/home/francisco/Documents/mis_escritos/precious/psimple/JSON_files/general.js"></script>
+
+  </head>
+  <body lang="en" class="computing">
+    <nav>
+      <!--
+      <p><a href="A_PAGE.html">LINK_TEXT</a></p>
+      <p><a rel="next" href="NEXT_PAGE.html">LINK_TEXT</a></p>
+      -->
+      <div>
+        <p><a rel="prev" href="js.html">JavaScript: the Web Programming Language</a></p>
+        <p><a href="json.html">JavaScript Object Notation</a></p>
+        <p><a href="js.objects.html">JavaScript Objects (as a Data Type and as a Class)</a></p>
+        <p><a href="js.strings.html">JavaScript Strings</a></p>
+        <p><a href="js.arrays.html">JavaScript Arrays</a></p>
+        <p><a href="js.regexp.html">JavaScript Regular Expressions</a></p>
+        <p><a href="js.higher-order-functions.html">Higher-Order Functions</a></p>
+        <p><a href="js.nodejs.html">Node JS</a></p>
+        <p><a href="js.modules.html">JavaScript Modules for Including Functionality</a></p>
+      </div>
+      <div>
+        <p><a href="adt-and-objects.html">Abstract Data Types and Objects (JavaScript)</a></p>
+        <p><a rel="prev" href="programming.html">Programming</a></p>
+        <p><a href="cpp.html">The C++ Programming Language</a></p>
+      </div>
+    </nav>
+    <main>
+      <h1>JavaScript Template for Writing to a File through a Blob</h1>
+      <p>The Blob object is a built-in JavaScript feature that allows you to create file-like objects of immutable raw data. Using a Blob, you can easily generate text files directly in the browser. Here&apos;s how to use it:</p>
+      <ul>
+        <li>Create a Blob object containing the data you want to write to a text file.</li>
+        <li>Use the <code>URL.createObjectURL()</code> method to create a downloadable link.</li>
+        <li>Trigger the file download automatically when the user clicks a button.</li>
+      </ul>
+      <p>The (relevant) code:</p>
+      <pre>
+    &lt;div&gt;
+      &lt;textarea id="textData" rows="6" cols="50" placeholder="Enter text to save"&gt;&lt;/textarea&gt;&lt;br/&gt;&lt;br/&gt;
+      &lt;textarea id="fileName" rows="1" cols="50" placeholder="FILENAME.txt"&gt;&lt;/textarea&gt;&lt;br/&gt;&lt;br/&gt;
+      &lt;button onclick="saveTextFromIdToId('textData', 'fileName')"&gt;Download Text File using saveTextFromIdToId(txt,file)&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+function saveText(text, fileName="saved.txt") {
+  var blob = new Blob([text], { type: 'text/plain' });
+  var link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = fileName;
+  link.click();
+}
+
+function saveTextFromIdToId(textareaId, fileNameId) {
+  var text     = document.getElementById(textareaId).value;
+  var fileName = document.getElementById(fileNameId).value;
+  saveText(text,fileName);
+}</pre>
+
+      <p>(You may of course change the identifiers, forego embedding your textarea and button in a div element, etc.)</p>
+
+      <hr/>
+
+    <div>
+      <!--<h2>JavaScript Program to Write Data to a Text File</h2>-->
+      <textarea id="textData" rows="6" cols="50" placeholder="Enter text to save"></textarea><br/><br/>
+      <textarea id="fileName" rows="1" cols="50" placeholder="FILENAME.txt"></textarea><br/><br/>
+      <button onclick="saveTextFromIdToId('textData', 'fileName')">Download Text File using saveTextFromIdToId(txt,file)</button>
+      <!--
+      -->
+    </div>
+
+    </main>
+  </body>
+</html>

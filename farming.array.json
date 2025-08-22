@@ -97,12 +97,92 @@
   "lang":  "en",
   "definition": "related to chill hours, a measure of the accumulated cold temperatures needed for certain crops to properly break dormancy and flower/fruit"
 },
+
 {
-  "name":  "USDA Cultivation Zones",
-  "type":  "term",
+  "term": "biological pest control",
+  "lang": "en",
+  "field": "farming",
+  "definition": "the use of living organisms to manage or reduce populations of harmful pests; it relies on natural enemies like predators, parasitoids, and pathogens to suppress pest populations, rather than relying solely on synthetic pesticides",
+  "notes": ["aims to create a balanced ecosystem where beneficial organisms help keep pest numbers in check, reducing the need for chemical interventions"]
+},
+
+{
+  "term":  "final frost date",
   "field": "farming",
   "lang":  "en",
-  "definition": null
+  "definition": "the last day you can expect frost",
+  "notes": [
+    "many potted plants and tender rhizomes must be kept indoors until after all threat of frost has passed, and some bareroots need to be kept out of frosty conditions in their first year",
+    "some cold-hardy plants, such as leafy vegetables grown from seed, can go into the ground before the last frost date",
+    "knowing your final frost date can also help you plan for starting flowers indoors. For example, if you plan to put dahlias outdoors after the last frost, but want an early start on them, you can count backward from that last date"]
+},
+{
+  "term":  "first frost date",
+  "field": "farming",
+  "lang":  "en",
+  "definition": "the first day of fall that you must watch out for frost",
+  "notes": [
+  "some summer bulbs need to come out of the ground before the first frost: these include caladiums and others that don't naturally encounter frost at all",
+  "if you plan to lift and bring hardier bulbs inside, you'll need to wait for that final frost, and for the foliage to die back. For most summer bulbs, that occurs six weeks after flowering",
+  "if you're planting hardy bulbs, such as tulips or daffodils, do that after the first frost"
+  ]
+},
+
+{
+  "term":  "hardiness zone",
+  "field": "farming",
+  "lang":  "en",
+  "definition": "a geographic area defined as having a certain average annual minimum temperature, being a factor relevant to the survival of many (perennial) plants",
+  "notes": ["the original and most widely used system is the one developed by the United States Department of Agriculture (USDA)"]
+},
+{
+  "term": "indicator plant",
+  "lang": "en",
+  "field": "farming",
+  "definition": "one that, by its presence or absence, suggests specific soil conditions, nutrient levels, or environmental factors",
+  "notes": [
+    "they act as \"bioindicators,\" providing insights into the health and suitability of the land for different agricultural practices",
+    "by observing these plants, farmers can make informed decisions about soil management, fertilization, and crop selection"
+  ],
+  "soil": {
+    "sandy": ["savory", "lavender", "oregano", "rosemary"],
+    "heavy": ["parsley", "mint"],
+    "nitrogen-rich": ["chickweed", "nettle", "meadow hogweed", "meadow chervil"],
+    "nitrogen-poor": ["lavender", "rosemary", "sage", "wild carrot", "dog chamomile"],
+    "acidic": ["bilberry", "cranberry", "dog chamomile", "small dock"],
+    "calcareous": ["chicory", "meadow sage", "lavender", "parsley"]
+  }
+},
+{
+  "name":  "USDA Cultivation Zones",
+  "type":  "classification",
+  "field": "farming",
+  "lang":  "en",
+  "definition": "a classification based on the average annual minimum winter temperature, with each zone representing a 10-degree Fahrenheit range",
+  "notes": [
+    "each zone is further divided into 'a' and 'b' subzones, representing 5-degree increments"
+  ],
+  "list": [
+    null,
+    {"F": [-60,-50], "C": [-55.1, -45.6], "N": 1},
+    {"F": [-50,-40], "C": [-45.6, -40], "N": 2},
+    {"F": [-40,-30], "C": [-40, -34.4], "N": 3},
+    {"F": [-30,-20], "C": [-34.4,-28.9], "N": 4},
+    {"F": [-20,-10], "C": [-28.9,-23.3], "N": 5},
+    {"F": [-10,0], "C": [-23.3,-17.8], "N": 6},
+    {"F": [0,10], "C": [-17.8, -12.2], "N": 7},
+    {"F": [10,20], "C": [-12.2, -6.7], "N": 8},
+    {"F": [20,30], "C": [-6.7, -1.1], "N": 9},
+    {"F": [30,40], "C": [-1.1,4.4], "N": 10},
+    {"F": [40,50], "C": [4.4, 10], "N": 11},
+    {"F": [50,60], "C": [10, 15.6], "N": 12},
+    {"F": [60,70], "C": [15.6, 21.1], "N": 13}
+  ],
+  "alternatives": [
+    "indicator plants",
+    "Köppen climate classification",
+    "Trewartha climate classification system"
+  ]
 },
 
 
@@ -144,7 +224,8 @@
   "definition": "an organism, typically an insect, that spends a significant portion of its life attached to or within a single host organism, ultimately killing it",
   "notes": [
     "they are distinct from parasites because they inevitably lead to the host's demise, unlike parasites which can live on or in a host without necessarily causing death",
-    "the share characteristics with both predators and parasites"
+    "the share characteristics with both predators and parasites",
+    "some are used in biological pest control"
   ],
   "instances": []
 },
