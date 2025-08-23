@@ -343,6 +343,46 @@
     "original-intent": "to serve as an indicator to the optimizer that inline substitution of a function is preferred over function call"
   },
   {
+    "term": "inline namespace",
+    "type": "keyword",
+    "language": "c++",
+    "action": "",
+    "description": "a mechanism whereby a library author can make a nested namespace look and act as if all its declarations were in the surrounding namespace (inline namespaces can be nested, so \"more-nested\" names percolate up all the way to the first non-inline namespace and look and act as if their declarations were in any of the namespaces in between, too).",
+    "purpose": "to allow versioning for backward-compatibility; you define multiple inner namespaces, and make the most recent one inline; or, anyway, the default one for people who don't care about versioning",
+    "examples": [
+      {
+        "code": [
+"// file V99.h:",
+"inline namespace V99 {",
+"    void f(int);    // does something better than the V98 version",
+"    void f(double); // new feature",
+"    // ...",
+"}",
+
+"// file V98.h:",
+"namespace V98 {",
+"    void f(int);    // does something",
+"    // ...",
+"}",
+
+"// file Mine.h:",
+"namespace Mine {",
+"#include \"V99.h\"",
+"#include \"V98.h\"",
+"}",
+
+"#include \"Mine.h\"",
+"using namespace Mine;",
+"// ...",
+"V98::f(1);  // old version",
+"V99::f(1);  // new version",
+"f(1);       // default version"
+        ]
+      }
+    ]
+  },
+
+  {
     "term": "inline substitution",
     "language": "cpp",
     "type": "concept",

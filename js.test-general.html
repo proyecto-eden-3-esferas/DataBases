@@ -13,6 +13,25 @@ let arr = [1, 2, 3];
 inPlaceMap(arr, (e) => e + 1);
 console.log(arr);
 
+let emptyArr = [];
+let emptyObj = {};
+let emptyStr = "";
+console.log("Has emptyArr got content? ", hasContent(emptyArr));
+console.log("Has emptyObj got content? ", hasContent(emptyObj));
+console.log("Has emptyStr got content? ", hasContent(emptyStr));
+
+let nonEmptyArr = ["first", "second"];
+let nonEmptyObj = {"name": "Agamemnon"};
+let nonEmptyStr = "dearing";
+console.log("Has nonEmptyArr got content? ", hasContent(nonEmptyArr));
+console.log("Has nonEmptyObj got content? ", hasContent(nonEmptyObj));
+console.log("Has nonEmptyStr got content? ", hasContent(nonEmptyStr));
+
+
+console.log("Has null got content? ", hasContent(null));
+console.log("Has undefined got content? ", hasContent(undefined));
+//console.log("Has non-existent got content? ", hasContent(y));
+
       </script>
 
   </head>
@@ -21,12 +40,13 @@ console.log(arr);
     <main>
       <h1>Testing JavaScript Library-File <cite>general.js</cite></h1>
       <p>This file tests functions in <cite>general.js</cite> through JavaScript&apos;s <code>console.log()</code> function. To see the results and debug the code, hold down <q>CTRL+SHIFT</q> then press <q>i</q>.</p>
-
+      <!--
       <pre id="result">EMPTY</pre>
       <ul id="list">
         <li>An Item...</li>
       </ul>
       <script type="text/javascript"> </script>
+      -->
 
     </main>
 

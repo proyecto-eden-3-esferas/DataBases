@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Array Test</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="JavaScript Array Test/Demonstration/etc"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.en.css"/>
+
+    <!--
+    get 'objInObj(OBJIN, OBJ)' and 'makeObjWithFieldsByObj(INOBJ, PROJOBJ)'
+    from "./filters.js"
+    -->
+    <script type="text/javascript" src="./general.js">    </script>
+    <script type="text/javascript" src="./indexes.js">    </script>
+
+    <!-- Bring in filter 'assorted'' from "./assorted.array.js" -->
+    <script type="text/javascript" src="./assorted.array.js"></script>
+    <style> span { border-style: solid; margin: 3px;} </style>
+    <script type="text/javascript">
+function appendChildAsSpanToId(stringName, container, n=0) {
+  let sp = document.createElement("span");
+  sp.setAttribute("id", n.toString());
+  sp.setAttribute("onclick", `showIn(${n})`);
+  sp.innerHTML = stringName;
+  container.appendChild(sp);
+}
+/* 'firstValIn' returns the first value in 'obj' whose key is in 'arrOfKeys',
+ * an array of strings, and null otherwise.
+ * (Copied from 'indexes.js') */
+function firstValIn(obj, arrOfKeys) {
+  for( k of arrOfKeys) {
+    if(k in obj)
+      return obj[k];
+  }
+  return null;
+}
+function appendFirstInAsSpan(objArr, strArr, cont) {
+  assortedArray.forEach( (obj, idx, arr) => {
+    let nm = firstValIn(obj, strArr);
+    appendChildAsSpanToId(nm, cont, idx);
+  });
+}
+    </script>
+  </head>
+  <body lang="en">
+
+    <main>
+      <h1>JavaScript Array: Test/Demonstrate Adding Hot Spans from an Array of Objects</h1>
+
+      <div class="solid">
+        <h3>These are the names of the objects available:</h3>
+        <p id="objects"></p>
+        <p>Click on one to view it.</p>
+      </div>
+      <script type="text/javascript">
+let container = document.getElementById("objects");
+appendFirstInAsSpan(assortedArray, ["term", "name", "title"], container);
+      </script>
+
+      <div class="solid">
+        <textarea id="chosenObjArea" rows="8" cols="90" placeholder="{YOUR_CLICKED_OBJECT}"></textarea>
+      </div>
+      <p id="chosenObjPara"></p>
+      <script type="text/javascript">
+
+function writeNthOfArrToAsValue(n, arr, txtarea) {
+  txtarea.value = JSON.stringify(arr[n]);
+}
+
+function writeNthOfArrToAsInnerHTML(n, arr, elem) {
+  //elem.innerHTML = JSON.stringify(arr[n]).replace("\",\"", "<br/>");
+  elem.innerHTML = printObj(arr[n]);
+}
+
+let co = document.getElementById("chosenObjArea");
+let ca = document.getElementById("chosenObjPara");
+function showIn(n=0) {
+  //co.value = JSON.stringify(assortedArray[n]);
+  writeNthOfArrToAsValue(    n, assortedArray, co);
+  writeNthOfArrToAsInnerHTML(n, assortedArray, ca);
+}
+      </script>
+
+    </main>
+
+  </body>
+
+</html>

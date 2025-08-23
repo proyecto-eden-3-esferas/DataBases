@@ -6,7 +6,7 @@
 
 body { background-color: cornsilk; }
 nav { border: 3px solid red; }
-div { border: 1px solid red; }
+div, span { border: 1px solid red; }
 /*main nav {border: 3px solid black;}*/
 footer { border: 3px solid red; }
 nav div { border: 3px solid indianred; }
