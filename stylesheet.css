@@ -37,6 +37,7 @@ nav div {
   flex-direction: column;
   border: 3px solid indianred;
 }
+span { border: 2px solid indianred; margin: 3px;}
 aside {
   padding-left: 5%;
   padding-right: 5%;

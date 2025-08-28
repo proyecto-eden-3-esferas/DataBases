@@ -9,10 +9,6 @@
 
     <script type="text/javascript" src="./general.js">       </script>
     <script type="text/javascript">
-let arr = [1, 2, 3];
-inPlaceMap(arr, (e) => e + 1);
-console.log(arr);
-
 let emptyArr = [];
 let emptyObj = {};
 let emptyStr = "";
@@ -40,6 +36,26 @@ console.log("Has undefined got content? ", hasContent(undefined));
     <main>
       <h1>Testing JavaScript Library-File <cite>general.js</cite></h1>
       <p>This file tests functions in <cite>general.js</cite> through JavaScript&apos;s <code>console.log()</code> function. To see the results and debug the code, hold down <q>CTRL+SHIFT</q> then press <q>i</q>.</p>
+      <p>First, function hasContent(<var>item</var>) is tested.</p>
+      <hr/>
+      <h3>Show an object:</h3>
+      <p id="objPara"></p>
+      <script type="text/javascript">
+let myP = document.getElementById("objPara");
+let myObj = {
+  "name": "Francisco",
+  "parents": [{"name": "Jose María", "sex": "male"},
+              {"name": "Concepción", "sex": "female"}
+             ],
+  "address": {"street": {"name": "López de Hoyos", "kind": "calle"},
+              "number": 310
+             },
+  "phone": 600217519,
+  "married": false
+};
+myP.innerHTML = printObjAsHTML(myObj);
+
+      </script>
       <!--
       <pre id="result">EMPTY</pre>
       <ul id="list">

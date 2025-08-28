@@ -1,4 +1,5 @@
 [
+
 {
   "term": "compute",
   "field": "information",
@@ -7,7 +8,178 @@
   "definition": "",
   "instances": []
 },
+{
+  "name": "initial",
+  "lang": "en",
+  "field": "computing",
+  "language": "CSS",
+  "type": "property value",
+  "description": "set a CSS property to its default value"
+},
+{
+  "name": "inherit",
+  "lang": "en",
+  "field": "computing",
+  "language": "CSS",
+  "type": "property value",
+  "description": "specifies that a property should inherit its value from its parent element",
+  "examples": [
+    {
+      "description": "set the text-color for <span> elements to blue, except those inside elements with class=\"extra\"",
+      "code": [
+        "span {",
+        "  color: blue;",
+        "}",
 
+        ".extra span {",
+        "  color: inherit;",
+        "}"
+      ]
+    }
+  ]
+},
+{
+  "name": "display",
+  "lang": "en",
+  "field": "computing",
+  "type": "property",
+  "language": "CSS",
+  "lang": "en",
+  "description": "specifies the display behavior (the type of rendering box) of an element",
+  "instances": [
+    {
+      "name": "inline",
+      "description": "displays an element as an inline element (like <span>); any height and width properties will have no effect"
+    },
+    {
+      "name": "block",
+      "description": "displays an element as a block element (like <p>): it starts on a new line, and takes up the whole width"
+    },
+    {
+      "name": "contents",
+      "description": "makes the container disappear, making the child elements children of the element the next level up in the DOM"
+    },
+    {
+      "name": "flex",
+      "description": "displays an element as a block-level flex container"
+    },
+    {
+      "name": "grid",
+      "description": "displays an element as a block-level grid container"
+    },
+    {
+      "name": "inline-block",
+      "description": "displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values"
+    },
+    {
+      "name": "inline-flex",
+      "description": "displays an element as an inline-level flex container"
+    },
+    {
+      "name": "inline-grid",
+      "description": "displays an element as an inline-level grid container"
+    },
+    {
+      "name": "inline-table",
+      "description": "the element is displayed as an inline-level table"
+    },
+    {
+      "name": "list-item",
+      "description": "let the element behave like a <li> element"
+    },
+    {
+      "name": "run-in",
+      "description": "displays an element as either block or inline, depending on context"
+    },
+    {
+      "name": "table",
+      "description": "let the element behave like a <table> element"
+    },
+    {
+      "name": "table-caption",
+      "description": "let the element behave like a <caption> element"
+    },
+    {
+      "name": "table-column-group",
+      "description": "let the element behave like a <colgroup> element"
+    },
+    {
+      "name": "table-header-group",
+      "description": "let the element behave like a <thead> element"
+    },
+    {
+      "name": "table-footer-group",
+      "description": "let the element behave like a <tfoot> element"
+    },
+    {
+      "name": "table-row-group",
+      "description": "let the element behave like a <tbody> element"
+    },
+    {
+      "name": "table-cell",
+      "description": "let the element behave like a <td> element"
+    },
+    {
+      "name": "table-column",
+      "description": "let the element behave like a <col> element"
+    },
+    {
+      "name": "table-row",
+      "description": "let the element behave like a <tr> element"
+    },
+    {
+      "name": "none",
+      "description": "the element is completely removed"
+    },
+    {
+      "name": "initial",
+      "description": "sets this property to its default value"
+    },
+    {
+      "name": "inherit",
+      "description": "inherits this property from its parent element"
+    }
+  ],
+  "default": "inline"
+},
+{
+  "name": "inline-block",
+  "lang": "en",
+  "field": "computing",
+  "language": "CSS",
+  "type": "property value",
+  "description": [
+    "combines the features of both inline and block elements",
+    "will appear on the same line as other inline or inline-block elements",
+    "you can set the width, height, margin-top, and margin-bottom properties for the element (like block elements)"
+  ],
+  "instances": [],
+  "uses": [
+    {
+      "name": "create a horizontal navigation menu",
+      "code": [
+        "horNav li {",
+        "  display: inline-block;",
+        "  font-size: 18px;",
+        "  padding: 15px;",
+        "}"
+      ]
+    }
+  ]
+},
+{
+  "name": "base",
+  "language": "HTML",
+  "type": "element",
+  "action": "specify a default URL and/or a default target for all links on a page through a \"href\" and/or \"target\" attribute",
+  "examples": [
+  ],
+  "notes": [
+    "there can only be one single <base> element in a document",
+    "the <base> element must be inside the <head> element",
+    "target values are one of _blank, _parent, _self, and _top"
+  ]
+},
 {
   "name": "contentEditable",
   "language": "HTML",
@@ -169,14 +341,19 @@
     {"name": "Mobile operating system  "}
   ]
 },
-
-
 {
   "term": "buffer",
   "lang": "en",
   "field": "computing",
   "definition": null
 },
+{
+  "term": "clobber",
+  "lang": "en",
+  "field": "computing",
+  "definition": "to overwrite or destroy data in a resource, such as a file, memory location, or processor register, often unintentionally"
+},
+
 {
   "term": "asynchronous",
   "lang": "en",
