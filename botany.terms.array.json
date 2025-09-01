@@ -280,8 +280,7 @@
   "related-to": ["branch", "terminal bud"]
 },
 {
-  "name":  "monopodial branching",
-  "type":  "term",
+  "term":  "monopodial branching",
   "field": "botany",
   "lang":  "en",
   "definition": "[when] the terminal bud continues to grow as a central leader shoot and the lateral branches remain subordinate",
@@ -290,14 +289,34 @@
   "related-to": ["branch", "terminal bud"]
 },
 {
-  "name":  "sympodial branching",
-  "type":  "term",
+  "term":  "sympodial branching",
   "field": "botany",
   "lang":  "en",
   "definition": "[when] the terminal bud ceases to grow (usually because a terminal flower has formed) and an axillary bud or buds become new leader shoots, called renewal shoots",
   "notes": ["results in candelabra-like overall shape"],
   "instances": ["Joshua tree"],
   "related-to": ["branch", "terminal bud"]
+},
+{
+  "term":  "frond",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "a large, divided leaf",
+  "instances": "the leaves of ferns"
+},
+
+
+
+{
+  "term":  "pinnate",
+  "word-class": "adj",
+  "field": "botany",
+  "lang":  "en",
+  "definition": "arranged multi-divided or feather-wise arising from both sides of a common axis",
+  "instances": [ "leaflet", "vein", "lobe", "branches"],
+  "discussion": [],
+  "notes": [],
+  "opposites": ["palmate", "pectinate"]
 },
 {
   "name":  "epiphytic",

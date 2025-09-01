@@ -6,7 +6,7 @@
   "genus": "Carya",
   "species": "illinoinensis",
   "native-to": "Southern United States and northern Mexico in the region of the Mississippi River",
-  "description": "a large deciduous tree, growing to 20–40 m (66–131 ft) in height, rarely to 44 m (144 ft).[10] It typically has a spread of 12–23 m (39–75 ft) with a trunk up to 2 m (6 ft 7 in) diameter. A 10-year-old sapling grown in optimal conditions will stand about 5 m (16 ft) tall. The leaves are alternate, 30–45 cm (12–18 in) long, and pinnate with 9–17 leaflets, each leaflet 5–12 cm (2–4+1⁄2 in) long and 2–6 cm (1–2+1⁄2 in) broad.",
+  "description": "a large deciduous tree, growing to 20–40 m (66–131 ft) in height, rarely to 44 m (144 ft). It typically has a spread of 12–23 m (39–75 ft) with a trunk up to 2 m (6 ft 7 in) diameter. A 10-year-old sapling grown in optimal conditions will stand about 5 m (16 ft) tall. The leaves are alternate, 30–45 cm (12–18 in) long, and pinnate with 9–17 leaflets, each leaflet 5–12 cm (2–4+1⁄2 in) long and 2–6 cm (1–2+1⁄2 in) broad.",
   "note": "a pecan, like the fruit of all other members of the hickory genus, is not truly a nut, but is technically a drupe. The husks are produced from the exocarp tissue of the flower, while the part known as the nut develops from the endocarp and contains the seed. The husk itself is aeneous, that is, brassy greenish-gold in color, oval to oblong in shape, 2.6–6 cm (1–2+3⁄8 in) long, and 1.5–3 cm (5⁄8–1+1⁄8 in) broad. The outer husk is 3–4 mm (1⁄8–5⁄32 in) thick, starts out green, and turns brown at maturity, at which time it splits off in four sections to release the thin-shelled seed.",
   "genetics": "Pecan is a 32-chromosome species (1N = 16) that readily hybridizes with other 32-chromosome members of the Carya genus, such as Carya ovata, Carya laciniosa, Carya cordiformis and has been reported to hybridize with 64-chromosome species such as Carya tomentosa. Most such hybrids are unproductive. Hybrids are referred to as \"hicans\" to indicate their hybrid origin.",
   "uses": ["The seed is an edible nut used as a snack and in various recipes, such as praline candy and pecan pie."],
@@ -185,27 +185,45 @@
   ]
 },
 
-
 {
-  "term": "green compost material",
+  "name": "compost green to brown ratio",
   "lang": "en",
   "field": "farming",
   "subfield": "composting",
-  "definition": "",
+  "description": "the ideal ratio for backyard composting is generally considered to be 3 to 4 parts brown materials to 1 part green materials, by volume",
+  "warnings": [
+    "in addition to the proper ratio, you must determine what can be composted: while all organic materials will decompose, not all organics are suitable for composting"
+  ]
+},
+{
+  "term": "green compost materials",
+  "lang": "en",
+  "field": "farming",
+  "subfield": "composting",
+  "definition": "materials that are rich in nitrogen or protein",
+  "effects": [
+    "they tend to heat a compost pile up because they help the microorganisms in the pile grow and multiply quickly"
+  ],
   "instances": [
     "grass clippings",
     "fresh manure",
     "coffee grounds",
     "plant trimmings",
-    "vegetable excess"
+    "fruit peelings and scraps",
+    "vegetable peelings and scraps",
+    "egg shells",
+    "seaweed"
   ]
 },
 {
-  "term": "brown compost material",
+  "term": "brown compost materials",
   "lang": "en",
   "field": "farming",
   "subfield": "composting",
-  "definition": "",
+  "definition": "carbon or carbohydrate-rich materials",
+  "effects": [
+    "feed all of the soil-dwelling organisms that will work with the microbes to break down the contents of your compost pile"
+  ],
   "instances": [
     "black-and-white newspapers (color ink is toxic to plants)",
     "dead leaves",
@@ -213,7 +231,80 @@
     "woodstove ash"
   ]
 },
-
+{
+  "term": "vermicomposting",
+  "lang": "en",
+  "field": "farming",
+  "subfield": "composting",
+  "definition": "a process that uses specific types of earthworms, such as red wigglers, to break down organic waste, including food scraps and yard trimmings, into a nutrient-rich soil amendment called vermicompost"
+},
+{
+  "term": "soil amendment",
+  "lang": "en",
+  "field": "farming",
+  "definition": "any material added to the soil to improve its physical or chemical properties",
+  "improves": [
+    "seed germination",
+    "root development",
+    "resistance to drought, stress",
+    "leaf growth",
+    "fruit set",
+    "flavor of fruit/vegetable",
+    "nutrient uptake",
+    "water retention",
+    "permeability",
+    "aeration",
+    "structure"
+  ],
+  "includes": [
+    "plant-based extracts",
+    "enzymes, vitamins",
+    "trace minerals",
+    "amino acids",
+    "mycorrhizae bacteria"
+  ],
+  "instances": [
+    "sphagnum peat moss",
+    "composted yard waste",
+    "manures",
+    "worm castings",
+    "humic acid",
+    "fluvic acid",
+    "compost tea",
+    "water holding crystals (Soil Moist)",
+    "mycorrhizae",
+    "bacteria (microbes)",
+    "wetting agents"
+  ]
+},
+{
+  "term": "bokashi",
+  "lang": "en",
+  "field": "farming",
+  "subfield": "composting",
+  "definition": "to ferment food prior to composting using lactobacillus bacteria to predigest waste matter into compost tea and pre-compost",
+  "description": "The method involves layering kitchen scraps (vegetables and fruits, as well as meat and dairy scraps) with a bokashi inoculant in a special bucket. Usually, the inoculant consists of either wheat germ, wheat bran, or sawdust combined with molasses and effective microorganisms (EM). The bran/molasses serve as the food for the microorganisms, which are the same natural microorganisms found in soil.",
+  "origin": "developed in the early 1980s by Dr. Teuro Higa, a professor at the University of the Ryukyus, Okinawa, Japan",
+  "steps": [
+    "Chop food waste into 1- to 2-inch pieces. If you add larger pieces, they will take longer to ferment.",
+    "About once a day or every two days, add a small sprinkle of bokashi bran, about 1 tablespoon per inch of food waste. Open the bin only to add scraps, not to check on the state of the fermentation. If you add fluffy scraps, press them down to remove the air or put a plate or another flat, heavy object on top of the material to weigh it down to limit oxygen exposure.",
+    "Once the bin is full, keep it closed, and let it sit in a warm place for at least two weeks. During that time, drain the bokashi tea every few days. When the bokashi pre-compost is ready and fermented, you don't need to use it immediately. It can sit in the bokashi bucket for longer. During that time, the microbes will go dormant until you use it."
+  ],
+  "characteristics": [
+    "it is a fermentation process",
+    "fast",
+    "lets you use dairy and meat scraps that are not incorporated in other forms of composting",
+    "requires a relatively small space",
+    "requires a special airtight bucket or bin with the ability to drain off the liquid that is produced",
+    "both the bokashi tea and the pre-compost are highly acidic"
+  ],
+  "pH": [4.0, 5.0],
+  "keywords": ["Japanese", "fermetation", "anaerobic"],
+  "notes": [
+    "no odors",
+    "decreases composting time"
+  ]
+},
 
 {
   "term": "parasitoid",
@@ -244,40 +335,69 @@
   "term": "plug tray",
   "lang": "en",
   "field": "farming",
-  "definition": "",
+  "definition": "a flat, multi-celled tray used in horticulture to start seeds or grow cuttings in individual cells, each containing a small amount of growing medium",
   "benefits": []
 },
 
 {
-  "term": "hugel kultur",
+  "term": "hugelkultur",
   "lang": "en",
   "field": "farming",
   "subfield": "organic farming",
-  "definition": "",
-  "instances": []
+  "definition": "a German term meaning \"mound culture\" or \"hill culture\", which refers to creating raised garden beds using wood and other organic materials",
+  "description": [
+    "the decaying wood acts like a sponge, storing water and releasing nutrients over time to create fertile, self-watering, and self-fertilizing garden beds with improved soil aeration and extended growing seasons",
+    "the wood provides a slow, steady release of nutrients as it breaks down, reducing the need for watering and fertilizer"
+  ],
+  "steps": [
+    "large logs and branches are placed at the bottom of the bed, acting as the core structure",
+    "the wood is then covered with other compostable materials, such as leaves, grass clippings, and other plant debris",
+    "a layer of soil and mulch is added on top, and plants can be grown directly on this surface"
+  ],
+  "benefits": [
+    "water conservation",
+    "nutrient release",
+    "improved soil",
+    "extended growing season",
+    "waste reduction"
+  ]
 },
 {
   "term": "heirloom variety",
   "lang": "en",
   "field": "farming",
   "subfield": "organic farming",
-  "definition": "",
-  "instances": []
+  "definition": "an older, open-pollinated plant cultivar of a fruit, vegetable, or flower that has been preserved and passed down through generations, typically for at least 50 years",
+  "discussion" : [
+    "These plants, often associated with specific families or regions, are valued for their unique qualities, such as distinct flavors, colors, shapes, or hardiness, and are grown from seeds saved each year, which will produce the same type of plant. They represent a significant source of genetic diversity and a connection to agricultural history, in contrast to modern, often hybrid, commercial varieties bred for yield, durability, and marketability."
+  ],
+  "characteristics": [
+    "open-pollinated",
+    "true-to-type seeds",
+    "age (at least 50 years old)",
+    "genetic diversity"
+  ],
+  "benefits": [
+    "unique flavors and traits",
+    "hardiness and adaptability",
+    "cultural significance",
+    "seed saving and adaptation"
+  ]
 },
 
 {
   "term": "humanure",
   "lang": "en",
   "field": null,
-  "definition": "",
-  "instances": []
+  "definition": "composting human excrement",
+  "discussion": [],
+  "reasons": []
 },
 {
   "term": "dry composting toilet",
   "lang": "en",
   "field": null,
-  "definition": "",
-  "instances": []
+  "definition": "a type of dry toilet that treats human waste by a biological process called composting"
 },
 
 
@@ -298,25 +418,51 @@
   "term": "abiotic stress",
   "lang": "en",
   "field": "biology",
-  "subfield": null,
-  "definition": []
+  "definition": "the negative impacts of non-living environmental factors on organisms, particularly plants, leading to reduced growth and yield",
+  "instances": [
+    "drought",
+    "salinity",
+    "extreme temperatures"
+  ]
 },
 {
   "term": "drought tolerance",
   "lang": "en",
   "field": "farming",
-  "subfield": null,
-  "definition": []
+  "definition": "the ability of living organisms, primarily plants and animals, to survive and thrive during periods of low water availability",
+  "mechanisms": [
+    "altering cell elasticity",
+    "adjusting water potential",
+    "entering dormant states to reduce damage from water deficit"
+  ]
+},
+{
+  "term": "water potential",
+  "lang": "en",
+  "definition": "a measure of the potential energy of water in a system, relative to pure water, as determining the direction of water movement",
+  "factors": [
+    "solute concentration",
+    "pressure",
+    "gravity"
+  ],
+  "discussion": [
+    "essentially, water moves from areas of high water potential to areas of low water potential"
+  ],
+  "notes": [
+    "measured in units of pressure, such as Pascals or bars"
+  ]
 },
 {
   "title": "nitrogen fixation under water stress",
   "lang": "en",
-  "field": "farming",
-  "subfield": null,
-  "definition": []
+  "field": "biology",
+  "subfield": "botany",
+  "discussion": [
+    "water stress, or drought, negatively affects biological nitrogen fixation by reducing the rate of nitrogenase activity in legumes and other nitrogen-fixing organisms.",
+    "this process can lead to nodule damage and loss of function due to reduced water potential and impaired enzyme activity within the nodules",
+    "the severity of the impact depends on the level and duration of stress, but moderate stress often slows fixation, while severe stress can cause complete cessation and irreversible damage, ultimately hindering the plant's ability to fix atmospheric nitrogen"
+  ]
 },
-
-
 
 {
   "type":    "quote",

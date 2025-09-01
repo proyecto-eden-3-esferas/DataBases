@@ -1,5 +1,14 @@
 [
 {
+  "term": "monophyletic",
+  "wordclass": "adj",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "genetics",
+  "definition": "that share a common ancestor"
+},
+
+{
   "term": "functional genomics",
   "lang": "en",
   "field": "biology",
@@ -50,6 +59,68 @@
   "lang": "en",
   "field": "biochemistry",
   "description": ""
+},
+
+{
+  "term": "thallus",
+  "lang": "en",
+  "definition": "the vegetative tissue of some organisms in diverse groups such as algae, fungi, some liverworts, lichens, and the Myxogastria",
+  "discussion": "a thallus usually names the entire body of a multicellular non-moving organism in which there is no organization of the tissues into organs",
+  "notes": [
+    "Even though thalli do not have organized and distinct parts (leaves, roots, and stems) as do the vascular plants, they may have analogous structures that resemble their vascular \"equivalents\". The analogous structures have similar function or macroscopic structure, but different microscopic structure; for example, no thallus has vascular tissue.",
+    "In exceptional cases such as the Lemnoideae, where the structure of a vascular plant is in fact thallus-like, it is referred to as having a thalloid structure, or sometimes as a thalloid."
+  ]
+},
+{
+  "term": "fungi",
+  "lang": "en",
+  "definition": "",
+  "characteristics": [
+    "chitin in their cell walls",
+    "heterotrophs",
+    "they acquire their food by absorbing dissolved molecules, typically by secreting digestive enzymes into their environment"
+  ],
+  "includes": ["yeast", "mold", "mushroom", "truffle"],
+  "notes": [
+    "singular: fungus",
+    "the principal decomposers in ecological systems",
+    "The cells of most fungi grow as tubular, elongated, and thread-like (filamentous) structures called hyphae, which may contain multiple nuclei and extend by growing at their tips. Each tip contains a set of aggregated vesicles—cellular structures consisting of proteins, lipids, and other organic molecules—called the Spitzenkörper. Both fungi and oomycetes grow as filamentous hyphal cells. In contrast, similar-looking organisms, such as filamentous green algae, grow by repeated cell division within a chain of cells."
+  ]
+},
+{
+  "term": "hyphae",
+  "lang": "en",
+  "description": "cylindrical, thread-like structures 2–10 μm in diameter and up to several centimeters in length",
+  "notes": [
+    "they grow at their tips (apices); new hyphae are typically formed by emergence of new tips along existing hyphae by a process called branching, or occasionally growing hyphal tips fork, giving rise to two parallel-growing hyphae",
+    "also sometimes fuse when they come into contact, a process called hyphal fusion (or anastomosis)",
+    "these growth processes lead to the development of a mycelium"
+  ]
+},
+{
+  "term": "mycelium",
+  "lang": "en",
+  "definition": "the thallus of a fungus, actually an interconnected network of hyphae"
+},
+{
+  "term": "Petri dish",
+  "lang": "en",
+  "definition": "used to provide a growth medium using a mix of agar and other nutrients in which microorganisms, including bacteria and fungi, can be cultured and observed under the microscope"
+},
+
+
+{
+  "term": "kelp",
+  "lang": "en",
+  "definition": "large brown alga or seaweed in the order Laminariales",
+  "notes": [
+    "there are about 30 different genera",
+    "despite its appearance and use of photosynthesis in chloroplasts, kelp is technically not a plant but a stramenopile (a group containing many protists)",
+    "grow from stalks close together in very dense areas like forests under shallow temperate and Arctic oceans"
+  ],
+  "description": [
+    "The thallus (or body) consists of flat or leaf-like structures known as lamina (or blades) that originate from elongated stem-like structures, referred to as the stipes. A root-like structure (called the holdfast) anchors the kelp to the substrate of the ocean. Gas-filled bladders (pneumatocysts) form at the base of blades of American species, such as Nereocystis lueteana, to hold the kelp blades close to the surface to access light for photosynthesis. The stipes are generally covered with a slimy mucilage layer, rather than a waxy cuticle."
+  ]
 },
 
 {

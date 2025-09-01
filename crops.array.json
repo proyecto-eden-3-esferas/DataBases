@@ -16,7 +16,7 @@
   "native-to": ["eastern Europe", "southern Asia", "eastern temperate Asia", "northern tropical Asia"],
   "uses": ["medicinal", "food"],
   "contains_compounds": ["oxalic acid", "malic acid", "citric acid", "anthraquinone glycosides"],
-  "grow": {
+  "cultivation": {
     "propagation": ["by cutting up the crowns of larger plants", "by seeds"],
     "sun": ["full", "tolerates partial shade"],
     "soil": ["well-draining", "fertile", "organic"],
@@ -83,14 +83,17 @@
 },
 
 {
-  "term": "spinach",
+  "name": "spinach",
   "Spanish": "espinaca",
-  "botanical": "Spinacia oleracea",
+  "genus": "Spinacia",
+  "species": "oleracea",
   "lifespan": "annual"
 },
 {
-  "term": "lettuce",
+  "name": "lettuce",
   "Spanish": "lechuga",
+  "species": "",
+  "genus": "",
   "lifespan": "annual",
   "season": [
     "spring",
@@ -101,8 +104,10 @@
 },
 
 {
-  "term": "cellery",
+  "name": "cellery",
   "Spanish": "apio",
+  "genus": "Apium",
+  "species": "graveolens"
   "botanical": "Apium graveolens",
   "family": "Apiaceae",
   "eaten": [
