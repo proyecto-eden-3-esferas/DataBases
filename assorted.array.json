@@ -1,5 +1,11 @@
 [
 {
+  "term": "histeresis",
+  "field": "electromagnetism",
+  "definition": null,
+  "instances": []
+},
+{
   "difference": ["instance", "example"],
   "discussion": [
     "an example is meant for illustrating or clarifying a point"

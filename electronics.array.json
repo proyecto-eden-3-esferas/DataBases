@@ -1,0 +1,254 @@
+[
+{
+  "term": "diode",
+  "field": "electronics",
+  "type": "device",
+  "definition": null,
+  "parameters": [
+    {"term": "breakdown voltage", "definition": "reverse voltage where the valve effect fails and the diode starts conducting"},
+    {"term": "forward voltage drop", "definition": "voltage drop when forward biased", "value": 0.65}
+  ],
+  "notes": [
+    "the cathode is marked with a ring or a shorter pin (LEDs)"
+  ]
+},
+{
+  "term": "Zener diode",
+  "field": "electronics",
+  "is-a": "diode",
+  "definition": "a diode so built that it has a very predictable operation at its breakdown voltage; in fact, at its breakdown voltage, it acts like a normal diode with a larger voltage drop",
+  "keywords": ["breakdown voltage"],
+  "notes": [
+    "with a Zener diode, since you are using its breakdown voltage rather than its forward voltage, it is wired into your circuit backward",
+    "the breakdown voltage drop for a Zener diode is much more constant over a larger range of current than the forward voltage drop of most regular diodes"
+  ]
+},
+{
+  "term": "Schottky diode",
+  "field": "electronics",
+  "is-a": "diode",
+  "description": "very similar to a normal diode, but made using a different process, so that its voltage drop is significantly reduced: while a normal diode’s forward voltage drop is about 0.6 V, a Schottky diode’s voltage drop can be as low as 0.15 V",
+  "uses": [
+    "useful for regulating the direction of electrical flow when the voltage requirements are sensitive enough that you can’t afford the 0.6 V of a regular diode"
+  ]
+},
+{
+  "term": "Light Emitting Diode",
+  "shortword": "LED",
+  "field": "electronics",
+  "is-a": "diode",
+  "definition": "a diode that emits light when conducting in forward bias",
+  "notes": [
+    "voltage drop highly dependent on type/colour, typically 1.8 to 3.3 volts"
+  ]
+},
+{
+  "term": "pull-up resistor",
+  "field": "electronics",
+  "is-a": "configuration",
+  "description": "a resistor is connected to the positive voltage source and is used to \"pull up\" the voltage on the circuit to a positive value when the switch is open while still providing safety (by limiting the current) when the switch is closed",
+  "notes": [
+    "many (but certainly not all) ICs do not source current, using open collectors for their output operations. This has the disadvantage that you have to supply your own voltage and pull-up resistor to the output pin, but it also has the advantage that the output is set to whatever voltage level you choose"
+  ]
+},
+{
+  "term": "integrated circuit",
+  "lang": "en",
+  "synonyms": ["IC", "chip", "microchip"],
+  "field": "electronics",
+  "is-a": "device",
+  "description": "a miniaturized circuit placed on a silicon plate, called the die, where all of the action takes place. The die is then placed into a package, which then provides connection points for circuit designers to interface with the IC, often called pins or pads. Each pin on an IC is numbered, starting with pin 1",
+  "kinds": [
+    {"term": "through-hole",
+     "description": "the connection points are long pins which can be used on a breadboard",
+     "uses": ["amateur"],
+     "notes": [
+       "a common through-hole package is the dual in-line package, or DIP"
+     ]},
+    {"term": "surface mount",
+     "description": "the connection points are small pads which are meant to be soldered to a circuit board. These packages are much smaller (and therefore less expensive) and can be more easily managed by automated systems to build completed circuits. Also referred to as SMDs (surface mount devices) or SMT (surface mount technology)",
+     "uses": ["industrial", "automated"]}
+  ],
+  "notes": [
+    "knowing which pin is which is important, because most of the pins on a chip each have their own purpose, so if you attach a wire to the wrong pin, your circuit won’t work or you will destroy the chip.",
+    "most packages are marked with the chip’s manufacturer and part number",
+    "The voltage pins on integrated circuits can be marked in a number of different ways. The positive voltage source is often labeled as VCC , VDD, or V+. The ground connect is often labeled as GND, VEE, VSS, or V−. There are additional ways that these are labeled as well"
+  ]
+},
+{
+  "name": "LM393",
+  "field": "electronics",
+  "is-a": "integrated circuit",
+  "action": "compares two input voltages and then outputs either a high-­voltage signal or a low-voltage signal depending on which input voltage is greater",
+  "definition": null,
+  "notes": [
+    "actually a dual voltage comparator, which means that it will do two separate comparisons on the same chip",
+    "an active device"
+  ]
+},
+{
+  "term": "open-collector",
+  "field": "electronics",
+  "is-a": "configuration",
+  "description": "high-voltage outputs don’t conduct",
+  "advantages": [
+    "this lets us set our own output voltage to whatever we want without causing too much complexity"
+  ]
+},
+{
+  "term": "source",
+  "field": "electronics",
+  "definition": "a component whose pins might provide current to other parts of the circuit"
+},
+{
+  "term": "sink",
+  "field": "electronics",
+  "definition": "a component whose pins might pull current from other parts of the circuit"
+},
+{
+  "term": "digital logic",
+  "field": "electronics",
+  "subfield": "digital electronics",
+  "description": "electric voltages are given meanings of either \"true\" or \"false,\" usually with \"false\" being a voltage near zero and \"true\" being a positive voltage (often between 3 and 5 volts). These values are also referred to by a number of other designations—a 1 (for true) and 0 (for false) or HIGH (for true) and LOW (for false)"
+},
+{
+  "term": "digital logic integrated circuit (IC)",
+  "field": "electronics",
+  "is-a": "device",
+  "definition": "an IC that implements a/some basic functions of digital logic"
+},
+{
+  "term": "inverted inputs and outputs",
+  "field": "electronics",
+  "subfield": "digital electronics",
+  "description": [
+    "Sometimes an input or an output on a chip will be labeled with a line on top of the input or output name. This means that the result (or requirement) will be the opposite of what you would otherwise expect. For instance, if the output is Y, then Y refers to the opposite value of Y. So, if Y is true, then Y will be false.",
+    "The same can occur on inputs as well. For instance, some chips have a reset on the chip which will reset the chip. However, we would normally consider “signaling” a pin to be sending it a voltage. Sometimes the chips would prefer that you signal the reset by bringing the voltage low instead of high. In these cases, they usually designate this by putting a bar over the name of the input pin, so the reset pin would be labeled RESET in order to indicate this behavior."
+  ]
+},
+{
+  "term": "development board",
+  "field": "electronics",
+  "is-a": "circuit",
+  "definition": "a prebuilt circuit that has a microcontroller chip pre-connected in its recommended manner. It is made to simplify the work of developing circuits"
+},
+{
+  "term": "in-system programmer",
+  "shortword": "ISP",
+  "field": "electronics",
+  "subfield": "digital electronics",
+  "is-a": "device",
+  "definition": "connects your computer to your chip or development board and will transmit the program from your computer to the chip"
+},
+{
+  "term": "headers",
+  "field": "electronics",
+  "is-a": "",
+  "definition": "places, usually pins or holes, on an electronics (development) board to plug in wires to connect to (a microcontroller's) ports"
+},
+{
+  "term": "baud",
+  "field": "electronics",
+  "subfield": "telecommunications",
+  "definition": "bits per second"
+},
+{
+  "term": "ceramic capacitor",
+  "field": "electronics",
+  "is-a": "capacitor",
+  "definition": null
+},
+{
+  "term": "electrolytic",
+  "field": "electronics",
+  "is-a": "capacitor",
+  "definition": null
+},
+
+{
+  "term": "oscillating circuit",
+  "field": "electronics",
+  "is-a": "circuit",
+  "definition": "a circuit that goes back and forth continually between two states, usually zero voltage and some positive voltage",
+  "discussion": [
+    "usually described by either its period or its frequency"
+  ]
+},
+{
+  "term": "servo motor",
+  "field": "electrical",
+  "is-a": "electric motor",
+  "definition": "a motor which moves an arm to a specific angle (i.e., think of a car’s steering wheel)",
+  "notes": [
+    "usually operated by frequencies, where each frequency specifies a different angle to move"
+  ]
+},
+{
+  "term": "NE555",
+  "field": "electronics",
+  "is-a": "integrated circuit",
+  "action": ["oscillate", "delay"],
+  "description": null,
+  "pinout": [
+    {"name": "reset", "action": null},
+    {"name": "output", "action": null},
+    {"name": "trigger", "action": null},
+    {"name": "ground", "action": null},
+    {"name": "Vcc", "action": null},
+    {"name": "discharge", "action": null},
+    {"name": "threshold", "action": null},
+    {"name": "control", "action": null}
+  ]
+},
+{
+  "term": "pinout",
+  "field": "electronics",
+  "lang": "en",
+  "is-a": "",
+  "definition": null
+},
+{
+  "term": "amplification",
+  "field": "electronics",
+  "definition": "the conversion of a low-power signal to a higher-power signal"
+},
+{
+  "term": "gain (of an amplifier)",
+  "field": "electronics",
+  "is-a": "",
+  "definition": "the amount of amplification that occurs"
+},
+{
+  "term": "transistor",
+  "field": "electronics",
+  "is-a": "device",
+  "definition": "a device that regulates the current between two (of its three) terminals through a small current (BJTs) or voltage (FETs) signal"
+},
+{
+  "term": "2N2222A",
+  "field": "electronics",
+  "subfield": "analog electronics",
+  "is-a": "transistor",
+  "package": "TO-92",
+  "characteristics": []
+},
+{
+  "term": "",
+  "field": "electronics",
+  "is-a": "",
+  "definition": null
+},
+{
+  "term": "",
+  "field": "electronics",
+  "is-a": "",
+  "definition": null
+},
+{
+  "term": "",
+  "field": "electronics",
+  "is-a": "",
+  "definition": null
+}
+
+]
