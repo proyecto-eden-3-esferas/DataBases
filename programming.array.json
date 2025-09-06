@@ -14,6 +14,11 @@
   ]
 },
 {
+  "term": "loop",
+  "lang": "en",
+  "definition": "a group of commands that is repeated multiple times"
+},
+{
   "term": "application programming interface",
   "shortname": "API",
   "lang": "en",

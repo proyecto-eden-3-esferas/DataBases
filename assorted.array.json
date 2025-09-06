@@ -1,5 +1,96 @@
 [
 {
+  "term": "biome",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "ecology",
+  "definition": "major life zone"
+},
+{
+  "term": "histosol",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "edaphology",
+  "is-a": "soil",
+  "definition": "",
+  "description": null,
+  "discussion": null
+},
+{
+  "term": "inceptisol",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "edaphology",
+  "is-a": "soil",
+  "definition": "",
+  "description": null,
+  "discussion": null
+},
+{
+  "term": "lichen",
+  "lang": "en",
+  "field": "biology",
+  "definition": "a symbiotic association of a fungus and algae"
+
+},
+
+{
+  "term": "taiga",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "ecology",
+  "is-a": "biome",
+  "description": [
+    "composed primarily of cone-bearing needle-leaved or scale-leaved evergreen trees",
+    "found in northern circumpolar forested regions characterized by long winters and moderate to high annual precipitation"
+  ],
+  "regions": [
+    {"name": "closed-canopy forest",
+     "description": [
+       "the southernmost portion of the taiga",
+       "contains the greatest richness of species, the warmest soils, the highest productivity, and the longest growing season within the boreal zone"
+     ]
+    },
+    {"name": "lichen woodland",
+     "synonyms": ["sparse taiga"],
+     "description": [
+       "a smaller parallel zone of sparse forest or woodland",
+       "tree crowns do not form a closed canopy",
+       "lichen mats and tundralike vegetation make up a significant portion of the ground cover"
+     ]
+    },
+    {"name": "forest-tundra",
+     "description": [
+       "along the northern edge of tree growth (tree line)",
+       "patches of trees consisting of only a few species dot restricted portions of the landscape, forming a complex mosaic with tundra",
+       "many trees in the forest-tundra zone have never been known to produce viable seeds or have done so only sporadically. These trees were established during warmer climatic episodes from a few hundred to a few thousand years ago and have persisted since, usually by vegetative (asexual) reproduction"
+     ]
+    }
+  ],
+  "discussion": null,
+  "notes": [
+    "occupies about 17 percent of Earth’s land surface area in a circumpolar belt of the far Northern Hemisphere",
+    "northward beyond, the taiga merges into the circumpolar tundra",
+    "plants and animals in the taiga are adapted to short growing seasons of long days that vary from cool to warm",
+    "hosts a limited number of conifer species—i.e., pine (Pinus), spruce (Picea), larch (Larix), fir (Abies)—and to a lesser degree by some deciduous genera such as birch (Betula) and poplar (Populus)",
+    "during winter a snowpack persists for at least five months in the southern portion of the taiga biome and for seven or eight months in the northern reaches",
+    "it has been estimated that Earth would be significantly colder without the taiga",
+    "areas with a mean annual temperature below freezing are susceptible to the formation of permafrost soils"
+  ]
+},
+{
+  "term": "tundra",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "ecology",
+  "is-a": "biome",
+  "definition": [
+  ],
+  "discussion": null,
+  "notes": []
+},
+
+{
   "term": "histeresis",
   "field": "electromagnetism",
   "definition": null,

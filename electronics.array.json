@@ -138,13 +138,12 @@
   "field": "electronics",
   "subfield": "digital electronics",
   "is-a": "device",
-  "definition": "connects your computer to your chip or development board and will transmit the program from your computer to the chip"
+  "definition": "connects your computer to your chip or development board and will transmit/upload the program from your computer to the chip"
 },
 {
   "term": "headers",
   "field": "electronics",
-  "is-a": "",
-  "definition": "places, usually pins or holes, on an electronics (development) board to plug in wires to connect to (a microcontroller's) ports"
+  "definition": "places, usually pins or holes, on an electronics (development) board where additional circuits or wires can be attached"
 },
 {
   "term": "baud",
@@ -233,22 +232,403 @@
   "characteristics": []
 },
 {
-  "term": "",
+  "term": "snubber",
+  "field": "electronics",
+  "is-a": "configuration",
+  "definition": "a diode placed in parallel with an inductor so that when the circuit is opened the inductor may discharge back"
+},
+{
+  "term": "feedback resistor",
+  "field": "electronics",
+  "is-a": "configuration",
+  "definition": "in a common emitter amplifier, add a resistor between the emitter (and ground) so that when beta increases the rise in current makes IBE smaller, and the other way round, thus compensating for the variation in beta"
+},
+{
+  "term": "bleed-off resistor",
+  "field": "electronics",
+  "is-a": "configuration",
+  "definition": "a large resistor from one side of a capacitor to (earth) so that the capacitor may discharge or equilize its voltage to (zero) on that side of its"
+},
+{
+  "term": "stomp box",
+  "field": "electronics",
+  "is-a": "device",
+  "definition": "a device to modulate the incoming signal in some way"
+},
+{
+  "term": "Thévenin equivalent circuit",
+  "field": "electronics",
+  "is-a": "model",
+  "action": "represents the way that a partial circuit looks to other parts of the circuit",
+  "description": "reduces a partial circuit to (1) a single voltage source (AC, DC, or DC-biased AC, expressed in RMS voltage), and (2) a single impedance (e.g., resistance) in series with the voltage source",
+  "notes": [
+    "the single voltage source may be different than the voltage source that is actually connected"
+  ]
+},
+{
+  "term": "anode",
   "field": "electronics",
   "is-a": "",
-  "definition": null
+  "definition": "the positive side of a polarized device",
+  "notes": ["in batteries, the anode is actually the negative terminal (because the positive charge enters here)"]
+},
+{
+  "term": "AC mains",
+  "field": "electronics",
+  "definition": "the type of current that is supplied to your house by the public utility companies"
+},
+{
+  "term": "brushed electric motor",
+  "field": "electronics",
+  "is-a": "electric motor",
+  "definition": "a motor that operates by changing its interior magnetic configuration based on wires that are rotating in the shaft"
+},
+{
+  "term": "brushless electric motor",
+  "field": "electronics",
+  "is-a": "electric motor",
+  "definition": "a motor that operates by changing its exterior magnetic configuration based on generating an alternating current inside the motor",
+  "notes": ["less prone to fail because of fewer parts that wear down"]
+},
+{
+  "term": "capacitative reactance",
+  "field": "electronics",
+  "is-a": "magnitude",
+  "definition": "the reactance that comes from capacitor-like components"
+},
+{
+  "term": "carrier frequency",
+  "field": "electronics",
+  "definition": "a frequency on which another signal is laid"
+},
+{
+  "term": "cathode",
+  "field": "electronics",
+  "definition": "a cathode is the “negative side” of a polarized device",
+  "notes": ["in batteries, the cathode is actually the positive terminal (because the positive charge leaves here)"]
+},
+{
+  "term": "circuit pattern",
+  "field": "electronics",
+  "definition": "a circuit pattern is a common way of building (and understanding) certain types of circuits or subcircuits"
+},
+{
+  "term": "common emitter",
+  "field": "electronics",
+  "is-a": "circuit pattern",
+  "definition": "a transistor circuit pattern where the emitter is tied to a known, fixed voltage"
+},
+{
+  "term": "conventional current flow",
+  "field": "electronics",
+  "is-a": "convention",
+  "definition": "to trace the flow of positive charge in a circuit from a positive source (often a battery) to either ground or a negative terminal"
+},
+{
+  "term": "coupling capacitor",
+  "field": "electronics",
+  "is-a": "configuration",
+  "definition": "a capacitor that links to circuits, usually at different DC offsets",
+  "action": "it transmits changes in voltage (i.e., AC) while blocking the DC offset voltages from influencing each other"
+},
+{
+  "term": "DC offset",
+  "field": "electronics",
+  "definition": "a voltage, usually other than zero, that an alternating current is centered around"
+},
+{
+  "term": "depletion mode (FET)",
+  "field": "electronics",
+  "is-a": "FET transistor",
+  "definition": "means that the FET normally conducts between the drain and source, but will be inhibited by sufficient gate-to-source voltage (sufficiently positive for a P-channel or sufficiently negative for an N-channel)"
+},
+{
+  "term": "direct current",
+  "field": "electronics",
+  "definition": "the flow of current maintains the same direction and value"
+},
+{
+  "term": "heat dissipation",
+  "field": "electronics",
+  "definition": "the removal of extra heat generated in circuits"
+},
+{
+  "term": "dual in-line",
+  "field": "electronics",
+  "is-a": "package",
+  "definition": "a type of package for integrated circuits which has two parallel sets of pins which fits nicely across the bridge of a breadboard"
+},
+{
+  "term": "enhancement mode FET",
+  "field": "electronics",
+  "is-a": "FET",
+  "definition": "a FET that normally does not conduct between the drain and source, while sufficient gate-to-source voltage will allow conduction (sufficiently positive if it is an N-channel and sufficiently negative if it is a P-channel)"
+},
+{
+  "term": "equivalent resistance",
+  "field": "electronics",
+  "is-a": "model",
+  "definition": "a resistor that would replace (is equivalent to) multiple resistors are connected in series or in parallel"
+},
+{
+  "term": "feedback",
+  "field": "electronics",
+  "definition": "when the output of a process feeds back into the input of a process"
+},
+{
+  "term": "filtering capacitor",
+  "field": "electronics",
+  "is-a": "configuration",
+  "definition": "a capacitor used to remove signals of a certain range of frequencies from the signal"
+},
+{
+  "term": "flash memory",
+  "field": "electronics",
+  "definition": "a type of memory in integrated circuits that is retained even after the power to the device is removed"
+},
+{
+  "term": "flyback diode",
+  "field": "electronics",
+  "is-a": "configuration",
+  "definition": "snubber diode"
+},
+{
+  "term": "ground",
+  "field": "electronics",
+  "definition": "the chosen point on a circuit by which to measure other voltages",
+  "notes": ["on DC battery circuits, it is usually simply the negative terminal of the battery"]
+},
+{
+  "term": "heatsink",
+  "field": "electronics",
+  "is-a": "component",
+  "definition": "an object, usually large and metallic, which attaches to a part of a circuit to dissipate heat into the environment and away from the circuit itself"
+},
+{
+  "term": "inductive kick",
+  "field": "electronics",
+  "is-a": "effect",
+  "definition": "when current is suddenly blocked to an inductor, the magnetic field suddenly collapses and generates a sudden large voltage at the cathode"
+},
+{
+  "term": "inductive reactance",
+  "field": "electronics",
+  "is-a": "magnitude",
+  "definition": "the reactance that comes from inductor-like components"
+},
+{
+  "term": "impedance. Impedance is usually based on a specific frequency",
+  "field": "electronics",
+  "is-a": "",
+  "definition": "the amount of resistance a circuit offers to alternating current which combines resistance and reactance",
+  "notes": ["usually based on a specific frequency"]
+},
+{
+  "term": "inefficiency",
+  "field": "technology",
+  "definition": "the amount of energy that is wasted in performing a process",
+  "notes": ["all processes are inefficient to some degree"]
+},
+{
+  "term": "junction",
+  "field": "electronics",
+  "definition": "the point where two or more wires or components are connected together"
+},
+{
+  "term": "Kirchhoff's current law",
+  "field": "electronics",
+  "subfield": "digital electronics",
+  "is-a": "law",
+  "definition": "at any junction, the total amount of current going into a junction is exactly the same as the total amount of current going out of that junction"
+},
+{
+  "term": "Kirchhoff's voltage law",
+  "field": "electronics",
+  "subfield": "digital electronics",
+  "is-a": "law",
+  "definition": "given any two specific points on a circuit (at a particular point in time), no matter what path is traveled to get from one point to the other, the difference in voltage between the two points is the same",
+  "notes": [ "this can also be stated equivalently as saying that any complete, closed path around a circuit has a total voltage drop of zero"]
+},
+{
+  "term": "latch",
+  "field": "electronics",
+  "subfield": "digital electronics",
+  "is-a": "device",
+  "definition": "a simple type of memory that stores a single bit using logic gates"
+},
+{
+  "term": "logic function",
+  "field": "electronics",
+  "subfield": "digital electronics",
+  "definition": "a function that takes in one or more logic (true/false) values as input and produces one or more (usually one) logic values as output"
+},
+{
+  "term": "logic gate",
+  "field": "electronics",
+  "subfield": "digital electronics",
+  "definition": "a circuit which implements a logic function"
+},
+{
+  "term": "microcontroller",
+  "field": "electronics",
+  "is-a": "device",
+  "definition": "an integrated circuit which operates as a standalone computer"
+},
+{
+  "term": "non-polarized component",
+  "field": "electronics",
+  "definition": "a circuit component (such as a resistor) where it does not matter which end is used as the anode or cathode"
+},
+{
+  "term": "open circuit",
+  "field": "electronics",
+  "definition": "a condition where there is no electrical pathway for the current to flow"
+},
+{
+  "term": "open collector",
+  "field": "electronics",
+  "is-a": "configuration",
+  "definition": "a type of output from a circuit where the \"positive\" state is actually disconnected, while the \"zero\" state is an actual ground voltage",
+  "notes": ["this is often used to allow the user of the circuit to supply their own voltage through a pull-up resistor"]
+},
+{
+  "term": "oscillator",
+  "field": "electronics",
+  "definition": "a circuit that switches back and forth between two or more states (e.g., positive voltage to zero voltage) in a regular fashion"
+},
+{
+  "term": "pinout",
+  "field": "electronics",
+  "definition": "the meaning/purpose assigned to each pin of a particular integrated circuit"
+},
+{
+  "term": "polarized component",
+  "field": "electronics",
+  "definition": "a circuit component (such as a diode) which has an explicit anode and cathode (i.e., the sides of the component are not interchangeable)"
+},
+{
+  "term": "power transistor",
+  "field": "electronics",
+  "is-a": "device",
+  "definition": "a transistor made to handle large amounts of voltage and current"
+},
+{
+  "term": "pull-up resistor",
+  "field": "electronics",
+  "is-a": "configuration",
+  "definition": "a resistor connected to a positive voltage which gives a default positive voltage if no other voltage is connected on the line"
+},
+{
+  "term": "pull-down resistor",
+  "field": "electronics",
+  "is-a": "configuration",
+  "definition": "a resistor connected to a positive voltage which gives a default zero voltage if no other voltage is connected on the line"
+},
+{
+  "term": "pulse-width modulation",
+  "field": "electronics",
+  "definition": "sending a signal using a fixed pulse frequency, but where the percentage of time the signal is high vs. low varies. This is a way of outputting voltage levels on devices that don’t support outputting at different voltage levels"
+},
+{
+  "term": "quiescent current",
+  "field": "electronics",
+  "subfield": "analog electronics",
+  "definition": "in a transistor amplifier, it is the amount of current that is flowing into the base of the transistor when no signal is applied"
+},
+{
+  "term": "RC circuit",
+  "field": "electronics",
+  "subfield": "analog electronics",
+  "is-a": "configuration",
+  "definition": "a resistor in series with a capacitor, usually used for timing"
+},
+{
+  "term": "reactance",
+  "field": "electronics",
+  "definition": "a part of impedance which is similar to resistance but operates by preventing flow rather than dissipating energy",
+  "notes": ["usually dependent on the frequency of the signal"]
+},
+{
+  "term": "resonant frequency",
+  "field": "electronics",
+  "definition": "given a circuit, the frequency where the inductive and capacitative reactances cancel each other out"
+},
+{
+  "term": "RS-232",
+  "field": "electronics",
+  "subfield": "digital electronics",
+  "is-a": "protocol",
+  "definition": "a protocol for serial communication describing voltage levels, timing, and other important signaling features for sending and receiving bits using two wires"
+},
+{
+  "term": "saturation mode",
+  "field": "electronics",
+  "subfield": "analog electronics",
+  "definition": "it occurs in a transistor when it is fully on and cannot amplify the signal further",
+  "notes": ["in saturation mode, the transistor acts more like a switch that is on rather than as an amplifier"]
+},
+{
+  "term": "serial interface",
+  "field": "electronics",
+  "subfield": "digital electronics",
+  "definition": "a type of input/output mechanism that sends data a single bit at a time, oftentimes using the RS-232 protocol"
+},
+{
+  "term": "servo motor",
+  "field": "electronics",
+  "is-a": "motor",
+  "definition": "a motor that, instead of spinning, creates an angle"
+},
+{
+  "term": "sink",
+  "field": "electronics",
+  "definition": "when a component or circuit receives incoming current"
+},
+{
+  "term": "solderless breadboard",
+  "field": "electronics",
+  "definition": "a device consisting of a number of connected terminals where components can be inserted and removed at will, which allows for the construction of circuits in a nonpermanent way"
+},
+{
+  "term": "snubber diode",
+  "field": "electronics",
+  "subfield": "analog electronics",
+  "is-a": "configuration",
+  "definition": "a diode that is wired backward across the terminals of an inductor to protect the circuit against inductive kick"
+},
+{
+  "term": "source",
+  "field": "electronics",
+  "definition": "when a component or circuit provides current output"
+},
+{
+  "term": "stall condition",
+  "field": "electronics",
+  "definition": "in an electric motor, this is the condition where the motor is not turning while it is exhibiting its maximum torque"
+},
+{
+  "term": "transformer",
+  "field": "electronics",
+  "definition": "a pair of inductors which utilize the magnetic field in one coil to generate a current in the other inductor",
+  "notes": ["commonly used to convert voltage levels in different circuits and to isolate parts of a circuit. Transformers only operate on AC circuits"]
+},
+{
+  "term": "voltage divider",
+  "field": "electronics",
+  "subfield": "analog electronics",
+  "is-a": "configuration",
+  "definition": "when there are two components (usually resistors) connected together with a terminal coming out from between them meant to have a voltage between that of the two components"
+},
+{
+  "term": "Zener diode",
+  "field": "electronics",
+  "subfield": "analog electronics",
+  "is-a": "configuration",
+  "definition": "a diode which is meant to be wired in such a way as to take advantage of its breakdown voltage"
 },
 {
   "term": "",
   "field": "electronics",
-  "is-a": "",
-  "definition": null
-},
-{
-  "term": "",
-  "field": "electronics",
-  "is-a": "",
-  "definition": null
+  "definition": ""
 }
-
 ]
