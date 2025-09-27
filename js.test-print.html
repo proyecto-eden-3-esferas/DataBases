@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test print.js library</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Test JavaScript print.js Library"/>
+
+    <script type="text/javascript" src="./general.js"> </script>
+    <script type="text/javascript" src="./print.js">   </script>
+    <script type="text/javascript" src="./print.indented.js">    </script>
+    <script type="text/javascript" src="./print.boxed.js">    </script>
+
+  </head>
+  <body lang="en">
+
+    <main>
+      <h1>Testing JavaScript Library-File <cite>print.js</cite></h1>
+      <p>This file prints a JSON object through function <code>printObjAsHTML(<var>OBJ</var>)</code> into the next blockquote, whose <var>id</var> equals <q>objElem</q>:</p>
+      <blockquote style="white-space: pre-wrap;" id="objElem"></blockquote>
+      <script type="text/javascript">
+let myBlockquote = document.getElementById("objElem");
+let myObj = {
+  "name": "Francisco",
+  "assorted": [58, true, "Spanish"],
+  "parents": [{"name": "Jose María", "sex": "male"},
+              {"name": "Concepción", "sex": "female"}
+             ],
+  "address": {"street": {"name": "López de Hoyos", "kind": "calle"},
+              "number": 310
+             },
+  "phone": 600217519,
+  "married": false
+};
+myBlockquote.innerHTML = printObjAsHTML(myObj);
+console.log("type of Boolean is: ", typeof true);
+      </script>
+      <!--
+      <pre id="result">EMPTY</pre>
+      <ul id="list">
+        <li>An Item...</li>
+      </ul>
+      <script type="text/javascript"> </script>
+      -->
+
+    </main>
+
+  </body>
+
+</html>

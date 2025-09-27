@@ -12,6 +12,9 @@
     from "./filters.js"
     -->
     <script type="text/javascript" src="./general.js">  </script>
+    <script type="text/javascript" src="./print.js">  </script>
+    <script type="text/javascript" src="./print.indented.js">    </script>
+    <script type="text/javascript" src="./print.boxed.js">    </script>
     <script type="text/javascript" src="./filters.js">  </script>
     <script type="text/javascript" src="./mongo.js">    </script>
 
@@ -41,9 +44,15 @@
       </div>
 
       <div class="solid">
+
         <p id="result-caption">These are the objects that have been filtered and mapped:</p>
-        <textarea id="result" rows="10" cols="80" placeholder="[obj0, obj1...]"></textarea>
-        <button onclick="ArrayTestShowWriteResultIntoValueAttr(assortedArray, 'testObj', 'projObj', 'result')">Process!</button>
+
+        <textarea id="resTextarea" rows="10" cols="80" placeholder="[obj0, obj1...]"></textarea>
+        <button onclick = "ArrayTestShowWriteResultIntoValueAttr(    assortedArray, 'testObj', 'projObj', 'resTextarea'); ">Process into TextArea!</button>
+
+        <pre      id="resPre" style="white-space: normal">[obj0, obj1...]</pre>
+       <button onclick = "ArrayTestShowWriteResultIntoInnerHTMLAttr(assortedArray, 'testObj', 'projObj', 'resPre');">Process into <code>pre</code> Element!</button>
+
       </div>
 
     </main>

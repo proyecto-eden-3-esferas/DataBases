@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Test JavaScript general.js Library"/>
 
+<!--
+This file tests two functions in file general.js:
+(1) hasContent(VAR): results output to console
+(2) printObjAsHTML(OBJ): results written to a blockquote element whose id is 'objElem'
+-->
 
     <script type="text/javascript" src="./general.js">       </script>
     <script type="text/javascript">
@@ -35,35 +40,7 @@ console.log("Has undefined got content? ", hasContent(undefined));
 
     <main>
       <h1>Testing JavaScript Library-File <cite>general.js</cite></h1>
-      <p>This file tests functions in <cite>general.js</cite> through JavaScript&apos;s <code>console.log()</code> function. To see the results and debug the code, hold down <q>CTRL+SHIFT</q> then press <q>i</q>.</p>
-      <p>First, function hasContent(<var>item</var>) is tested.</p>
-      <hr/>
-      <h3>Show an object:</h3>
-      <p id="objPara"></p>
-      <script type="text/javascript">
-let myP = document.getElementById("objPara");
-let myObj = {
-  "name": "Francisco",
-  "parents": [{"name": "Jose María", "sex": "male"},
-              {"name": "Concepción", "sex": "female"}
-             ],
-  "address": {"street": {"name": "López de Hoyos", "kind": "calle"},
-              "number": 310
-             },
-  "phone": 600217519,
-  "married": false
-};
-myP.innerHTML = printObjAsHTML(myObj);
-
-      </script>
-      <!--
-      <pre id="result">EMPTY</pre>
-      <ul id="list">
-        <li>An Item...</li>
-      </ul>
-      <script type="text/javascript"> </script>
-      -->
-
+      <p>This file tests function <code>hasContent()</code> in <cite>general.js</cite> through JavaScript&apos;s <code>console.log()</code> function. To see the results and debug the code, hold down <q>CTRL+SHIFT</q> then press <q>i</q>.</p>
     </main>
 
   </body>

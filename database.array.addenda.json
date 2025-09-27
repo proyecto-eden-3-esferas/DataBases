@@ -1,0 +1,15 @@
+[
+{
+  "term":  "upsert",
+  "lang":  "en",
+  "field": "computing",
+  "subfield": "databases",
+  "definition": "a database operation that either updates an existing record or inserts a new record into a table, depending on whether a matching record already exists",
+  "etymology": "a portmanteau of \"update\" and \"insert\"",
+  "benefits": [
+    {"name": "efficiency", "discussion": "It's faster and cheaper than performing separate \"check then insert/update\" operations, especially for large datasets"},
+    {"name": "atomicity", "discussion": "the operation is atomic, meaning it's treated as a single, indivisible transaction"},
+    {"name": "data consistency", "discussion": "essential for managing data that might arrive out of order or for correcting errors, ensuring the database remains consistent"}
+  ]
+}
+]
