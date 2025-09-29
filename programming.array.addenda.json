@@ -6,6 +6,14 @@
   "lang": "en",
   "definition": "",
   "notes": [ ]
+},
+{
+  "term": "duck typing",
+  "field": "computing",
+  "subfield": "programming",
+  "lang": "en",
+  "definition": "an object is of a given type if it has all methods and properties required by that type",
+  "notes": [ ]
 }
 
 ]

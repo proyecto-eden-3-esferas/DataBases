@@ -46,7 +46,21 @@ function makeObjWithFieldsByObj (inObj, projObj) {
    - passes the filter (each item contains 'testObj'), and
    - has a field only if 'testObj' has its key set to 1:
   */
-function mongoFind(arr, testObj, projObj) {
+function isObject (o) {
+  if(typeof o == "object") {
+    if(Array.isArray(o))
+      return false;
+    else
+      return true;
+  } else return false;
+}
+function mongoFind(arr, testObj={}, projObj={}) {
+  // If 'testObj' is not a JSON object, turn it into an {}:
+  if(!isObject(testObj))
+    testObj = {};
+  // If 'projObj' is not a JSON object, turn it into an {}
+  if(!isObject(projObj))
+    projObj = {};
   return arr.filter(o => {return objInObj(testObj,o)})
             .map(   o => {return makeObjWithFieldsByObj(o,projObj)});
 }

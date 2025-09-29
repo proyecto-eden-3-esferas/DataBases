@@ -40,7 +40,7 @@
         </ul>
         <p>For example, type <code>{"term": 1, "definition": 1}</code> to retrieve the fields <q>term</q> and <q>definition</q>.</p>
         <p><strong>Note</strong> As yet, only value == 1 is honoured, while == 0 is ignored.</p>
-        <textarea id="projObj" rows="4" cols="50" placeholder="{_id: 0}"></textarea>
+        <textarea id="projObj" rows="4" cols="50" placeholder="{_id: 0}">{}</textarea>
       </div>
 
       <div class="solid">
@@ -52,6 +52,10 @@
 
         <pre      id="resPre" style="white-space: normal">[obj0, obj1...]</pre>
        <button onclick = "ArrayTestShowWriteResultIntoInnerHTMLAttr(assortedArray, 'testObj', 'projObj', 'resPre');">Process into <code>pre</code> Element!</button>
+       <script>
+let re = new RegExp;
+console.log("Type of RegExp thing is: ", typeof re);
+       </script>
 
       </div>
 
