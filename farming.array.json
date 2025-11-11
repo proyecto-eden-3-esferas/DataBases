@@ -1,5 +1,45 @@
 [
 {
+  "term": "silking",
+  "lang": "en",
+  "definition": "the reproductive stage of corn where yellowish, thread-like silks emerge from the husk of the developing ear",
+  "notes": [
+    "ach silk is a single strand that connects to a potential kernel and must be pollinated by pollen from the tassel for that kernel to develop",
+    "this process, which starts around the R1 growth stage, is crucial for a successful harvest as it determines the final ear of corn"
+  ]
+},
+{
+  "term": "tassel",
+  "lang": "en",
+  "definition": "the male flower in a corn plant"
+},
+{
+  "term": "tasseling",
+  "lang": "en",
+  "definition": "the stage in a corn plant's growth when the tassel fully emerges from the top of the plant",
+  "notes": [
+    "marks a critical shift from vegetative to reproductive growth and is a pivotal time for pollination, when the plant releases pollen to fertilize the silks on the developing ears",
+    "management is crucial during this stage, as the plant is highly susceptible to stress from heat, drought, or pests, which can significantly impact the final yield"
+  ]
+},
+{
+  "term": "pruning",
+  "lang": "en",
+  "definition": null,
+  "tips": [
+    "often seen as a fall and winter task; while it is, waiting for the cold is a key component to keeping plants alive and healthy",
+    "wait to cut back perennials and fruit trees until late fall or winter when they are dormant"
+  ]
+},
+{
+  "title": "Harvesting Root Crops",
+  "contents": [
+    "The sweetening effect that happens the later you plant cole crops also affects the harvest time of root crops. Many of these benefit from colder weather.",
+    "\"When the temperatures drop, they convert their starches into sugars which act as an anti-freezing agent for their cells,\" Gross says. \"Pick your root vegetables after the first frost of autumn and chances are that they'll taste a lot sweeter than if you'd picked them in the summer.\""
+  ]
+},
+
+{
   "name": "pecan",
   "pronuciation": "/pɪˈkæn/",
   "lang": "en",

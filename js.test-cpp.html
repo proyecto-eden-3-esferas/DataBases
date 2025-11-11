@@ -7,9 +7,9 @@
     <meta name="description" content="Test JavaScript index.js Library"/>
 
 
-    <script type="text/javascript" src="./general.js">       </script>
-    <script type="text/javascript" src="./indexes.js">       </script>
-    <script type="text/javascript" src="./cpp.js">       </script>
+    <script type="text/javascript" src="./general.js"></script>
+    <script type="text/javascript" src="./indexes.js"></script> <!-- for firstValIn -->
+    <script type="text/javascript" src="./cpp.js"></script>     <!-- for printCpp -->
     <script type="text/javascript">
 let arr = [
   {"term":  "water",
@@ -44,7 +44,13 @@ arr.forEach( (o,i,a, cppPrefix="myObj.emplace_back") => {
 
     <main>
       <h1>Testing JavaScript Library-File <cite>cpp.js</cite></h1>
-      <p>This file tests functions in <cite>cpp.js</cite> through JavaScript&apos;s <code>console.log()</code> function. To see the results and debug the code, hold down <q>CTRL+SHIFT</q> then press <q>i</q>.</p>
+      <p>This file tests functions:</p>
+      <ul>
+        <li><code>printCpp(<var>atom</var>)</code> in <cite>cpp.js</cite>, and</li>
+        <li><code>firstValIn(<var>arrayOfStrings</var>)</code> in <cite>index.js</cite></li>
+      </ul>
+      <p>through JavaScript&apos;s <code>console.log()</code> function. Code is generated for adding to a container objects taking three arguments, two strings and a number.</p>
+      <p>To see the results and debug the code, hold down <q>CTRL+SHIFT</q> then press <q>i</q>.</p>
     </main>
 
   </body>

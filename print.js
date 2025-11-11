@@ -9,6 +9,34 @@
    - js.test-print.html
  */
 
+/* Print the items in an array
+ */
+function printArraySeparated(arr,
+                        print=(o) => {
+                          if(typeof o == "string")
+                            return o.toString();
+                          else
+                            return o.toString();
+                          /*
+                          let res = "";
+                          if(typeof o == "string")
+                            res = "\"" + o + "\"";
+                            //return o;
+                          else
+                            res = o;
+                          return res;*/
+                        },
+                        sep=",") {
+  let res = "";
+  let len = arr.length;
+  let  sp = ' '
+  for( i = 0; i < len - 1; i=i+1) {
+    res = res + print(arr[i] + sep + sp);
+  }
+  res += print(arr[len - 1]);
+  return res;
+}
+
 // replace characters <, >, ", and ' with "&lt;" and so on:
 function printStringAsHTML(str) {
   return str.replaceAll("<", "&lt;").replaceAll(">", "&gt;")

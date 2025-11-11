@@ -1,4 +1,136 @@
 [
+
+{
+  "name": "BiCMOS",
+  "lang": "en",
+  "description": null
+},
+
+{
+  "name": "Arduino UNO Q",
+  "lang": "en",
+  "field": "electronics",
+  "type": "circuit board",
+  "description": null,
+  "contains": [
+    "a quad-core Qualcomm processor running Debian Linux (you can run AI models or stream from a camera)",
+    "a real-time STM32 microcontroller (handles the kind of low-latency control Arduino is known for)",
+    "2 GB of RAM",
+    "16 GB of eMMC storage",
+    "Wi-Fi",
+    "Bluetooth",
+    "a full-size USB-C port that supports video out"
+  ],
+  "price": [44, null],
+  "notes": [
+    "will preserve Arduino's open tools and ecosystem",
+    "keeps the standard UNO shield layout, so existing hardware should still fit",
+    "Arduino has published the schematics and layout files under an open license",
+    "the STM32 half of the board remains programmable through the traditional Arduino IDE"
+  ]
+},
+
+{
+  "name": "ngspice/PULSE",
+  "lang": "en",
+  "field": "electronics",
+  "subfield": "analog",
+  "subsubfield": "simulation",
+  "type": "command",
+  "prototype": "PULSE(voltage-low voltage-high initial-delat time-to-rise time-to-fall width period phase)",
+  "instances": [
+    "V1 in 0 dc 0 PULSE (0 5 1u 1u 1u 0.5 1)"
+  ],
+  "notes": [
+    "width stands for the time at the top, the width of the pulse",
+    "you may leave \"phase\" out"
+  ],
+  "description": "simulate a pulse"
+},
+{
+  "name": "ngspice/tran",
+  "lang": "en",
+  "field": "electronics",
+  "subfield": "analog",
+  "subsubfield": "simulation",
+  "type": "command",
+  "prototype": "tran step span",
+  "instances": [
+    {"code": "tran 50u 50m", "discussion": "50u second steps over a span of 50m seconds"}
+  ],
+  "notes": [],
+  "description": null
+},
+{
+  "name": "ngspice/ac",
+  "lang": "en",
+  "field": "electronics",
+  "subfield": "analog",
+  "subsubfield": "simulation",
+  "type": "command",
+  "subtype": "control command",
+  "prototype": null,
+  "instances": [
+    {"code": "ac dec 10 1 100k",
+     "discussion": "vary the frequency as if plotted logarithmically, with 10 points per decade; the starting frequency is 1 Hz, the stopping frequency is 100 kHz"
+    }
+  ],
+  "notes": [],
+  "description": null
+},
+{
+  "name": "ngspice/plot",
+  "lang": "en",
+  "field": "electronics",
+  "subfield": "analog",
+  "subsubfield": "simulation",
+  "type": "command",
+  "subtype": "control command",
+  "prototype": "plot var1 ...",
+  "instances": [
+    {"code": "plot in0 out0"},
+    {"code": "plot vdb(out) ph(out)", "discussion": "for 'out', plot the gain in dB and the phase"}
+  ],
+  "notes": [],
+  "description": null
+},
+
+{
+  "term": "band diagram",
+  "lang": "en",
+  "definition": "a diagram plotting various key electron energy levels (Fermi level and nearby energy band edges) as a function of some spatial dimension, which is often denoted x",
+  "purpose": "help to explain the operation of many kinds of semiconductor devices and to visualize how bands change with position (band bending)"
+},
+{
+  "term": "band gap",
+  "lang": "en",
+  "definition": "an energy range in a solid where no electronic states exist",
+  "discussion": [
+    "in graphs of the electronic band structure of solids, the band gap refers to the energy difference (often expressed in electronvolts) between the top of the valence band and the bottom of the conduction band in insulators and semiconductors",
+    "it is the energy required to promote an electron from the valence band to the conduction band"
+  ]
+},
+{
+  "term": "Fermi level",
+  "lang": "en",
+  "definition": "of a solid-state body, it is the thermodynamic work required to add one electron to the body",
+  "notes": [
+    "a thermodynamic quantity usually denoted by μ or E_F for brevity",
+    "does not include the work required to remove the electron from wherever it came from",
+    "a precise understanding of the Fermi level—how it relates to electronic band structure in determining electronic properties; how it relates to the voltage and flow of charge in an electronic circuit—is essential to an understanding of solid-state physics"
+  ]
+},
+{
+  "term": "Fermi energy",
+  "lang": "en",
+  "definition": "",
+  "notes": []
+},
+
+
+
+
+
 {
   "term": "diode",
   "field": "electronics",

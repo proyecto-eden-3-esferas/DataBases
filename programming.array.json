@@ -1,5 +1,17 @@
 [
 
+{
+  "name": "piece table/rope",
+  "lang": "en",
+  "description": "advanced data structure used by some editors to manage large texts efficiently"
+},
+
+{
+  "term": "linting",
+  "lang": "en",
+  "definition": null
+},
+
 
 {
   "name": "fundamental control structures",

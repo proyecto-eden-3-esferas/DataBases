@@ -1,0 +1,56 @@
+[
+{
+  "term": "herb",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "ecology",
+  "definition": "a plant, or a part of a plant, usually the fresh or dried aromatic leaves or flowers of such plants, cultivated for medicine, or flavor and aroma in small amounts",
+  "instances": ["marjoram", "mint", "rosemary", "bay leaf", "parsley", "thyme"],
+  "notes": [
+  "the 'h' is often silent, making it sound like \"erb\"",
+  "Spices and herbs consist of rhizomes, bulbs, barks, flower buds, stigmas, fruits, seeds, and leaves. They are commonly divided into the categories of spices, spice seeds, and herbs.",
+  "contain essential oils, which are the flavouring components of extracts, and they are employed in the production of perfumes, cosmetics, toiletries, lotions, hair products, toothpastes, and soaps"
+  ]
+},
+{
+  "term": "spice seeds",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "ecology",
+  "definition": "the tiny aromatic fruits and oil-bearing seeds of some herbaceous plants",
+  "instances": ["anise", "caraway", "cumin", "fennel", "poppy", "sesame"]
+},
+{
+  "term": "spice",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "ecology",
+  "definition": "",
+  "instances": ["cardamom", "cinnamon", "cloves", "gingerpepper"],
+  "notes": [
+  "many of the world's highly prized spices cultivated in tropical and subtropical regions",
+  "contain essential oils, which are the flavouring components of extracts, and they are employed in the production of perfumes, cosmetics, toiletries, lotions, hair products, toothpastes, and soaps"
+  ]
+},
+{
+  "term": "herbal tea",
+  "synonyms": ["tisane"],
+  "lang": "en",
+  "field": "biology",
+  "subfield": "ecology",
+  "definition": "an infusion of a herb (typically dried leaves, flowers or seeds) in boiling water",
+  "characteristics": [
+  "may not contain tannins or caffeine",
+  "are not typically mixed with milk",
+  "often used as a source of relaxation or can be associated with rituals"
+  ],
+  "instances": ["chamomile tea", "mint tea"]
+},
+{
+  "term": "",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "ecology",
+  "definition": ""
+}
+]

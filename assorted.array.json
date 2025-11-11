@@ -1,5 +1,237 @@
 [
 {
+  "term": "entropy",
+  "lang": "en",
+  "field": "science",
+  "subfield": "thermodynamics",
+  "definition": "a concept that measures the randomness, disorder, or uncertainty in a system, also defined as the amount of thermal energy unavailable to do work",
+  "notes": [
+    "central to the second law of thermodynamics, which states that the entropy of an isolated system never decreases over time, meaning that systems naturally evolve toward a state of maximum disorder or equilibrium"
+  ]
+},
+{
+  "name": "férula extensora activa",
+  "lang": "es",
+  "field": "medicine",
+  "description": null
+},
+{
+  "term": "Internet of Things",
+  "lang": "en",
+  "field": "technology",
+  "definition": "a network of connected things and people, all of which share data about the way they are used and their environments",
+  "instances": [
+    "appliances",
+    "sensors",
+    "televisions",
+    "routers",
+    "printers"
+  ]
+},
+{
+  "term": "bioremediation (of contaminated soils)",
+  "lang": "en",
+  "field": "ecology",
+  "definition": ""
+},
+{
+  "term": "biomedicine",
+  "lang": "en",
+  "field": "health",
+  "definition": ""
+},
+{
+  "term": "eutrophication",
+  "lang": "en",
+  "field": "ecology",
+  "definition": "excessive richness of nutrients in a lake or other body of water, frequently due to run-off from the land, which causes a dense growth of plant life",
+  "causes": [
+    {"name": "agricultural runoff", "discussion": "fertilizers containing nitrogen and phosphorus are washed into waterways"},
+    {"name": "sewage and septic systems", "discussion": "discharge of wastewater can be high in nutrients"},
+    {"name": "industrial waste", "discussion": "some industrial processes release nutrient-rich waste"},
+    {"name": "animal waste", "discussion": "runoff from farms containing animal waste adds to the nutrient load"}
+  ]
+},
+{
+  "term": "algal bloom",
+  "lang": "en",
+  "field": "ecology",
+  "definition": "rapid growth of algae and aquatic plants, which block sunlight from reaching lower plants",
+  "notes": [
+    "when these blooms decompose, bacteria consume the available oxygen, creating hypoxic or \"dead\" zones where fish and other aquatic life cannot survive"
+  ]
+},
+{
+  "term": "slurry",
+  "lang": "en",
+  "field": "materials",
+  "definition": "a semi-liquid mixture, typically of fine particles of manure, cement, or coal suspended in water"
+},
+{
+  "name": "rebound effect",
+  "lang": "en",
+  "description": null
+},
+{
+  "title": "The world is analog",
+  "lang": "en",
+  "discussion": null
+},
+{
+  "term": "surveillance capitalism",
+  "lang": "en",
+  "field": "society",
+  "definition": null,
+  "discussion": null
+},
+{
+  "name": "Javons Paradox",
+  "lang": "en",
+  "field": "economics",
+  "description": "technological advancements increasing the efficiency of a resource can lead to an overall increase in its consumption, rather than a decrease (rebound effect)",
+  "explanation": "the resource becomes cheaper to use, leading to higher demand that can outpace the efficiency gains, resulting in more total consumption",
+  "examples": [
+    "more efficient engines made coal cheaper to use, which led to coal being used in more industries and ultimately increased overall coal consumption",
+    "more fuel-efficient cars lead to people driving more miles, increasing total fuel use",
+    "better cybersecurity incentivates taking more risks, which could result in more breaches",
+    "improvements in computing efficiency lead to proportional increases in demand for computing resources, ultimately balancing out the gains",
+    "the more roads are built, the more people will drive, which could actually worsen congestion"
+  ],
+  "notes": [
+    "the paradox occurs when this increased demand, driven by affordability, completely offsets or even exceeds the savings from the initial efficiency improvement"
+  ]
+},
+{
+  "name": "automation complacency",
+  "lang": "en",
+  "field": "psychology",
+  "description": null
+},
+{
+  "term": "the consumtariat",
+  "lang": "en",
+  "field": "society",
+  "etymology": "a portmanteau of consumer and proletariat",
+  "definition": "a new underclass whose main activity is consumption, regulated from above",
+  "description": "kept occupied with private problems, its desires provoked with the use of advertisements and its active participation limited to things like product choice, product customization, engaging with interactive products and life-style choice",
+  "originator": "Alexander Bard"
+},
+{ "term": "phase-separation",
+  "lang": "en",
+  "definition": "the process where a single, homogeneous mixture separates into two or more distinct, physically separate phases",
+  "notes": [
+    "this phenomenon is often induced through quenching",
+    "historically, phase separation in glass was an unwanted defect, today, it is a controlled process used to create advanced materials"
+  ]
+},
+{
+  "term": "topological sort",
+  "lang": "en",
+  "field": "mathematics",
+  "subfield": "graph theory",
+  "definition": "in a directed acyclical graph (DAG), a traversal such that each node v is visited only after all its dependencies are visited",
+  "instances": [
+    "scheduling a sequence of jobs or tasks based on their dependencies",
+    "logic synthesis",
+    "determining the order of compilation tasks to perform in makefiles",
+    "data serialization"
+  ]
+},
+{
+  "term": "total ordering",
+  "lang": "en",
+  "field": "mathematics",
+  "definition": "on a set, whenever for each pair of elements a,b, either a < b, or a == b, or a > b",
+  "notes": [
+    "this is tantamount to saying that all elements are comparable"
+  ]
+},
+{
+  "term": "strict",
+  "lang": "en",
+  "field": "mathematics",
+  "definition": "said about a mapping, whenever no element is mapped to itself",
+  "instances": [
+    {"name": "set inclusion",
+     "discussion": "if set A is strictly included in set B, then they must be different"},
+    {"name": "comparisons",
+     "discussion": "a comparison, such as < (\"less than\"), is said to be strict if for all elements, no E < E"}
+  ]
+},
+{
+  "term": "strict partial ordering",
+  "lang": "en",
+  "field": "mathematics",
+  "definition": "on a set, given any two elements x and y, x is never ordered before itself (strict), and x and y might be tied (neither x nor y may be ordered before the other, i.e. partial)",
+  "instances": [
+    {"name": "books",
+     "discussion": "often enough a reader is persuaded that a book A is better than book B, yet uncertain as to whether B is better than, say, book C"},
+    {"name": "people",
+     "discussion": "for any two people A and B, sometimes it is clear to somebody that A is kinder (or wiser, or fitter) than B, sometimes it isn't clear at all"}
+  ]
+},
+{
+  "term": "strict weak ordering",
+  "lang": "en",
+  "field": "mathematics",
+  "definition": "a restricted version of a strict partial order: if x is tied with y, and y is tied with z, x is also tied with z",
+  "instances": [
+    {"name": "time",
+     "discussion": "events that are equivalent in a given timeframe happen at the same time"},
+    {"name": "price",
+     "discussion": "an item may cost the same as another, but it can also cost the same amount of money"}
+  ]
+},
+{
+  "term": "upcycling",
+  "lang": "en",
+  "field": "ecologism",
+  "definition": "the creative reuse of waste or unwanted products to create new items of higher quality and value",
+  "synonyms": ["creative reuse"],
+  "notes": [
+    "unlike conventional recycling, which breaks down materials into raw components, upcycling involves transforming an item without destroying its original material integrity"
+  ],
+  "instances": [
+    "turning old pallets into furniture"
+  ],
+  "benefits": [
+    "helps reduce waste",
+    "conserves resources",
+    "lowers environmental impact"
+  ]
+},
+{
+  "term": "essential-oil extract",
+  "lang": "en",
+  "definition": "an extract prepared by dissolving an essential oil in alcohol of the proper strength, and adding water",
+  "instances": ["almond", "anise", "celery", "cassia/cinnamon", "clove", "lemon", "nutmeg", "orange", "rosemary", "savory", "basil", "sweet marjoram", "thyme", "wintergreen"]
+},
+{
+  "title": "Use Edges and Value the Marginal",
+  "lang": "en",
+  "field": "systems",
+  "subfield": "permaculture",
+  "contents": ["Edges occur where two systems meet – think ecosystems, cultures, etc. At these meeting points, diversity increases as the elements of both systems converge and create entirely new elements that may not exist otherwise."]
+},
+{
+  "term": "fintech",
+  "lang": "en",
+  "definition": "computer programs and other technology used to support or enable banking and financial services",
+  "discussion": "Fintech, a blend of \"financial\" and \"technology,\" refers to the use of technology to deliver financial services and products in new ways. It encompasses a wide range of innovations, from mobile banking apps and digital payments to blockchain, artificial intelligence, and algorithmic trading. Essentially, it's technology-enabled innovation that changes how consumers and businesses access and manage their finances."
+},
+{
+  "name": "humanists",
+  "lang": "en",
+  "description": [
+    "Humanists are non-religious people who do not believe in a god. They believe that the world is a natural place, that human beings have natural origins, and that this is the one life we have. They believe it is possible to lead a good, happy, and meaningful life without religion.",
+    "Humanists recognise that we have many different natural capacities and believe we have a responsibility to make the most of them to build a fairer and kinder society. We can ask and answer questions about the world around us. We can use empathy and imagination to consider how other people might feel, and think about how to treat them well. We can make choices about how we want to live and take action to improve our own lives and the lives of others. Humanists believe we should think about the consequences of our actions on other people and animals and try to promote happiness and wellbeing. They celebrate these human capacities and the way different people have used them to make the world a better place."
+  ]
+},
+
+
+
+
+{
   "term": "biome",
   "lang": "en",
   "field": "biology",

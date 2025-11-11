@@ -1,4 +1,93 @@
 [
+{
+  "name": "Round Robin Scheduling",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "algorithm",
+  "description": null
+},
+{
+  "term": "injection attack",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "security",
+  "definition": "a cyberattack where an attacker inserts malicious code into an application by exploiting a vulnerability in how the application handles user input, then the code is executed as part of a command or query, potentially leading to unauthorized actions like data theft, system compromise, or denial of service"
+},
+{
+  "name": "YAML",
+  "lang": "en",
+  "field": "computing",
+  "subfield": "security",
+  "definition": "a human-readable data serialization language"
+
+},
+{
+  "term": "in-place",
+  "lang": "en",
+  "field": "computing",
+  "definition": "said of an operation that changes an object instead of producing a modified copy",
+  "instances": [
+    "in-place sort",
+    "appending an elemnt to a list",
+    "editing a file"
+  ]
+
+},
+{
+  "term": "hashtag",
+  "lang": "en",
+  "definition": null
+},
+{
+  "name": "wordpress",
+  "field": "computing",
+  "subfield": "internet",
+  "type": "platform",
+  "lang": "en",
+  "description": null
+},
+
+{
+  "title": "repair NTFS (cmd)",
+  "field": "computing",
+  "subfield": "windows",
+  "type": "instructions",
+  "lang": "en",
+  "steps": [
+    "windows + S",
+    "type: cmd",
+    "right-click to select \"run as administrator\"",
+    "chkdsk X: /r /f"
+  ]
+},
+{
+  "title": "repair NTFS (PowerShell)",
+  "field": "computing",
+  "subfield": "windows",
+  "type": "instructions",
+  "lang": "en",
+  "steps": [
+    "windows + S",
+    "type: PowerShell",
+    "Repair-Volume E -OfflineScanAndFix"
+  ],
+  "examples": [],
+  "notes": [
+    "alternatively:\"Repair-Volume E -SpotFix\""
+  ]
+},
+{
+  "title": "repair NTFS (linux/ntfsfix)",
+  "field": "computing",
+  "subfield": "windows",
+  "type": "instructions",
+  "lang": "en",
+  "steps": [ "sudo ntfsfix /dev/sdxn" ],
+  "notes": ["alternatively: \"sudo ntfsfix --clear-dirty /dev/sdxn\""]
+},
+
+
+
 
 {
   "term": "compute",

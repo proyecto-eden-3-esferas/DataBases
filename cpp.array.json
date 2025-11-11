@@ -1,9 +1,48 @@
 [
   {
+    "term": "container adaptors",
+    "language": "c++",
+    "definition": "not full container classes, but classes that provide a specific interface relying on an object of one of the container classes (such as deque or list) to handle the elements",
+    "discussion": [
+      "the underlying container is encapsulated in such a way that its elements are accessed by the members of the container adaptor independently of the underlying container class used"
+    ],
+    "instances": ["stack", "queue", "priority_queue"],
+    "notes": []
+  },
+  {
+    "title": "precompiled header",
+    "language": "c++",
+    "definition": null,
+    "discussion": null
+  },
+
+
+
+
+
+  {
     "title": "characters allowed in identifiers",
     "language": "c++",
     "start-characters":     ["letters", "_"],
     "non-start-characters": ["letters", "digits", "_"]
+  },
+
+  {
+    "title": "C++ trailing return type",
+    "language": "c++",
+    "description": null,
+    "examples": [
+      {"code": "auto func_name(int x, int y) -> int;"}
+    ],
+    "uses": [
+      "a lambda return type, if specified, must be specified via a trailing return type",
+      "if your return type utilizes a decltype that requires that the argument names are in scope, a trailing return type must be used (however, one can usually use declval<T> to work around this latter issue",
+      "member typedefs are not in scope until after the name of the class appears before, so we have to repeat the class qualification twice. If we use a trailing return type, we don't need to repeat the name of the type"
+    ],
+    "notes": [
+      "available since C++11",
+      "the leading \"auto\" keyword in the prototype does not mean type deduction"
+    ]
   },
 
   {

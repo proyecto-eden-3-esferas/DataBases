@@ -1,5 +1,25 @@
 [
 {
+  "term": "bitmask",
+  "field": "computing",
+  "subfield": "programming",
+  "lang": "en",
+  "definition": "a binary pattern used to select, set, clear, or toggle specific bits in a variable — usually with the help of bitwise operators",
+  "notes": [
+  ]
+},
+{
+  "term": "stream",
+  "field": "computing",
+  "subfield": "programming",
+  "lang": "en",
+  "definition": "an abstraction that represents a device on which input and ouput operations are performed",
+  "notes": [
+    "a stream can basically be represented as a source or destination of characters of indefinite length",
+    "streams are generally associated to a physical source or destination of characters, like a disk file, the keyboard, or the console, so the characters gotten or written to/from our abstraction called stream are physically input/output to the physical device"
+  ]
+},
+{
   "term": "reentrant",
   "field": "computing",
   "subfield": "programming",

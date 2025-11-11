@@ -1,5 +1,40 @@
 [
 {
+  "term": "translocation",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "phitology",
+  "definition": "the long-distance transport of dissolved organic compounds like sugars from \"sources\" (like leaves where they are made) to \"sinks\" (like roots, fruits, or growing points) via the phloem",
+  "notes": [
+    "this process moves the products of photosynthesis to where they are needed for respiration, growth, and storage",
+    "phloem tubes, made of living cells, are the specific vascular tissue that carries this substance, known as plant sap, in both directions up and down the plant"
+  ]
+},
+{
+  "term": "cuticle",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "phitology",
+  "definition": "any of a variety of tough but flexible, non-mineral outer coverings of an organism, or parts of an organism, that provide protection",
+  "notes": [
+    "this process moves the products of photosynthesis to where they are needed for respiration, growth, and storage",
+    "phloem tubes, made of living cells, are the specific vascular tissue that carries this substance, known as plant sap, in both directions up and down the plant"
+  ]
+},
+
+{
+  "title": "nitrogen fixers",
+  "lang": "en",
+  "type": "list",
+  "items": [
+    {"name": "bacteria of the genus Azobacter", "notes": ["live freely in soil"]},
+    {"name": "bacteria of the genus Rhizobium", "notes": ["live sheltered in the roots of leguminous plants such as peas and beans"]},
+    {"name": "cyanobacteria (blue-green algae)", "notes": ["important for growing rice in the flooded paddy fields of Southeast Asia"]}
+  ]
+},
+
+
+{
   "term": "monophyletic",
   "wordclass": "adj",
   "lang": "en",
