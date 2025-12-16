@@ -1,5 +1,13 @@
 [
   {
+    "term": "visitor",
+    "lang": "en",
+    "field": "computing",
+    "subfield": "programming",
+    "language": "c++",
+    "definition": "a function object with multiple methods instead of just one"
+  },
+  {
     "term": "container adaptors",
     "language": "c++",
     "definition": "not full container classes, but classes that provide a specific interface relying on an object of one of the container classes (such as deque or list) to handle the elements",

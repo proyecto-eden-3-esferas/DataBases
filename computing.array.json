@@ -1,5 +1,11 @@
 [
 {
+  "name": "ISO 8601 date standard",
+  "description": "a scheme for representing a date string in a Year-Month-DayTHour:Minute:Second.microsecond format",
+  "examples": [
+  ]
+},
+{
   "name": "Round Robin Scheduling",
   "lang": "en",
   "field": "computing",

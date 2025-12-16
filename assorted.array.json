@@ -1,5 +1,130 @@
 [
 {
+  "name": "Ilok",
+  "email": "betweendimensions88@gmail.com",
+  "username": "betweendimensions",
+  "password": "Pepe1973"
+},
+{
+  "name": "NI - Native Instruments",
+  "email": "betweendimensions88@gmail.com",
+  "username": null,
+  "password": "Pepe1973"
+},
+{
+  "name": "Waves",
+  "email": null,
+  "username": "David Alonso",
+  "password": "pepe1973"
+},
+{
+  "name": "LANOR/LANDOR",
+  "email": "betweendimensions88@gmail.com",
+  "password": "Pepe1973"
+},
+{
+  "name": "Izotope",
+  "email": "betweendimensions88@gmail.com",
+  "password": "pepe1973"
+},
+{
+  "name": "Sound Cloud",
+  "email": "under8dimension@gmail.com",
+  "password": "pepe1973",
+  "notes": ["Mixcloud"]
+},
+
+{
+  "name": "",
+  "email": "",
+  "username": "",
+  "password": ""
+},
+{
+  "name": "",
+  "email": "",
+  "username": "",
+  "password": ""
+},
+{
+  "name": "",
+  "email": "",
+  "username": "",
+  "password": ""
+},
+
+{
+  "name": "Personal Slogans",
+  "type": "slogans",
+  "lang": "en",
+  "items": [
+    "clean, yet not fastidious",
+    "bears no grudge",
+    "forgiving, not vengeful",
+    "keeps it simple",
+    "drops ego",
+    "bodily / in your body",
+    "self-cheerful",
+    "mindful-aware",
+    "fearless",
+    "unfettered",
+    "exercising maitri and karuna"
+  ]
+},
+
+{
+  "forename": "Jorge",
+  "surname": "Dipest",
+  "type": "person",
+  "subtype": "painter",
+  "medium": ["oils", "acrylics", "pastel", "charcoal", "watercolours"],
+  "web-site": "jorgedipest.com",
+  "email": "contact@jorgedipest.com",
+  "tel": "678 50 43 02"
+},
+
+{
+  "name": "Madrid Camper",
+  "type": "shop",
+  "web-site": "https://madridcamper.com/",
+  "address": "C/ Avenida de las nieves 21 C.P. 28935 Mostoles-Madrid",
+  "tel": "653 207 849"
+},
+{
+  "name": "bordón para rail toldos y avances furgonetas",
+  "lang": "es",
+  "description": "bordón para la confección de toldos, avances, lonas y poder fijarlas en los soportes de raíl",
+  "shop": "Madrid Camper",
+  "description": [
+    "Ø de la varilla flexible de 7.5mm y 2 cm de vuelo para coser",
+    "compatible con soporte de rail"
+  ],
+  "notes": ["se suministra por metros 1 unidad en el carro de compra equivale a 1m de bordón" ],
+  "price": "1,90€/metro"
+},
+{
+  "name": "bordón fino para raíl toldos y avances",
+  "lang": "es",
+  "shop": "Madrid Camper",
+  "description": [
+    "tubería de PVC Ø 5 mm (para Mercedes Marco Polo), de plástico blanco",
+    "aleta de 22 mm con refuerzo de tela para coser o pegarse a la tienda"
+  ],
+  "notes": [ "se suministra por metros" ],
+  "price": "4,15€/metro"
+},
+
+{
+  "term": "microclimate",
+  "lang": "en",
+  "definition": "the distinct climate of a small area",
+  "examples": [
+    "the west side of a wall",
+    "in the shade of a shrub",
+    "behind a windbreak"
+  ]
+},
+{
   "term": "entropy",
   "lang": "en",
   "field": "science",
@@ -32,7 +157,12 @@
   "term": "bioremediation (of contaminated soils)",
   "lang": "en",
   "field": "ecology",
-  "definition": ""
+  "definition": "the use of either naturally occurring or deliberately introduced microorganisms to consume and break down environmental pollutants, in order to clean a polluted site",
+  "types": [
+    {"name": "microbial bioremediation", "description": "utilizes microorganisms to consume and degrade pollutants, such as hydrocarbons and organic solvents"},
+    {"name": "phytoremediation", "description": "involves plants to extract, bind, or detoxify contaminants like metals, pesticides, and petroleum hydrocarbons"},
+    {"name": "mycoremediation", "description": null}
+  ]
 },
 {
   "term": "biomedicine",

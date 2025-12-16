@@ -1,5 +1,10 @@
 [
 {
+  "term": "hardiness",
+  "lang": "en",
+  "definition": "how well a plant can withstand cold"
+},
+{
   "name": "oxalic acid",
   "field": "chemistry",
   "subfield": "biochemistry",
@@ -522,11 +527,25 @@
   "type":  "term",
   "field": "botany",
   "lang":  "en",
-  "definition": "simple fleshy fruit that usually contains a single seed",
-  "instances": ["cherry", "peach", "olive", "mango", "walnut", "dogwood"],
+  "definition": "a fruit in which an outer fleshy part surrounds a shell (the pit, or stone with a seed inside)",
+  "instances": ["cherry", "damson", "nectarine", "plum", "peach", "apricot", "olive", "mango", "almond", "walnut", "dogwood"],
   "discussion": "As a simple fruit, a drupe is derived from a single ovary of an individual flower. The outer layer of the ovary wall is a thin skin or peel, the middle layer is thick and usually fleshy (though sometimes tough, as in the almond, or fibrous, as in the coconut), and the inner layer, known as the pit, or putamen, is hard and stony. The pit, which is often confused with the seed itself, usually has one seed or, rarely, two or three, in which case only one develops fully.",
-  "notes": ["In some aggregate fruits, such as the raspberry and blackberry—which are not true berries—many small drupes are clumped together. Formally, these fruits are called aggregates of drupelets. Such fruits are formed of numerous fused carpels (ovule-containing structures) from a single flower."]
+  "notes": [
+    "the definitive characteristic of a drupe is that the hard, lignified stone (or pit) is derived from the ovary wall of the flower",
+    "some flowering plants that produce drupes are all members of the genus Prunus, including the ",
+    "In some aggregate fruits, such as the raspberry and blackberry—which are not true berries—many small drupes are clumped together. Formally, these fruits are called aggregates of drupelets. Such fruits are formed of numerous fused carpels (ovule-containing structures) from a single flower."
+  ]
 },
+{
+  "term": "pome",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "phitology",
+  "definition": "the fruit type derived from the fusion of the ovaries, calyx cup, and floral tube",
+  "notes": ["produced by members of the subfamily Pomoideae"],
+  "instances": ["apple", "pear", "quince"]
+},
+
 {
   "name":  "bract",
   "type":  "term",

@@ -1,5 +1,17 @@
 [
   {
+    "term": "paclitaxel",
+    "synonyms": ["taxol"],
+    "language": "en",
+    "field": "health",
+    "subfield": "cancer",
+    "definition": "a chemotherapy drug used to treat several types of cancer, including ovarian, breast, lung, and Kaposi's sarcoma",
+    "origin": [
+      "Pacific yew"
+    ],
+    "notes": []
+  },
+  {
     "term": "enamel",
     "language": "en",
     "field": "health",
