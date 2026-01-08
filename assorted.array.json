@@ -1,37 +1,16 @@
 [
+
 {
-  "name": "Ilok",
-  "email": "betweendimensions88@gmail.com",
-  "username": "betweendimensions",
-  "password": "Pepe1973"
+  "term": "sustainable",
+  "lang": "en",
+  "author": "the United Nations",
+  "definition": "development that meets the needs of the present without compromising the ability of future generations to meet their own needs"
 },
 {
-  "name": "NI - Native Instruments",
-  "email": "betweendimensions88@gmail.com",
-  "username": null,
-  "password": "Pepe1973"
-},
-{
-  "name": "Waves",
-  "email": null,
-  "username": "David Alonso",
-  "password": "pepe1973"
-},
-{
-  "name": "LANOR/LANDOR",
-  "email": "betweendimensions88@gmail.com",
-  "password": "Pepe1973"
-},
-{
-  "name": "Izotope",
-  "email": "betweendimensions88@gmail.com",
-  "password": "pepe1973"
-},
-{
-  "name": "Sound Cloud",
-  "email": "under8dimension@gmail.com",
-  "password": "pepe1973",
-  "notes": ["Mixcloud"]
+  "term": "peak oil",
+  "lang": "en",
+  "field": "economy",
+  "definition": "the point at which the rate of global oil extraction peaks, thereafter dropping into decline"
 },
 
 {
@@ -66,52 +45,11 @@
     "bodily / in your body",
     "self-cheerful",
     "mindful-aware",
+    "maitri-karuna",
     "fearless",
     "unfettered",
     "exercising maitri and karuna"
   ]
-},
-
-{
-  "forename": "Jorge",
-  "surname": "Dipest",
-  "type": "person",
-  "subtype": "painter",
-  "medium": ["oils", "acrylics", "pastel", "charcoal", "watercolours"],
-  "web-site": "jorgedipest.com",
-  "email": "contact@jorgedipest.com",
-  "tel": "678 50 43 02"
-},
-
-{
-  "name": "Madrid Camper",
-  "type": "shop",
-  "web-site": "https://madridcamper.com/",
-  "address": "C/ Avenida de las nieves 21 C.P. 28935 Mostoles-Madrid",
-  "tel": "653 207 849"
-},
-{
-  "name": "bordón para rail toldos y avances furgonetas",
-  "lang": "es",
-  "description": "bordón para la confección de toldos, avances, lonas y poder fijarlas en los soportes de raíl",
-  "shop": "Madrid Camper",
-  "description": [
-    "Ø de la varilla flexible de 7.5mm y 2 cm de vuelo para coser",
-    "compatible con soporte de rail"
-  ],
-  "notes": ["se suministra por metros 1 unidad en el carro de compra equivale a 1m de bordón" ],
-  "price": "1,90€/metro"
-},
-{
-  "name": "bordón fino para raíl toldos y avances",
-  "lang": "es",
-  "shop": "Madrid Camper",
-  "description": [
-    "tubería de PVC Ø 5 mm (para Mercedes Marco Polo), de plástico blanco",
-    "aleta de 22 mm con refuerzo de tela para coser o pegarse a la tienda"
-  ],
-  "notes": [ "se suministra por metros" ],
-  "price": "4,15€/metro"
 },
 
 {
@@ -133,12 +71,6 @@
   "notes": [
     "central to the second law of thermodynamics, which states that the entropy of an isolated system never decreases over time, meaning that systems naturally evolve toward a state of maximum disorder or equilibrium"
   ]
-},
-{
-  "name": "férula extensora activa",
-  "lang": "es",
-  "field": "medicine",
-  "description": null
 },
 {
   "term": "Internet of Things",

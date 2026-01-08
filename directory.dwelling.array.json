@@ -1,0 +1,137 @@
+[
+
+{
+  "from": "Madrid",
+  "to": "Casavieja",
+  "type": "distance",
+  "km": 114,
+  "driving-time": {"hours": 0, "minutes": 0},
+  "by-train": { "time": null, "price": 0, "hours": null}
+},
+{
+  "from": "Madrid",
+  "to": "Cáceres",
+  "type": "distance",
+  "km": 298,
+  "driving-time": {"hours": 0, "minutes": 0},
+  "by-train": { "time": null, "price": 0, "hours": null}
+},
+{
+  "from": "Madrid",
+  "to": "Badajoz",
+  "type": "distance",
+  "km": 400,
+  "driving-time": {"hours": 0, "minutes": 0},
+  "by-train": { "time": null, "price": 0, "hours": null}
+},
+{
+  "from": "Madrid",
+  "to": "Hoyuelos (Segovia)",
+  "type": "distance",
+  "km": 120,
+  "driving-time": {"hours": 0, "minutes": 0},
+  "by-train": { "time": null, "price": 0, "hours": null}
+},
+{
+  "from": "Madrid",
+  "to": "Ejea de los Caballeros (Zaragoza)",
+  "type": "distance",
+  "km": 359,
+  "driving-time": {"hours": 4, "minutes": 0},
+  "by-train": { "time": null, "price": 0, "hours": null}
+},
+{
+  "from": "Madrid",
+  "to": "Lleida",
+  "type": "distance",
+  "km": 468,
+  "driving-time": {"hours": 0, "minutes": 0},
+  "by-train": { "time": null, "price": 0, "hours": null}
+},
+{
+  "from": "Madrid",
+  "to": "Balaguer",
+  "type": "distance",
+  "km": 485,
+  "driving-time": {"hours": 4, "minutes": 45},
+  "by-train": { "time": null, "price": 0, "hours": null}
+},
+{
+  "from": "Madrid",
+  "to": "Alòs de Balaguer (Lleida)",
+  "type": "distance",
+  "km": 525,
+  "driving-time": {"hours": 5, "minutes": 28},
+  "by-train": { "time": null, "price": 0, "hours": null}
+},
+
+{
+  "from": "Madrid",
+  "to": "Caspe",
+  "type": "distance",
+  "km": 325,
+  "driving-time": {"hours": 3, "minutes": 45},
+  "by-train": { "time": null, "price": 0, "hours": null}
+},
+{
+  "from": "Madrid",
+  "to": "Mequinenza",
+  "type": "distance",
+  "km": 450,
+  "driving-time": {"hours": 3, "minutes": 45},
+  "by-train": { "time": null, "price": 0, "hours": null}
+},
+
+{
+  "from": "Madrid",
+  "to": "Tarazona",
+  "type": "distance",
+  "km": 292,
+  "driving-time": {"hours": 3, "minutes": 8},
+  "by-train": { "time": null, "price": 0, "hours": null}
+},
+
+
+
+{
+  "name": "Polideportivo de Cabanillas de la Sierra",
+  "tels": ["620 96 37 37"],
+  "address": "Avenida de los Arrieros 12",
+  "hours": "L-V 09:00 a 14:00h y 16:00 a 22:00h, S 09:00 a 14:00h",
+  "lessons": [
+    {"name": "karate avanzado", "hours": "L,X 15:30 16:30"},
+    {"name": "yoga articular",  "hours": "l,X 20:00-21:00"}
+  ],
+  "web-site": "https://www.cabanillasdelasierra.es/ciudadanos/polideportivo-municipal"
+},
+
+{
+  "name": "Polideportivo de Venturada/Cotos",
+  "tels": ["628 151 283"],
+  "address": "",
+  "hours": "",
+  "lessons": [
+    {"name": "pilates", "hours": "L,X,V: 10-11"},
+    {"name": "pilates", "hours": "L,X,V: 11-12"},
+    {"name": "pilates", "hours": "M,J: 19-20"},
+    {"name": "yoga", "hours": "M,J: 20-21"},
+    {"name": "yoga", "hours": "X: 21-22"},
+    {"name": "escalada", "hours": "L,X 19:30 21:00"},
+    {"name": "pilates", "hours": "M,J: 18:30-19:30"}
+  ],
+  "price": [
+    {"name": "bono 10 sesiones pack basic", "price": 30},
+    {"name": "bono 10 sesiones escalada",   "price": 25},
+    {"name": "escalada adulto", "price": 30},
+    {"name": "pase sala musculación", "price": 5},
+    {"name": "pase clase colectiva", "price": 6},
+    {"name": "pase rocódromo", "price": 3},
+    {"name": "pase clase de escalada", "price": 8}
+  ],
+
+  "web-site": ""
+},
+
+{}
+
+]

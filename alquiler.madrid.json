@@ -1,0 +1,96 @@
+[
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "",
+    "price-per-month": 0,
+    "description": "",
+    "notes": []
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "",
+    "price-per-month": 0,
+    "description": "",
+    "notes": []
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "Garganta de los Montes",
+    "price-per-month": 500,
+    "description": "estudio de 40m2",
+    "notes": ["Grupo Inkasa"]
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "Alameda del Valle",
+    "address": "Calle de la Carnicería, 11",
+    "price-per-month": 600,
+    "description": [
+    "piso de 30m2",
+    "planta 1a exterior sin ascensor"
+    ],
+    "notes": ["Grupo Inkasa"]
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "",
+    "price-per-month": 0,
+    "description": "",
+    "notes": []
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "",
+    "price-per-month": 0,
+    "description": "",
+    "notes": []
+  },
+  {
+    "region": "Madrid",
+    "area": null,
+    "town": "Collado Mediano",
+    "price-per-month": 475,
+    "description": "estudio de 30m2",
+    "notes": ["puedes hablar con MZ Gestiona por chat"]
+  },
+  {
+    "region": "Guadalajara",
+    "area": null,
+    "town": "Cogolludo",
+    "price-per-month": 350,
+    "description": "Alquiler de casa rural en CL Labradores",
+    "notes": ["Tecnorete Yunquera"]
+  },
+  {
+    "region": "Guadalajara",
+    "area": null,
+    "town": "Sacedón",
+    "price-per-month": 420,
+    "description": "Alquiler de casa de pueblo en Calle San Roque, 19",
+    "notes": [
+      "52m2",
+      "Particular: Rdf P. Pérez"
+    ]
+  },
+
+  {
+    "region": "Toledo",
+    "area": null,
+    "town": "Malpica de Tajo",
+    "price-per-month": 400,
+    "description": "Alquiler de casa de pueblo de 90m2",
+    "notes": [
+      "PRECIO DE VENTA: 35.999€; ENTRADA INICIAL: 15.500€",
+      "Apihouse presenta Casa de Pueblo en Malpica de Tajo, 85m. de superficie aprox, 3 habitaciones, un baño, propiedad Para reforma total, carpintería interior de sapeli, orientación este, suelo de tarima, carpintería exterior de aluminio"
+    ]
+  }
+
+
+
+]

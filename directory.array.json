@@ -1,0 +1,200 @@
+[
+
+{
+  "name":  "Mad Rural Lab",
+  "description": [
+    "Un centro Madrid Rural Lab es un espacio abierto de innovación y experimentación, donde se trabaja la cultura Maker y donde las personas y empresas del entorno rural tendrán a su disposición una serie de actividades, tecnologías y recursos que les permitan emprender.",
+    "La Red Madrid Rural Lab es una iniciativa conjunta de los Grupos de Acción Local de la Comunidad de Madrid (ADI SIERRA OESTE, ARACOVE y GALSINMA) para incorporar en sus territorios las soluciones a los desafíos demográficos del entorno rural y de la Cuarta Revolución Industrial, la transición energética, la inteligencia artificial y la artesanía digital.",
+    "Ofrecemos una amplia gama de actividades que incluyen talleres y cursos especializados en diseño, robótica y fabricación digital. Además, realizamos demostraciones prácticas para enriquecer la experiencia de aprendizaje. También organizamos jornadas dedicadas a la tecnología y la inteligencia artificial, fomentando así el desarrollo de habilidades en estos campos tan importantes en el mundo actual. También damos apoyo a empresas y autónomos, proporcionando servicios de mentoring para emprendedores que buscan orientación y crecimiento. "
+  ],
+  "uses": [
+    "Idear soluciones: Para dar respuesta a nuevos retos",
+    "Diseñar y crear: Tu proyecto, producto o servicio",
+    "Desarrollar competencias: Herramientas de fabricación digital"
+  ],
+  "projects": [
+    {
+      "name": "destratificador",
+      "description": "un tubo un poco más corto que el alto de una habitación en el que se instala un ventilador, un diodo rectificador (recomendable), cableado, un interruptor (opcional) y un alimentador",
+      "fields": ["electronics", "mechanics"]
+    },
+    {
+      "name": "regulador de carga fotovoltaico no conmutado",
+      "description": "se utilizan placas solares para cargar o mantener cargada una batería",
+      "notes": [
+        "por la naturaleza del mercado estos circuitos, aunque se venden, son caros"
+      ],
+      "fields": ["electronics"]
+    },
+    {
+      "name": "introducción a NGSpice",
+      "type": "course",
+      "description": "simulación por software de circuitos electrónicos analógicos",
+      "fields": ["electronics"]
+    },
+    {
+      "name": "órgano de luz",
+      "description": "la cantidad de luz que llega a una fotorresistencia se traduce en una frecuencia; otras fotorresistencias podrían utilizarse para regular (1) la intensidad o volumen, (2) otras voces/polifonía, etc.",
+      "fields": ["electronics"]
+    },
+    {
+      "name": "dron con alas",
+      "description": "un avión telecontrolado, posibilidad de motor a combustión interna",
+      "fields": ["electronics", "mechanics", "aerodynamics"]
+    },
+    {
+      "name": "pantógrafo",
+      "description": "prototipo de cualquier material cortable a láser, muy útil para los que no sabemos dibujar bien pero nos encanta pintar",
+      "fields": ["electronics", "mechanics", "chemistry"]
+    },
+    {
+      "name": "superburó",
+      "description": "fabricado con listones y rectángulos de contrachapado, mecanismo de apertura de tablero abatible, regulación de inclinación de dicho tablero, incorpora una lámpara, ruedines, toma de corriente (para ordenador), compartimentos pensados para la vida moderna",
+      "fields": ["mechanics", "carpentry"]
+    },
+    {
+      "name": "xilófono de cajas de resonancia individuales",
+      "description": "cada caja de resonancia varía ligeramente la frecuencia a la que vibra la tablilla que percutimos; importante diseñar las tablillas para que se desafinen concertadamente, es decir que mantengan sus relaciones de frecuencia, tal vez mejor de metal o incluso plástico",
+      "fields": ["mechanics"]
+    },
+    {
+      "name": "cocina solar",
+      "description": "la superficie reflectante se aproxima al máximo a un paraboloide; ¿montura ecuatorial? impresora 3D para las aristas y esquinas, por ejemplo; posibilidad de motorización",
+      "fields": ["mechanics", "geometry"]
+    },
+    {
+      "name": null,
+      "description": null,
+      "fields": ["electronics", "mechanics", "chemistry"]
+    }
+  ],
+  "people": [
+    {
+      "name": "Rodrigo Sánchez",
+      "post": "Dinamizador LAB SIERRA NORTE Venturada",
+      "email": "galsinma@lab.com",
+      "tels": ["686385447"],
+      "text": "La creatividad crece en entornos divertidos, pero divertidos en serio. Ya sea solo o en equipos de todos los tamaños, su objetivo es encontrar soluciones a través del juego, combinando herramientas diversas (Diseño gráfico, de producto y videojuegos, fabricación digital, programación, narrativa...) con sus pasiones (Cine, automovilismo, literatura, videojuegos arcade, teatro...). Durante la última década, esta perspectiva le ha llevado a una carrera multidisciplinaria por Europa, Norte, Centro y Sudamérica, en una amplia gama de industrias y roles (desde la facilitación de talleres de narrativa a la programación de maquinaria industrial), con un enfoque compartido en innovación. ¡Construyamos juntos!"
+    },
+
+    {
+      "name": "David Fernández",
+      "post": "Coordinador red madrid rural lab",
+      "email": "coordinador@madridrurallab.com",
+      "tels": ["694 226 330"],
+      "introduction": "Maker con formación en ingeniería y educación, con experiencia internacional lo que le ha permitido enriquecer su perspectiva y habilidades. Le apasiona el aprendizaje práctico, siempre buscando oportunidades para \"aprender haciendo\" y crear ambientes enriquecedores que fomenten la creatividad e inviten a experimentar. Está especialmente interesado en los procesos de fabricación, tanto tradicionales como digitales, y disfruta explorando nuevas técnicas y tecnologías. Siempre en busca de la oportunidad para trastear en el taller, ya que cree firmemente que la curiosidad y la experimentación son clave para el crecimiento personal y profesional. Os esperamos en nuestros centros para seguir compartiendo y aprendiendo juntos."
+    }
+  ]
+},
+
+
+
+
+{
+  "name": "Fundación Jiménez Díaz",
+  "type": "password",
+  "password": ["FcoF-VH66"],
+  "web-site": "https://www.fjd.es/idcsalud-client/cm/portal-paciente-fjd/",
+  "notes": ["My initial password was X7bG5gq3hz"]
+},
+{
+  "name": "férula extensora activa",
+  "lang": "es",
+  "field": "medicine",
+  "description": null
+},
+
+{
+  "name": "Firefox Password Administration",
+  "url": "about:logins"
+},
+
+
+{
+  "name": "191A",
+  "type": "bus line",
+  "departure": {
+    "from": "Buitrago de Lozoya",
+    "hours": [
+      "L-V: 7:35, 10:00 14:50 19:50",
+      "S-D: 14:10 17:45"
+    ]
+  },
+  "departure": {
+    "from": "Braojos",
+    "hours": [
+      "L-V: 7:50, 10:30 15:30 20:10",
+      "S-D: 14:30 18:25"
+    ]
+  }
+},
+{
+  "name": "Mascohotel",
+  "place": "La Serna del Monte, Madrid",
+  "web-site": "https://www.mascohotel.com/",
+  "hours": "10:30-13:00 18:00-20:00",
+  "tels": ["646 77 16 58", "630 69 01 44"]
+},
+{
+  "site": "https://www.idealista.com/",
+  "type": null,
+  "user": "franciscofvh@hotmail.com",
+  "password": "f2F7-v2H8"
+},
+{
+  "name": "reset oil change light on a Ford Transit",
+  "steps": [
+    "turn the ignition on (engine off)",
+    "press and hold the accelerator and brake pedals simultaneously for 20-25 seconds until the display show...",
+    "release pedals",
+    "turn ignition off"
+  ]
+},
+{
+  "name": "Ilok",
+  "email": "betweendimensions88@gmail.com",
+  "username": "betweendimensions",
+  "password": "Pepe1973"
+},
+{
+  "name": "NI - Native Instruments",
+  "email": "betweendimensions88@gmail.com",
+  "username": null,
+  "password": "Pepe1973"
+},
+{
+  "name": "Waves",
+  "email": null,
+  "username": "David Alonso",
+  "password": "pepe1973"
+},
+{
+  "name": "LANOR/LANDOR",
+  "email": "betweendimensions88@gmail.com",
+  "password": "Pepe1973"
+},
+{
+  "name": "Izotope",
+  "email": "betweendimensions88@gmail.com",
+  "password": "pepe1973"
+},
+{
+  "name": "Sound Cloud",
+  "email": "under8dimension@gmail.com",
+  "password": "pepe1973",
+  "notes": ["Mixcloud"]
+},
+
+{
+  "forename": "Jorge",
+  "surname": "Dipest",
+  "type": "person",
+  "subtype": "painter",
+  "medium": ["oils", "acrylics", "pastel", "charcoal", "watercolours"],
+  "web-site": "jorgedipest.com",
+  "email": "contact@jorgedipest.com",
+  "tel": "678 50 43 02"
+}
+
+
+]

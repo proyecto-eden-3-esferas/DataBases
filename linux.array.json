@@ -1,5 +1,13 @@
 [
 {
+  "name": "Fixing Corrupt NTFS Partition from Linux",
+  "field": "computing",
+  "subfield": "linux",
+  "examples": [
+    "sudo ntfsfix -b -d /dev/sda6"
+  ]
+},
+{
   "term": "joulnald.conf",
   "type": "configuration file",
   "location": "/etc/systemd/journald.conf",

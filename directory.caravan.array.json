@@ -1,0 +1,36 @@
+[
+
+{
+  "name": "Madrid Camper",
+  "type": "shop",
+  "web-site": "https://madridcamper.com/",
+  "address": "C/ Avenida de las nieves 21 C.P. 28935 Mostoles-Madrid",
+  "tel": "653 207 849"
+},
+
+{
+  "name": "bordón para rail toldos y avances furgonetas",
+  "lang": "es",
+  "description": "bordón para la confección de toldos, avances, lonas y poder fijarlas en los soportes de raíl",
+  "shop": "Madrid Camper",
+  "description": [
+    "Ø de la varilla flexible de 7.5mm y 2 cm de vuelo para coser",
+    "compatible con soporte de rail"
+  ],
+  "notes": ["se suministra por metros 1 unidad en el carro de compra equivale a 1m de bordón" ],
+  "price": "1,90€/metro"
+},
+
+{
+  "name": "bordón fino para raíl toldos y avances",
+  "lang": "es",
+  "shop": "Madrid Camper",
+  "description": [
+    "tubería de PVC Ø 5 mm (para Mercedes Marco Polo), de plástico blanco",
+    "aleta de 22 mm con refuerzo de tela para coser o pegarse a la tienda"
+  ],
+  "notes": [ "se suministra por metros" ],
+  "price": "4,15€/metro"
+}
+
+]
