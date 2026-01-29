@@ -1,4 +1,500 @@
 [
+
+  {
+    "region": "Madrid",
+    "area": "S.E.",
+    "town": "Chinchón",
+    "price": 150000,
+    "description": "piso 86m2 2 habs 1 ext sin ascensor garaje",
+    "notes": [
+      "terraza",
+      "1974"
+    ],
+    "vende": "Fincasa",
+    "web-site": "https://www.idealista.com/inmueble/108238551/"
+  },
+  {
+    "region": "Madrid",
+    "area": "S.E.",
+    "town": "Chinchón",
+    "price": 225000,
+    "description": "chalet 100m2 útiles 3 habs garaje",
+    "notes": [
+      "consumo E /eficiencia E",
+      "Chalet adosado en urbanización cerrada con zonas verdes",
+      "Calle Vallejuelo",
+      "2002",
+      "Calefacción individual: Gas natural"
+    ],
+    "vende": "GarSep Homes",
+    "web-site": "https://www.idealista.com/inmueble/109438609/"
+  },
+  {
+    "region": "Madrid",
+    "area": "S.E.",
+    "town": "Chinchón",
+    "price": 174000,
+    "description": "75m2 2habs 1ro sin ascensor garaje urb. trastero",
+    "notes": [
+      "2007",
+      "Calefacción individual: Gas natural"
+    ],
+    "vende": "Tecnocasa",
+    "web-site": "https://www.idealista.com/inmueble/110042917/"
+  },
+
+
+  {
+    "region": "Madrid",
+    "area": null,
+    "town": null,
+    "price": null,
+    "description": "m2 2 habs 1ro exterior sin/con ascensor",
+    "notes": [
+      "consumo/eficiencia"
+    ],
+    "vende": "",
+    "web-site": ""
+  },
+  {
+    "region": "Madrid",
+    "area": null,
+    "town": null,
+    "price": null,
+    "description": "m2 2 habs 1ro exterior sin/con ascensor",
+    "notes": [
+      "consumo/eficiencia"
+    ],
+    "vende": "",
+    "web-site": ""
+  },
+  {
+    "region": "Madrid",
+    "area": null,
+    "town": null,
+    "price": null,
+    "description": "m2 2 habs 1ro exterior sin/con ascensor",
+    "notes": [
+      "consumo/eficiencia"
+    ],
+    "vende": "",
+    "web-site": ""
+  },
+
+
+
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "El Espartal",
+    "price": 230000,
+    "description": "98 m2 construidos 2 habs 1 baño 1ra ext. con ascensor terraza 2008",
+    "notes": [
+      "Carretera de el Molar",
+      "2 plazas de garaje ",
+      "2 trasteros (uno de ellos un ático abuhardillado de 31 m2 útiles)",
+      "visitas de lunes a viernes a las 18.30h"
+    ],
+    "vende": "Alquiler Protegido-Real Estate",
+    "web-site": "https://www.idealista.com/inmueble/110038254/"
+  },
+
+  {
+    "region": "Madrid",
+    "area": null,
+    "town": "Algete",
+    "price": 240000,
+    "description": "90m2 3 habs 1ro exterior con ascensor terraza trastero consumo/eficiencia A",
+    "notes": [
+      "Calle Monte Albillo, 21"
+    ],
+    "vende": "particular",
+    "web-site": "https://www.idealista.com/inmueble/110231385/"
+  },
+
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "El Vellón",
+    "price": 215000,
+    "description": "115m2 3 habs 2 baños 2do interior [sin ascensor]",
+    "notes": [
+      "consumo/eficiencia F"
+    ],
+    "web-site": "https://www.yaencontre.com/venta/piso/inmueble-62048-110035493"
+  },
+
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "Torrelaguna",
+    "price": 239000,
+    "description": "107m2 3 habs 1ro exterior sin ascensor",
+    "notes": [
+      "Calle del Cardenal Cisneros",
+      "consumo/eficiencia E",
+      "edificio de 1900"
+    ],
+    "web-site": "https://www.idealista.com/inmueble/109781644/"
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "El Vellón",
+    "price": 179000,
+    "description": "61m2 2 habs bajo exterior sin ascensor",
+    "notes": [
+      "consumo/eficiencia G/F"
+    ],
+    "vende": "Atika Inversiones Inmobiliarias SL",
+    "web-site": "https://www.idealista.com/inmueble/109595499/"
+  },
+
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "El Vellón / El Molar / Torrelaguna",
+    "price": "135000",
+    "description": "52m2 1 hab 1ro exterior sin ascensor",
+    "notes": [
+      "consumo/eficiencia C",
+      "balcón",
+      "orientación sur",
+      "2009"
+    ],
+    "vende": "Héctor",
+    "web-site": "https://www.idealista.com/inmueble/109484645/"
+  },
+
+
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "Torrelaguna",
+    "price": 180000,
+    "description": "174m2 2 habs 2 baños 1ro exterior sin ascensor",
+    "notes": [
+      "para reformar",
+      "2001",
+      "consumo/eficiencia E",
+      "Calle de Bernaldo de Quirós"
+    ],
+    "vende": "",
+    "web-site": "https://www.idealista.com/inmueble/108909855/"
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "Torrelaguna",
+    "price": 250000,
+    "description": "chalet 151m2 5 habs 3 baños en parcela de 1.598m2",
+    "notes": [
+      "1976",
+      "armarios empotrados",
+      "consumo/eficiencia"
+    ],
+    "vende": "Insol Torrelaguna",
+    "web-site": "https://www.idealista.com/inmueble/109983899/"
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "El Vellón / El Molar / Torrelaguna",
+    "price": null,
+    "description": "55m2 3 habs 1 baño",
+    "notes": [
+      "patio privado de 30 m2 aproximadamente",
+      "dos plantas",
+      "consumo/eficiencia",
+      "Ventanas de aluminio con cristal normal. Suelos de plaqueta. Paredes con gotelé",
+      "La casa fue reformada en el 90, en la actualidad necesita ser reformada"
+    ],
+    "vende": "",
+    "web-site": ""
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "Torrelaguna",
+    "price": 186000,
+    "description": "110m2 4 habs 2 baños 2ndo exterior sin ascensor",
+    "notes": [
+      "consumo G / eficiencia E"
+    ],
+    "vende": "Atika",
+    "web-site": "https://www.idealista.com/inmueble/108272372/"
+  },
+
+
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "Torrelaguna",
+    "price": 140000,
+    "description": "55m2 2 habs bajo exterior sin ascensor",
+    "notes": [
+      "consumo/eficiencia",
+      "2006",
+      "rejas",
+      "armarios empotrados",
+      "anuncio actualizado hace más de un mes"
+    ],
+    "vende": "Alfa 3C: Alejandro",
+    "web-site": "https://www.idealista.com/inmueble/108892433/"
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "Talamanca de Jarama",
+    "price": 169900,
+    "description": "65m2 1 hab 1ro exterior sin ascensor garaje incluido",
+    "notes": [
+      "consumo F /eficiencia E",
+      "PLAZA DE GARAJE, PISCINA, TRASTERO y un PATIO privado",
+      "Armarios empotrados",
+      "2007",
+      "anuncio actualizado el 19 de enero"
+    ],
+    "vende": "TECNOCASA ALCALA BARRIO VENECIA",
+    "web-site": "https://www.idealista.com/inmueble/109625938/"
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "Torremocha de Jarama",
+    "price": 125000,
+    "description": "99m2 2 habs 1ro exterior sin ascensor",
+    "notes": [
+      "en Plaza Arquitecto Juan Blasco",
+      "línea 197, que llega hasta o sale de T. de J. 5 veces al día",
+      "5,2 km a Torrelaguna"
+    ]
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "Torrelaguna",
+    "price": 129000,
+    "description": "71m2 2habs 1ra ext. con ascensor garaje incluido",
+    "notes": [
+      "para inversores"
+    ],
+    "web-site": "https://www.idealista.com/inmueble/109690543/"
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "Torrelaguna",
+    "price": null,
+    "description": "84m2 2habs bajo ext. sin ascensor",
+    "notes": [
+      "Calle de la Cabeza",
+      "Tecnocasa"
+    ],
+    "web-site": "https://www.idealista.com/inmueble/109974966/"
+  },
+
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "La Cabrera",
+    "price": 130000,
+    "description": "85m2 piso 2 habs bajo ext. sin ascensor",
+    "notes": [
+      "C/ de la Zarza",
+      "2007"
+    ],
+    "web-site": "https://www.idealista.com/inmueble/105637080/"
+  },
+
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "Lozoyuela",
+    "price": 119900,
+    "description": "piso 1ra planta 1 dormitorio sin ascensor",
+    "notes": [
+      "C/ Virgen de la Soledad 35"
+    ],
+    "web-site": "https://www.idealista.com/inmueble/110220457/"
+  },
+
+  {
+    "region": "Almería",
+    "area": "Níjar",
+    "town": "Campohermoso",
+    "price": 85000,
+    "description": "piso 120m2 3 dormitorio 2 baños bajo",
+    "notes": [
+      "certificado energético: E"
+    ],
+    "web-site": "https://www.milanuncios.com/venta-de-pisos-en-villacarrillo-jaen/cerca-del-paseo-c-cadiz-494581699.htm"
+  },
+  {
+    "region": "Jaén",
+    "area": null,
+    "town": "Villacarrillo",
+    "price": 64000,
+    "description": "piso 120m2 5 dormitorio 2 baños 2nd planta",
+    "notes": [
+      "certificado energético: B"
+    ],
+    "web-site": "https://www.milanuncios.com/venta-de-pisos-en-villacarrillo-jaen/cerca-del-paseo-c-cadiz-494581699.htm"
+  },
+  {
+    "region": "León",
+    "area": null,
+    "town": "Villablino",
+    "price": 39500,
+    "description": "piso 61m2 1 dormitorio 1 baño entreplanta",
+    "notes": [
+      "certificado energético: F"
+    ],
+    "web-site": "https://www.milanuncios.com/venta-de-pisos-en-villablino-leon/la-plaza-c-la-pandietsa-567612051.htm"
+  },
+  {
+    "region": "Asturias",
+    "area": null,
+    "town": "Bravial",
+    "price": 79700,
+    "description": "piso 78m2 2 dormitorios 1 baño 1ra planta con ascensor",
+    "notes": [
+      "certificado energético: D",
+      "dos trasteros",
+      "calefacción y agua caliente de gasoil"
+    ],
+    "web-site": "https://www.milanuncios.com/venta-de-pisos-en-bravial-asturias/el-bravial-smra-av-de-la-libertad-538298756.htm"
+  },
+  {
+    "region": "Badajoz",
+    "area": null,
+    "town": "Calera de la Hermita",
+    "price": 60000,
+    "description": "piso 101m2 3 dormitorios 1 baño 2nda planta",
+    "notes": [
+      "certificado energético: E"
+    ],
+    "web-site": "https://www.milanuncios.com/venta-de-pisos-en-calera-de-leon-badajoz/la-ermita-566617005.htm"
+  },
+  {
+    "region": "La Rioja",
+    "area": null,
+    "town": "Autol",
+    "price": 115000,
+    "description": "piso 95m2 3 dormitorios 2 baños 2nda planta sin ascensor",
+    "notes": [
+      "certificado energético: E",
+      "calefacción eléctrica",
+      "calle Manzanera"
+    ],
+    "web-site": "https://www.milanuncios.com/venta-de-pisos-en-autol-la_rioja/manzanera-c-manzanera-436883202.htm"
+  },
+  {
+    "region": "Asturias",
+    "area": null,
+    "town": "Moreda de Ayer",
+    "price": 23000,
+    "description": "piso 50m2 2 dormitorios 1 baño bajo",
+    "notes": [
+      "para reformar",
+      "tu segunda vivienda, o inversión"
+    ],
+    "web-site": "https://www.milanuncios.com/venta-de-pisos-en-casanueva-(moreda)-asturias/asturias-moreda-de-aller-av-tart-524968674.htm"
+  },
+  {
+    "region": "Jaén",
+    "area": "Campiña de Jaén",
+    "town": "Arjonilla",
+    "price": 55000,
+    "description": "piso 109m2 4 dormitorios 1 baño 2nda planta",
+    "notes": [
+      "Certificado energético F",
+      "en Avda de Andalucía"
+    ],
+    "web-site": "https://www.milanuncios.com/venta-de-pisos-en-arjonilla-jaen/centro-523701345.htm"
+  },
+  {
+    "region": "Badajoz",
+    "area": null,
+    "town": "Puebla de la Calzada",
+    "price": 85000,
+    "description": "piso 100m2 2 dormitorios 1 baño 1ra planta",
+    "notes": [
+      "Terraza",
+      "Amueblado",
+      "Trastero"
+    ],
+    "web-site": "https://www.milanuncios.com/venta-de-pisos-en-puebla-de-la-calzada-badajoz/calzada-romana-576464354.htm"
+  },
+  {
+    "region": "Ávila",
+    "area": "Valle del Alberche",
+    "town": "El Barraco",
+    "price": 65000,
+    "description": "piso 100m2 3 dormitorios 2 baños 1ra planta",
+    "notes": [
+    ],
+    "web-site": "https://www.milanuncios.com/venta-de-pisos-en-el-barraco-avila/el-barraco-542451436.htm"
+  },
+  {
+    "region": "Alicante",
+    "area": "Medio Vinalopó",
+    "town": "Elda",
+    "price": 150000,
+    "description": "piso 90m2 3 dormitorios 2 baños planta baja",
+    "notes": [
+    ],
+    "web-site": "https://www.milanuncios.com/venta-de-pisos-en-elda-alicante/ronda-576467298.htm"
+  },
+  {
+    "region": "Alicante",
+    "area": null,
+    "town": "Crevillent/Crevillente",
+    "price": 60000,
+    "description": "piso 92m2 3 dormitorios 1 baño 3ra planta",
+    "notes": [
+    ],
+    "web-site": "https://www.milanuncios.com/venta-de-pisos-en-crevillent|crevillente-alicante/boquera-calvario-576467496.htm"
+  },
+  {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "El Vellón",
+    "price": 145000,
+    "description": "piso 55m2 en calle de San Blas, 21",
+    "notes": [
+      "Tiene 2 balcones uno en el salon y otro en la habitacion que esta cerrado con ventanas para darle mayor amplitud",
+      "Salon",
+      "Cocina amueblada",
+      "Baño completo",
+      "Habitacion grande con armario empotrado",
+      "Aire acondicionado y bomba de calor",
+      "Perfecto para entrar a vivir",
+      "Zona tranquila, sin problemas de aparcamiento",
+      "SOLO TIENE 1 HABITACION!",
+      "PRECIO NO NEGOCIABLE!",
+      "NO AGENCIAS!",
+      "Planta 1ª exterior Sin ascensor",
+      "Gastos de comunidad 10 €/mes"
+    ],
+    "web-site": "https://www.idealista.com/inmueble/105021510/"
+  },
+
+
+    {
+    "region": "Madrid",
+    "area": "Sierra Norte",
+    "town": "Torrelaguna",
+    "price": 140,
+    "built": 2006,
+    "description": "piso 61m2 construidos bajo",
+    "reference": "Ref: 1530/2710. SERVICIOS INMOBILIARIOS ALFA 3C",
+    "notes": [
+      "Publicado el 01/10/2025 a las 18:27"
+    ],
+    "web-site": "https://www.milanuncios.com/venta-de-pisos-en-torrelaguna-madrid/torrelaguna-560552956.htm"
+  },
+
   {
     "region": "Madrid",
     "area": "Sierra Norte",
@@ -83,29 +579,7 @@
     "tel": "puedes contactar con el anunciante por chat (no ha facilitado teléfono)",
     "web-site": "https://www.idealista.com/inmueble/109484645/"
   },
-  {
-    "region": "Madrid",
-    "area": "Sierra Norte",
-    "town": "El Vellón",
-    "price": 145000,
-    "description": "piso 55m2 en calle de San Blas, 21",
-    "notes": [
-      "Tiene 2 balcones uno en el salon y otro en la habitacion que esta cerrado con ventanas para darle mayor amplitud",
-      "Salon",
-      "Cocina amueblada",
-      "Baño completo",
-      "Habitacion grande con armario empotrado",
-      "Aire acondicionado y bomba de calor",
-      "Perfecto para entrar a vivir",
-      "Zona tranquila, sin problemas de aparcamiento",
-      "SOLO TIENE 1 HABITACION!",
-      "PRECIO NO NEGOCIABLE!",
-      "NO AGENCIAS!",
-      "Planta 1ª exterior Sin ascensor",
-      "Gastos de comunidad 10 €/mes"
-    ],
-    "web-site": "https://www.idealista.com/inmueble/105021510/"
-  },
+
   {
     "region": "Madrid",
     "area": "Sierra Norte",

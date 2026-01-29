@@ -1,6 +1,16 @@
 [
 
 {
+  "name": "Código en C++",
+  "web-site": "https://github.com/proyecto-eden-3-esferas/Cpp"
+},
+
+{
+  "name": "Enlaces de pisos para Francisco de Carlos",
+  "web-site": "https://docs.google.com/spreadsheets/d/1Axo0_2GzGBoSqQhaXyiQmATlBQ7MaYwOcJcprBfvhl8/edit?gid=0#gid=0"
+},
+
+{
   "name":  "Mad Rural Lab",
   "description": [
     "Un centro Madrid Rural Lab es un espacio abierto de innovación y experimentación, donde se trabaja la cultura Maker y donde las personas y empresas del entorno rural tendrán a su disposición una serie de actividades, tecnologías y recursos que les permitan emprender.",

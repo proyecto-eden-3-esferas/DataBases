@@ -1,6 +1,13 @@
 [
 
 {
+  "name": "Make Oil Painting Medium",
+  "lang": "en",
+  "type": "instructions",
+  "contents": "Make a basic, versatile oil painting medium by mixing 2 parts distilled turpentine (or odorless mineral spirits) with 1 part refined linseed oil. This ratio creates a \"lean\" mixture ideal for early layers, improving flow and thinning paint. Mix in a small glass jar with a tight-fitting lid, allowing it to rest for a few hours before use"
+},
+
+{
   "term": "sustainable",
   "lang": "en",
   "author": "the United Nations",
