@@ -1,6 +1,12 @@
 [
 
 {
+  "term": "signal",
+  "field": "electronics",
+  "definition": "a time varying magnitude containing some type of information",
+},
+
+{
   "name": "BiCMOS",
   "lang": "en",
   "description": null
@@ -94,6 +100,22 @@
   "notes": [],
   "description": null
 },
+
+
+{
+  "term": "threshold voltage (of the n-channel MOSFET)",
+  "lang": "en",
+  "symbol": "V_{TN}",
+  "definition": "the applied gate voltage needed to create an inversion charge",
+  "notes": [
+  "the density in the inversion layer is equal to the concentration of majority carriers in the semiconductor substrate",
+  "in simple terms, we can think of the threshold voltage as the gate voltage required to \"turn on\" the transistor",
+  "for the n-channel enhancement-mode MOSFET, the threshold voltage is positive because a positive gate voltage is required to create the inversion charge"
+  ]
+
+},
+
+
 
 {
   "term": "band diagram",

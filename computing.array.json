@@ -26,6 +26,16 @@
 },
 
 {
+  "term": "whitespace",
+  "lang": "en",
+  "definition": "characters which are used to provide horizontal or vertical space between other characters",
+  "notes": [
+    "often used to separate tokens in HTML, CSS, JavaScript and other computer languages",
+    "largely meaningless"
+  ]
+},
+
+{
   "name": "Round Robin Scheduling",
   "lang": "en",
   "field": "computing",

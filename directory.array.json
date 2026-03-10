@@ -1,6 +1,22 @@
 [
 
 {
+  "name": "qBitTorrent *.torrent Folder",
+  "field": "computing",
+  "directory": "~/.local/share/qBittorrent/BT_backup/"
+},
+
+{
+  "name": "reset oil change light on a Ford Transit",
+  "steps": [
+    "turn the ignition on (engine off)",
+    "press and hold the accelerator and brake pedals simultaneously for 20-25 seconds until the display show...",
+    "release pedals",
+    "turn ignition off"
+  ]
+},
+
+{
   "name": "Código en C++",
   "web-site": "https://github.com/proyecto-eden-3-esferas/Cpp"
 },
@@ -144,55 +160,6 @@
   "web-site": "https://www.mascohotel.com/",
   "hours": "10:30-13:00 18:00-20:00",
   "tels": ["646 77 16 58", "630 69 01 44"]
-},
-{
-  "site": "https://www.idealista.com/",
-  "type": null,
-  "user": "franciscofvh@hotmail.com",
-  "password": "f2F7-v2H8"
-},
-{
-  "name": "reset oil change light on a Ford Transit",
-  "steps": [
-    "turn the ignition on (engine off)",
-    "press and hold the accelerator and brake pedals simultaneously for 20-25 seconds until the display show...",
-    "release pedals",
-    "turn ignition off"
-  ]
-},
-{
-  "name": "Ilok",
-  "email": "betweendimensions88@gmail.com",
-  "username": "betweendimensions",
-  "password": "Pepe1973"
-},
-{
-  "name": "NI - Native Instruments",
-  "email": "betweendimensions88@gmail.com",
-  "username": null,
-  "password": "Pepe1973"
-},
-{
-  "name": "Waves",
-  "email": null,
-  "username": "David Alonso",
-  "password": "pepe1973"
-},
-{
-  "name": "LANOR/LANDOR",
-  "email": "betweendimensions88@gmail.com",
-  "password": "Pepe1973"
-},
-{
-  "name": "Izotope",
-  "email": "betweendimensions88@gmail.com",
-  "password": "pepe1973"
-},
-{
-  "name": "Sound Cloud",
-  "email": "under8dimension@gmail.com",
-  "password": "pepe1973",
-  "notes": ["Mixcloud"]
 },
 
 {

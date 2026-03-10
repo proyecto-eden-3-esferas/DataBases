@@ -1,4 +1,110 @@
 [
+  {
+    "region": "Madrid",
+    "area": "O. de la A-1",
+    "town": "Miraflores",
+    "price": 163000,
+    "description": "76m2 2 habs 1ro exterior sin ascensor",
+    "notes": [
+      "Dúplex en venta en Calle de la Fuente, 30",
+      "armarios empotrados"
+    ],
+    "vende": "Emma (particular)",
+    "web-site": "https://www.idealista.com/inmueble/88526406/"
+  },
+  {
+    "region": "Madrid",
+    "area": "O. de la A-1",
+    "town": "Miraflores",
+    "price": 165000,
+    "description": "53m2 1 habs 1ro exterior sin/con ascensor",
+    "notes": [
+      "obra nueva",
+      "Calle Altozano, 7",
+      "consumo B /eficiencia B"
+    ],
+    "vende": "RAYAN CONSULTING INMOBILIARIO",
+    "web-site": "https://www.idealista.com/inmueble/110132564/"
+  },
+  {
+    "region": "Madrid",
+    "area": "O. de la A-1",
+    "town": "Miraflores",
+    "price": 186000,
+    "description": "78m2 construidos 2 habs 1ro exterior sin ascensor",
+    "notes": [
+      "armarios empotrados",
+      "Calf. propano bombonas",
+      "Ventanas madera con climalit",
+      "En el pueblo. Cerca de todos los servicios"
+    ],
+    "vende": "Pilar: 919 38 70 17",
+    "web-site": "https://www.idealista.com/inmueble/109368955/"
+  },
+  {
+    "region": "Madrid",
+    "area": "O. de la A-1",
+    "town": "Miraflores",
+    "price": 175000,
+    "description": "57m2 construidos + almacén 57m2 2 habs dos plantas",
+    "notes": [
+      "armarios empotrados",
+      "Calf. propano bombonas",
+      "En el pueblo. Cerca de todos los servicios"
+    ],
+    "vende": "Pilar: 919 38 70 17",
+    "web-site": "https://www.idealista.com/inmueble/109368955/"
+  },
+
+
+  {
+    "region": "Madrid",
+    "area": "O. de la A-1",
+    "town": "Bustarviejo",
+    "price": 140000,
+    "description": "45m2 1 hab 1ro exterior sin ascensor garaje",
+    "notes": [
+      "Un dormitorio con armario empotrado con baño incorporado",
+      "Concepto abierto de cocina y salón",
+      "trastero",
+      "2004",
+      "consumo/eficiencia",
+      "Calefacción central: Gasoil"
+
+    ],
+    "vende": "Manuela Díaz (profesional): 919382970",
+    "web-site": "https://www.idealista.com/inmueble/107770170/"
+  },
+  {
+    "region": "Madrid",
+    "area": "O. de la A-1",
+    "town": "Bustarviejo",
+    "price": null,
+    "description": "m2 2 habs 1ro exterior sin/con ascensor",
+    "notes": [
+      "consumo/eficiencia"
+    ],
+    "vende": "",
+    "web-site": ""
+  },
+  {
+    "region": "Madrid",
+    "area": "O. de la A-1",
+    "town": "Bustarviejo",
+    "price": null,
+    "description": "m2 2 habs 1ro exterior sin/con ascensor",
+    "notes": [
+      "consumo/eficiencia"
+    ],
+    "vende": "",
+    "web-site": ""
+  },
+
+
+
+
+
+
 
   {
     "region": "Madrid",
@@ -44,18 +150,7 @@
   },
 
 
-  {
-    "region": "Madrid",
-    "area": null,
-    "town": null,
-    "price": null,
-    "description": "m2 2 habs 1ro exterior sin/con ascensor",
-    "notes": [
-      "consumo/eficiencia"
-    ],
-    "vende": "",
-    "web-site": ""
-  },
+
   {
     "region": "Madrid",
     "area": null,
