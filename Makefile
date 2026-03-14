@@ -20,5 +20,9 @@ bring_stylesheets_from_github_pages:
 bring_github_js_write_blob:
 	cp --update $(GITHUB_JS_WRITE_BLOB) ./js.write.blob.html
 
+ORGANIZER_FILES = directory.*json alquiler.*json comprar-vivienda.json
+save_organizer_to_dropbox:
+	cp --update $(ORGANIZER_FILES)  $(DROPBOX_SUBDIR)organizer/
+
 save_to_dropbox:
-	cp --update $(HTML_TO_SAVE) *.json *.js Makefile *.md *.txt style*.css $(DROPBOX_SUBDIR)
+	cp --update $(HTML_TO_SAVE) *.json *.js Makefile *.md *.txt style*.css *.sh $(DROPBOX_SUBDIR)

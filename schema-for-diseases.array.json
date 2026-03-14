@@ -1,9 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "array",
+  "uniqueItems": true,
   "items": {
     "type": "object",
-    "properties": {
+    "patternProperties": {
       "name":        {"type": "string"},
       "synonyms":    {"type":  ["string", "array"], "items": {"type": "string"}},
       "description": {"type": "string"},
@@ -33,6 +34,9 @@
                         }
                       }
                      }
-    }
+    },
+    "required": ["name", "description"],
+    "minProperties": 2,
+    "additionalProperties": {"type": ["string", "array"], "items": {"type": ["string", "object"]}}
   }
 }
