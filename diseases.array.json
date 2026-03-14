@@ -1,0 +1,99 @@
+[
+  {
+    "name": "glaucoma",
+    "description": "group of eye diseases that damage the optic nerve, often due to high eye pressure",
+    "infectious": false,
+    "causes": ["fluid (aqueous humor) fails to drain properly"],
+    "risk-factors": [
+      "age (over 60)",
+      "diabetes",
+      "family history",
+      "African American or Hispanic ethnicity"
+    ],
+    "symptoms": [],
+    "cure": []
+  },
+
+  {
+    "name": "mononucleosis",
+    "synonyms": ["mono", "glandular fever", "\"kissing disease\""],
+    "description": "a contagious infection typically caused by the Epstein-Barr virus (EBV)",
+    "infectious": true,
+    "agent": "virus",
+    "causes": "Epstein-Barr virus (EBV)",
+    "symptoms": ["fatigue, fever", "sore throat", "swollen lymph nodes"],
+    "transmission": [
+      "through saliva"
+    ],
+    "cure": "no specific cure; focused on relieving symptoms with rest, fluids, and over-the-counter pain relievers"
+  },
+
+
+  {
+    "name": "arteriosclerosis",
+    "description": "the hardening and stiffening of the arteries",
+    "infectious": false,
+    "types": [
+      {"name": "atherosclerosis",
+       "description": "the most common type, where fatty deposits called plaque build up inside larger arteries, eventually blocking blood flow",
+       "causes": ["This process begins when fats, like lipid (LDL cholesterol), build up in the artery walls, attracting inflammatory cells that damage the artery. Over time, this damage allows more plaque to accumulate."],
+       "prognosis": "can lead to complications like heart attack, stroke, aneurysm, congestive heart failure, and cardiac arrest"
+      },
+      {"name": "arteriolosclerosis",
+       "description": "affects the small arteries, or arterioles, which thicken, often due to conditions like hypertension and diabetes; these smaller blood vessels help manage your blood pressure and carry blood to organs like the kidneys",
+       "prognosis": "when arterioles fail, organs may not receive adequate blood flow, leading to potential health complications"
+      },
+      {"name": "medial arterial calcification",
+       "synonyms": "Mönckeberg medial calcified sclerosis",
+       "correlations": "often associated with kidney failure and hemodialysis",
+       "description": "calcium builds up in the middle layer of artery walls, making them hard",
+       "prognosis": "it can lead to problems with blood flow and heart health"}
+    ],
+    "where-types": [
+      {"name": "coronary artery disease", "description": "hardening occurs in the coronary arteries, which supply blood to the heart"},
+      {"name": "peripheral artery disease", "description": "hardening affects the arteries in the limbs or pelvis, usually leading to issues with blood flow in the legs"},
+      {"name": "carotid artery disease", "description": "hardening occurs in the carotid arteries, which carry blood to the brain and can increase stroke risk"},
+      {"name": "aortic aneurysm", "description": "hardening occurs in the aorta, the large artery that runs from the heart down to the pelvis, and can lead to weakening or bulging of the vessel"}
+    ],
+    "causes": [
+      "the buildup of fatty, lipid-rich deposits, (plaque) along the artery walls",
+      ""
+    ],
+    "risk-factors": ["age", "family history", "high blood pressure", "high cholesterol", "high triglycerides", "tobacco use", "metabolic issues (obesity, insulin resistance, diabetes)", "inflammation (including certain rheumatological disorders)"],
+    "symptoms": ["foot pain", "leg pain", "chest pain", "racing or pounding heart (heart palpitations)", "fatigue", "dizziness", "shortness of breath", "weakness", "one-sided vision loss", "vision problems"],
+    "prognosis": [
+      "over time, these plaques can become fibrotic and calcified, further contributing to arterial stiffness",
+      "this hardening of the arteries can restrict blood flow and cause other problems, such as heart disease",
+      "complications of arteriosclerosis are often serious, even deadly: heart attack, stroke, kidney failure, amputation, and pulmonary embolism"
+    ],
+    "prevention": "Most arteriosclerosis risk factors can be controlled through lifestyle choices.\nAn active lifestyle and healthy diet can keep you in good shape and lower your likelihood of heart attack, stroke, obesity, type 2 diabetes, high blood pressure, and high blood lipids. Giving up tobacco and limiting alcohol consumption can also lower your risk of arteriosclerosis.\nUnfortunately, some risk factors—age and family history, for instance—are out of your control. However, if you have risk factors like a family history of the condition, it can be a red flag for arteriosclerosis and a sign that you should get checked, even if you don’t have symptoms.",
+    "diagnosis": [
+      {"name": "exercise stress tests",
+       "discussion": "exercise on a treadmill or on a stationary bicycle can identify the presence of low blood flow in the heart in many patients, indicating a potential blockage"
+      },
+      {"name": "nuclear scans",
+       "discussion": "nuclear scans—like radionuclide angiography and myocardial perfusion—can measure the rate at which your heart moves blood and identify parts of your heart that don't get enough blood, which can be signs that your arteries aren't working as they should"
+      },
+      {"name": "imaging",
+       "discussion": "X-rays and CT scans can show blockages or coronary or artery calcification"
+      },
+      {"name": "blood pressure differential",
+       "discussion": "if blood pressure in your arms and legs is noticeably different, it may be a sign of blocked arteries"
+      },
+      {"name": "cardiac catheterization",
+       "discussion": "in some cases, testing may lead to cardiac catheterization, a procedure in which the doctor uses a thin tube inserted into your blood vessels to inject a dye that helps the X-ray better detect and potentially treat blockages in the same procedure"
+      }
+    ],
+    "cure": [
+      {"name": "lifestyle changes",
+       "discussion": "giving up tobacco, eating a heart-healthy diet, and getting more exercise can help by lowering your blood pressure, improving your blood glucose levels, and lowering cholesterol"
+      },
+      {"name": "medication",
+       "discussion": "you may treat your arteriosclerosis with medications that help improve your blood flow (such as blood pressure drugs and blood thinners) or reduce the likelihood of plaque build-up (like anti-platelet and cholesterol-lowering meds)"
+      },
+      {"name": "surgery",
+       "discussion": "in severe cases, treatment may include percutaneous interventions, such as angioplasty or stenting, or, in some instances, surgery. For more complex cases, bypass surgery may be recommended. This involves using a healthy blood vessel from another part of the body to create a new path for blood to flow around the blockage. Depending on the location of the blockage, this may be done as coronary artery bypass surgery or peripheral artery bypass surgery"
+      }
+    ]
+  }
+]

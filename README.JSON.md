@@ -37,7 +37,11 @@ Finally, you could load all my JSON files into one single database.
 
 ## Schemata
 
-No schema-enforcement has been implemented as yet. (Go on reading, though.)
+Schema-enforcement is being implemented for arrays of diseases (file *diseases.array.json*).
+I am using utility `jsonschema`, like this:
+```
+jsonschema  validate schema-for-diseases.array.json diseases.array.json
+```
 
 ### Schema-Defining Files
 

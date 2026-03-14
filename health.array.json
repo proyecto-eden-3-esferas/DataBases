@@ -54,14 +54,24 @@
     ]
   },
 
+
   {
-    "term": null,
+    "term": "angioplasty",
     "language": "en",
     "field": "health",
-    "subfield": null,
-    "definition": null,
-    "examples": [],
-    "notes": []
+    "subfield": "surgery",
+    "discussion": "a procedure that widens the blood vessel to improve blood flow, and a stent (a small tube) may be placed",
+    "aims": ["keep the artery open"]
+  },
+
+  {
+    "term": "histerectomy",
+    "language": "en",
+    "field": "health",
+    "subfield": "surgery",
+    "definition": "a surgical procedure to remove a woman's uterus (womb), often including the cervix, ovaries, and fallopian tubes",
+    "aims": ["to treat conditions like heavy bleeding, fibroids, pain, or cancer"],
+    "side-effect": ["menstruation ceases", "pregnancy is not possible"]
   },
   {
     "term": null,
@@ -73,11 +83,11 @@
     "notes": []
   },
   {
-    "term": null,
+    "term": "zoonotic",
     "language": "en",
     "field": "health",
-    "subfield": null,
-    "definition": null,
+    "subfield": "pathology",
+    "definition": "a group of bacterial diseases that are transmitted to humans by contact with infected vertebrate animals",
     "examples": [],
     "notes": []
   },

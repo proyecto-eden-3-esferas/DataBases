@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name":        {"type": "string"},
+      "synonyms":    {"type":  ["string", "array"], "items": {"type": "string"}},
+      "description": {"type": "string"},
+      "correlations":{"type": ["string", "array"], "items": {"type": "string"}},
+      "types":       {"type": "array",
+                      "items": {
+                                 "type": "object",
+                                 "properties": {
+                                                 "name":        {"type": "string"},
+                                                 "description": {"type": "string"}
+                                               }
+                               }
+                     },
+      "transmission":{"type": ["string", "array"], "items": {"type": "string"}},
+      "infectious":  {"type": "boolean"},
+      "agent":       {"type": "string", "enum": ["bacteria", "virus", "fungi", "protozoa", "worm"]},
+      "causes":      {"type": ["string", "array"], "items": {"type": "string"}},
+      "risk-factors":{"type": ["string", "array"], "items": {"type": "string"}},
+      "symptoms":    {"type": ["string", "array"], "items": {"type": "string"}},
+      "cure":        {"type": ["string", "array"],
+                      "items": {
+                        "type": ["string", "object"],
+                        "properties" : {
+                          "name":        {"type": "string"},
+                          "description": {"type": "string"},
+                          "discussion":  {"type": "string"}
+                        }
+                      }
+                     }
+    }
+  }
+}

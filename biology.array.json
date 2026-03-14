@@ -123,6 +123,16 @@
   ]
 },
 {
+  "term": "yeast",
+  "lang": "en",
+  "description": "made up of simple fungi cells, 3 to 5 μm (0.0001 to 0.0002 inch) in diameter"
+},
+{
+  "term": "mold",
+  "lang": "en",
+  "description": "consists of filamentous branching structures (called hyphae), 2 to 10 μm in diameter, that are formed of several fungi cells lying end to end"
+},
+{
   "term": "hyphae",
   "lang": "en",
   "description": "cylindrical, thread-like structures 2–10 μm in diameter and up to several centimeters in length",
