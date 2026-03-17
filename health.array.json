@@ -92,11 +92,39 @@
     "notes": []
   },
   {
-    "term": null,
+    "term": "bile",
+    "language": "en",
+    "field": "health",
+    "subfield": "physiology",
+    "type": "bodily fluid",
+    "definition": "an alkaline fluid containing cholesterol and bile acids",
+    "functions": ["emulsifies and aids the breakdown of dietary fat"]
+  },
+  {
+    "term": "hepatic artery",
+    "language": "en",
+    "type": "duct",
+    "field": "health",
+    "subfield": "anatomy",
+    "function": "carry oxygen-rich blood from the aorta via the celiac trunk (to the liver)",
+    "definition": null
+  },
+  {
+    "term": "portal vein",
+    "language": "en",
+    "field": "health",
+    "subfield": "anatomy",
+    "definition": null,
+    "functions": ["carry blood rich in digested nutrients from the entire gastrointestinal tract and also from the spleen and pancreas"],
+    "notes": []
+  },
+  {
+    "term": "hepatic lobule",
     "language": "en",
     "field": "health",
     "subfield": null,
-    "definition": null,
+    "definition": "the functional units of the liver",
+    "description": "Each lobule is made up of millions of hepatocytes, which are the basic metabolic cells. The lobules are held together by a fine, dense, irregular, fibroelastic connective tissue layer extending from the fibrous capsule covering the entire liver known as Glisson's capsule after British doctor Francis Glisson.[4] This tissue extends into the structure of the liver by accompanying the blood vessels, ducts, and nerves at the hepatic hilum. The whole surface of the liver, except for the bare area, is covered in a serous coat derived from the peritoneum, and this firmly adheres to the inner Glisson's capsule.",
     "examples": [],
     "notes": []
   },

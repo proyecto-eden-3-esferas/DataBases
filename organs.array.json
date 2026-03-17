@@ -1,0 +1,36 @@
+[
+  {
+    "name": "liver",
+    "prefix": "hepat",
+    "description": "a dark reddish brown, wedge-shaped organ with two lobes of unequal size and shape; a major metabolic organ exclusively found in vertebrates, which performs many essential biological functions",
+    "location": [
+      "in the right upper quadrant of the abdomen",
+      "below the diaphragm",
+      "mostly shielded by the lower right rib cage"
+    ],
+    "functions": [
+      "detoxification of the organism",
+      "synthesis of various proteins and various other biochemicals necessary for digestion (e.g. bile) and growth",
+      "carbohydrate metabolism",
+      "the production of a number of hormones",
+      "conversion and storage of nutrients such as glucose and glycogen",
+      "decomposition of red blood cells"
+    ],
+    "weight-in-gr": [600, 1860],
+    "parts": ["hepatic lobules"],
+    "arteries": "hepatic artery",
+    "veins":    "portal vein",
+    "anatomy": "made up of hepatic lobules",
+    "notes": [
+      "estimates regarding the organ's total number of functions vary, but is generally cited as being around 500; for this reason, the liver has sometimes been described as the body's \"chemical factory\""
+    ]
+  },
+
+  {
+    "name": "gallbladder",
+    "description": ", a small hollow pouch",
+    "location": ["just under the right lobe of liver"],
+    "functions": ["stores and concentrates the bile produced by the liver"],
+    "notes": [ "bile is later excreted to the duodenum" ]
+  }
+]

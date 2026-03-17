@@ -4,20 +4,11 @@
   "uniqueItems": true,
   "items": {
     "type": "object",
-    "patternProperties": {
+    "properties": {
       "name":        {"type": "string"},
       "synonyms":    {"type":  ["string", "array"], "items": {"type": "string"}},
       "description": {"type": "string"},
       "correlations":{"type": ["string", "array"], "items": {"type": "string"}},
-      "types":       {"type": "array",
-                      "items": {
-                                 "type": "object",
-                                 "properties": {
-                                                 "name":        {"type": "string"},
-                                                 "description": {"type": "string"}
-                                               }
-                               }
-                     },
       "transmission":{"type": ["string", "array"], "items": {"type": "string"}},
       "infectious":  {"type": "boolean"},
       "agent":       {"type": "string", "enum": ["bacteria", "virus", "fungi", "protozoa", "worm"]},
@@ -33,6 +24,17 @@
                           "discussion":  {"type": "string"}
                         }
                       }
+                     }
+    },
+    "patternProperties": {
+      "types":       {"type": "array",
+                      "items": {
+                                 "type": "object",
+                                 "properties": {
+                                                 "name":        {"type": "string"},
+                                                 "description": {"type": "string"}
+                                               }
+                               }
                      }
     },
     "required": ["name", "description"],

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "properties": {
+      "name":        {"type": "string"},
+      "synonyms":    {"type":  ["string", "array"], "items": {"type": "string"}},
+      "prefix":      {"type":  ["string", "array"], "items": {"type": "string"}},
+      "description": {"type": "string"},
+      "location":    {"type":  ["string", "array"], "items": {"type": "string"}},
+      "parts":       {"type":  ["string", "array"], "items": {"type": "string"}},
+      "tissues":     {
+                      "type": "array",
+                      "items": {"type": "object",
+                                "properties": {
+                                  "name": {"type": "string"},
+                                  "order-outwards": {"type": "integer"},
+                                  "percent": { "type": "number",
+                                                "minimum": 0.0,
+                                                "maximum": 100.0
+                                              }
+                                }
+                               }
+                     },
+      "notes":    {"type":  ["string", "array"], "items": {"type": "string"}}
+    },
+    "patternProperties": {
+      "function":    {"type": "array", "minItems": 1},
+      "weight":      {"type":  ["number", "array"], "items": {"type": "number"}},
+      "types":       {"type": "array",
+                      "items": {
+                                 "type": "object",
+                                 "properties": {
+                                                 "name":        {"type": "string"},
+                                                 "description": {"type": "string"}
+                                               }
+                               }
+                     }
+    },
+    "required": ["name", "description"],
+    "minProperties": 2,
+    "additionalProperties": {"type": ["string", "array"], "items": {"type": ["string", "object"]}}
+  }
+}
