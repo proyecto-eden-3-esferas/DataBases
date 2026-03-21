@@ -10,7 +10,8 @@
       "prefix":      {"type":  ["string", "array"], "items": {"type": "string"}},
       "description": {"type": "string"},
       "location":    {"type":  ["string", "array"], "items": {"type": "string"}},
-      "parts":       {"type":  ["string", "array"], "items": {"type": "string"}},
+      "parts":       {"type":  ["string", "array"], "items": {"type": ["string", "object"]}},
+      "secretes":    {"type":  ["string", "array"], "items": {"type": ["string", "object"]}},
       "tissues":     {
                       "type": "array",
                       "items": {"type": "object",
@@ -27,7 +28,16 @@
       "notes":    {"type":  ["string", "array"], "items": {"type": "string"}}
     },
     "patternProperties": {
-      "function":    {"type": "array", "minItems": 1},
+      "function":    {"type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": ["string", "object"],
+                        "properties": {
+                          "name": {"type": "string"},
+                          "description": {"type": "string"}
+                        }
+                      }
+                     },
       "weight":      {"type":  ["number", "array"], "items": {"type": "number"}},
       "types":       {"type": "array",
                       "items": {

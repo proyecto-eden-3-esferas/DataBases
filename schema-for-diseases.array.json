@@ -7,6 +7,7 @@
     "properties": {
       "name":        {"type": "string"},
       "synonyms":    {"type":  ["string", "array"], "items": {"type": "string"}},
+      "definition":  {"type": "string"},
       "description": {"type": "string"},
       "correlations":{"type": ["string", "array"], "items": {"type": "string"}},
       "transmission":{"type": ["string", "array"], "items": {"type": "string"}},
@@ -37,7 +38,10 @@
                                }
                      }
     },
-    "required": ["name", "description"],
+    "anyOf": [
+      {"required": ["name", "definition" ]},
+      {"required": ["name", "description"]}
+    ],
     "minProperties": 2,
     "additionalProperties": {"type": ["string", "array"], "items": {"type": ["string", "object"]}}
   }

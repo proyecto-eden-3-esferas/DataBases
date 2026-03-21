@@ -1,5 +1,10 @@
 [
   {
+    "name": "cystic fibrosis",
+    "definition": "a genetic disorder inherited in an autosomal recessive manner that impairs the normal clearance of mucus from the lungs, which facilitates the colonization and infection of the lungs by bacteria, notably Pseudomonas aeruginosa"
+  },
+
+  {
     "name": "glaucoma",
     "description": "group of eye diseases that damage the optic nerve, often due to high eye pressure",
     "infectious": false,
@@ -13,6 +18,32 @@
     "symptoms": [],
     "cure": []
   },
+
+    {
+    "name": "pancreatitis",
+    "definition": "inflammation of the pancreas",
+    "infectious": false,
+    "causes": [
+      "recurrent gallstones",
+      "chronic alcohol use",
+      "traumatic damage",
+      "damage following an ERCP",
+      "some medications",
+      "infections such as mumps",
+      "very high blood triglyceride levels"
+    ],
+    "mechanisms": ["enzymes of the exocrine pancreas damage the structure and tissue of the pancreas"],
+    "symptoms": [
+      "acute pancreatitis is likely to cause intense pain in the central abdomen, that often radiates to the back, and may be associated with nausea or vomiting",
+      "severe pancreatitis may lead to bleeding or perforation of the pancreas resulting in shock or a systemic inflammatory response syndrome, bruising of the flanks or the region around the belly button"
+    ],
+    "diagnosis": [
+      "detection such enzymes as amylase and lipase in the blood",
+      "some symptoms",
+      "medical imaging such as ultrasound or a CT scan"
+    ]
+  },
+
 
   {
     "name": "mononucleosis",

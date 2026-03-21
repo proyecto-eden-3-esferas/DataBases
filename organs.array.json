@@ -1,5 +1,28 @@
 [
   {
+    "name": "kidney",
+    "prefix": "nephro",
+    "description": "a paired compact organ whose functional units are called nephrons, above a million in each kidney, ",
+    "location": [
+      "beneath the diaphragm",
+      "behind the peritoneum"
+    ],
+    "parts": [
+      {"name": "cortex",
+       "appearance": "granular",
+       "contains": ["glomeruli", "convoluted tubules"]},
+      {"name": "medulla",
+       "appearance": "striated",
+       "contains": ["loops of Henle", "collecting tubules"]}
+    ],
+    "functions": [
+      {"name": "filter initial urine from the blood"},
+      {"name": "reabsorb water and nutrients"},
+      {"name": "secrete wastes, producing the final urine, which is expelled"}
+    ]
+  },
+
+  {
     "name": "liver",
     "prefix": "hepat",
     "description": "a dark reddish brown, wedge-shaped organ with two lobes of unequal size and shape; a major metabolic organ exclusively found in vertebrates, which performs many essential biological functions",
@@ -23,6 +46,61 @@
     "anatomy": "made up of hepatic lobules",
     "notes": [
       "estimates regarding the organ's total number of functions vary, but is generally cited as being around 500; for this reason, the liver has sometimes been described as the body's \"chemical factory\""
+    ]
+  },
+
+  {
+    "name": "pancreas",
+    "description": "compound gland",
+    "shape": "pear-like",
+    "system": ["digestive", "endocrine"],
+    "location": [
+      "behind the stomach",
+      "with the head lying immediately adjacent to the duodenum"
+    ],
+    "secretes": ["pancreatic juice"],
+    "connected-to": [
+      {"name": "duct of Wirsung",   "functions": "collect pancreatic juice and empty into the duodenum"},
+      {"name": "duct of Santorini",
+       "functions": "collect pancreatic juice and empty into the duodenum",
+       "notes": "only in some individuals"},
+      {"name": "vagus nerve", "functions": "control"}
+    ],
+    "cells": [
+      {"name": "acinar cells",                   "secrete": "digestive enzymes"},
+      {"name": "(insulin-producing) beta cells", "secrete": "insulin", "in": "islets of Langerhans"},
+      {"name": "alpha cells",                    "secrete": "glucagon", "location": "periphery"},
+      {"name": "delta cells",                    "secrete": "somatostatin", "location": "periphery"},
+      {"name": "F (or PP) cells",                "secrete": "pancreatic polypeptide", "location": "periphery"}
+    ],
+    "functions": [
+      {"name": "endocrine",
+       "description": "the islets of Langerhans secrete hormones, including insulin and glucagon, directly into the bloodstream to regulate carbohydrate, fat, and protein metabolism",
+       "regulated-by": [
+         "autonomic nerves",
+         "circulating metabolites (e.g., glucose, amino acids, ketone bodies)",
+         "circulating hormones",
+         "local (paracrine) hormones"
+       ]
+      },
+      {"name": "digestive exocrine",
+       "description": "acinar cells in the pancreas secrete digestive enzymes into the small intestine via the pancreatic ducts to break down dietary proteins, fats, and carbohydrates"}
+    ],
+    "weight-in-gr": 80,
+    "parts": [
+      {"name": "islets of Langerhans",
+       "location": "scattered throughout the pancreas",
+       "cells": ["alpha", "beta", "delta", "F"]
+      }
+    ],
+    "arteries": "",
+    "veins":    "",
+    "anatomy": "",
+    "diseases": ["pancreatitis", "pancreatic cancer"],
+    "notes": [
+      "as an endocrine gland, it functions mostly to regulate blood sugar levels, secreting the hormones insulin, glucagon, somatostatin and pancreatic polypeptide",
+      "As a part of the digestive system, it functions as an exocrine gland secreting pancreatic juice into the duodenum through the pancreatic duct. This juice contains bicarbonate, which neutralizes acid entering the duodenum from the stomach; and digestive enzymes, which break down carbohydrates, proteins and fats in food entering the duodenum from the stomach",
+      "[their flow] is controlled by the vagus nerve and by the hormones secretin and cholecystokinin, which are produced in the intestinal mucosa. When food enters the duodenum, secretin and cholecystokinin are released into the bloodstream by secretory cells of the duodenum. When these hormones reach the pancreas, the pancreatic cells are stimulated to produce and release large amounts of water, bicarbonate, and digestive enzymes, which then flow into the intestine"
     ]
   },
 
