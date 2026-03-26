@@ -1,8 +1,42 @@
 [
   {
+    "name": "spleen",
+    "prefix": "splenic",
+    "description": [
+      "organ of the lymphatic system",
+      "the size of a fist",
+      "encased in a thick connective-tissue capsule"
+    ],
+    "location": [
+      "left side of the abdominal cavity",
+      "under the diaphragm"
+    ],
+    "tissues": [
+      {"name": "red pulp",
+       "descripton": "a network of splenic cords (cords of Billroth) and sinusoids (wide vessels) filled with blood",
+       "function": [
+         "most of the filtration",
+         "splenic cords serve as important reservoirs for large quantities of macrophages and other phagocytic white blood cells called monocytes",
+         "major site of the destruction of red blood cells, which normally have a life span of only 120 days: the hemoglobin that they contain is degraded to a readily excretable pigment and an iron molecule that is recycled (i.e., used to produce new hemoglobin elsewhere)"
+       ]
+      },
+      {"name": "white pulp",
+       "description": "lymphoid tissue that usually surrounds splenic blood vessels",
+       "contains": "typical lymphoid elements, such as plasma cells, lymphocytes, and lymphatic nodules, called follicles",
+       "function": "lymphocyte production (in the germinal centres)"
+      }
+    ],
+    "parts": [],
+    "functions": [
+      "the primary filtering element for the blood",
+      "storing and releasing certain types of immune cells that mediate tissue inflammation",
+      "react to microorganisms and other antigens that reach the bloodstream by releasing special phagocytic cells known as macrophages, which reside in both red and white pulp, and serve to remove foreign material from the blood and to initiate an immune reaction that results in the production of antibodies"
+    ]
+  },
+  {
     "name": "kidney",
     "prefix": "nephro",
-    "description": "a paired compact organ whose functional units are called nephrons, above a million in each kidney, ",
+    "description": "a paired reddish-brown multilobar multipapillary bean-shaped blood-filtering organ whose functional units are called nephrons, above a million in each kidney",
     "location": [
       "beneath the diaphragm",
       "behind the peritoneum"
@@ -10,15 +44,75 @@
     "parts": [
       {"name": "cortex",
        "appearance": "granular",
-       "contains": ["glomeruli", "convoluted tubules"]},
+       "location": "arches over the bases of the pyramids and fills gaps between the pyramids",
+       "contains": [
+         {"name": "glomeruli", "functions": "filtering"},
+         {"name": "convoluted tubules"}
+       ]
+      },
       {"name": "medulla",
        "appearance": "striated",
-       "contains": ["loops of Henle", "collecting tubules"]}
+       "contains": ["loops of Henle", "collecting tubules"],
+       "comprises": {
+         "name": "renal pyramid",
+         "number": "several",
+         "appearance": "dark cones",
+         "orientation": "with bases outward and apexes projecting, either singly or in groups, into the renal sinus"
+       }
+      },
+      {"name": "hilus",
+       "description": "a deep vertical cleft",
+       "leads-to": "a cavity within the kidney known as the renal (kidney) sinus",
+       "function": "the point of entry and exit of the renal arteries and veins, lymphatic vessels, nerves, and the enlarged upper extension of the ureters"
+      },
+      {"name": "renal papilla",
+       "description": "each projection of one or more pyramid apexes into the sinus",
+       "appearance": "the bases are irregular, with slender striations extending toward the external kidney surface"
+
+      }
+    ],
+
+    "functional-unit": {
+      "name": "nephron",
+      "number-in-millions": [1, 1.5],
+      "cells" : [
+        "epithelial cells with a lumen"
+      ],
+      "parts": [
+        {"name": "renal corpuscle",
+         "function": "filtration of blood plasma",
+         "parts": [
+           {"name": "glomerulus", "description": "a tuft of capillaries"},
+           {"name": "Bowman's capsule", "description": "a cup-shaped structure"}
+         ]},
+        {"name": "renal tubule", "length-in-millimetres": [30,55]
+        }
+      ],
+      "working": "Blood flows into and away from the glomerulus through tiny arteries called arterioles, which reach and leave the glomerulus through the open end of the capsule. In the renal corpuscle, fluid filters out of the blood in the glomerulus through the inner wall of the capsule and into the nephron tubule. As this filtrate passes through the tubule, its composition is altered by the secretion of certain substances into it and by the selective reabsorption of water and other constituents from it. The final product is urine, which is conveyed through the collecting tubules into the renal pelvis."
+    },
+
+    "arteries": "renal artery",
+    "veins":    "renal vein",
+    "connected-to": [
+      {"name": "ureter", "functions": "carry excreted urine to the bladder"}
     ],
     "functions": [
-      {"name": "filter initial urine from the blood"},
-      {"name": "reabsorb water and nutrients"},
-      {"name": "secrete wastes, producing the final urine, which is expelled"}
+      {"name": "control of the volume of various body fluids"},
+      {"name": "acid–base balance"},
+      {"name": "various electrolyte concentrations"},
+      {"name": "fluid osmolality"},
+      {"name": "reabsorb water and nutrients (sodium, bicarbonate, glucose, and amino acids)"},
+      {"name": "convert a precursor of vitamin D to its active form, calcitriol"},
+      {"name": "synthesize the hormones erythropoietin and renin"},
+      {"name": "removal of toxins"},
+      {"name": "secrete wastes (e.g. hydrogen, ammonium, potassium and uric acid), producing the final urine, which is expelled"}
+    ],
+    "regulated-by": [
+      {"name": "renin", "type": "hormone"},
+      {"name": "angiotensin II", "type": "hormone"},
+      {"name": "aldosterone", "type": "hormone"},
+      {"name": "antidiuretic hormone", "type": "hormone"},
+      {"name": "atrial natriuretic peptide", "type": "hormone"}
     ]
   },
 

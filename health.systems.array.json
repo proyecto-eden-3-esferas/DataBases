@@ -1,0 +1,52 @@
+[
+
+{
+  "name": "immune system",
+  "definition": "complex group of defense responses",
+  "functions": [
+    "help repel disease-causing organisms (pathogens)",
+    "help eliminate abnormal cells of the body that can develop into cancer"
+  ],
+  "types": [
+    {"name": "nonspecific, innate",
+     "description": "repel all microorganisms equally",
+     "mechanisms": [
+       {"name": "physical barriers", "instances": ["skin", "mucous membranes"]},
+       {"name": "chemical barriers",
+        "instances": ["antimicrobial proteins",
+                      "oleic acid (skin)",
+                      "hydrochloric acid (stomach)",
+                      "lysozyme (an enzyme that can break down the outer wall of certain bacteria)"]},
+       {"name": "cells that attack foreign cells and body cells harboring infectious agents", "instances": []}
+     ]
+    },
+    {"name": "specific, acquired",
+     "description": "tailored to particular types of invaders"}
+  ],
+  "description": "",
+  "organs": [
+    "skin",
+    "mucous membranes"
+  ],
+  "cells": []
+},
+
+{
+  "name": "",
+  "definition": "",
+  "description": "",
+  "organs": [
+  ],
+  "cells": []
+},
+
+{
+  "name": "",
+  "definition": "",
+  "description": "",
+  "organs": [
+  ],
+  "cells": []
+}
+
+]

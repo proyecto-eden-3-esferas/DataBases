@@ -1,0 +1,67 @@
+[
+
+{
+  "term": "monocyte",
+  "field": "cytology",
+  "lang": "en",
+  "definition": "a large phagocytic white blood cell with a simple oval nucleus and clear, greyish cytoplasm",
+  "functions": [
+    {"name": "phagocytosis", "description": "they engulf and digest pathogens, dead cells, and debris"},
+    {"name": "antigen presentation", "description": "they transform into dendritic cells to present antigens to t-cells"},
+    {"name": "tissue repair", "description": "they differentiate into macrophages to help heal tissue"}
+  ],
+  "notes": [
+    "they originate in the bone marrow",
+    "circulate in the blood before migrating into tissues to differentiate into macrophages or dendritic cells, aiding in phagocytosis, pathogen defense, and inflammation resolution"
+  ]
+},
+
+{
+  "term": "stem cell",
+  "field": "cytology",
+  "lang": "en",
+  "definition": ""
+},
+
+{
+  "term": "macrophage",
+  "field": "cytology",
+  "lang": "en",
+  "definition": "a large phagocytic cell found in stationary form in the tissues or as a mobile white blood cell, especially at sites of infection"
+},
+
+{
+  "term": "granulocyte",
+  "field": "cytology",
+  "lang": "en",
+  "definition": "a large phagocytic white blood cell with a simple oval nucleus and clear, greyish cytoplasm",
+  "description": [
+    "have numerous chemical-containing granules in their cytoplasm, have an oddly shaped nucleus (polymorphonuclear leukocytes)",
+    "some granules contain digestive enzymes capable of breaking down proteins, while others contain bacteriocidal (bacteria-killing) proteins",
+    "a life span of only a few days",
+    "continuously produced from stem (i.e., precursor) cells in the bone marrow",
+    "mobile and attracted to foreign materials by chemical signals, some of which are produced by the invading microorganisms themselves, others by damaged tissues, and still others by the interaction between microbes and proteins in the blood plasma",
+    "some microorganisms produce toxins that poison granulocytes and thus escape phagocytosis",
+    "some microbes are indigestible and are not killed when ingested"
+  ],
+  "types": [
+
+    {"name": "neutrophils", "description": [
+      "about 60 to 70 percent of all white blood cells",
+      "ingest and destroy microorganisms, especially bacteria"]
+    },
+    {"name": "eosinophils", "description": [
+      "rarer than neutrophils",
+      "particularly effective at damaging the cells that make up the cuticle (body wall) of larger parasites"]},
+    {"name": "basophils",
+     "description": [
+       "the rarest of all granulocytes",
+       "release heparin (a substance that inhibits blood coagulation), histamine, and other substances that play a role in some allergic reactions"
+      ]}
+  ],
+  "functions": []
+}
+
+
+
+]

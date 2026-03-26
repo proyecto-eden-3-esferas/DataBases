@@ -71,6 +71,24 @@
 },
 
 {
+  "term": "interferon",
+  "field": "immunology",
+  "lang": "en",
+  "definition": "group of proteins that inhibit the replication of many—but not all—viruses",
+  "mechanism":  [
+    "cells that have been infected with a virus produce interferon, which sends a signal to other cells of the body to resist viral growth",
+    "interfere with the transcription of viral nucleic acid",
+    "regulate the extent to which lymphocytes and other cells express certain important molecules on their surface membranes"
+  ]
+},
+
+{
+  "term": "antigen",
+  "lang": "en",
+  "definition": "a toxin or other foreign substance which induces an immune response in the body, especially the production of antibodies (by binding to an antibody or T-cell receptor)"
+},
+
+{
   "term": "enzyme",
   "lang": "en",
   "definition": "a protein that help the body carry out chemical reactions, such as breaking down food"
