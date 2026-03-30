@@ -1,0 +1,249 @@
+[
+
+{
+  "name": "testosterone",
+  "gland-or-tissue": "testis",
+  "functions": "stimulates development of male sex organs and secondary sex characteristics, including facial hair growth and increased muscle mass"
+},
+
+{
+  "name": "estrogens (estradiol, estrone, estriol)",
+  "gland-or-tissue": "ovary",
+  "functions": [
+    "stimulate development of female sex organs and secondary sex characteristics",
+    "maturation of ovarian follicles",
+    "formation and maintenance of bone tissue",
+    "contraction of the uterine muscles"
+  ]
+},
+
+{
+  "name": "inhibin (folliculostin)",
+  "gland-or-tissue": "ovary",
+  "functions": "inhibits secretion of follicle-stimulating hormone from the pituitary gland"
+},
+
+{
+  "name": "progesterone",
+  "gland-or-tissue": "ovary",
+  "functions": "stimulates secretion of substances from the lining of the uterus (endometrium) in preparation for egg implantation in the uterine wall"
+},
+
+{
+  "name": "thyroxine",
+  "gland-or-tissue": "thyroid gland",
+  "functions": "stimulates cellular metabolism, lipid production, carbohydrate utilization, and central and autonomic nervous system activation"
+},
+{
+  "name": "triiodothyronine",
+  "gland-or-tissue": "thyroid gland",
+  "functions": "stimulates cellular metabolism, lipid production, carbohydrate utilization, and central and autonomic nervous system activation"
+},
+
+
+{
+  "name": "epinephrine (adrenaline)",
+  "gland-or-tissue": "adrenal gland, medulla",
+  "functions": "stimulates \"fight or flight\" response, increases heart rate, dilates blood vessels in skeletal muscles and liver, increases oxygen delivery to muscle and brain tissues, increases blood glucose concentrations, and suppresses digestion "
+},
+{
+  "name": "norepinephrine (noradrenaline)",
+  "gland-or-tissue": "adrenal gland, medulla",
+  "functions": "stimulates \"fight or flight\" response, increases heart rate, constricts blood vessels, increases blood glucose concentrations, and suppresses digestion"
+},
+
+
+{
+  "name": "cortisol",
+  "gland-or-tissue": "adrenal gland, cortex",
+  "functions": "activates physiological stress responses to maintain blood glucose concentrations, augments constriction of blood vessels to maintain blood pressure, and stimulates anti-inflammatory pathways"
+},
+{
+  "name": "aldosterone",
+  "gland-or-tissue": "adrenal gland, cortex",
+  "functions": "regulates balance of salt and water in the body"
+},
+{
+  "name": "androgens",
+  "gland-or-tissue": "adrenal gland, cortex",
+  "functions": "contribute to growth and development of the male reproductive system and serve as precursors to testosterone and estrogen"
+},
+
+
+{
+  "name": "corticotropin (adrenocorticotropin, ACTH)",
+  "gland-or-tissue": "pituitary gland, anterior lobe",
+  "functions": "stimulates growth and secretion of cells of the adrenal cortex; increases skin pigmentation "
+},
+{
+  "name": "growth hormone (GH; somatotropin)",
+  "gland-or-tissue": "pituitary gland, anterior lobe",
+  "functions": "stimulates growth of essentially all tissues in the body"
+},
+{
+  "name": "thyrotropin (thyroid-stimulating hormone)",
+  "gland-or-tissue": "pituitary gland, anterior lobe",
+  "functions": "stimulates secretion of thyroid hormone and growth of thyroid cells"
+},
+{
+  "name": "follicle-stimulating hormone (FSH)",
+  "gland-or-tissue": "pituitary gland, anterior lobe",
+  "functions": "stimulates maturation of egg follicles in females and development of spermatozoa in males"
+},
+{
+  "name": "luteinizing hormone (LH; interstitial cell stimulating hormone, ICSH)",
+  "gland-or-tissue": "pituitary gland, anterior lobe",
+  "functions": "stimulates rupture of mature egg follicles and production of progesterone and androgens in females and secretion of androgens in males"
+},
+{
+  "name": "prolactin (PRL; luteotropic hormone, LTH; lactogenic hormone; mammotropin)",
+  "gland-or-tissue": "pituitary gland, anterior lobe",
+  "functions": "stimulates and maintains lactation in breast-feeding mothers"
+},
+
+
+{
+  "name": "oxytocin",
+  "gland-or-tissue": "pituitary gland, posterior lobe",
+  "functions": "stimulates milk ejection during breast-feeding and uterine muscle contraction during childbirth"
+},
+{
+  "name": "vasopressin (antidiuretic hormone, ADH)",
+  "gland-or-tissue": "pituitary gland, posterior lobe",
+  "functions": "regulates fluid volume by increasing or decreasing fluid excretion in response to changes in blood pressure"
+},
+
+{
+  "name": "melanocyte-stimulating hormones (MSH)*",
+  "gland-or-tissue": "pituitary gland, intermediate lobe",
+  "functions": "stimulate melanin synthesis in skin cells to increase skin pigmentation; may also suppress appetite"
+},
+
+{
+  "name": "corticotropin-releasing hormone (CRH)",
+  "gland-or-tissue": "hypothalamus",
+  "functions": "stimulates synthesis and secretion of corticotropin from the anterior pituitary gland"
+},
+{
+  "name": "growth hormone-releasing hormone (GHRH)",
+  "gland-or-tissue": "hypothalamus",
+  "functions": "stimulates synthesis and secretion of growth hormone from the anterior pituitary gland"
+},
+{
+  "name": "thyrotropin-releasing hormone (TRH)",
+  "gland-or-tissue": "hypothalamus",
+  "functions": "stimulates and regulates secretion of thyrotropin from the anterior pituitary gland and may modulate neuronal activity in the brain and spinal cord"
+},
+{
+  "name": "gonadotropin-releasing hormone (GnRH)",
+  "gland-or-tissue": "hypothalamus",
+  "functions": "stimulates synthesis and secretion of follicle-stimulating hormone and luteinizing hormone from the anterior pituitary gland"
+},
+{
+  "name": "prolactin-inhibiting factor (PIF; dopamine)",
+  "gland-or-tissue": "hypothalamus",
+  "functions": "inhibits secretion of prolactin from the anterior pituitary gland"
+},
+{
+  "name": "somatostatin",
+  "gland-or-tissue": "hypothalamus",
+  "functions": "inhibits secretion of growth hormone from the anterior pituitary gland, inhibits secretion of insulin and glucagon in the pancreas, and inhibits secretion of gastrointestinal hormones and secretion of acid in the stomach"
+},
+{
+  "name": "gastrointestinal neuropeptides",
+  "gland-or-tissue": "hypothalamus",
+  "functions": "hormones secreted from the stomach and pancreas that stimulate hypothalamic secretion of neuropeptides, such as neuropeptide Y, gastrin-releasing peptide, and somatostatin, that regulate appetite, fat storage, and metabolism"
+},
+
+
+{
+  "name": "glucagon",
+  "gland-or-tissue": "pancreatic islets of Langerhans",
+  "functions": "maintains blood glucose concentrations by stimulating release of glucose from the liver and production of glucose from amino acids and glycerol"
+},
+{
+  "name": "insulin",
+  "gland-or-tissue": "pancreatic islets of Langerhans",
+  "functions": "stimulates glucose uptake and storage in adipose, muscle, and liver tissues"
+},
+{
+  "name": "somatostatin",
+  "gland-or-tissue": "pancreatic islets of Langerhans",
+  "functions": "inhibits glucagon and insulin secretion from the pancreas and inhibits secretion of gastrointestinal hormones and secretion of acid in the stomach"
+},
+{
+  "name": "pancreatic polypeptide",
+  "gland-or-tissue": "pancreatic islets of Langerhans",
+  "functions": "inhibits contraction of the gallbladder and secretion of exocrine substances from the pancreas"
+},
+
+
+{
+  "name": "parathyroid hormone (parathormone)",
+  "gland-or-tissue": "parathyroid gland",
+  "functions": "increases serum calcium concentrations by stimulating release of calcium from bone tissue, reabsorption of calcium in the kidneys, and production of vitamin D in the kidneys; inhibits reabsorption of phosphate in the kidneys"
+},
+
+{
+  "name": "calcitonin",
+  "gland-or-tissue": "parathyroid gland",
+  "functions": "decreases serum calcium concentrations by promoting uptake of calcium into bone tissue and excretion of calcium in the urine"
+},
+
+{
+  "name": "calciferols (vitamin D)",
+  "gland-or-tissue": "skin, liver, kidneys",
+  "functions": "maintain serum calcium concentrations by increasing absorption of calcium and phosphate in the intestines and reabsorption of calcium and phosphate in the kidneys; mobilizes calcium from bone in response to parathyroid hormone activity"
+},
+
+{
+  "name": "gastrin",
+  "gland-or-tissue": "stomach",
+  "functions": "stimulates secretion of acid and pepsin in the stomach and contraction of the pyloric region of the stomach near the small intestine to increase motility during digestion"
+},
+
+{
+  "name": "cholecystokinin (CCK; pancreozymin)",
+  "gland-or-tissue": "duodenum",
+  "functions": "stimulates release of bile from the gallbladder into the intestine and stimulates secretion of pancreatic juices into the intestine; may induce satiety"
+},
+{
+  "name": "secretin",
+  "gland-or-tissue": "duodenum",
+  "functions": "stimulates secretion of water and bicarbonate from the pancreas into the duodenum; inhibits secretion of gastrin in the stomach, delaying gastric emptying"
+},
+{
+  "name": "gastric-inhibitory polypeptide (GIP)",
+  "gland-or-tissue": "duodenum",
+  "functions": "inhibits secretion of acid into the stomach; stimulates secretion of insulin from the pancreas"
+},
+{
+  "name": "vasoactive intestinal peptide (VIP)",
+  "gland-or-tissue": "duodenum",
+  "functions": "stimulates dilation of blood vessels and secretion of water and electrolytes from the intestine; modulates immune functions"
+},
+
+{
+  "name": "melatonin",
+  "gland-or-tissue": "pineal gland",
+  "functions": "regulates circadian rhythm (primarily in response to light and dark cycles) and release of gonadotropin-releasing hormone from the hypothalamus and gonadotropins from the pituitary gland"
+},
+
+{
+  "name": "renin",
+  "gland-or-tissue": "kidneys",
+  "functions": "regulates blood pressure and blood flow by catalyzing conversion of angiotensinogen to angiotensin I in the kidneys"
+},
+
+{
+  "name": "insulin-like growth factors (somatomedins)",
+  "gland-or-tissue": "multiple tissues",
+  "functions": "stimulate growth by mediating secretion of growth hormone from the pituitary gland"
+},
+{
+  "name": "prostaglandins",
+  "gland-or-tissue": "multiple tissues",
+  "functions": "regulate many physiological processes, including dilation and constriction of blood vessels, aggregation of platelets, and inflammation"
+}
+
+]

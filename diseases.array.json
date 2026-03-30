@@ -1,5 +1,24 @@
 [
   {
+    "name": "goitre",
+    "definition": "enlargement of the thyroid gland"
+  },
+
+  {
+    "name": "acromegaly",
+    "definition": "excess production of growth hormone",
+    "causes": [
+      "tumour production of growth hormone",
+      "tumour production of growth hormone-releasing hormone (GHRH) (very rarely)"
+    ]
+  },
+
+  {
+    "name": "Cushing disease",
+    "mechanism": "a small pituitary tumour produces excess quantities of adrenocorticotropin that cause hyperfunction and hyperplasia of the adrenal glands"
+  },
+
+  {
     "name": "cystic fibrosis",
     "definition": "a genetic disorder inherited in an autosomal recessive manner that impairs the normal clearance of mucus from the lungs, which facilitates the colonization and infection of the lungs by bacteria, notably Pseudomonas aeruginosa"
   },

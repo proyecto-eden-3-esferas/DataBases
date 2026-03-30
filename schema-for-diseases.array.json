@@ -28,6 +28,7 @@
                      }
     },
     "patternProperties": {
+      "mechanism":   {"type":  ["string", "array"]},
       "types":       {"type": "array",
                       "items": {
                                  "type": "object",
@@ -40,7 +41,8 @@
     },
     "anyOf": [
       {"required": ["name", "definition" ]},
-      {"required": ["name", "description"]}
+      {"required": ["name", "description"]},
+      {"required": ["name", "mechanism"]}
     ],
     "minProperties": 2,
     "additionalProperties": {"type": ["string", "array"], "items": {"type": ["string", "object"]}}

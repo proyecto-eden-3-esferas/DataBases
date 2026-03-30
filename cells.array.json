@@ -1,5 +1,15 @@
 [
 
+
+{
+  "term": "neurosecretory cell",
+  "field": "cytology",
+  "lang": "en",
+  "definition": "specially modified nerve cells within the nervous system",
+  "functions": [],
+  "secretes": "neurohormones"
+},
+
 {
   "term": "monocyte",
   "field": "cytology",

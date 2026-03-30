@@ -1,6 +1,40 @@
 [
 
 {
+  "name": "endocrine system",
+  "definition": "complex group of ; comprises a group of ductless glands that regulate body processes by secreting chemical substances called hormones",
+  "diseases": [
+    "oversecretion",
+    "undersecretion",
+    "inability of target organs or tissues to respond to hormones effectively"
+  ],
+  "regulated-by": [
+    "a hormone that influences the function of the gland (a tropic hormone)",
+    "a biochemical product (e.g., glucose)",
+    "a biologically important element (e.g., calcium or potassium)"
+  ],
+  "parts": [
+    "hypothalamic-pituitary-target gland axis"
+  ],
+  "organs": [
+    "thyroid gland",
+    "parathyroid glands",
+    "islets of Langerhans",
+    "adrenal cortex",
+    "adrenal medulla",
+    "ovary",
+    "testis",
+    "pituitary gland",
+    "pancreas"
+  ],
+  "functions": [
+    "regulate the body’s internal activities and the body’s interactions with the external environment to preserve the internal environment",
+    "the control of growth and development",
+    "sexual differentiation of the fetus into a male or a female"
+  ]
+},
+
+{
   "name": "immune system",
   "definition": "complex group of defense responses",
   "functions": [

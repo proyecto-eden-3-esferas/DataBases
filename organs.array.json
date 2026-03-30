@@ -1,5 +1,20 @@
 [
   {
+    "name": "hypothalamus",
+    "location": [
+      "at the base of the brain",
+      "above the pituitary gland"
+    ],
+    "secretes": " neurohormones"
+  },
+
+  {
+    "name": "parathyroid gland",
+    "description": "",
+    "secretes": "parathormone",
+  },
+
+  {
     "name": "spleen",
     "prefix": "splenic",
     "description": [
