@@ -1,5 +1,128 @@
 [
 
+{
+  "name": "neuron",
+  "number-billion": [80, 200],
+  "discussion": [
+    "Each neuron has its own identity, expressed by its interactions with other neurons and by its secretions; each also has its own function, depending on its intrinsic properties and location as well as its inputs from other select groups of neurons, its capacity to integrate those inputs, and its ability to transmit the information to another select group of neurons.",
+    "Embedded within the lipid bilayer are proteins, which also float in the liquid environment of the membrane. These include glycoproteins containing polysaccharide chains, which function, along with other carbohydrates, as adhesion sites and recognition sites for attachment and chemical interaction with other neurons. The proteins provide another basic and crucial function: those which penetrate the membrane can exist in more than one conformational state, or molecular shape, forming channels that allow ions to pass between the extracellular fluid and the cytoplasm, or internal contents of the cell. In other conformational states, they can block the passage of ions. This action is the fundamental mechanism that determines the excitability and pattern of electrical activity of the neuron.",
+    "While the axon mainly conducts nerve impulses from the soma to the terminal, the terminal itself secretes chemical substances called neurotransmitters. The synthesis of these substances can occur in the terminal itself, but the synthesizing enzymes are formed by ribosomes in the soma and must be transported down the axon to the terminal. This process is known as axoplasmic flow; it occurs in both directions along the axon and may be facilitated by microtubules."
+  ],
+  "parts": [
+    {
+      "name": "cell body",
+      "synonym": "soma",
+      "description": ""
+    },
+    {
+      "name": "nerve fibre",
+      "synonym": "axon",
+      "description": "",
+      "function": "to conduct impulses away from the soma or dendrites toward other neurons",
+      "discussion": [
+        "arises from the soma at a region called the axon hillock, or initial segment: this is the region where the plasma membrane generates nerve impulses"
+      ]
+    },
+    {
+      "name": "myelin sheath",
+      "discussion": [
+        "large axons acquire an insulating myelin sheath and are known as myelinated, or medullated, fibres",
+        "concentric layers of myelin lipids separated by thin layers of protein give rise to a high-resistance, low-capacitance electrical insulator interrupted at intervals by gaps called nodes of Ranvier, where the nerve membrane is exposed to the external environment",
+        "in the central nervous system the myelin sheath is formed from glial cells called oligodendrocytes, and in peripheral nerves it is formed from Schwann cells"
+      ]
+    },
+    {
+      "name": "receiving processes",
+      "synonym": "dendrites",
+      "description": "usually shorter than axons and unmyelinated",
+      "discussion": [
+        "form receiving surfaces for synaptic input from other neurons; in many dendrites these surfaces are provided by specialized structures called dendritic spines, which, by providing discrete regions for the reception of nerve impulses, isolate changes in electrical current from the main dendritic trunk",
+        "The traditional view of dendritic function presumes that only axons conduct nerve impulses and only dendrites receive them, but dendrites can form synapses with dendrites and axons and even somata can receive impulses. Indeed, some neurons have no axon; in these cases nervous transmission is carried out by the dendrites."
+      ]
+    },
+    {
+      "name": "cytoskeleton",
+      "description": "a complex system of proteinaceous intracellular filaments is linked to the membrane proteins",
+      "parts": [
+        "thin neurofilaments containing actin",
+        "thick neurofilaments similar to myosin",
+        "microtubules composed of tubulin"
+      ],
+      "discussion": [
+        "the filaments are probably involved with movement and translocation of the membrane proteins, while microtubules may anchor the proteins to the cytoplasm",
+        "the tubules can also enter the axon at its initial segment and extend to the axon terminals"
+      ]
+    },
+    {
+      "name": "synapsis",
+      "description": "a specialized structure that forms junctions with other neurons and with muscle cells",
+      "discussion": [
+        "Presynaptic terminals, when seen by light microscope, look like small knobs and contain many organelles. The most numerous of these are synaptic vesicles, which, filled with neurotransmitters, are often clumped in areas of the terminal membrane that appear to be thickened. The thickened areas are called presynaptic dense projections, or active zones.",
+        "The presynaptic terminal is unmyelinated and is separated from the neuron or muscle cell onto which it impinges by a gap called the synaptic cleft, across which neurotransmitters diffuse when released from the vesicles. In nerve-muscle junctions the synaptic cleft contains a structure called the basal lamina, which holds an enzyme that destroys neurotransmitters and thus regulates the amount that reaches the postsynaptic receptors on the receiving cell. Most knowledge of postsynaptic neurotransmitter receptors comes from studies of the receptor on muscle cells. This receptor, called the end plate, is a glycoprotein composed of five subunits. Other neurotransmitter receptors do not have the same structure, but they are all proteins and probably have subunits with a central channel that is activated by the neurotransmitter.",
+        "While the chemically mediated synapse described forms the majority of synapses in vertebrate nervous systems, there are other types of synapses in vertebrate brains and, in especially great numbers, in invertebrate and fish nervous systems. At these synapses there is no synaptic gap; instead, there are gap junctions, direct channels between neurons that establish a continuity between the cytoplasm of adjacent cells and a structural symmetry between the pre- and postsynaptic sites. Rapid neuronal communication at these junctions is probably electrical in nature."
+      ]
+    }
+  ]
+},
+
+{
+  "term": "neuroglia",
+  "etymology": "\"neuroglia\" is Greek for nerve glue",
+  "description": [
+    "10 times as many as there are neurons",
+    "lack of axons",
+    "presence of only one type of process",
+    "do not form synapses",
+    "they retain the ability to divide throughout their life span",
+    "While neurons and neuroglia lie in close apposition to one another, there are no direct junctional specializations, such as gap junctions"
+  ],
+  "types": ["astrocytes", "oligodendrocytes", "microglia"],
+  "functions": [
+    "oligodendrocytes and Schwann cells produce the myelin sheath around neuronal axons",
+    "repair of the central nervous system following injury",
+    "When neurons of the peripheral nervous system are severed, they undergo a process of degeneration followed by regeneration; fibres regenerate in such a way that they return to their original target sites. Schwann cells that remain after nerve degeneration apparently determine the route. This route direction is also performed by astrocytes during development of the central nervous system. In the developing cerebral cortex and cerebellum of primates, astrocytes project long processes to certain locations, and neurons migrate along these processes to arrive at their final locations. Thus, neuronal organization is brought about to some extent by the neuroglia."
+  ]
+},
+
+{
+  "term": "Schwann cell",
+  "definition": "in the peripheral nervous system, neuroglia that are equivalent to oligodendrocytes",
+  "functions": [
+    "produce the myelin sheath around neuronal axons"
+  ]
+},
+{
+  "term": "astrocyte",
+  "functions": [
+    "they divide after injury to the nervous system and occupy the spaces left by injured neuron"
+  ],
+  "types": [
+    {"name": "fibrous",
+     "description": "prevalent among myelinated nerve fibres in the white matter of the central nervous system. Organelles seen in the somata of neurons are also seen in astrocytes, but they appear to be much sparser. These cells are characterized by the presence of numerous fibrils in their cytoplasm. The main processes exit the cell in a radial direction (hence the name astrocyte, meaning “star-shaped cell”), forming expansions and end feet at the surfaces of vascular capillaries."},
+    {"name": "protoplasmic",
+    "description": "occur in the gray matter of the central nervous system. They have fewer fibrils within their cytoplasm, and cytoplasmic organelles are sparse, so that the somata are shaped by surrounding neurons and fibres. The processes of protoplasmic astrocytes also make contact with capillaries."}
+  ]
+},
+{
+  "term": "oligodendrocyte",
+  "functions": [
+    "produce the myelin sheath around neuronal axons"
+  ],
+  "types": [
+    {"name": "interfascicular",
+     "description": "aligned in rows between the nerve fibres of the white matter of the central nervous system"},
+    {"name": "perineuronal", "description": "located in close proximity to the somata of neurons"}
+  ],
+  "description": "have few cytoplasmic fibrils but a well-developed Golgi apparatus. They can be distinguished from astrocytes by the greater density of both the cytoplasm and the nucleus, the absence of fibrils and of glycogen in the cytoplasm, and large numbers of microtubules in the processes"
+},
+{
+  "term": "microglia",
+  "description": [
+    "small cells with dark cytoplasm and a dark nucleus",
+    "it is uncertain whether they are merely damaged neuroglial cells or occur as a separate group in living tissue "
+  ]
+},
+
 
 {
   "term": "neurosecretory cell",

@@ -24,6 +24,46 @@ Finally, you could load all my JSON files into one single database.
 
 # TODOs
 
+# Useful `jp` (for Querying JSON)
+
+- Output the value of all keys=="term":
+```
+jp -f biology.array.json '[].term'
+```
+
+- Output an object with fields *word* (from *term*) and *definition* (from *definition*), from the first object in array held in file *biology.array.json*:
+```
+jp -f biology.array.json '[0] | {word: term, definition: definition}'
+```
+
+# Useful `jq` (for Querying JSON)
+
+A database is often contained in an array of JSON objects:
+```
+[ {OBJ0}, {OBJ1}, {OBJ2} ...]
+```
+Such a file should be named something like *<TOPIC>.array.json*
+
+We often need to iterate through the component objects (of such arrays held in files thus named). `jq .[]` will produce the concatenation of the component objects:
+```
+{OBJ0} {OBJ1} {OBJ2} ...
+```
+Let us say that our database contains definitions of terms, and that each object has a field named <q>term</q>. Then `jq '.[] | .term'` will output a list of values for key <q>term</q>. For instance, `jq '.[] | .term' computing.array.json` will produce:
+
+```
+"escape character"
+"operating system"
+"buffer"
+"clobber"
+"asynchronous"
+"concurrent"
+"thread"
+...
+```
+
+
+
+
 # On Writing JSON Notes
 
 ## Sources

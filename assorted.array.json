@@ -1,11 +1,36 @@
 [
 
 {
+  "name": "Modern Propaganda according to Edward Bernays",
+  "type": "quote",
+  "field": "society",
+  "author": "Edward Bernays",
+  "contents": "Modern propaganda is a consistent, enduring effort to create or shape events to influence the relations of the public to an enterprise, idea or group"
+},
+
+{
   "name": "Make Oil Painting Medium",
   "lang": "en",
   "type": "instructions",
   "contents": "Make a basic, versatile oil painting medium by mixing 2 parts distilled turpentine (or odorless mineral spirits) with 1 part refined linseed oil. This ratio creates a \"lean\" mixture ideal for early layers, improving flow and thinning paint. Mix in a small glass jar with a tight-fitting lid, allowing it to rest for a few hours before use"
 },
+
+{
+  "term": "semipermeable membrane",
+  "lang": "en",
+  "definition": "a membrane with pores allowing passage of molecules of only a particular size"
+},
+
+{
+  "term": "ion",
+  "lang": "en",
+  "definition": "an atom or group of atoms that gain an electrical charge by losing or acquiring electrons",
+  "types": [
+    {"name": "cation", "definition": "a positively charged ion"},
+    {"name": "anion",  "definition": "a negatively charged ion"}
+  ]
+},
+
 
 {
   "term": "sustainable",

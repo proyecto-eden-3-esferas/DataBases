@@ -1,6 +1,21 @@
 [
 
 {
+  "name": "nervous system",
+  "definition": " organized group of cells specialized for the conduction of electrochemical stimuli from sensory receptors through a network to the site at which a response occurs",
+  "description": "",
+  "organs": [
+    "brain",
+    "spinal cord"
+  ],
+  "cells": [
+    "neuron",
+    "neuroglial cell"
+  ]
+},
+
+
+{
   "name": "endocrine system",
   "definition": "complex group of ; comprises a group of ductless glands that regulate body processes by secreting chemical substances called hormones",
   "diseases": [
@@ -61,15 +76,6 @@
   "organs": [
     "skin",
     "mucous membranes"
-  ],
-  "cells": []
-},
-
-{
-  "name": "",
-  "definition": "",
-  "description": "",
-  "organs": [
   ],
   "cells": []
 },

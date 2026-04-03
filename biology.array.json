@@ -44,6 +44,19 @@
 },
 
 {
+  "term": "taxis",
+  "definition": "a response in which the organism moves toward or away from the stimulus"
+},
+
+{
+  "name": "lipid bilayer",
+  "description": "two sheets of mainly phospholipids with a space between",
+  "discussion": [
+    "One end of a phospholipid molecule is hydrophilic, or water attaching, and the other end is hydrophobic, or water repelling. The bilayer structure results when the hydrophilic ends of the phospholipid molecules in each sheet turn toward the watery mediums of both the cell interior and the extracellular environment, while the hydrophobic ends of the molecules turn in toward the space between the sheets. These lipid layers are not rigid structures; the loosely bonded phospholipid molecules can move laterally across the surfaces of the membrane, and the interior is in a highly liquid state."
+  ]
+},
+
+{
   "term": "hyperplasia",
   "definition": "increase in the number of cells"
 },
@@ -169,6 +182,21 @@
   "field": "health",
   "content": []
 },
+
+{
+  "name": "myelin",
+  "description": "composed of 80 percent lipid and 20 percent protein; cholesterol is one of the major lipids, along with variable amounts of cerebrosides and phospholipids"
+},
+{
+  "name": "tight myelination",
+  "description": "a glial cell wraps itself like a rolled sheet around a length of axon until the fibre is covered by several layers"
+},
+{
+  "name": "nodes of Ranvier",
+  "description": "exposed sections between segments of myelin wrapping",
+  "function": "aid in the transmission of nerve impulses"
+},
+
 
 {
   "term": "oxalic acid",

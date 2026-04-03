@@ -1,4 +1,16 @@
 [
+
+{
+  "term": "frame",
+  "field": "computing",
+  "subfield": "programming",
+  "lang": "en",
+  "definition": "an artificial intelligence data structure used to divide knowledge into substructures by representing \"stereotyped situations\"",
+  "notes": [
+  ]
+},
+
+
 {
   "term": "bitmask",
   "field": "computing",

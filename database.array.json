@@ -1,4 +1,34 @@
 [
+
+{
+  "term":  "knowledge representation",
+  "acronym": "KR",
+  "source": "wikipedia",
+  "lang":  "en",
+  "field": "computing",
+  "definition": "models information in a structured manner to formally represent it as knowledge in knowledge-based system"
+},
+
+{
+  "term": "knowledge representation and reasoning",
+  "acronym": "KRR",
+  "source": "wikipedia",
+  "lang":  "en",
+  "field": "computing",
+  "definition": "besides representing knowledge, aims to understand, reason, and interpret it",
+  "discussion": [
+    "is widely used in the field of artificial intelligence (AI) with the goal of representing information about the world in a form that a computer system can use to solve complex tasks, such as diagnosing a medical condition or having a natural-language dialog"
+  ]
+},
+
+{
+  "term":  "knowledge database",
+  "lang":  "en",
+  "field": "computing",
+  "subfield": "databases",
+  "definition": "an organized collection of relevant experiences and insights captured from individuals within an organization, designed to facilitate the sharing and distribution of knowledge among users to enhance operational efficiency and learning"
+},
+
 {
   "term":  "upsert",
   "lang":  "en",
