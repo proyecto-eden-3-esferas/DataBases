@@ -1,4 +1,36 @@
 [
+
+{
+  "term": "action potential",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "neurology",
+  "definition": ""
+},
+
+{
+  "name": "transmission at the synapse",
+  "types": [
+    {"name": "electrical",
+     "description": "the ionic current flows directly through channels that couple the cells",
+     "notes": [
+       "far less common than chemical transmission",
+       "occurs in the nervous systems of invertebrates and lower vertebrates, as well as in the central nervous systems of some mammals",
+       "transmission takes place through gap junctions, which are protein channels that link the cellular contents of adjacent neurons",
+       "direct diffusion of ions through these junctions allows the action potential to be transmitted with little or no delay or distortion, in effect synchronizing the response of an entire group of neurons",
+       "the channels often allow ions to diffuse in both directions, but some gated channels restrict transmission to only one direction"
+     ]
+    },
+    {"name": "chemical",
+     "description": "a chemical substance called the \"neurotransmitter\" passes from one cell to the other, stimulating the second cell to generate its own action potential",
+     "notes": [
+       "",
+       ""
+     ]
+    }
+  ]
+},
+
 {
   "term": "translocation",
   "lang": "en",

@@ -3,8 +3,20 @@
 {
   "term": "signal",
   "field": "electronics",
-  "definition": "a time varying magnitude containing some type of information",
+  "definition": "a time varying magnitude containing some type of information"
 },
+
+{
+  "term": "signal ground",
+  "field": "electronics",
+  "definition": "the designated (0V) reference point and return path for electronic signals within a circuit",
+  "notes": [
+    "ensuring signal integrity by minimizing noise and interference. It is often isolated from power grounds—which handle high currents—to prevent noise coupling, and it acts as the common, low-impedance path for components like sensors, amplifiers, and digital logic",
+    "noise Reduction: In many designs, signal ground is separated from power ground or chassis ground to prevent high-power currents from contaminating low-power, sensitive signals, thus reducing electromagnetic interference (EMI)",
+    "on PCBs, signal ground is often a dedicated plane, sometimes divided into analog and digital sections to prevent noise coupling"
+  ]
+},
+
 
 {
   "name": "BiCMOS",

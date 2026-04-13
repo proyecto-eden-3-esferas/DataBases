@@ -1,6 +1,26 @@
 [
 
 {
+  "term": "multigraph",
+  "lang": "en",
+  "field": "mathematics",
+  "subfield": "graph theory",
+  "definition": "a graph which may have multiple edges (also called parallel edges), that is, edges that have the same end nodes",
+  "notes": [
+    "some authors allow multigraphs to have loops, that is, an edge that connects a vertex to itself, while others call these pseudographs, reserving the term multigraph for the case with no loops",
+    "for some authors, the terms pseudograph and multigraph are synonymous; for others, a pseudograph is a multigraph that is permitted to have loops"
+  ]
+},
+
+{
+  "term": "hypergraph",
+  "lang": "en",
+  "field": "mathematics",
+  "subfield": "graph theory",
+  "definition": "a graph in which an edge can connect any number of nodes, not just two"
+},
+
+{
   "name": "Modern Propaganda according to Edward Bernays",
   "type": "quote",
   "field": "society",

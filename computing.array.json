@@ -1,4 +1,15 @@
 [
+
+{
+  "term": "object relational mapper",
+  "definition": ""
+},
+
+{
+  "name": "SPARQL",
+  "description": "an RDF query language - that is, a semantic query language for databases - able to retrieve and manipulate data stored in Resource Description Framework (RDF) format"
+},
+
 {
   "name": "cbr",
   "type": "file format",
