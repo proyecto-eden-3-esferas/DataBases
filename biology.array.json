@@ -1,6 +1,14 @@
 [
 
 {
+  "term": "blastocyst",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "embriology",
+  "definition": "the bundle of cells into which a fertilized ovum divides"
+},
+
+{
   "term": "action potential",
   "lang": "en",
   "field": "biology",

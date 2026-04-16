@@ -1,6 +1,11 @@
 [
 
 {
+  "name": "thymocyte",
+  "definition": "an immature T cell"
+},
+
+{
   "name": "neuron",
   "number-billion": [80, 200],
   "discussion": [

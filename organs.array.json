@@ -1,5 +1,39 @@
 [
   {
+    "name": "thymus",
+    "description": "a specialized, pyramid-shaped lymphoid organ located in the upper chest behind the breastbone, vital for immune system development",
+    "location": [
+      "in the anterior mediastinum",
+      "behind the sternum",
+      "in front of the heart and trachea"
+    ],
+    "parts": [
+      {"name": "cortex"},
+      {"name": "medulla"}
+    ],
+    "cells": [
+      {"name": "thymocyte"},
+      {"name": "epithelial cells", "function": "help the thymocytes develop"}
+    ],
+    "diseases": [
+      "decreased number of T cells",
+      "autoimmune polyendocrine syndrome type 1",
+      "myasthenia gravis"
+    ],
+    "system": "immune",
+    "function": " matures T-lymphocytes (white blood cells) that fight infection, training them to distinguish self from non-self antigens",
+    "notes": [
+      "most active during neonatal and pre-adolescent periods and undergoes involution (shrinking) with age",
+      "T cells that successfully develop react appropriately with MHC immune receptors of the body (called positive selection) and not against proteins of the body (called negative selection)"
+    ],
+    "microanatomy": [
+      "The thymus consists of two lobes, merged in the middle, surrounded by a capsule that extends with blood vessels into the interior. The lobes consist of an outer cortex rich with cells and an inner less dense medulla. The lobes are divided into smaller lobules 0.5-2 mm in diameter, between which extrude radiating insertions from the capsule along septa.",
+      "The cortex is mainly made up of thymocytes and epithelial cells. The thymocytes, immature T cells, are supported by a network of the finely-branched epithelial reticular cells, which is continuous with a similar network in the medulla. This network forms an adventitia to the blood vessels, which enter the cortex via septa near the junction with the medulla. Other cells are also present in the thymus, including macrophages, dendritic cells, and a small amount of B cells, neutrophils and eosinophils.",
+      "In the medulla, the network of epithelial cells is coarser than in the cortex, and the lymphoid cells are relatively fewer in number. Concentric, nest-like bodies called Hassall's corpuscles (also called thymic corpuscles) are formed by aggregations of the medullary epithelial cells. These are concentric, layered whorls of epithelial cells that increase in number throughout life. They are the remains of the epithelial tubes, which grow out from the third pharyngeal pouch of the embryo to form the thymus."
+    ]
+  },
+
+    {
     "name": "hypothalamus",
     "location": [
       "at the base of the brain",
@@ -8,10 +42,11 @@
     "secretes": " neurohormones"
   },
 
+
   {
     "name": "parathyroid gland",
     "description": "",
-    "secretes": "parathormone",
+    "secretes": "parathormone"
   },
 
   {

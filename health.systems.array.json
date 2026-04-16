@@ -8,6 +8,10 @@
     "brain",
     "spinal cord"
   ],
+  "parts": [
+    {"name": "central nervous system",    "comprises": ["brain", "spinal cord"]},
+    {"name": "peripheral nervous system", "comprises": ["nerves"]}
+  ],
   "cells": [
     "neuron",
     "neuroglial cell"
@@ -69,13 +73,14 @@
        {"name": "cells that attack foreign cells and body cells harboring infectious agents", "instances": []}
      ]
     },
-    {"name": "specific, acquired",
+    {"name": "specific, acquired, adaptive",
      "description": "tailored to particular types of invaders"}
   ],
   "description": "",
   "organs": [
     "skin",
-    "mucous membranes"
+    "mucous membranes",
+    "thymus"
   ],
   "cells": []
 },
