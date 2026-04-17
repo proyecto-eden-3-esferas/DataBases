@@ -1,4 +1,97 @@
 [
+
+  {
+    "name": "brain",
+    "description": "the complex command center of the nervous system",
+    "functions": [
+      "thought",
+      "memory",
+      "emotion",
+      "perception",
+      "motor skills",
+      "bodily functions (such as breathing)"
+    ],
+    "system": "nervous system",
+    "subsystem": "central nervous system",
+    "parts": [
+      {"name":          "cerebrum",
+
+      },
+      {"name": "brainstem",
+       "parts": [
+         "thalamus",
+         "hypothalamus",
+         "epithalamus",
+         "subthalamus",
+         "midbrain",
+         "pons",
+         "medulla oblongata"
+        ]},
+      {"name": "cerebellum"}
+    ]
+  },
+
+
+  {
+    "name": "cerebrum",
+    "description": "the paired hemispheres; the largest, uppermost portion of the brain",
+     "parts": [
+       "lobes of the cerebral cortex",
+       "cerebral ventricles",
+       "basal ganglia"
+     ],
+    "functions": [
+      {"name": "sensory integration"},
+      {"name": "control of voluntary movement"},
+      {"name": "higher intellectual functions", "instances": ["speech", "abstract thought"]}
+    ],
+    "components": [
+      {
+        "name": "cerebral cortex",
+        "made-up-of": "a convoluted (wrinkled) outer layer of gray matter",
+        "subparts": [],
+        "notes": []
+      },
+      {
+        "name": "",
+        "made-up-of": "white matter",
+        "interconnects": [
+          {"parts": ["cerebral hemispheres"], "via": "corpus callosum"},
+          {"parts": ["different regions of a single hemisphere"]}
+        ],
+        "subparts": [],
+        "notes": []
+      },
+
+      {
+        "name": "internal capsule",
+        "made-up-of": "myelinated fibers projecting to and from the cerebral cortex",
+        "descripton": [
+          "forms a concentrated fan-shaped band",
+          "consists of an anterior limb and a larger posterior limb",
+          "is abruptly curved, with the apex directed toward the center of the brain; the junction is called the genu"
+        ]
+      },
+      {
+        "name": "basal ganglia",
+        "description": "groups of subcortical neuronal masses"
+      },
+      {
+        "name": "longitudinal fissure",
+        "description": "a deep groove that partially separates the cerebral hemispheres from each other"
+      },
+      {
+        "name": "corpus callosum",
+        "location": "at the base of the longitudinal fissure",
+        "description": " a thick band of white matter",
+        "function": "provides a communication link between corresponding regions of the cerebral hemispheres"
+      }
+    ],
+    "notes": [
+      "derived from the telencephalon"
+    ]
+  },
+
   {
     "name": "thymus",
     "description": "a specialized, pyramid-shaped lymphoid organ located in the upper chest behind the breastbone, vital for immune system development",
@@ -21,7 +114,7 @@
       "myasthenia gravis"
     ],
     "system": "immune",
-    "function": " matures T-lymphocytes (white blood cells) that fight infection, training them to distinguish self from non-self antigens",
+    "functions": ["matures T-lymphocytes (white blood cells) that fight infection, training them to distinguish self from non-self antigens"],
     "notes": [
       "most active during neonatal and pre-adolescent periods and undergoes involution (shrinking) with age",
       "T cells that successfully develop react appropriately with MHC immune receptors of the body (called positive selection) and not against proteins of the body (called negative selection)"
@@ -33,11 +126,16 @@
     ]
   },
 
-    {
+  {
     "name": "hypothalamus",
+    "description": "A small, vital region in the vertebrate brain—about the size of an almond in humans—located below the thalamus and above the brain stem, forming part of the diencephalon and limbic system",
     "location": [
       "at the base of the brain",
       "above the pituitary gland"
+    ],
+    "functions": [
+      "acts as the primary link between the nervous system and the endocrine system",
+      "maintaining homeostasis by regulating body temperature, hunger, thirst, sleep-wake cycles, and hormone release through the pituitary gland"
     ],
     "secretes": " neurohormones"
   },

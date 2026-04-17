@@ -1,12 +1,21 @@
 [
 
 {
+  "term": "white matter",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "histology",
+  "definition": "myelinated commissural nerve fibers"
+},
+
+{
   "term": "blastocyst",
   "lang": "en",
   "field": "biology",
-  "subfield": "embriology",
+  "subfield": "embryology",
   "definition": "the bundle of cells into which a fertilized ovum divides"
 },
+
 
 {
   "term": "action potential",

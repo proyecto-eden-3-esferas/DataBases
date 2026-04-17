@@ -1,6 +1,20 @@
 [
 
 {
+  "name": "Seven Pillars of Capitalism",
+  "type": "list",
+  "items": [
+    "private property",
+    "profit motive",
+    "capital accumulation",
+    "competitive markets",
+    "commodification",
+    "wage labor",
+    "an emphasis on innovation and economic growth"
+  ]
+},
+
+{
   "term": "multigraph",
   "lang": "en",
   "field": "mathematics",
@@ -466,6 +480,7 @@
   "list": [],
   "notes": []
 },
+
 {
   "term": "projection",
   "lang": "en",
