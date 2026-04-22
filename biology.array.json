@@ -1,6 +1,22 @@
 [
 
 {
+  "term": "gyrus",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "nervous system",
+  "definition": "the crest of a single convolution"
+},
+{
+  "term": "sulcus",
+  "lang": "en",
+  "field": "biology",
+  "subfield": "nervous system",
+  "definition": "the fissure between two gyri"
+},
+
+
+{
   "term": "white matter",
   "lang": "en",
   "field": "biology",

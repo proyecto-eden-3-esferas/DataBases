@@ -18,6 +18,7 @@
 
       },
       {"name": "brainstem",
+       "description": "made up of all the unpaired structures that connect the cerebrum with the spinal cord",
        "parts": [
          "thalamus",
          "hypothalamus",

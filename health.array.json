@@ -1,5 +1,16 @@
 [
   {
+    "term": "basal ganglia",
+    "description": "large gray masses of nerve cells",
+    "location": "deep within the cerebral hemispheres",
+    "instances": [
+      "caudate nucleus",
+      "putamen",
+      "globus pallidus",
+      "amygdala"
+    ]
+  },
+  {
     "term": "paclitaxel",
     "synonyms": ["taxol"],
     "language": "en",
