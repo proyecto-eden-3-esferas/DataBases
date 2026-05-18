@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Oferta de empleo 3324 Ayudante de Servicios Múltiples",
+    "description": "Oferta de empleo 3324 Ayudante de Servicios Múltiples para programa de empleo Ayto de Cabanillas de la Sierra en su eMail",
+    "notes": []
+  },
+
+  {
+    "name": "llamar Mutua por rebaja",
+    "tel": "91 557 82 00",
+    "description": "Llamar a la Mutua Madrileña para solicitar un plan de seguro más barato",
+    "notes": [
+      "número de póliza: 4730235",
+      "matrícula: 9413HTC",
+      "actualmente es el plan Terceros Plus "
+    ]
+  },
+
+  {
+    "name": "Caducidad de su Certificado FNMT de Persona Física",
+    "tel": "",
+    "deadline": "22/06/2026",
+    "description": "Te informamos que tu Certificado de Ciudadano/a con NIF 51382728S y número de serie 1BD590DB0A48A1A962B2BF25BA59B28D caducará el próximo día 22/06/2026",
+    "content": [
+      "Si el certificado es válido, no ha sido revocado y fue emitido de forma presencial, puedes solicitar tu renovación online desde nuestra Sede Electrónica, sin necesidad de acudir a una de nuestras oficinas de Registro.",
+      "Si lo deseas, puedes verificar el estado de tu certificado, así como su fecha y hora de caducidad.",
+      "En cualquier caso, siempre puedes solicitar un nuevo certificado: Obtención del certificado de Ciudadano."
+    ],
+    "web-links": [
+      "https://www.sede.fnmt.gob.es/certificados/persona-fisica/renovar/solicitar-renovacion",
+      "https://www.sede.fnmt.gob.es/certificados/administracion-publica/verificar-estado",
+      "https://www.sede.fnmt.gob.es/certificados/persona-fisica"],
+    "notes": []
+  },
+
+  {
+    "name": "solucionar reja dormitorio grande",
+    "tel": "",
+    "description": "la llave entra en la cerradura pero no gira ni la abre",
+    "notes": []
+  },
+
+  {
+    "name": "",
+    "tel": "",
+    "description": "",
+    "notes": []
+  },
+
+  {
+    "name": "",
+    "tel": "",
+    "description": "",
+    "notes": []
+  }
+
+
+]

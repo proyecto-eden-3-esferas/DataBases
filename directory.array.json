@@ -1,6 +1,30 @@
 [
 
 {
+  "name": "mueble antiguo roble macizo con tallas",
+  "alto": 67,
+  "ancho": 120,
+  "fondo": 41,
+  "notas": ["falta sujetatirador", "falta un tornillo del otro sujetatirador, el que sí hay"]
+},
+
+{
+  "name": "graduación de la vista",
+  "subject": "Francisco Fernández-Victorio Hernández",
+  "author": "Jose María Fernández-Victorio de la Fuente",
+  "contents": ["OD=180 º - 1", "OI=(10º)(15º) - 1,25"]
+},
+
+{
+  "name": "Zafiro",
+  "type": "shop",
+  "subtype": "stationary's",
+  "tels": ["918410192", "640392223"],
+  "address": "c/ Murga 2, 28710, el Molar, Madrid",
+  "e-mail": "elmolarzafiro@gmail.com"
+},
+
+{
   "name": "qBitTorrent *.torrent Folder",
   "field": "computing",
   "directory": "~/.local/share/qBittorrent/BT_backup/"
@@ -171,6 +195,12 @@
   "web-site": "jorgedipest.com",
   "email": "contact@jorgedipest.com",
   "tel": "678 50 43 02"
+},
+
+{
+  "name": "Arturo",
+  "tels": ["656 64 44 03"],
+  "relationship": "interesado en comprar mi caravana para llevársela a una finca de Calatayud"
 }
 
 
