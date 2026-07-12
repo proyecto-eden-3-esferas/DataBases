@@ -1,0 +1,93 @@
+[
+  {
+    "name": "NGSpice Code Examples",
+    "type": "code / examples",
+    "location": "/former/home/francisco/Documents/mis_escritos/precious/psimple/Electric_files/spice_code/ngspice_examples/"
+  },
+  {
+    "name": "Spice Code Examples",
+    "type": "code / examples",
+    "location": "/former/home/francisco/Documents/mis_escritos/precious/psimple/Electric_files/spice_code/"
+  },
+
+  {
+    "name": "SQL Code",
+    "description": "SQL code for defining (DDL) and initializing databases; strongly MySQL-oriented",
+    "type": "SQL Code",
+    "location": "~/former/home/francisco/Documents/mis_escritos/precious/psimple$ ls directory_files/databases/"
+  },
+
+  {
+    "name": "JSON Files",
+    "subtypes": [
+      "an array of JSON objects (TOPIC.array.json)",
+      "schema (schema-for-TOPIC.array.json)"
+    ],
+    "type": "JSON",
+    "location": "~/former/home/francisco/Documents/mis_escritos/precious/psimple/JSON_files/organizer/"
+  },
+  {
+    "name": "Private/Personal JSON Files",
+    "type": "JSON",
+    "location": "~/former/home/francisco/Documents/mis_escritos/precious/psimple/JSON_files/organizer/"
+  },
+
+
+  {
+    "name": "C++ Code",
+    "type": "C++ code",
+    "subtypes": [
+      "C++ headers-only libraries (*.h)",
+      "headers (*.h)",
+      "implementations (*.cpp)",
+      "examples to demonstrate C++ features and facilities",
+      "test files (*.test.cpp)",
+      ""
+    ],
+    "location": "~/former/home/francisco/Documents/mis_escritos/precious/psimple/Electric_files/cpp_code/"
+  },
+  {
+    "name": "C++ Code for GitHub",
+    "description": "originally revised code ready to upload to my C++ repository with GitHub",
+    "type": "C++ code",
+    "location": "~/former/home/francisco/Documents/mis_escritos/precious/psimple/Electric_files/cpp_code_git/"
+  },
+  {
+    "name": "SVG C++ Code",
+    "description": "",
+    "type": "C++ code",
+    "location": "~/former/home/francisco/Documents/mis_escritos/precious/psimple/Electric_files/SVG/"
+  },
+  {
+    "name": "SVG C++ Code (Rewrite)",
+    "description": "a rewrite of ../SVG/ that enforces several guidelines",
+    "type": "C++ code",
+    "location": "~/former/home/francisco/Documents/mis_escritos/precious/psimple/Electric_files/SVG2.0/"
+  },
+
+
+  {
+    "name": "Files to Print",
+    "description": "Files to be printed in subdirs",
+    "subdirs": ["NotesForProfessionals", "prospective", "next", "ready"],
+    "type": "files/PDF",
+    "location": "~/windows/Users/Francisco/to_print/"
+  },
+
+  {
+    "name": "~/.aMule/Incoming/books/",
+    "description": "books classified in subdirectories and downloaded through aMule (ed2k protocol)",
+    "type": "files/PDF",
+    "location": "~/.aMule/Incoming/books/"
+  },
+
+  {
+    "name": "~/.aMule/Incoming/*/",
+    "description": "Other subdirectories with books downloaded through aMule (ed2k protocol)",
+    "type": "files",
+    "list": ["dzogchen", "ebooks", "english_pdf", "es_epub", "espanyol_pdf", "French_pdf"],
+    "location": "~/.aMule/Incoming/"
+  }
+
+
+]

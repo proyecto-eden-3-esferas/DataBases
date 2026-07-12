@@ -1,6 +1,25 @@
 [
 
 {
+  "name": "Como se tramita un préstamo bibliotecario",
+  "description": "puedes solicitar un libro al mes y renovarlo cada quince días",
+  "lang": "es",
+  "steps": [
+    {"description": "Busca el documento que te interesa en el catálogo de lectura pública de la Comunidad de Madrid https://www.comunidad.madrid/portal-lector/catalogos"},
+    {"description": "Rellena el impreso en tu biblioteca, que el personal bibliotecario validará si lo considera correcto"},
+    {"description": "Recibirás un aviso para recoger el documento cuando esté en la biblioteca"},
+    {"description": "Tienes un plazo de cuatro días para recogerlo"}
+  ]
+},
+
+{
+  "name": "Gomden Dimensions",
+  "width-cm": 42,
+  "depth-cm": 31.75,
+  "height-cm": 16.51
+},
+
+{
   "name": "mueble antiguo roble macizo con tallas",
   "alto": 67,
   "ancho": 120,

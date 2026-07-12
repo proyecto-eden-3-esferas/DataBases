@@ -1,5 +1,21 @@
 [
   {
+    "name": "Cita con urólogo",
+    "type": "appointment",
+    "date": "Nov 6, 2026",
+    "time": "11:00",
+    "location": "Hospital Infanta Sofía - planta 1 - pasillo 4 - consulta 135"
+  },
+
+  {
+    "name": "libros de la biblioteca del Molar de los que pintar",
+    "list": [
+      {"title": "Los bosques de Castilla y León", "code": "634 / ORI / bos"},
+      {"title": "Árboles del Mundo", "code": "582 PET arb"}
+    ]
+  },
+
+  {
     "name": "Oferta de empleo 3324 Ayudante de Servicios Múltiples",
     "description": "Oferta de empleo 3324 Ayudante de Servicios Múltiples para programa de empleo Ayto de Cabanillas de la Sierra en su eMail",
     "notes": []
