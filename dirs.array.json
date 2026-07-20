@@ -1,5 +1,17 @@
 [
   {
+    "name": "Bash and XSLT Scripts",
+    "type": "code",
+    "location": "~/former/home/francisco/Documents/mis_escritos/precious/psimple/XSLT_and_bash_scripts"
+  },
+
+  {
+    "name": "XSLT Code",
+    "type": "code / XSLT",
+    "location": "~/former/home/francisco/Documents/mis_escritos/precious/psimple/Electric_files/XSLT_code/"
+  },
+
+  {
     "name": "NGSpice Code Examples",
     "type": "code / examples",
     "location": "/former/home/francisco/Documents/mis_escritos/precious/psimple/Electric_files/spice_code/ngspice_examples/"

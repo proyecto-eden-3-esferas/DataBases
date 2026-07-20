@@ -2,6 +2,15 @@
   {
     "name": "Cita con urólogo",
     "type": "appointment",
+    "date": "Aug 4, 2026",
+    "time": "12:32",
+    "tel":  "913368434",
+    "location": "CEP San Blas / Sala B414"
+  },
+
+  {
+    "name": "Cita con urólogo",
+    "type": "appointment",
     "date": "Nov 6, 2026",
     "time": "11:00",
     "location": "Hospital Infanta Sofía - planta 1 - pasillo 4 - consulta 135"
